@@ -2,3 +2,4 @@
 **/x64/
 *.vsxproj.filters
 *.vsxproj.user
+**/x86/
