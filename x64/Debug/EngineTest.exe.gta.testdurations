@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>D:\XYZ C++ for gamedevelopment\Rogalique_v2\x64\Debug\EngineTest.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="TestCaseName.TestName" Duration="1" />
+    <TestDuration Test="VectorTests.ZeroContructor" Duration="1" />
+    <TestDuration Test="VectorTests.Contructor" Duration="1" />
+    <TestDuration Test="VectorTests.VectorPlusVector" Duration="1" />
+    <TestDuration Test="VectorTests.VectorMinusVector" Duration="1" />
+    <TestDuration Test="VectorTests.NegativeVector" Duration="1" />
+    <TestDuration Test="VectorTests.VectorMultiplyVector" Duration="1" />
+    <TestDuration Test="VectorTests.ScalarMultiplyVector" Duration="1" />
+    <TestDuration Test="VectorTests.VectorMultiplyScalar" Duration="1" />
+    <TestDuration Test="VectorTests.Equal" Duration="1" />
+    <TestDuration Test="VectorTests.NotEqual" Duration="1" />
+    <TestDuration Test="VectorTests.DotProduct" Duration="1" />
+    <TestDuration Test="VectorTests.GetLength" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
