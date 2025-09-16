@@ -1,3 +1,5 @@
-Roguelike - это простой учебный 2д рогалик.
-Игрок бегает по случайно сгенерированному лабиринту, убивает монстров и собирает лут.
-Сделаем в рамках этого проекта также простой 2д движок.
+﻿
+Rogalique- simple 2D study project writen by C++ and used SFML library.
+Player runs through a randomly generated maze, kills monsters and picks up loots.
+Simple 2d engine will be created in thith project.
+
