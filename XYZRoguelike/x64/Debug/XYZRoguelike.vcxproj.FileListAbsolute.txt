@@ -1,1 +1,2 @@
 D:\XYZ C++ for gamedevelopment\Rogalique_v10_HW\XYZRoguelike\x64\Debug\XYZRoguelike.exe
+D:\XYZ C++ for gamedevelopment\Rogalique\XYZRoguelike\x64\Debug\XYZRoguelike.exe

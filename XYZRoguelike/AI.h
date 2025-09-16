@@ -16,6 +16,7 @@ namespace XYZRoguelike
 		AI(const XYZEngine::Vector2Df& position, XYZEngine::GameObject* player);
 		XYZEngine::GameObject* GetGameObject();
 	private:
+
 		XYZEngine::GameObject* gameObject;
 	};
 }
