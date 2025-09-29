@@ -6,6 +6,8 @@
 #include "FollowComponent.h"
 #include "Player.h"
 #include "DeveloperLevel.h"
+#include <StatsComponent.h>
+#include <AttackComponen.h>
 
 
 namespace XYZRoguelike
@@ -37,6 +39,13 @@ namespace XYZRoguelike
 		rigidbody->SetKinematic(false);
 
 		auto collider = gameObject->AddComponent<XYZEngine::SpriteColliderComponent>();
+
+		//Add health, damage, armor stats
+		auto statsComponent = gameObject->AddComponent<XYZEngine::StatsComponent>(maxArmor, maxArmor);
+
+		//Add AttackComponent
+		auto attackComponent = gameObject->AddComponent<XYZEngine::AttackComponent>(attackPower);
+
 	}
 
 	XYZEngine::GameObject* AI::GetGameObject()

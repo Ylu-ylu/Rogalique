@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "InputComponent.h"
+#include "Logger.h"
 
 namespace XYZEngine
 {
@@ -10,22 +11,26 @@ namespace XYZEngine
 		verticalAxis = 0.f;
 		horizontalAxis = 0.f;
 
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W))
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::W) || sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
 		{
 			verticalAxis += 1.0f;
+			LOG_INFO("Move forward");
 		}
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::S))
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::S) || sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
 		{
 			verticalAxis -= 1.0f;
+			LOG_INFO("Move backward");
 		}
 
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::D) || sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
 		{
 			horizontalAxis += 1.0f;
+			LOG_INFO("Move right");
 		}
-		if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::A) || sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
 		{
 			horizontalAxis -= 1.0f;
+			LOG_INFO("Move left");
 		}
 	}
 	void InputComponent::Render()

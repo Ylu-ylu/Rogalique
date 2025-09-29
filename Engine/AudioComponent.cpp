@@ -24,9 +24,6 @@ namespace XYZEngine
 
 	void AudioComponent::SetAudio(const sf::SoundBuffer& audio)
 	{
-		/*this->soundBuffer = new sf::SoundBuffer(audio);
-		sound->setBuffer(*this->soundBuffer);*/
-
 		sound->setBuffer(audio);
 	}
 

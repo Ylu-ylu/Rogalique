@@ -1,8 +1,8 @@
 #pragma once
 #define NOMINMAX
 #include <algorithm>
-
 #include "SFML/Graphics.hpp"
+#include "Logger.h"
 
 namespace XYZEngine
 {
@@ -19,5 +19,8 @@ namespace XYZEngine
 	private:
 		Engine();
 		~Engine() = default;
+
+
+		void setupLogger();
 	};
 }

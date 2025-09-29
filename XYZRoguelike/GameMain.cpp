@@ -4,50 +4,107 @@
 #include "ResourceSystem.h" 
 #include "DeveloperLevel.h"
 #include "Matrix2D.h"
+#include <cassert>
+#include <stdexcept>
+#include <fstream>
 #include <map>
 #include <SFML/Audio/SoundBuffer.hpp>
+#include <Logger.h>
 //#include <windows.h>
 
 using namespace XYZRoguelike;
 
 int main()
 {
-	XYZEngine::RenderSystem::Instance()->SetMainWindow(new sf::RenderWindow(sf::VideoMode(1280, 720), "XYZRoguelike"));
+	try
+	{
+		// Create main window
+		auto* window = new sf::RenderWindow(sf::VideoMode(1280, 720), "XYZRoguelike");
+		if (window == nullptr)
+		{
+			LOG_ERROR("Failed to allocate main window");
+			throw std::runtime_error("Window allocation failed");
+		}
+		XYZEngine::RenderSystem::Instance()->SetMainWindow(window);
 
-	//XYZEngine::ResourceSystem::Instance()->LoadTexture("ball", "Resources/Textures/ball.png");
-	//XYZEngine::ResourceSystem::Instance()->LoadTextureMap("ai", "Resources/TextureMaps/Enemy.png", { 63, 63 }, 5, false);
-	//XYZEngine::ResourceSystem::Instance()->LoadTextureMap("Player", "Resources/TextureMaps/Player.png", { 48, 63 }, 4, false);
-	XYZEngine::ResourceSystem::Instance()->LoadTextureMap("ai", "Resources/TextureMaps/Wizard.png", {46, 140 }, 1, false);
-	XYZEngine::ResourceSystem::Instance()->LoadTextureMap("Player", "Resources/TextureMaps/Man.png", { 45, 140}, 1, false);
-	ResourceSystem::Instance()->LoadTextureMap("level_floors", "Resources/TextureMaps/Floor.png", { 16, 16 }, 49, false);
-	ResourceSystem::Instance()->LoadTextureMap("level_walls", "Resources/TextureMaps/Wall.png", { 16, 16 }, 48, false);
+		// Pre-check resource files (warn if missing before attempting to load)
+		auto warnIfMissing = [](const std::string& path)
+		{
+			std::ifstream f(path);
+			if (!f.good())
+			{
+				LOG_WARN(std::string("Resource file missing: ") + path);
+			}
+		};
 
-	XYZEngine::ResourceSystem::Instance()->LoadSound("music", "Resources/Sounds/neon-gaming.wav");
-	
+		warnIfMissing("Resources/TextureMaps/Wizard.png");
+		warnIfMissing("Resources/TextureMaps/Man.png");
+		warnIfMissing("Resources/TextureMaps/Floor.png");
+		warnIfMissing("Resources/TextureMaps/Wall.png");
+		warnIfMissing("Resources/Sounds/neon-gaming.wav");
 
-	auto developerLevel = std::make_shared<DeveloperLevel>();
-	developerLevel->Start();
+		LOG_INFO("Loading texture maps and sounds");
 
-///For check Matrix2D
+		// Load textures
+		XYZEngine::ResourceSystem::Instance()->LoadTextureMap("ai", "Resources/TextureMaps/Wizard.png", {46, 140 }, 1, false);
+		if (XYZEngine::ResourceSystem::Instance()->GetTextureMapElementShared("ai", 0) == nullptr)
+		{
+			LOG_ERROR("Texture map 'ai' failed to load or is empty");
+			throw std::runtime_error("Failed to load required texture map: ai");
+		}
 
-	/*XYZEngine::Matrix2D zeroMatrix;
-	zeroMatrix.Print();
+		XYZEngine::ResourceSystem::Instance()->LoadTextureMap("Player", "Resources/TextureMaps/Man.png", { 45, 140}, 1, false);
+		if (XYZEngine::ResourceSystem::Instance()->GetTextureMapElementShared("Player", 0) == nullptr)
+		{
+			LOG_ERROR("Texture map 'Player' failed to load or is empty");
+			throw std::runtime_error("Failed to load required texture map: Player");
+		}
 
-	XYZEngine::Matrix2D translationMatrix= XYZEngine::Matrix2D(Vector2Df(12.f, 5.f), 0.f, Vector2Df(1.f, 1.f));
-	translationMatrix.Print();
+		ResourceSystem::Instance()->LoadTextureMap("level_floors", "Resources/TextureMaps/Floor.png", { 16, 16 }, 49, false);
+		if (ResourceSystem::Instance()->GetTextureMapElementShared("level_floors", 0) == nullptr)
+		{
+			LOG_ERROR("Texture map 'level_floors' failed to load or is empty");
+			throw std::runtime_error("Failed to load required texture map: level_floors");
+		}
 
-	XYZEngine::Matrix2D rotationMatrix = XYZEngine::Matrix2D(Vector2Df(0.f, 0.f), 90.f, Vector2Df(1.f, 1.f));
-	rotationMatrix.Print();
+		ResourceSystem::Instance()->LoadTextureMap("level_walls", "Resources/TextureMaps/Wall.png", { 16, 16 }, 48, false);
+		if (ResourceSystem::Instance()->GetTextureMapElementShared("level_walls", 0) == nullptr)
+		{
+			LOG_ERROR("Texture map 'level_walls' failed to load or is empty");
+			throw std::runtime_error("Failed to load required texture map: level_walls");
+		}
 
-	(rotationMatrix*translationMatrix).Print();
-	
-	XYZEngine::Matrix2D someMatrix = XYZEngine::Matrix2D(Vector2Df(13.f, 25.f), 90.f, Vector2Df(1.5f, 1.f));
-	someMatrix.Print();
-	
-	(someMatrix*someMatrix.GetInversed()).Print();*/	
-	
-	
-	XYZEngine::Engine::Instance()->Run();
+		// Load and validate sound
+		XYZEngine::ResourceSystem::Instance()->LoadSound("music", "Resources/Sounds/neon-gaming.wav");
+		if (XYZEngine::ResourceSystem::Instance()->GetSound("music") == nullptr)
+		{
+			LOG_ERROR("Sound 'music' failed to load");
+			throw std::runtime_error("Failed to load required sound: music");
+		}
 
-	return 0;
+		LOG_INFO("Initializing DeveloperLevel");
+		auto developerLevel = std::make_shared<DeveloperLevel>();
+		if (developerLevel == nullptr)
+		{
+			LOG_ERROR("Failed to create DeveloperLevel instance");
+			throw std::runtime_error("DeveloperLevel allocation failed");
+		}
+		developerLevel->Start();
+
+		LOG_INFO("Starting engine run");
+		XYZEngine::Engine::Instance()->Run();
+
+		LOG_INFO("Game exiting");
+		return 0;
+	}
+	catch (const std::exception& ex)
+	{
+		LOG_ERROR(std::string("Unhandled exception: ") + ex.what());
+		return EXIT_FAILURE;
+	}
+	catch (...)
+	{
+		LOG_ERROR("Unhandled non-standard exception");
+		return EXIT_FAILURE;
+	}
 }

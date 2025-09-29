@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "ResourceSystem.h"
+#include "Logger.h"
 
 namespace XYZEngine
 {
@@ -21,6 +22,10 @@ namespace XYZEngine
 		{
 			newTexture->setSmooth(isSmooth);
 			textures.emplace(name, newTexture);
+		}
+		else
+		{
+			LOG_ERROR("Not loaded texture " + name);
 		}
 	}
 	const sf::Texture* ResourceSystem::GetTextureShared(const std::string& name) const
@@ -81,6 +86,10 @@ namespace XYZEngine
 
 			textureMaps.emplace(name, *textureMapElements);
 		}
+		else 
+		{
+			LOG_ERROR("Not loaded texture map " + name);
+		}
 	}
 	const sf::Texture* ResourceSystem::GetTextureMapElementShared(const std::string& name, int elementIndex) const
 	{
@@ -129,6 +138,10 @@ namespace XYZEngine
 		if (newSoundBuffer->loadFromFile(sourcePath))
 		{
 			sounds.emplace(name, newSoundBuffer);
+		}
+		else
+		{
+			LOG_ERROR("Not loaded sound " + name);
 		}
 	}
 

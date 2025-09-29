@@ -18,5 +18,10 @@ namespace XYZRoguelike
 	private:
 
 		XYZEngine::GameObject* gameObject;
+		float maxHealth = 0.f;
+		float maxArmor = 0.f;
+		float attackPower = 0.f;
+
+
 	};
 }
