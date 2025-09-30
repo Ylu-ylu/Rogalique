@@ -4,7 +4,8 @@
 
 
 namespace XYZEngine
-{
+{	
+
 	void StatsComponent::TakeDamage(float damage)
 	{
 		damage -= armor;
@@ -38,6 +39,14 @@ namespace XYZEngine
 		}
 
 		LOG_INFO("Healed" + std::to_string(amount) + " amount, Current health: " + std::to_string(currentHealth));
+	}
+
+	void StatsComponent::Update(float deltaTime)
+	{
+	}
+
+	void StatsComponent::Render()
+	{
 	}
 
 }

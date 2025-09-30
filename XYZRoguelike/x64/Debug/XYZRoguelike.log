@@ -1,36 +1,3 @@
-﻿  AI.cpp
-  Application.cpp
-  DeveloperLevel.cpp
-  Floor.cpp
-  GameState.cpp
-  GameStateData.cpp
-  GameStateGameWin.cpp
-  LevelLoader.cpp
-D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\XYZRoguelike\LevelLoader.cpp(18,21): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  Music.cpp
-  Player.cpp
-  Sprite.cpp
-  Game.cpp
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: The intermediate directory (D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\x64\Debug\) contains files shared from another project (XYZEngine.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   GameMain.cpp
-  GameStatePauseMenu.cpp
-  GameStateGameOver.cpp
-  GameStateMainMenu.cpp
-  GameStatePlaying.cpp
-D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\XYZRoguelike\GameStatePlaying.cpp(23,66): warning C4244: 'argument': conversion from 'const unsigned int' to 'T', possible loss of data
-D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\XYZRoguelike\GameStatePlaying.cpp(23,66): warning C4244:         with
-D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\XYZRoguelike\GameStatePlaying.cpp(23,66): warning C4244:         [
-D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\XYZRoguelike\GameStatePlaying.cpp(23,66): warning C4244:             T=float
-D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\XYZRoguelike\GameStatePlaying.cpp(23,66): warning C4244:         ]
-D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\XYZRoguelike\GameStatePlaying.cpp(23,43): warning C4244: 'argument': conversion from 'const unsigned int' to 'T', possible loss of data
-D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\XYZRoguelike\GameStatePlaying.cpp(23,43): warning C4244:         with
-D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\XYZRoguelike\GameStatePlaying.cpp(23,43): warning C4244:         [
-D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\XYZRoguelike\GameStatePlaying.cpp(23,43): warning C4244:             T=float
-D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\XYZRoguelike\GameStatePlaying.cpp(23,43): warning C4244:         ]
-  GameStateRecords.cpp
-  Menu.cpp
-  Text.cpp
-  Generating Code...
-  Compiling...
-  Wall.cpp
-  Generating Code...
   XYZRoguelike.vcxproj -> D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\XYZRoguelike\x64\Debug\XYZRoguelike.exe

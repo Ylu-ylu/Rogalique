@@ -1,3 +1,4 @@
+D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\Engine\AttackComponen.cpp;D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\x64\Debug\AttackComponen.obj
 D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\Engine\AudioComponent.cpp;D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\x64\Debug\AudioComponent.obj
 D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\Engine\CameraComponent.cpp;D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\x64\Debug\CameraComponent.obj
 D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\Engine\ColliderComponent.cpp;D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\x64\Debug\ColliderComponent.obj
@@ -18,5 +19,6 @@ D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\Engine\ResourceSystem.cpp;D:\XY
 D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\Engine\RigidbodyComponent.cpp;D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\x64\Debug\RigidbodyComponent.obj
 D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\Engine\SpriteColliderComponent.cpp;D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\x64\Debug\SpriteColliderComponent.obj
 D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\Engine\SpriteRendererComponent.cpp;D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\x64\Debug\SpriteRendererComponent.obj
+D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\Engine\StatsComponent.cpp;D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\x64\Debug\StatsComponent.obj
 D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\Engine\TransformComponent.cpp;D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\x64\Debug\TransformComponent.obj
 D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\Engine\Trigger.cpp;D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\x64\Debug\Trigger.obj

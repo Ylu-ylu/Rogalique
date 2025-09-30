@@ -113,6 +113,15 @@ private:
 	std::shared_ptr<Logger> defaultLogger;
 	std::mutex registryMutex;
 public:
+	// Ensure default logger exists
+	LoggerRegistry()
+	{
+		defaultLogger = std::make_shared<Logger>();
+		defaultLogger->AddSink(std::make_shared<ConsoleSink>());
+		// Optionally add a file sink as a safe default:
+		// defaultLogger->AddSink(std::make_shared<FileSink>("log.txt"));
+	}
+	
 	static LoggerRegistry& getInstance()
 	{
 		static LoggerRegistry instance;
@@ -123,6 +132,12 @@ public:
 		std::lock_guard<std::mutex> lock(registryMutex);
 		if (loggers.find(name) != loggers.end()) {
 			return loggers[name];
+		}
+		// Always return a valid logger
+		if (!defaultLogger)
+		{
+			defaultLogger = std::make_shared<Logger>();
+			defaultLogger->AddSink(std::make_shared<ConsoleSink>());
 		}
 		return defaultLogger;
 	}

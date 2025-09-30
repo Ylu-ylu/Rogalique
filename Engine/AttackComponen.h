@@ -17,6 +17,10 @@ namespace XYZEngine
 
 		void Attack(GameObject* target);
 
+		// Implement pure virtuals from Component
+		void Update(float deltaTime) override;
+		void Render() override;
+
 	private:	
 		
 		float attackPower;

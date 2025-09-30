@@ -10,13 +10,22 @@ namespace XYZEngine
 			return;
 		}
 
-		auto targetStatsComponent=target->AddComponent<StatsComponent>();
-		if(targetStatsComponent)
+		auto targetStatsComponent = target->GetComponent<StatsComponent>();
+		if (targetStatsComponent)
 		{
 			float damage = attackPower;
 			targetStatsComponent->TakeDamage(damage);
 		}
 
+	}
+	void AttackComponent::Update(float /*deltaTime*/)
+	{
+		// No periodic logic for now
+	}
+
+	void AttackComponent::Render()
+	{
+		// Nothing to render for AttackComponent
 	}
 
 }

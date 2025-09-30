@@ -3,6 +3,7 @@
 //#include "pch.h"
 #include "TransformComponent.h"
 #include <iostream>
+#include <assert.h>
 
 namespace XYZEngine
 {
