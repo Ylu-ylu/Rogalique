@@ -25,6 +25,6 @@ jobs:
       #Step 3: Build the Solution
     - name: Build solution
       run:
-          msbuild Game.sln/p:Configuration=Release/p:Platform=x64
+          msbuild Game.sln/d:Configuration=Release/d:Platform=x64
          
          
