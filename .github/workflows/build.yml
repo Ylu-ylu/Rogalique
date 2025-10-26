@@ -18,14 +18,15 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          submodules: true
 
       # Step 2: Set up MSBuild and VS
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
 
-      # Debug: List all files to verify solution file exists
-      - name: List all repository files
-        run: dir
+      # Debug: List all files recursively to verify solution file exists
+      - name: List all repository files recursively
+        run: dir /s
 
       # Step 3: Build the Solution
       - name: Build solution
