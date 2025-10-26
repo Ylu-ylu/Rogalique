@@ -15,18 +15,18 @@ jobs:
     steps:
       # Step 1: Checkout the repository
       - name: Checkout code
-        uses: actions/checkout@v4  # Updated to latest stable version
+        uses: actions/checkout@v4
         with:
-           fetch-depth: 0
-           
+          fetch-depth: 0
+
       # Step 2: Set up MSBuild and VS
       - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v2  # Updated to latest version
+        uses: microsoft/setup-msbuild@v2
 
-      # Debug: List files to verify Game.sln exists (remove after testing)
-      - name: List repository files
-        run: dir Game.sln || echo "Game.sln not found" # On Windows, this lists files in the root
+      # Debug: List all files to verify solution file exists
+      - name: List all repository files
+        run: dir
 
       # Step 3: Build the Solution
       - name: Build solution
-        run: msbuild Game.sln /p:Configuration=Release /p:Platform=x64
+        run: msbuild Game.sln /p:Configuration=Release /p:Platform=x64  # Update path if needed
