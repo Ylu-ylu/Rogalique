@@ -1,30 +1,30 @@
 name: Build Game Solution
 
 on:
- push:
-   branches:
-   - main # Start at push
- pull_request:
-   branches:
-     - main # Start when pull request create
+  push:
+    branches:
+      - main  # Start on push
+  pull_request:
+    branches:
+      - main  # Start on pull request
 
 jobs:
   build:
-    runs-on: windows-latest # Use Windows Runner
+    runs-on: windows-latest  # Use Windows Runner
 
     steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4  # Updated to latest stable version
 
-    #Step 1: Checkout the repository
-    - name: Checkout code
-      uses: actions/checkout@v3
+      # Step 2: Set up MSBuild and VS
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2  # Updated to latest version
 
-      #Step 2: Set up MSBuild and VS
-    - name: Setup MSBuild
-      uses: microsoft/setup-msbuild@v1
+      # Debug: List files to verify Game.sln exists (remove after testing)
+      - name: List repository files
+        run: dir  # On Windows, this lists files in the root
 
-      #Step 3: Build the Solution
-    - name: Build solution
-      run:
-          msbuild Game.sln/d:Configuration=Release/d:Platform=x64
-         
-         
+      # Step 3: Build the Solution
+      - name: Build solution
+        run: msbuild Game.sln /p:Configuration=Release /p:Platform=x64
