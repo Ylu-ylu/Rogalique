@@ -31,13 +31,12 @@
 #include <SFML/Window/Export.hpp>
 #include <SFML/System/NonCopyable.hpp>
 
-
 namespace sf
 {
 
 class Context;
 
-typedef void(*ContextDestroyCallback)(void*);
+typedef void (*ContextDestroyCallback)(void *);
 
 ////////////////////////////////////////////////////////////
 /// \brief Base class for classes that require an OpenGL context
@@ -45,8 +44,7 @@ typedef void(*ContextDestroyCallback)(void*);
 ////////////////////////////////////////////////////////////
 class SFML_WINDOW_API GlResource
 {
-protected:
-
+  protected:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -70,7 +68,7 @@ protected:
     /// \param arg      Argument to pass when calling the function
     ///
     ////////////////////////////////////////////////////////////
-    static void registerContextDestroyCallback(ContextDestroyCallback callback, void* arg);
+    static void registerContextDestroyCallback(ContextDestroyCallback callback, void *arg);
 
     ////////////////////////////////////////////////////////////
     /// \brief RAII helper class to temporarily lock an available context for use
@@ -78,7 +76,7 @@ protected:
     ////////////////////////////////////////////////////////////
     class SFML_WINDOW_API TransientContextLock : NonCopyable
     {
-    public:
+      public:
         ////////////////////////////////////////////////////////////
         /// \brief Default constructor
         ///
@@ -94,7 +92,6 @@ protected:
 };
 
 } // namespace sf
-
 
 #endif // SFML_GLRESOURCE_HPP
 

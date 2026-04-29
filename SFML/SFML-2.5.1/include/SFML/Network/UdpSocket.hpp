@@ -33,7 +33,6 @@
 #include <SFML/Network/IpAddress.hpp>
 #include <vector>
 
-
 namespace sf
 {
 class Packet;
@@ -44,8 +43,7 @@ class Packet;
 ////////////////////////////////////////////////////////////
 class SFML_NETWORK_API UdpSocket : public Socket
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     // Constants
     ////////////////////////////////////////////////////////////
@@ -95,7 +93,7 @@ public:
     /// \see unbind, getLocalPort
     ///
     ////////////////////////////////////////////////////////////
-    Status bind(unsigned short port, const IpAddress& address = IpAddress::Any);
+    Status bind(unsigned short port, const IpAddress &address = IpAddress::Any);
 
     ////////////////////////////////////////////////////////////
     /// \brief Unbind the socket from the local port to which it is bound
@@ -128,7 +126,7 @@ public:
     /// \see receive
     ///
     ////////////////////////////////////////////////////////////
-    Status send(const void* data, std::size_t size, const IpAddress& remoteAddress, unsigned short remotePort);
+    Status send(const void *data, std::size_t size, const IpAddress &remoteAddress, unsigned short remotePort);
 
     ////////////////////////////////////////////////////////////
     /// \brief Receive raw data from a remote peer
@@ -151,7 +149,7 @@ public:
     /// \see send
     ///
     ////////////////////////////////////////////////////////////
-    Status receive(void* data, std::size_t size, std::size_t& received, IpAddress& remoteAddress, unsigned short& remotePort);
+    Status receive(void *data, std::size_t size, std::size_t &received, IpAddress &remoteAddress, unsigned short &remotePort);
 
     ////////////////////////////////////////////////////////////
     /// \brief Send a formatted packet of data to a remote peer
@@ -169,7 +167,7 @@ public:
     /// \see receive
     ///
     ////////////////////////////////////////////////////////////
-    Status send(Packet& packet, const IpAddress& remoteAddress, unsigned short remotePort);
+    Status send(Packet &packet, const IpAddress &remoteAddress, unsigned short remotePort);
 
     ////////////////////////////////////////////////////////////
     /// \brief Receive a formatted packet of data from a remote peer
@@ -186,10 +184,9 @@ public:
     /// \see send
     ///
     ////////////////////////////////////////////////////////////
-    Status receive(Packet& packet, IpAddress& remoteAddress, unsigned short& remotePort);
+    Status receive(Packet &packet, IpAddress &remoteAddress, unsigned short &remotePort);
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
@@ -198,9 +195,7 @@ private:
 
 } // namespace sf
 
-
 #endif // SFML_UDPSOCKET_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::UdpSocket

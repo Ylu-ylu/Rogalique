@@ -33,7 +33,6 @@
 #include <SFML/System/Time.hpp>
 #include <cstdlib>
 
-
 namespace sf
 {
 class SoundBuffer;
@@ -44,8 +43,7 @@ class SoundBuffer;
 ////////////////////////////////////////////////////////////
 class SFML_AUDIO_API Sound : public SoundSource
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -58,7 +56,7 @@ public:
     /// \param buffer Sound buffer containing the audio data to play with the sound
     ///
     ////////////////////////////////////////////////////////////
-    explicit Sound(const SoundBuffer& buffer);
+    explicit Sound(const SoundBuffer &buffer);
 
     ////////////////////////////////////////////////////////////
     /// \brief Copy constructor
@@ -66,7 +64,7 @@ public:
     /// \param copy Instance to copy
     ///
     ////////////////////////////////////////////////////////////
-    Sound(const Sound& copy);
+    Sound(const Sound &copy);
 
     ////////////////////////////////////////////////////////////
     /// \brief Destructor
@@ -123,7 +121,7 @@ public:
     /// \see getBuffer
     ///
     ////////////////////////////////////////////////////////////
-    void setBuffer(const SoundBuffer& buffer);
+    void setBuffer(const SoundBuffer &buffer);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set whether or not the sound should loop after reaching the end
@@ -161,7 +159,7 @@ public:
     /// \return Sound buffer attached to the sound (can be NULL)
     ///
     ////////////////////////////////////////////////////////////
-    const SoundBuffer* getBuffer() const;
+    const SoundBuffer *getBuffer() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Tell whether or not the sound is in loop mode
@@ -199,7 +197,7 @@ public:
     /// \return Reference to self
     ///
     ////////////////////////////////////////////////////////////
-    Sound& operator =(const Sound& right);
+    Sound &operator=(const Sound &right);
 
     ////////////////////////////////////////////////////////////
     /// \brief Reset the internal buffer of the sound
@@ -212,19 +210,16 @@ public:
     ////////////////////////////////////////////////////////////
     void resetBuffer();
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    const SoundBuffer* m_buffer; ///< Sound buffer bound to the source
+    const SoundBuffer *m_buffer; ///< Sound buffer bound to the source
 };
 
 } // namespace sf
 
-
 #endif // SFML_SOUND_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Sound

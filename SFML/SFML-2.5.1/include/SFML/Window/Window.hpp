@@ -40,14 +40,13 @@
 #include <SFML/System/String.hpp>
 #include <SFML/System/Vector2.hpp>
 
-
 namespace sf
 {
 namespace priv
 {
-    class GlContext;
-    class WindowImpl;
-}
+class GlContext;
+class WindowImpl;
+} // namespace priv
 
 class Event;
 
@@ -57,8 +56,7 @@ class Event;
 ////////////////////////////////////////////////////////////
 class SFML_WINDOW_API Window : GlResource, NonCopyable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -87,7 +85,7 @@ public:
     /// \param settings Additional settings for the underlying OpenGL context
     ///
     ////////////////////////////////////////////////////////////
-    Window(VideoMode mode, const String& title, Uint32 style = Style::Default, const ContextSettings& settings = ContextSettings());
+    Window(VideoMode mode, const String &title, Uint32 style = Style::Default, const ContextSettings &settings = ContextSettings());
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct the window from an existing control
@@ -103,7 +101,7 @@ public:
     /// \param settings Additional settings for the underlying OpenGL context
     ///
     ////////////////////////////////////////////////////////////
-    explicit Window(WindowHandle handle, const ContextSettings& settings = ContextSettings());
+    explicit Window(WindowHandle handle, const ContextSettings &settings = ContextSettings());
 
     ////////////////////////////////////////////////////////////
     /// \brief Destructor
@@ -130,7 +128,7 @@ public:
     /// \param settings Additional settings for the underlying OpenGL context
     ///
     ////////////////////////////////////////////////////////////
-    void create(VideoMode mode, const String& title, Uint32 style = Style::Default, const ContextSettings& settings = ContextSettings());
+    void create(VideoMode mode, const String &title, Uint32 style = Style::Default, const ContextSettings &settings = ContextSettings());
 
     ////////////////////////////////////////////////////////////
     /// \brief Create (or recreate) the window from an existing control
@@ -147,7 +145,7 @@ public:
     /// \param settings Additional settings for the underlying OpenGL context
     ///
     ////////////////////////////////////////////////////////////
-    void create(WindowHandle handle, const ContextSettings& settings = ContextSettings());
+    void create(WindowHandle handle, const ContextSettings &settings = ContextSettings());
 
     ////////////////////////////////////////////////////////////
     /// \brief Close the window and destroy all the attached resources
@@ -184,7 +182,7 @@ public:
     /// \return Structure containing the OpenGL context settings
     ///
     ////////////////////////////////////////////////////////////
-    const ContextSettings& getSettings() const;
+    const ContextSettings &getSettings() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Pop the event on top of the event queue, if any, and return it
@@ -209,7 +207,7 @@ public:
     /// \see waitEvent
     ///
     ////////////////////////////////////////////////////////////
-    bool pollEvent(Event& event);
+    bool pollEvent(Event &event);
 
     ////////////////////////////////////////////////////////////
     /// \brief Wait for an event and return it
@@ -236,7 +234,7 @@ public:
     /// \see pollEvent
     ///
     ////////////////////////////////////////////////////////////
-    bool waitEvent(Event& event);
+    bool waitEvent(Event &event);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the position of the window
@@ -260,7 +258,7 @@ public:
     /// \see getPosition
     ///
     ////////////////////////////////////////////////////////////
-    void setPosition(const Vector2i& position);
+    void setPosition(const Vector2i &position);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the size of the rendering region of the window
@@ -283,7 +281,7 @@ public:
     /// \see getSize
     ///
     ////////////////////////////////////////////////////////////
-    void setSize(const Vector2u& size);
+    void setSize(const Vector2u &size);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change the title of the window
@@ -293,7 +291,7 @@ public:
     /// \see setIcon
     ///
     ////////////////////////////////////////////////////////////
-    void setTitle(const String& title);
+    void setTitle(const String &title);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change the window's icon
@@ -312,7 +310,7 @@ public:
     /// \see setTitle
     ///
     ////////////////////////////////////////////////////////////
-    void setIcon(unsigned int width, unsigned int height, const Uint8* pixels);
+    void setIcon(unsigned int width, unsigned int height, const Uint8 *pixels);
 
     ////////////////////////////////////////////////////////////
     /// \brief Show or hide the window
@@ -379,7 +377,7 @@ public:
     /// \see sf::Cursor::loadFromPixels
     ///
     ////////////////////////////////////////////////////////////
-    void setMouseCursor(const Cursor& cursor);
+    void setMouseCursor(const Cursor &cursor);
 
     ////////////////////////////////////////////////////////////
     /// \brief Enable or disable automatic key-repeat
@@ -496,8 +494,7 @@ public:
     ////////////////////////////////////////////////////////////
     WindowHandle getSystemHandle() const;
 
-protected:
-
+  protected:
     ////////////////////////////////////////////////////////////
     /// \brief Function called after the window has been created
     ///
@@ -517,8 +514,7 @@ protected:
     ////////////////////////////////////////////////////////////
     virtual void onResize();
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     /// \brief Processes an event before it is sent to the user
     ///
@@ -531,7 +527,7 @@ private:
     /// \param event Event to filter
     ///
     ////////////////////////////////////////////////////////////
-    bool filterEvent(const Event& event);
+    bool filterEvent(const Event &event);
 
     ////////////////////////////////////////////////////////////
     /// \brief Perform some common internal initializations
@@ -542,18 +538,16 @@ private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    priv::WindowImpl* m_impl;           ///< Platform-specific implementation of the window
-    priv::GlContext*  m_context;        ///< Platform-specific implementation of the OpenGL context
-    Clock             m_clock;          ///< Clock for measuring the elapsed time between frames
-    Time              m_frameTimeLimit; ///< Current framerate limit
-    Vector2u          m_size;           ///< Current size of the window
+    priv::WindowImpl *m_impl;   ///< Platform-specific implementation of the window
+    priv::GlContext *m_context; ///< Platform-specific implementation of the OpenGL context
+    Clock m_clock;              ///< Clock for measuring the elapsed time between frames
+    Time m_frameTimeLimit;      ///< Current framerate limit
+    Vector2u m_size;            ///< Current size of the window
 };
 
 } // namespace sf
 
-
 #endif // SFML_WINDOW_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Window

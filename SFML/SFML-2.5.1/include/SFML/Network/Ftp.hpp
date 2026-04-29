@@ -35,7 +35,6 @@
 #include <string>
 #include <vector>
 
-
 namespace sf
 {
 class IpAddress;
@@ -46,8 +45,7 @@ class IpAddress;
 ////////////////////////////////////////////////////////////
 class SFML_NETWORK_API Ftp : NonCopyable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Enumeration of transfer modes
     ///
@@ -65,8 +63,7 @@ public:
     ////////////////////////////////////////////////////////////
     class SFML_NETWORK_API Response
     {
-    public:
-
+      public:
         ////////////////////////////////////////////////////////////
         /// \brief Status codes possibly returned by a FTP response
         ///
@@ -75,62 +72,62 @@ public:
         {
             // 1xx: the requested action is being initiated,
             // expect another reply before proceeding with a new command
-            RestartMarkerReply          = 110, ///< Restart marker reply
-            ServiceReadySoon            = 120, ///< Service ready in N minutes
+            RestartMarkerReply = 110,          ///< Restart marker reply
+            ServiceReadySoon = 120,            ///< Service ready in N minutes
             DataConnectionAlreadyOpened = 125, ///< Data connection already opened, transfer starting
-            OpeningDataConnection       = 150, ///< File status ok, about to open data connection
+            OpeningDataConnection = 150,       ///< File status ok, about to open data connection
 
             // 2xx: the requested action has been successfully completed
-            Ok                    = 200, ///< Command ok
-            PointlessCommand      = 202, ///< Command not implemented
-            SystemStatus          = 211, ///< System status, or system help reply
-            DirectoryStatus       = 212, ///< Directory status
-            FileStatus            = 213, ///< File status
-            HelpMessage           = 214, ///< Help message
-            SystemType            = 215, ///< NAME system type, where NAME is an official system name from the list in the Assigned Numbers document
-            ServiceReady          = 220, ///< Service ready for new user
-            ClosingConnection     = 221, ///< Service closing control connection
-            DataConnectionOpened  = 225, ///< Data connection open, no transfer in progress
+            Ok = 200,                    ///< Command ok
+            PointlessCommand = 202,      ///< Command not implemented
+            SystemStatus = 211,          ///< System status, or system help reply
+            DirectoryStatus = 212,       ///< Directory status
+            FileStatus = 213,            ///< File status
+            HelpMessage = 214,           ///< Help message
+            SystemType = 215,            ///< NAME system type, where NAME is an official system name from the list in the Assigned Numbers document
+            ServiceReady = 220,          ///< Service ready for new user
+            ClosingConnection = 221,     ///< Service closing control connection
+            DataConnectionOpened = 225,  ///< Data connection open, no transfer in progress
             ClosingDataConnection = 226, ///< Closing data connection, requested file action successful
-            EnteringPassiveMode   = 227, ///< Entering passive mode
-            LoggedIn              = 230, ///< User logged in, proceed. Logged out if appropriate
-            FileActionOk          = 250, ///< Requested file action ok
-            DirectoryOk           = 257, ///< PATHNAME created
+            EnteringPassiveMode = 227,   ///< Entering passive mode
+            LoggedIn = 230,              ///< User logged in, proceed. Logged out if appropriate
+            FileActionOk = 250,          ///< Requested file action ok
+            DirectoryOk = 257,           ///< PATHNAME created
 
             // 3xx: the command has been accepted, but the requested action
             // is dormant, pending receipt of further information
-            NeedPassword       = 331, ///< User name ok, need password
+            NeedPassword = 331,       ///< User name ok, need password
             NeedAccountToLogIn = 332, ///< Need account for login
-            NeedInformation    = 350, ///< Requested file action pending further information
+            NeedInformation = 350,    ///< Requested file action pending further information
 
             // 4xx: the command was not accepted and the requested action did not take place,
             // but the error condition is temporary and the action may be requested again
-            ServiceUnavailable        = 421, ///< Service not available, closing control connection
+            ServiceUnavailable = 421,        ///< Service not available, closing control connection
             DataConnectionUnavailable = 425, ///< Can't open data connection
-            TransferAborted           = 426, ///< Connection closed, transfer aborted
-            FileActionAborted         = 450, ///< Requested file action not taken
-            LocalError                = 451, ///< Requested action aborted, local error in processing
-            InsufficientStorageSpace  = 452, ///< Requested action not taken; insufficient storage space in system, file unavailable
+            TransferAborted = 426,           ///< Connection closed, transfer aborted
+            FileActionAborted = 450,         ///< Requested file action not taken
+            LocalError = 451,                ///< Requested action aborted, local error in processing
+            InsufficientStorageSpace = 452,  ///< Requested action not taken; insufficient storage space in system, file unavailable
 
             // 5xx: the command was not accepted and
             // the requested action did not take place
-            CommandUnknown          = 500, ///< Syntax error, command unrecognized
-            ParametersUnknown       = 501, ///< Syntax error in parameters or arguments
-            CommandNotImplemented   = 502, ///< Command not implemented
-            BadCommandSequence      = 503, ///< Bad sequence of commands
+            CommandUnknown = 500,          ///< Syntax error, command unrecognized
+            ParametersUnknown = 501,       ///< Syntax error in parameters or arguments
+            CommandNotImplemented = 502,   ///< Command not implemented
+            BadCommandSequence = 503,      ///< Bad sequence of commands
             ParameterNotImplemented = 504, ///< Command not implemented for that parameter
-            NotLoggedIn             = 530, ///< Not logged in
-            NeedAccountToStore      = 532, ///< Need account for storing files
-            FileUnavailable         = 550, ///< Requested action not taken, file unavailable
-            PageTypeUnknown         = 551, ///< Requested action aborted, page type unknown
-            NotEnoughMemory         = 552, ///< Requested file action aborted, exceeded storage allocation
-            FilenameNotAllowed      = 553, ///< Requested action not taken, file name not allowed
+            NotLoggedIn = 530,             ///< Not logged in
+            NeedAccountToStore = 532,      ///< Need account for storing files
+            FileUnavailable = 550,         ///< Requested action not taken, file unavailable
+            PageTypeUnknown = 551,         ///< Requested action aborted, page type unknown
+            NotEnoughMemory = 552,         ///< Requested file action aborted, exceeded storage allocation
+            FilenameNotAllowed = 553,      ///< Requested action not taken, file name not allowed
 
             // 10xx: SFML custom codes
-            InvalidResponse  = 1000, ///< Not part of the FTP standard, generated by SFML when a received response cannot be parsed
+            InvalidResponse = 1000,  ///< Not part of the FTP standard, generated by SFML when a received response cannot be parsed
             ConnectionFailed = 1001, ///< Not part of the FTP standard, generated by SFML when the low-level socket connection with the server fails
             ConnectionClosed = 1002, ///< Not part of the FTP standard, generated by SFML when the low-level socket connection is unexpectedly closed
-            InvalidFile      = 1003  ///< Not part of the FTP standard, generated by SFML when a local file cannot be read or written
+            InvalidFile = 1003       ///< Not part of the FTP standard, generated by SFML when a local file cannot be read or written
         };
 
         ////////////////////////////////////////////////////////////
@@ -143,7 +140,7 @@ public:
         /// \param message Response message
         ///
         ////////////////////////////////////////////////////////////
-        explicit Response(Status code = InvalidResponse, const std::string& message = "");
+        explicit Response(Status code = InvalidResponse, const std::string &message = "");
 
         ////////////////////////////////////////////////////////////
         /// \brief Check if the status code means a success
@@ -170,14 +167,13 @@ public:
         /// \return The response message
         ///
         ////////////////////////////////////////////////////////////
-        const std::string& getMessage() const;
+        const std::string &getMessage() const;
 
-    private:
-
+      private:
         ////////////////////////////////////////////////////////////
         // Member data
         ////////////////////////////////////////////////////////////
-        Status      m_status;  ///< Status code returned from the server
+        Status m_status;       ///< Status code returned from the server
         std::string m_message; ///< Last message received from the server
     };
 
@@ -187,15 +183,14 @@ public:
     ////////////////////////////////////////////////////////////
     class SFML_NETWORK_API DirectoryResponse : public Response
     {
-    public:
-
+      public:
         ////////////////////////////////////////////////////////////
         /// \brief Default constructor
         ///
         /// \param response Source response
         ///
         ////////////////////////////////////////////////////////////
-        DirectoryResponse(const Response& response);
+        DirectoryResponse(const Response &response);
 
         ////////////////////////////////////////////////////////////
         /// \brief Get the directory returned in the response
@@ -203,16 +198,14 @@ public:
         /// \return Directory name
         ///
         ////////////////////////////////////////////////////////////
-        const std::string& getDirectory() const;
+        const std::string &getDirectory() const;
 
-    private:
-
+      private:
         ////////////////////////////////////////////////////////////
         // Member data
         ////////////////////////////////////////////////////////////
         std::string m_directory; ///< Directory extracted from the response message
     };
-
 
     ////////////////////////////////////////////////////////////
     /// \brief Specialization of FTP response returning a
@@ -220,8 +213,7 @@ public:
     ////////////////////////////////////////////////////////////
     class SFML_NETWORK_API ListingResponse : public Response
     {
-    public:
-
+      public:
         ////////////////////////////////////////////////////////////
         /// \brief Default constructor
         ///
@@ -229,7 +221,7 @@ public:
         /// \param data      Data containing the raw listing
         ///
         ////////////////////////////////////////////////////////////
-        ListingResponse(const Response& response, const std::string& data);
+        ListingResponse(const Response &response, const std::string &data);
 
         ////////////////////////////////////////////////////////////
         /// \brief Return the array of directory/file names
@@ -237,16 +229,14 @@ public:
         /// \return Array containing the requested listing
         ///
         ////////////////////////////////////////////////////////////
-        const std::vector<std::string>& getListing() const;
+        const std::vector<std::string> &getListing() const;
 
-    private:
-
+      private:
         ////////////////////////////////////////////////////////////
         // Member data
         ////////////////////////////////////////////////////////////
         std::vector<std::string> m_listing; ///< Directory/file names extracted from the data
     };
-
 
     ////////////////////////////////////////////////////////////
     /// \brief Destructor
@@ -278,7 +268,7 @@ public:
     /// \see disconnect
     ///
     ////////////////////////////////////////////////////////////
-    Response connect(const IpAddress& server, unsigned short port = 21, Time timeout = Time::Zero);
+    Response connect(const IpAddress &server, unsigned short port = 21, Time timeout = Time::Zero);
 
     ////////////////////////////////////////////////////////////
     /// \brief Close the connection with the server
@@ -313,7 +303,7 @@ public:
     /// \return Server response to the request
     ///
     ////////////////////////////////////////////////////////////
-    Response login(const std::string& name, const std::string& password);
+    Response login(const std::string &name, const std::string &password);
 
     ////////////////////////////////////////////////////////////
     /// \brief Send a null command to keep the connection alive
@@ -354,7 +344,7 @@ public:
     /// \see getWorkingDirectory, changeDirectory, parentDirectory
     ///
     ////////////////////////////////////////////////////////////
-    ListingResponse getDirectoryListing(const std::string& directory = "");
+    ListingResponse getDirectoryListing(const std::string &directory = "");
 
     ////////////////////////////////////////////////////////////
     /// \brief Change the current working directory
@@ -368,7 +358,7 @@ public:
     /// \see getWorkingDirectory, getDirectoryListing, parentDirectory
     ///
     ////////////////////////////////////////////////////////////
-    Response changeDirectory(const std::string& directory);
+    Response changeDirectory(const std::string &directory);
 
     ////////////////////////////////////////////////////////////
     /// \brief Go to the parent directory of the current one
@@ -393,7 +383,7 @@ public:
     /// \see deleteDirectory
     ///
     ////////////////////////////////////////////////////////////
-    Response createDirectory(const std::string& name);
+    Response createDirectory(const std::string &name);
 
     ////////////////////////////////////////////////////////////
     /// \brief Remove an existing directory
@@ -410,7 +400,7 @@ public:
     /// \see createDirectory
     ///
     ////////////////////////////////////////////////////////////
-    Response deleteDirectory(const std::string& name);
+    Response deleteDirectory(const std::string &name);
 
     ////////////////////////////////////////////////////////////
     /// \brief Rename an existing file
@@ -426,7 +416,7 @@ public:
     /// \see deleteFile
     ///
     ////////////////////////////////////////////////////////////
-    Response renameFile(const std::string& file, const std::string& newName);
+    Response renameFile(const std::string &file, const std::string &newName);
 
     ////////////////////////////////////////////////////////////
     /// \brief Remove an existing file
@@ -443,7 +433,7 @@ public:
     /// \see renameFile
     ///
     ////////////////////////////////////////////////////////////
-    Response deleteFile(const std::string& name);
+    Response deleteFile(const std::string &name);
 
     ////////////////////////////////////////////////////////////
     /// \brief Download a file from the server
@@ -465,7 +455,7 @@ public:
     /// \see upload
     ///
     ////////////////////////////////////////////////////////////
-    Response download(const std::string& remoteFile, const std::string& localPath, TransferMode mode = Binary);
+    Response download(const std::string &remoteFile, const std::string &localPath, TransferMode mode = Binary);
 
     ////////////////////////////////////////////////////////////
     /// \brief Upload a file to the server
@@ -488,7 +478,7 @@ public:
     /// \see download
     ///
     ////////////////////////////////////////////////////////////
-    Response upload(const std::string& localFile, const std::string& remotePath, TransferMode mode = Binary, bool append = false);
+    Response upload(const std::string &localFile, const std::string &remotePath, TransferMode mode = Binary, bool append = false);
 
     ////////////////////////////////////////////////////////////
     /// \brief Send a command to the FTP server
@@ -506,10 +496,9 @@ public:
     /// \return Server response to the request
     ///
     ////////////////////////////////////////////////////////////
-    Response sendCommand(const std::string& command, const std::string& parameter = "");
+    Response sendCommand(const std::string &command, const std::string &parameter = "");
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     /// \brief Receive a response from the server
     ///
@@ -533,15 +522,13 @@ private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    TcpSocket   m_commandSocket; ///< Socket holding the control connection with the server
+    TcpSocket m_commandSocket;   ///< Socket holding the control connection with the server
     std::string m_receiveBuffer; ///< Received command data that is yet to be processed
 };
 
 } // namespace sf
 
-
 #endif // SFML_FTP_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Ftp

@@ -34,7 +34,6 @@
 #include <SFML/Graphics/Vertex.hpp>
 #include <SFML/Graphics/Rect.hpp>
 
-
 namespace sf
 {
 class Texture;
@@ -46,8 +45,7 @@ class Texture;
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API Sprite : public Drawable, public Transformable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -64,7 +62,7 @@ public:
     /// \see setTexture
     ///
     ////////////////////////////////////////////////////////////
-    explicit Sprite(const Texture& texture);
+    explicit Sprite(const Texture &texture);
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct the sprite from a sub-rectangle of a source texture
@@ -75,7 +73,7 @@ public:
     /// \see setTexture, setTextureRect
     ///
     ////////////////////////////////////////////////////////////
-    Sprite(const Texture& texture, const IntRect& rectangle);
+    Sprite(const Texture &texture, const IntRect &rectangle);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change the source texture of the sprite
@@ -96,7 +94,7 @@ public:
     /// \see getTexture, setTextureRect
     ///
     ////////////////////////////////////////////////////////////
-    void setTexture(const Texture& texture, bool resetRect = false);
+    void setTexture(const Texture &texture, bool resetRect = false);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the sub-rectangle of the texture that the sprite will display
@@ -110,7 +108,7 @@ public:
     /// \see getTextureRect, setTexture
     ///
     ////////////////////////////////////////////////////////////
-    void setTextureRect(const IntRect& rectangle);
+    void setTextureRect(const IntRect &rectangle);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the global color of the sprite
@@ -125,7 +123,7 @@ public:
     /// \see getColor
     ///
     ////////////////////////////////////////////////////////////
-    void setColor(const Color& color);
+    void setColor(const Color &color);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the source texture of the sprite
@@ -139,7 +137,7 @@ public:
     /// \see setTexture
     ///
     ////////////////////////////////////////////////////////////
-    const Texture* getTexture() const;
+    const Texture *getTexture() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the sub-rectangle of the texture displayed by the sprite
@@ -149,7 +147,7 @@ public:
     /// \see setTextureRect
     ///
     ////////////////////////////////////////////////////////////
-    const IntRect& getTextureRect() const;
+    const IntRect &getTextureRect() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the global color of the sprite
@@ -159,7 +157,7 @@ public:
     /// \see setColor
     ///
     ////////////////////////////////////////////////////////////
-    const Color& getColor() const;
+    const Color &getColor() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the local bounding rectangle of the entity
@@ -189,8 +187,7 @@ public:
     ////////////////////////////////////////////////////////////
     FloatRect getGlobalBounds() const;
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     /// \brief Draw the sprite to a render target
     ///
@@ -198,7 +195,7 @@ private:
     /// \param states Current render states
     ///
     ////////////////////////////////////////////////////////////
-    virtual void draw(RenderTarget& target, RenderStates states) const;
+    virtual void draw(RenderTarget &target, RenderStates states) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Update the vertices' positions
@@ -215,16 +212,14 @@ private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    Vertex         m_vertices[4]; ///< Vertices defining the sprite's geometry
-    const Texture* m_texture;     ///< Texture of the sprite
-    IntRect        m_textureRect; ///< Rectangle defining the area of the source texture to display
+    Vertex m_vertices[4];     ///< Vertices defining the sprite's geometry
+    const Texture *m_texture; ///< Texture of the sprite
+    IntRect m_textureRect;    ///< Rectangle defining the area of the source texture to display
 };
 
 } // namespace sf
 
-
 #endif // SFML_SPRITE_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Sprite

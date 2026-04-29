@@ -5,25 +5,29 @@
 
 namespace XYZEngine
 {
-	class AttackComponent : public Component
-	{
-	public:
-		AttackComponent(GameObject* gameObject, float attackPower):
-			Component(gameObject), attackPower(attackPower) {}
+class AttackComponent : public Component
+{
+  public:
+    AttackComponent(GameObject *gameObject, float attackPower) : Component(gameObject), attackPower(attackPower)
+    {
+    }
 
+    float GetAttackPower() const
+    {
+        return attackPower;
+    }
+    void SetAttackPower(float newAttackPower)
+    {
+        attackPower = newAttackPower;
+    }
 
-		float GetAttackPower() const { return attackPower; }	
-		void SetAttackPower(float newAttackPower) { attackPower = newAttackPower; }
+    void Attack(GameObject *target);
 
-		void Attack(GameObject* target);
+    // Implement pure virtuals from Component
+    void Update(float deltaTime) override;
+    void Render() override;
 
-		// Implement pure virtuals from Component
-		void Update(float deltaTime) override;
-		void Render() override;
-
-	private:	
-		
-		float attackPower;
-
-	};
-}
+  private:
+    float attackPower;
+};
+} // namespace XYZEngine

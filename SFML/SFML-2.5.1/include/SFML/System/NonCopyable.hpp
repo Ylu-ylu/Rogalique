@@ -30,7 +30,6 @@
 ////////////////////////////////////////////////////////////
 #include <SFML/System/Export.hpp>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -40,8 +39,7 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_SYSTEM_API NonCopyable
 {
-protected:
-
+  protected:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -50,8 +48,10 @@ protected:
     /// That's why we must define it explicitly.
     ///
     ////////////////////////////////////////////////////////////
-    NonCopyable() {}
-    
+    NonCopyable()
+    {
+    }
+
     ////////////////////////////////////////////////////////////
     /// \brief Default destructor
     ///
@@ -60,10 +60,11 @@ protected:
     /// preventing possible resource leaks.
     ///
     ////////////////////////////////////////////////////////////
-    ~NonCopyable() {}
+    ~NonCopyable()
+    {
+    }
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     /// \brief Disabled copy constructor
     ///
@@ -74,7 +75,7 @@ private:
     /// produce an error if the first protection was inefficient.
     ///
     ////////////////////////////////////////////////////////////
-    NonCopyable(const NonCopyable&);
+    NonCopyable(const NonCopyable &);
 
     ////////////////////////////////////////////////////////////
     /// \brief Disabled assignment operator
@@ -86,14 +87,12 @@ private:
     /// produce an error if the first protection was inefficient.
     ///
     ////////////////////////////////////////////////////////////
-    NonCopyable& operator =(const NonCopyable&);
+    NonCopyable &operator=(const NonCopyable &);
 };
 
 } // namespace sf
 
-
 #endif // SFML_NONCOPYABLE_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::NonCopyable

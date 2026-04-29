@@ -1,3 +1,12 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: The intermediate directory (D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\x64\Debug\) contains files shared from another project (XYZEngine.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+﻿  AI.cpp
+  Creeper.cpp
+  CreeperSpawner.cpp
+  DeveloperLevel.cpp
+  Game.cpp
   GameMain.cpp
-  XYZRoguelike.vcxproj -> D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\XYZRoguelike\x64\Debug\XYZRoguelike.exe
+  GameState.cpp
+  GameStatePlaying.cpp
+  MazeGenerator.cpp
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\XYZRoguelike\MazeGenerator.cpp(22,25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+  XYZRoguelike.vcxproj -> D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\XYZRoguelike\x64\Debug\XYZRoguelike.exe

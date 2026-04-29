@@ -36,7 +36,7 @@ namespace sf
 {
 namespace priv
 {
-    class CursorImpl;
+class CursorImpl;
 }
 
 ////////////////////////////////////////////////////////////
@@ -45,8 +45,7 @@ namespace priv
 ////////////////////////////////////////////////////////////
 class SFML_WINDOW_API Cursor : NonCopyable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Enumeration of the native system cursor types
     ///
@@ -90,8 +89,7 @@ public:
         NotAllowed              ///< Action not allowed cursor
     };
 
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -141,7 +139,7 @@ public:
     ///         false otherwise
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromPixels(const Uint8* pixels, Vector2u size, Vector2u hotspot);
+    bool loadFromPixels(const Uint8 *pixels, Vector2u size, Vector2u hotspot);
 
     ////////////////////////////////////////////////////////////
     /// \brief Create a native system cursor
@@ -159,8 +157,7 @@ public:
     ////////////////////////////////////////////////////////////
     bool loadFromSystem(Type type);
 
-private:
-
+  private:
     friend class Window;
 
     ////////////////////////////////////////////////////////////
@@ -172,21 +169,18 @@ private:
     /// \return a reference to the OS-specific implementation
     ///
     ////////////////////////////////////////////////////////////
-    const priv::CursorImpl& getImpl() const;
+    const priv::CursorImpl &getImpl() const;
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    priv::CursorImpl* m_impl; ///< Platform-specific implementation of the cursor
+    priv::CursorImpl *m_impl; ///< Platform-specific implementation of the cursor
 };
 
 } // namespace sf
 
-
 #endif // SFML_CURSOR_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Cursor

@@ -8,7 +8,6 @@
 #include <ctime>
 #include <cstdlib>
 
-
 ////////////////////////////////////////////////////////////
 /// Entry point of application
 ///
@@ -27,8 +26,7 @@ int main()
     float ballRadius = 10.f;
 
     // Create the window of the application
-    sf::RenderWindow window(sf::VideoMode(gameWidth, gameHeight, 32), "SFML Pong",
-                            sf::Style::Titlebar | sf::Style::Close);
+    sf::RenderWindow window(sf::VideoMode(gameWidth, gameHeight, 32), "SFML Pong", sf::Style::Titlebar | sf::Style::Close);
     window.setVerticalSyncEnabled(true);
 
     // Load the sounds used in the game
@@ -76,11 +74,11 @@ int main()
 
     // Define the paddles properties
     sf::Clock AITimer;
-    const sf::Time AITime   = sf::seconds(0.1f);
+    const sf::Time AITime = sf::seconds(0.1f);
     const float paddleSpeed = 400.f;
-    float rightPaddleSpeed  = 0.f;
-    const float ballSpeed   = 400.f;
-    float ballAngle         = 0.f; // to be changed later
+    float rightPaddleSpeed = 0.f;
+    const float ballSpeed = 400.f;
+    float ballAngle = 0.f; // to be changed later
 
     sf::Clock clock;
     bool isPlaying = false;
@@ -91,8 +89,7 @@ int main()
         while (window.pollEvent(event))
         {
             // Window closed or escape key pressed: exit
-            if ((event.type == sf::Event::Closed) ||
-               ((event.type == sf::Event::KeyPressed) && (event.key.code == sf::Keyboard::Escape)))
+            if ((event.type == sf::Event::Closed) || ((event.type == sf::Event::KeyPressed) && (event.key.code == sf::Keyboard::Escape)))
             {
                 window.close();
                 break;
@@ -117,8 +114,7 @@ int main()
                     {
                         // Make sure the ball initial angle is not too much vertical
                         ballAngle = (std::rand() % 360) * 2 * pi / 360;
-                    }
-                    while (std::abs(std::cos(ballAngle)) < 0.7f);
+                    } while (std::abs(std::cos(ballAngle)) < 0.7f);
                 }
             }
         }
@@ -128,13 +124,11 @@ int main()
             float deltaTime = clock.restart().asSeconds();
 
             // Move the player's paddle
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) &&
-               (leftPaddle.getPosition().y - paddleSize.y / 2 > 5.f))
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up) && (leftPaddle.getPosition().y - paddleSize.y / 2 > 5.f))
             {
                 leftPaddle.move(0.f, -paddleSpeed * deltaTime);
             }
-            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) &&
-               (leftPaddle.getPosition().y + paddleSize.y / 2 < gameHeight - 5.f))
+            if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down) && (leftPaddle.getPosition().y + paddleSize.y / 2 < gameHeight - 5.f))
             {
                 leftPaddle.move(0.f, paddleSpeed * deltaTime);
             }

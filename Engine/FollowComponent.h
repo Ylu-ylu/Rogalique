@@ -6,27 +6,30 @@
 
 namespace XYZEngine
 {
-	class FollowComponent : public Component
-	{
-	public:
-		FollowComponent(GameObject* gameObject);
-		void Update(float deltaTime) override;
-		void Render() override;
-		
+class FollowComponent : public Component
+{
+  public:
+    FollowComponent(GameObject *gameObject);
+    void Update(float deltaTime) override;
+    void Render() override;
 
-		void SetTarget(GameObject* targetObject);
-		void SetSpeed(float newSpeed);
-		float getSpeed() const;
+    void SetTarget(GameObject *targetObject);
+    void SetSpeed(float newSpeed);
+    float getSpeed() const;
+    float GetSpeed() const
+    {
+        return speed;
+    }
 
-	private:
-		TransformComponent* transform = nullptr;
-		TransformComponent* targetTransform = nullptr;
-		SpriteRendererComponent* spriteRenderer = nullptr;
+  private:
+    TransformComponent *transform = nullptr;
+    TransformComponent *targetTransform = nullptr;
+    SpriteRendererComponent *spriteRenderer = nullptr;
 
-		//Render
-		std::vector<const sf::Texture*> textureMap;
-		float secondsForFrame = 0.f;
+    // Render
+    std::vector<const sf::Texture *> textureMap;
+    float secondsForFrame = 0.f;
 
-		float speed = 100.f; //default speed
-	};
-}
+    float speed = 100.f; // default speed
+};
+} // namespace XYZEngine

@@ -32,12 +32,11 @@
 #include <SFML/System/NonCopyable.hpp>
 #include <cstdlib>
 
-
 namespace sf
 {
 namespace priv
 {
-    class ThreadLocalImpl;
+class ThreadLocalImpl;
 }
 
 ////////////////////////////////////////////////////////////
@@ -46,15 +45,14 @@ namespace priv
 ////////////////////////////////////////////////////////////
 class SFML_SYSTEM_API ThreadLocal : NonCopyable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
     /// \param value Optional value to initialize the variable
     ///
     ////////////////////////////////////////////////////////////
-    ThreadLocal(void* value = NULL);
+    ThreadLocal(void *value = NULL);
 
     ////////////////////////////////////////////////////////////
     /// \brief Destructor
@@ -68,7 +66,7 @@ public:
     /// \param value Value of the variable for the current thread
     ///
     ////////////////////////////////////////////////////////////
-    void setValue(void* value);
+    void setValue(void *value);
 
     ////////////////////////////////////////////////////////////
     /// \brief Retrieve the thread-specific value of the variable
@@ -76,21 +74,18 @@ public:
     /// \return Value of the variable for the current thread
     ///
     ////////////////////////////////////////////////////////////
-    void* getValue() const;
+    void *getValue() const;
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    priv::ThreadLocalImpl* m_impl; ///< Pointer to the OS specific implementation
+    priv::ThreadLocalImpl *m_impl; ///< Pointer to the OS specific implementation
 };
 
 } // namespace sf
 
-
 #endif // SFML_THREADLOCAL_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::ThreadLocal

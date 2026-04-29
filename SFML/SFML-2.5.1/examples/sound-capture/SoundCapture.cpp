@@ -5,7 +5,6 @@
 #include <SFML/Audio.hpp>
 #include <iostream>
 
-
 ////////////////////////////////////////////////////////////
 /// Entry point of application
 ///
@@ -24,7 +23,7 @@ int main()
     // Choose the sample rate
     unsigned int sampleRate;
     std::cout << "Please choose the sample rate for sound capture (44100 is CD quality): ";
-    std::cin  >> sampleRate;
+    std::cin >> sampleRate;
     std::cin.ignore(10000, '\n');
 
     // Wait for user input...
@@ -41,18 +40,18 @@ int main()
     recorder.stop();
 
     // Get the buffer containing the captured data
-    const sf::SoundBuffer& buffer = recorder.getBuffer();
+    const sf::SoundBuffer &buffer = recorder.getBuffer();
 
     // Display captured sound informations
     std::cout << "Sound information:" << std::endl;
-    std::cout << " " << buffer.getDuration().asSeconds() << " seconds"           << std::endl;
-    std::cout << " " << buffer.getSampleRate()           << " samples / seconds" << std::endl;
-    std::cout << " " << buffer.getChannelCount()         << " channels"          << std::endl;
+    std::cout << " " << buffer.getDuration().asSeconds() << " seconds" << std::endl;
+    std::cout << " " << buffer.getSampleRate() << " samples / seconds" << std::endl;
+    std::cout << " " << buffer.getChannelCount() << " channels" << std::endl;
 
     // Choose what to do with the recorded sound data
     char choice;
     std::cout << "What do you want to do with captured sound (p = play, s = save) ? ";
-    std::cin  >> choice;
+    std::cin >> choice;
     std::cin.ignore(10000, '\n');
 
     if (choice == 's')

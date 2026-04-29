@@ -34,7 +34,6 @@
 #include <SFML/Window/Window.hpp>
 #include <string>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -43,8 +42,7 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API RenderWindow : public Window, public RenderTarget
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -73,7 +71,7 @@ public:
     /// \param settings Additional settings for the underlying OpenGL context
     ///
     ////////////////////////////////////////////////////////////
-    RenderWindow(VideoMode mode, const String& title, Uint32 style = Style::Default, const ContextSettings& settings = ContextSettings());
+    RenderWindow(VideoMode mode, const String &title, Uint32 style = Style::Default, const ContextSettings &settings = ContextSettings());
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct the window from an existing control
@@ -91,7 +89,7 @@ public:
     /// \param settings Additional settings for the underlying OpenGL context
     ///
     ////////////////////////////////////////////////////////////
-    explicit RenderWindow(WindowHandle handle, const ContextSettings& settings = ContextSettings());
+    explicit RenderWindow(WindowHandle handle, const ContextSettings &settings = ContextSettings());
 
     ////////////////////////////////////////////////////////////
     /// \brief Destructor
@@ -157,8 +155,7 @@ public:
     ////////////////////////////////////////////////////////////
     SFML_DEPRECATED Image capture() const;
 
-protected:
-
+  protected:
     ////////////////////////////////////////////////////////////
     /// \brief Function called after the window has been created
     ///
@@ -181,9 +178,7 @@ protected:
 
 } // namespace sf
 
-
 #endif // SFML_RENDERWINDOW_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::RenderWindow

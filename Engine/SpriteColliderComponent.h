@@ -1,6 +1,5 @@
 #pragma once
 
-
 #include "ColliderComponent.h"
 #include "SpriteRendererComponent.h"
 #include "RenderSystem.h"
@@ -8,16 +7,16 @@
 
 namespace XYZEngine
 {
-	class SpriteColliderComponent : public ColliderComponent
-	{
-	public:
-		SpriteColliderComponent(GameObject* gameObject);
-		~SpriteColliderComponent();
+class SpriteColliderComponent : public ColliderComponent
+{
+  public:
+    SpriteColliderComponent(GameObject *gameObject);
+    ~SpriteColliderComponent();
 
-		void Update(float deltaTime) override;
-		void Render() override;
-	private:
-		const sf::Sprite* sprite;
-	};
-}
+    void Update(float deltaTime) override;
+    void Render() override;
 
+  private:
+    const sf::Sprite *sprite;
+};
+} // namespace XYZEngine

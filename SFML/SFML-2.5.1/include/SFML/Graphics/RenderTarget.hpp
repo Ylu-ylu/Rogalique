@@ -39,7 +39,6 @@
 #include <SFML/Graphics/Vertex.hpp>
 #include <SFML/System/NonCopyable.hpp>
 
-
 namespace sf
 {
 class Drawable;
@@ -51,8 +50,7 @@ class VertexBuffer;
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API RenderTarget : NonCopyable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Destructor
     ///
@@ -68,7 +66,7 @@ public:
     /// \param color Fill color to use to clear the render target
     ///
     ////////////////////////////////////////////////////////////
-    void clear(const Color& color = Color(0, 0, 0, 255));
+    void clear(const Color &color = Color(0, 0, 0, 255));
 
     ////////////////////////////////////////////////////////////
     /// \brief Change the current active view
@@ -89,7 +87,7 @@ public:
     /// \see getView, getDefaultView
     ///
     ////////////////////////////////////////////////////////////
-    void setView(const View& view);
+    void setView(const View &view);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the view currently in use in the render target
@@ -99,7 +97,7 @@ public:
     /// \see setView, getDefaultView
     ///
     ////////////////////////////////////////////////////////////
-    const View& getView() const;
+    const View &getView() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the default view of the render target
@@ -112,7 +110,7 @@ public:
     /// \see setView, getView
     ///
     ////////////////////////////////////////////////////////////
-    const View& getDefaultView() const;
+    const View &getDefaultView() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the viewport of a view, applied to this render target
@@ -127,7 +125,7 @@ public:
     /// \return Viewport rectangle, expressed in pixels
     ///
     ////////////////////////////////////////////////////////////
-    IntRect getViewport(const View& view) const;
+    IntRect getViewport(const View &view) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Convert a point from target coordinates to world
@@ -147,7 +145,7 @@ public:
     /// \see mapCoordsToPixel
     ///
     ////////////////////////////////////////////////////////////
-    Vector2f mapPixelToCoords(const Vector2i& point) const;
+    Vector2f mapPixelToCoords(const Vector2i &point) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Convert a point from target coordinates to world coordinates
@@ -178,7 +176,7 @@ public:
     /// \see mapCoordsToPixel
     ///
     ////////////////////////////////////////////////////////////
-    Vector2f mapPixelToCoords(const Vector2i& point, const View& view) const;
+    Vector2f mapPixelToCoords(const Vector2i &point, const View &view) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Convert a point from world coordinates to target
@@ -198,7 +196,7 @@ public:
     /// \see mapPixelToCoords
     ///
     ////////////////////////////////////////////////////////////
-    Vector2i mapCoordsToPixel(const Vector2f& point) const;
+    Vector2i mapCoordsToPixel(const Vector2f &point) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Convert a point from world coordinates to target coordinates
@@ -225,7 +223,7 @@ public:
     /// \see mapPixelToCoords
     ///
     ////////////////////////////////////////////////////////////
-    Vector2i mapCoordsToPixel(const Vector2f& point, const View& view) const;
+    Vector2i mapCoordsToPixel(const Vector2f &point, const View &view) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Draw a drawable object to the render target
@@ -234,7 +232,7 @@ public:
     /// \param states   Render states to use for drawing
     ///
     ////////////////////////////////////////////////////////////
-    void draw(const Drawable& drawable, const RenderStates& states = RenderStates::Default);
+    void draw(const Drawable &drawable, const RenderStates &states = RenderStates::Default);
 
     ////////////////////////////////////////////////////////////
     /// \brief Draw primitives defined by an array of vertices
@@ -245,8 +243,7 @@ public:
     /// \param states      Render states to use for drawing
     ///
     ////////////////////////////////////////////////////////////
-    void draw(const Vertex* vertices, std::size_t vertexCount,
-              PrimitiveType type, const RenderStates& states = RenderStates::Default);
+    void draw(const Vertex *vertices, std::size_t vertexCount, PrimitiveType type, const RenderStates &states = RenderStates::Default);
 
     ////////////////////////////////////////////////////////////
     /// \brief Draw primitives defined by a vertex buffer
@@ -255,7 +252,7 @@ public:
     /// \param states       Render states to use for drawing
     ///
     ////////////////////////////////////////////////////////////
-    void draw(const VertexBuffer& vertexBuffer, const RenderStates& states = RenderStates::Default);
+    void draw(const VertexBuffer &vertexBuffer, const RenderStates &states = RenderStates::Default);
 
     ////////////////////////////////////////////////////////////
     /// \brief Draw primitives defined by a vertex buffer
@@ -266,7 +263,7 @@ public:
     /// \param states       Render states to use for drawing
     ///
     ////////////////////////////////////////////////////////////
-    void draw(const VertexBuffer& vertexBuffer, std::size_t firstVertex, std::size_t vertexCount, const RenderStates& states = RenderStates::Default);
+    void draw(const VertexBuffer &vertexBuffer, std::size_t firstVertex, std::size_t vertexCount, const RenderStates &states = RenderStates::Default);
 
     ////////////////////////////////////////////////////////////
     /// \brief Return the size of the rendering region of the target
@@ -366,8 +363,7 @@ public:
     ////////////////////////////////////////////////////////////
     void resetGLStates();
 
-protected:
-
+  protected:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -383,8 +379,7 @@ protected:
     ////////////////////////////////////////////////////////////
     void initialize();
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     /// \brief Apply the current view
     ///
@@ -397,7 +392,7 @@ private:
     /// \param mode Blending mode to apply
     ///
     ////////////////////////////////////////////////////////////
-    void applyBlendMode(const BlendMode& mode);
+    void applyBlendMode(const BlendMode &mode);
 
     ////////////////////////////////////////////////////////////
     /// \brief Apply a new transform
@@ -405,7 +400,7 @@ private:
     /// \param transform Transform to apply
     ///
     ////////////////////////////////////////////////////////////
-    void applyTransform(const Transform& transform);
+    void applyTransform(const Transform &transform);
 
     ////////////////////////////////////////////////////////////
     /// \brief Apply a new texture
@@ -413,7 +408,7 @@ private:
     /// \param texture Texture to apply
     ///
     ////////////////////////////////////////////////////////////
-    void applyTexture(const Texture* texture);
+    void applyTexture(const Texture *texture);
 
     ////////////////////////////////////////////////////////////
     /// \brief Apply a new shader
@@ -421,7 +416,7 @@ private:
     /// \param shader Shader to apply
     ///
     ////////////////////////////////////////////////////////////
-    void applyShader(const Shader* shader);
+    void applyShader(const Shader *shader);
 
     ////////////////////////////////////////////////////////////
     /// \brief Setup environment for drawing
@@ -430,7 +425,7 @@ private:
     /// \param states         Render states to use for drawing
     ///
     ////////////////////////////////////////////////////////////
-    void setupDraw(bool useVertexCache, const RenderStates& states);
+    void setupDraw(bool useVertexCache, const RenderStates &states);
 
     ////////////////////////////////////////////////////////////
     /// \brief Draw the primitives
@@ -448,7 +443,7 @@ private:
     /// \param states Render states used for drawing
     ///
     ////////////////////////////////////////////////////////////
-    void cleanupDraw(const RenderStates& states);
+    void cleanupDraw(const RenderStates &states);
 
     ////////////////////////////////////////////////////////////
     /// \brief Render states cache
@@ -456,32 +451,33 @@ private:
     ////////////////////////////////////////////////////////////
     struct StatesCache
     {
-        enum {VertexCacheSize = 4};
+        enum
+        {
+            VertexCacheSize = 4
+        };
 
-        bool      enable;         ///< Is the cache enabled?
-        bool      glStatesSet;    ///< Are our internal GL states set yet?
-        bool      viewChanged;    ///< Has the current view changed since last draw?
-        BlendMode lastBlendMode;  ///< Cached blending mode
-        Uint64    lastTextureId;  ///< Cached texture
-        bool      texCoordsArrayEnabled; ///< Is GL_TEXTURE_COORD_ARRAY client state enabled?
-        bool      useVertexCache; ///< Did we previously use the vertex cache?
-        Vertex    vertexCache[VertexCacheSize]; ///< Pre-transformed vertices cache
+        bool enable;                         ///< Is the cache enabled?
+        bool glStatesSet;                    ///< Are our internal GL states set yet?
+        bool viewChanged;                    ///< Has the current view changed since last draw?
+        BlendMode lastBlendMode;             ///< Cached blending mode
+        Uint64 lastTextureId;                ///< Cached texture
+        bool texCoordsArrayEnabled;          ///< Is GL_TEXTURE_COORD_ARRAY client state enabled?
+        bool useVertexCache;                 ///< Did we previously use the vertex cache?
+        Vertex vertexCache[VertexCacheSize]; ///< Pre-transformed vertices cache
     };
 
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    View        m_defaultView; ///< Default view
-    View        m_view;        ///< Current view
-    StatesCache m_cache;       ///< Render states cache
-    Uint64      m_id;          ///< Unique number that identifies the RenderTarget
+    View m_defaultView;  ///< Default view
+    View m_view;         ///< Current view
+    StatesCache m_cache; ///< Render states cache
+    Uint64 m_id;         ///< Unique number that identifies the RenderTarget
 };
 
 } // namespace sf
 
-
 #endif // SFML_RENDERTARGET_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::RenderTarget

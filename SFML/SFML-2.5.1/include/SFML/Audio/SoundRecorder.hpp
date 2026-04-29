@@ -35,7 +35,6 @@
 #include <vector>
 #include <string>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -44,8 +43,7 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_AUDIO_API SoundRecorder : AlResource
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief destructor
     ///
@@ -134,7 +132,7 @@ public:
     /// \see getAvailableDevices, getDefaultDevice
     ///
     ////////////////////////////////////////////////////////////
-    bool setDevice(const std::string& name);
+    bool setDevice(const std::string &name);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the name of the current audio capture device
@@ -142,7 +140,7 @@ public:
     /// \return The name of the current audio capture device
     ///
     ////////////////////////////////////////////////////////////
-    const std::string& getDevice() const;
+    const std::string &getDevice() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the channel count of the audio capture device
@@ -185,8 +183,7 @@ public:
     ////////////////////////////////////////////////////////////
     static bool isAvailable();
 
-protected:
-
+  protected:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -240,7 +237,7 @@ protected:
     /// \return True to continue the capture, or false to stop it
     ///
     ////////////////////////////////////////////////////////////
-    virtual bool onProcessSamples(const Int16* samples, std::size_t sampleCount) = 0;
+    virtual bool onProcessSamples(const Int16 *samples, std::size_t sampleCount) = 0;
 
     ////////////////////////////////////////////////////////////
     /// \brief Stop capturing audio data
@@ -253,8 +250,7 @@ protected:
     ////////////////////////////////////////////////////////////
     virtual void onStop();
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     /// \brief Function called as the entry point of the thread
     ///
@@ -285,20 +281,18 @@ private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    Thread             m_thread;             ///< Thread running the background recording task
-    std::vector<Int16> m_samples;            ///< Buffer to store captured samples
-    unsigned int       m_sampleRate;         ///< Sample rate
-    Time               m_processingInterval; ///< Time period between calls to onProcessSamples
-    bool               m_isCapturing;        ///< Capturing state
-    std::string        m_deviceName;         ///< Name of the audio capture device
-    unsigned int       m_channelCount;       ///< Number of recording channels
+    Thread m_thread;              ///< Thread running the background recording task
+    std::vector<Int16> m_samples; ///< Buffer to store captured samples
+    unsigned int m_sampleRate;    ///< Sample rate
+    Time m_processingInterval;    ///< Time period between calls to onProcessSamples
+    bool m_isCapturing;           ///< Capturing state
+    std::string m_deviceName;     ///< Name of the audio capture device
+    unsigned int m_channelCount;  ///< Number of recording channels
 };
 
 } // namespace sf
 
-
 #endif // SFML_SOUNDRECORDER_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::SoundRecorder

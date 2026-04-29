@@ -6,43 +6,47 @@
 #include <StatsComponent.h>
 #include <AttackComponen.h>
 
-
 namespace XYZRoguelike
 {
-	Player::Player(const XYZEngine::Vector2Df& position)
-	{
-		gameObject = XYZEngine::GameWorld::Instance()->CreateGameObject("Player");
-		auto transform = gameObject->GetComponent<XYZEngine::TransformComponent>();
-		transform->SetWorldPosition(position);
+Player::Player(const XYZEngine::Vector2Df &position)
+{
+    gameObject = XYZEngine::GameWorld::Instance()->CreateGameObject("Player");
+    auto transform = gameObject->GetComponent<XYZEngine::TransformComponent>();
+    transform->SetWorldPosition(position);
 
-		auto playerRenderer = gameObject->AddComponent<XYZEngine::SpriteRendererComponent>();
-		playerRenderer->SetTexture(*XYZEngine::ResourceSystem::Instance()->GetTextureMapElementShared("Player",0));
-		playerRenderer->SetPixelSize(100, 100);
+    auto playerRenderer = gameObject->AddComponent<XYZEngine::SpriteRendererComponent>();
+    const sf::Texture *playerTexture = XYZEngine::ResourceSystem::Instance()->GetTextureMapElementShared("Player", 0);
+    playerRenderer->SetTexture(*playerTexture);
 
-		auto playerCamera = gameObject->AddComponent<XYZEngine::CameraComponent>();
-		playerCamera->SetWindow(&XYZEngine::RenderSystem::Instance()->GetMainWindow());
-		playerCamera->SetBaseResolution(1280, 720);
+    // keep texture aspect ratio (no squash)
+    const float desiredHeight = 128.0f;
+    const auto playerTexSize = playerTexture->getSize();
+    const int desiredWidth = static_cast<int>(desiredHeight * static_cast<float>(playerTexSize.x) / static_cast<float>(playerTexSize.y));
+    playerRenderer->SetPixelSize(desiredWidth, static_cast<int>(desiredHeight));
 
-		auto playerInput = gameObject->AddComponent<XYZEngine::InputComponent>();
+    auto playerCamera = gameObject->AddComponent<XYZEngine::CameraComponent>();
+    playerCamera->SetWindow(&XYZEngine::RenderSystem::Instance()->GetMainWindow());
+    playerCamera->SetBaseResolution(1280, 720);
 
-		auto movement = gameObject->AddComponent<XYZEngine::MovementComponent>();
-		movement->SetSpeed(400.f);
+    auto playerInput = gameObject->AddComponent<XYZEngine::InputComponent>();
 
-		auto rigidbody = gameObject->AddComponent<XYZEngine::RigidbodyComponent>();
-		rigidbody->SetKinematic(false);
+    auto movement = gameObject->AddComponent<XYZEngine::MovementComponent>();
+    movement->SetSpeed(400.f);
 
-		auto collider = gameObject->AddComponent<XYZEngine::SpriteColliderComponent>();
+    auto rigidbody = gameObject->AddComponent<XYZEngine::RigidbodyComponent>();
+    rigidbody->SetKinematic(false);
 
-		//Add health, damage, armor stats
-		auto statsComponent=gameObject->AddComponent<XYZEngine::StatsComponent>(100.0f,50.0f);
+    auto collider = gameObject->AddComponent<XYZEngine::SpriteColliderComponent>();
 
-		//Add AttackComponent
-		auto attackComponent = gameObject->AddComponent<XYZEngine::AttackComponent>(10.0f);
+    // Add health, damage, armor stats
+    auto statsComponent = gameObject->AddComponent<XYZEngine::StatsComponent>(100.0f, 50.0f);
 
-	}
-
-	XYZEngine::GameObject* Player::GetGameObject()
-	{
-		return gameObject;
-	}
+    // Add AttackComponent
+    auto attackComponent = gameObject->AddComponent<XYZEngine::AttackComponent>(10.0f);
 }
+
+XYZEngine::GameObject *Player::GetGameObject()
+{
+    return gameObject;
+}
+} // namespace XYZRoguelike

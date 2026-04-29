@@ -6,151 +6,168 @@
 #include <mutex>
 #include <unordered_map>
 
-
 enum class LogLevel
-{	
-	Info,
-	Warning,
-	Error
+{
+    Info,
+    Warning,
+    Error
 };
 
 class LogSink
 {
-public:
-		virtual void Log(LogLevel level, const std::string& message) = 0;
-		virtual ~LogSink() = default;
+  public:
+    virtual void Log(LogLevel level, const std::string &message) = 0;
+    virtual ~LogSink() = default;
 };
 
 class ConsoleSink : public LogSink
 {
-public:
-		void Log(LogLevel level, const std::string& message) override
-		{
-			std::cout << logLevelToString(level) << " " << message << std::endl;
-		}
-private:
-	std::string logLevelToString(LogLevel level) const
-	{
-		switch (level)
-		{
-		case LogLevel::Info:
-			return "[INFO]";
-		case LogLevel::Warning:
-			return "[WARNING]";
-		case LogLevel::Error:
-			return "[ERROR]";
-		default:
-			return "[UNKNOWN]";
-		}
-	}
+  public:
+    void Log(LogLevel level, const std::string &message) override
+    {
+        std::cout << logLevelToString(level) << " " << message << std::endl;
+    }
 
+  private:
+    std::string logLevelToString(LogLevel level) const
+    {
+        switch (level)
+        {
+        case LogLevel::Info:
+            return "[INFO]";
+        case LogLevel::Warning:
+            return "[WARNING]";
+        case LogLevel::Error:
+            return "[ERROR]";
+        default:
+            return "[UNKNOWN]";
+        }
+    }
 };
 
 class FileSink : public LogSink
 {
-private:
-	std::ofstream logFile;
+  private:
+    std::ofstream logFile;
 
-public:
-	FileSink(const std::string& filename)
-	{
-		logFile.open (filename, std::ios::app);
-	}
+  public:
+    FileSink(const std::string &filename)
+    {
+        logFile.open(filename, std::ios::app);
+    }
 
-	void Log(LogLevel level, const std::string& message) override
-	{
-		if (logFile) 
-		{
-			logFile << logLevelToString(level) << " " << message << std::endl;
-		}
-	}
-	~FileSink() 
-	{
-		if (logFile.is_open()) logFile.close();
-	}
-private:
-	std::string logLevelToString(LogLevel level) 
-	{
-		switch (level) 
-		{
-		case LogLevel::Info: return "[INFO]";
-		case LogLevel::Warning: return "[WARNING]";
-		case LogLevel::Error: return "[ERROR]";
-		default: return "[UNKNOWN]";
-		}
-	}
+    void Log(LogLevel level, const std::string &message) override
+    {
+        if (logFile)
+        {
+            logFile << logLevelToString(level) << " " << message << std::endl;
+        }
+    }
+    ~FileSink()
+    {
+        if (logFile.is_open())
+            logFile.close();
+    }
+
+  private:
+    std::string logLevelToString(LogLevel level)
+    {
+        switch (level)
+        {
+        case LogLevel::Info:
+            return "[INFO]";
+        case LogLevel::Warning:
+            return "[WARNING]";
+        case LogLevel::Error:
+            return "[ERROR]";
+        default:
+            return "[UNKNOWN]";
+        }
+    }
 };
 
 class Logger
 {
-private:
-		std::vector <std::shared_ptr<LogSink>> sinks;
-		std::mutex logMutex;
+  private:
+    std::vector<std::shared_ptr<LogSink>> sinks;
+    std::mutex logMutex;
 
-public:
-		void AddSink(std::shared_ptr<LogSink> sink) 
-		{
-			sinks.push_back(sink);
-		}
-		void Log(LogLevel level, const std::string& message) 
-		{
-			std::lock_guard<std::mutex> lock(logMutex);
-			for (const auto& sink : sinks) 
-			{
-				sink->Log(level, message);
-			}
-		}
+  public:
+    void AddSink(std::shared_ptr<LogSink> sink)
+    {
+        sinks.push_back(sink);
+    }
+    void Log(LogLevel level, const std::string &message)
+    {
+        std::lock_guard<std::mutex> lock(logMutex);
+        for (const auto &sink : sinks)
+        {
+            sink->Log(level, message);
+        }
+    }
 
-		void info(const std::string& message) { Log(LogLevel::Info, message); }
-		void warn(const std::string& message) { Log(LogLevel::Warning, message); }
-		void error(const std::string& message) { Log(LogLevel::Error, message); }
+    void info(const std::string &message)
+    {
+        Log(LogLevel::Info, message);
+    }
+    void warn(const std::string &message)
+    {
+        Log(LogLevel::Warning, message);
+    }
+    void error(const std::string &message)
+    {
+        Log(LogLevel::Error, message);
+    }
 };
 
 class LoggerRegistry
 {
-private:
-	std::unordered_map<std::string, std::shared_ptr<Logger>> loggers;
-	std::shared_ptr<Logger> defaultLogger;
-	std::mutex registryMutex;
-public:
-	// Ensure default logger exists
-	LoggerRegistry()
-	{
-		defaultLogger = std::make_shared<Logger>();
-		defaultLogger->AddSink(std::make_shared<ConsoleSink>());
-		// Optionally add a file sink as a safe default:
-		// defaultLogger->AddSink(std::make_shared<FileSink>("log.txt"));
-	}
-	
-	static LoggerRegistry& getInstance()
-	{
-		static LoggerRegistry instance;
-		return instance;
-	}
+  private:
+    std::unordered_map<std::string, std::shared_ptr<Logger>> loggers;
+    std::shared_ptr<Logger> defaultLogger;
+    std::mutex registryMutex;
 
-	std::shared_ptr<Logger> getLogger(const std::string& name) {
-		std::lock_guard<std::mutex> lock(registryMutex);
-		if (loggers.find(name) != loggers.end()) {
-			return loggers[name];
-		}
-		// Always return a valid logger
-		if (!defaultLogger)
-		{
-			defaultLogger = std::make_shared<Logger>();
-			defaultLogger->AddSink(std::make_shared<ConsoleSink>());
-		}
-		return defaultLogger;
-	}
-	void setDefaultLogger(std::shared_ptr<Logger> logger) {
-		defaultLogger = logger;
-	}
-	void registerLogger(const std::string& name, std::shared_ptr<Logger> logger) {
-		std::lock_guard<std::mutex> lock(registryMutex);
-		loggers[name] = logger;
-	}
+  public:
+    // Ensure default logger exists
+    LoggerRegistry()
+    {
+        defaultLogger = std::make_shared<Logger>();
+        defaultLogger->AddSink(std::make_shared<ConsoleSink>());
+        // Optionally add a file sink as a safe default:
+        // defaultLogger->AddSink(std::make_shared<FileSink>("log.txt"));
+    }
+
+    static LoggerRegistry &getInstance()
+    {
+        static LoggerRegistry instance;
+        return instance;
+    }
+
+    std::shared_ptr<Logger> getLogger(const std::string &name)
+    {
+        std::lock_guard<std::mutex> lock(registryMutex);
+        if (loggers.find(name) != loggers.end())
+        {
+            return loggers[name];
+        }
+        // Always return a valid logger
+        if (!defaultLogger)
+        {
+            defaultLogger = std::make_shared<Logger>();
+            defaultLogger->AddSink(std::make_shared<ConsoleSink>());
+        }
+        return defaultLogger;
+    }
+    void setDefaultLogger(std::shared_ptr<Logger> logger)
+    {
+        defaultLogger = logger;
+    }
+    void registerLogger(const std::string &name, std::shared_ptr<Logger> logger)
+    {
+        std::lock_guard<std::mutex> lock(registryMutex);
+        loggers[name] = logger;
+    }
 };
 #define LOG_INFO(message) LoggerRegistry::getInstance().getLogger("global")->info(message)
 #define LOG_WARN(message) LoggerRegistry::getInstance().getLogger("global")->warn(message)
 #define LOG_ERROR(message) LoggerRegistry::getInstance().getLogger("global")->error(message)
-
-

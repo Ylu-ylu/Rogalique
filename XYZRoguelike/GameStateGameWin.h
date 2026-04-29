@@ -4,25 +4,25 @@
 
 namespace XYZRoguelike
 {
-	class Game;
+class Game;
 
-	class GameStateGameWinData : public GameStateData
-	{
-	public:
-		void Init() override;
-		void HandleWindowEvent(const sf::Event& event) override;
-		void Update(float timeDelta) override;
-		void Draw(sf::RenderWindow& window) override;
+class GameStateGameWinData : public GameStateData
+{
+  public:
+    void Init() override;
+    void HandleWindowEvent(const sf::Event &event) override;
+    void Update(float timeDelta) override;
+    void Draw(sf::RenderWindow &window) override;
 
-	private:
-		// Resources
-		sf::Font font;
+  private:
+    // Resources
+    sf::Font font;
 
-		float timeSinceGameWin = 0.f;
+    float timeSinceGameWin = 0.f;
 
-		// UI data
-		sf::RectangleShape background;
-		sf::Text gameWinText;
-		sf::Text hintText;
-	};
-}
+    // UI data
+    sf::RectangleShape background;
+    sf::Text gameWinText;
+    sf::Text hintText;
+};
+} // namespace XYZRoguelike

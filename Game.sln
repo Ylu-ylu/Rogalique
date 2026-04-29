@@ -10,6 +10,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EngineTest", "EngineTest\EngineTest.vcxproj", "{9092E230-4825-427F-AF20-40C569DF2C27}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ApplesGame", "ApplesGame\ApplesGame.vcxproj", "{2B9DD919-361F-491F-914F-A30B4D310A92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -50,6 +52,14 @@ Global
 		{9092E230-4825-427F-AF20-40C569DF2C27}.Release|x64.Build.0 = Release|x64
 		{9092E230-4825-427F-AF20-40C569DF2C27}.Release|x86.ActiveCfg = Release|Win32
 		{9092E230-4825-427F-AF20-40C569DF2C27}.Release|x86.Build.0 = Release|Win32
+		{2B9DD919-361F-491F-914F-A30B4D310A92}.Debug|x64.ActiveCfg = Debug|x64
+		{2B9DD919-361F-491F-914F-A30B4D310A92}.Debug|x64.Build.0 = Debug|x64
+		{2B9DD919-361F-491F-914F-A30B4D310A92}.Debug|x86.ActiveCfg = Debug|Win32
+		{2B9DD919-361F-491F-914F-A30B4D310A92}.Debug|x86.Build.0 = Debug|Win32
+		{2B9DD919-361F-491F-914F-A30B4D310A92}.Release|x64.ActiveCfg = Release|x64
+		{2B9DD919-361F-491F-914F-A30B4D310A92}.Release|x64.Build.0 = Release|x64
+		{2B9DD919-361F-491F-914F-A30B4D310A92}.Release|x86.ActiveCfg = Release|Win32
+		{2B9DD919-361F-491F-914F-A30B4D310A92}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

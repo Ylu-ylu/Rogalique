@@ -34,7 +34,6 @@
 #include <string>
 #include <vector>
 
-
 namespace sf
 {
 class InputStream;
@@ -45,8 +44,7 @@ class InputStream;
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API Image
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -69,7 +67,7 @@ public:
     /// \param color  Fill color
     ///
     ////////////////////////////////////////////////////////////
-    void create(unsigned int width, unsigned int height, const Color& color = Color(0, 0, 0));
+    void create(unsigned int width, unsigned int height, const Color &color = Color(0, 0, 0));
 
     ////////////////////////////////////////////////////////////
     /// \brief Create the image from an array of pixels
@@ -84,7 +82,7 @@ public:
     /// \param pixels Array of pixels to copy to the image
     ///
     ////////////////////////////////////////////////////////////
-    void create(unsigned int width, unsigned int height, const Uint8* pixels);
+    void create(unsigned int width, unsigned int height, const Uint8 *pixels);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the image from a file on disk
@@ -101,7 +99,7 @@ public:
     /// \see loadFromMemory, loadFromStream, saveToFile
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromFile(const std::string& filename);
+    bool loadFromFile(const std::string &filename);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the image from a file in memory
@@ -119,7 +117,7 @@ public:
     /// \see loadFromFile, loadFromStream
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromMemory(const void* data, std::size_t size);
+    bool loadFromMemory(const void *data, std::size_t size);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the image from a custom stream
@@ -136,7 +134,7 @@ public:
     /// \see loadFromFile, loadFromMemory
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromStream(InputStream& stream);
+    bool loadFromStream(InputStream &stream);
 
     ////////////////////////////////////////////////////////////
     /// \brief Save the image to a file on disk
@@ -153,7 +151,7 @@ public:
     /// \see create, loadFromFile, loadFromMemory
     ///
     ////////////////////////////////////////////////////////////
-    bool saveToFile(const std::string& filename) const;
+    bool saveToFile(const std::string &filename) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Return the size (width and height) of the image
@@ -174,7 +172,7 @@ public:
     /// \param alpha Alpha value to assign to transparent pixels
     ///
     ////////////////////////////////////////////////////////////
-    void createMaskFromColor(const Color& color, Uint8 alpha = 0);
+    void createMaskFromColor(const Color &color, Uint8 alpha = 0);
 
     ////////////////////////////////////////////////////////////
     /// \brief Copy pixels from another image onto this one
@@ -196,7 +194,7 @@ public:
     /// \param applyAlpha Should the copy take into account the source transparency?
     ///
     ////////////////////////////////////////////////////////////
-    void copy(const Image& source, unsigned int destX, unsigned int destY, const IntRect& sourceRect = IntRect(0, 0, 0, 0), bool applyAlpha = false);
+    void copy(const Image &source, unsigned int destX, unsigned int destY, const IntRect &sourceRect = IntRect(0, 0, 0, 0), bool applyAlpha = false);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change the color of a pixel
@@ -212,7 +210,7 @@ public:
     /// \see getPixel
     ///
     ////////////////////////////////////////////////////////////
-    void setPixel(unsigned int x, unsigned int y, const Color& color);
+    void setPixel(unsigned int x, unsigned int y, const Color &color);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the color of a pixel
@@ -244,7 +242,7 @@ public:
     /// \return Read-only pointer to the array of pixels
     ///
     ////////////////////////////////////////////////////////////
-    const Uint8* getPixelsPtr() const;
+    const Uint8 *getPixelsPtr() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Flip the image horizontally (left <-> right)
@@ -258,20 +256,17 @@ public:
     ////////////////////////////////////////////////////////////
     void flipVertically();
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    Vector2u           m_size;   ///< Image size
+    Vector2u m_size;             ///< Image size
     std::vector<Uint8> m_pixels; ///< Pixels of the image
 };
 
 } // namespace sf
 
-
 #endif // SFML_IMAGE_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Image

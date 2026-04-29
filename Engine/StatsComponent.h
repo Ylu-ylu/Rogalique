@@ -1,38 +1,36 @@
-#pragma once
+﻿#pragma once
+
 #include "Component.h"
-#include "GameObject.h"
 
 namespace XYZEngine
 {
-	class StatsComponent : public Component
-	{
-	public:
-		StatsComponent(GameObject* gameObject, float health, float armor):
-			Component(gameObject), maxHealth(health), currentHealth(health), armor(armor) {};
-		
-		
-	
-		float GetCurrentHealth() const { return currentHealth; }
-		float GetMaxHealth() const { return maxHealth; }
-		float GetArmor() const { return armor; }
+class StatsComponent : public Component
+{
+  public:
+    explicit StatsComponent(GameObject *gameObject);
+    StatsComponent(GameObject *gameObject, float health, float armor);
 
-		void TakeDamage(float damage);
-		void Heal(float amount);
+    void Update(float deltaTime) override;
+    void Render() override;
 
-		void Update(float deltaTime) override;
-		void Render() override;
+    float GetCurrentHealth() const;
+    float GetMaxHealth() const;
+    float GetCurrentArmor() const;
+    float GetMaxArmor() const;
 
-	private:
-		
-		float maxHealth;
-		float currentHealth;
-		float armor;
-	};
+    void SetCurrentHealth(float health);
+    void SetMaxHealth(float health);
+    void SetCurrentArmor(float armor);
+    void SetMaxArmor(float armor);
 
+    void TakeDamage(float damage);
+    void Heal(float amount);
+    void RepairArmor(float amount);
 
-
-
-
-
-
-}
+  private:
+    float currentHealth = 100.0f;
+    float maxHealth = 100.0f;
+    float currentArmor = 0.0f;
+    float maxArmor = 0.0f;
+};
+} // namespace XYZEngine

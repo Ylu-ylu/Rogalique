@@ -25,7 +25,6 @@
 #ifndef SFML_VECTOR2_HPP
 #define SFML_VECTOR2_HPP
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -33,11 +32,9 @@ namespace sf
 ///        2-dimensional vectors
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-class Vector2
+template <typename T> class Vector2
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -66,8 +63,7 @@ public:
     /// \param vector Vector to convert
     ///
     ////////////////////////////////////////////////////////////
-    template <typename U>
-    explicit Vector2(const Vector2<U>& vector);
+    template <typename U> explicit Vector2(const Vector2<U> &vector);
 
     ////////////////////////////////////////////////////////////
     // Member data
@@ -85,8 +81,7 @@ public:
 /// \return Memberwise opposite of the vector
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-Vector2<T> operator -(const Vector2<T>& right);
+template <typename T> Vector2<T> operator-(const Vector2<T> &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Vector2
@@ -101,8 +96,7 @@ Vector2<T> operator -(const Vector2<T>& right);
 /// \return Reference to \a left
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-Vector2<T>& operator +=(Vector2<T>& left, const Vector2<T>& right);
+template <typename T> Vector2<T> &operator+=(Vector2<T> &left, const Vector2<T> &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Vector2
@@ -117,8 +111,7 @@ Vector2<T>& operator +=(Vector2<T>& left, const Vector2<T>& right);
 /// \return Reference to \a left
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-Vector2<T>& operator -=(Vector2<T>& left, const Vector2<T>& right);
+template <typename T> Vector2<T> &operator-=(Vector2<T> &left, const Vector2<T> &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Vector2
@@ -130,8 +123,7 @@ Vector2<T>& operator -=(Vector2<T>& left, const Vector2<T>& right);
 /// \return Memberwise addition of both vectors
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-Vector2<T> operator +(const Vector2<T>& left, const Vector2<T>& right);
+template <typename T> Vector2<T> operator+(const Vector2<T> &left, const Vector2<T> &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Vector2
@@ -143,8 +135,7 @@ Vector2<T> operator +(const Vector2<T>& left, const Vector2<T>& right);
 /// \return Memberwise subtraction of both vectors
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-Vector2<T> operator -(const Vector2<T>& left, const Vector2<T>& right);
+template <typename T> Vector2<T> operator-(const Vector2<T> &left, const Vector2<T> &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Vector2
@@ -156,8 +147,7 @@ Vector2<T> operator -(const Vector2<T>& left, const Vector2<T>& right);
 /// \return Memberwise multiplication by \a right
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-Vector2<T> operator *(const Vector2<T>& left, T right);
+template <typename T> Vector2<T> operator*(const Vector2<T> &left, T right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Vector2
@@ -169,8 +159,7 @@ Vector2<T> operator *(const Vector2<T>& left, T right);
 /// \return Memberwise multiplication by \a left
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-Vector2<T> operator *(T left, const Vector2<T>& right);
+template <typename T> Vector2<T> operator*(T left, const Vector2<T> &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Vector2
@@ -185,8 +174,7 @@ Vector2<T> operator *(T left, const Vector2<T>& right);
 /// \return Reference to \a left
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-Vector2<T>& operator *=(Vector2<T>& left, T right);
+template <typename T> Vector2<T> &operator*=(Vector2<T> &left, T right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Vector2
@@ -198,8 +186,7 @@ Vector2<T>& operator *=(Vector2<T>& left, T right);
 /// \return Memberwise division by \a right
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-Vector2<T> operator /(const Vector2<T>& left, T right);
+template <typename T> Vector2<T> operator/(const Vector2<T> &left, T right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Vector2
@@ -214,8 +201,7 @@ Vector2<T> operator /(const Vector2<T>& left, T right);
 /// \return Reference to \a left
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-Vector2<T>& operator /=(Vector2<T>& left, T right);
+template <typename T> Vector2<T> &operator/=(Vector2<T> &left, T right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Vector2
@@ -229,8 +215,7 @@ Vector2<T>& operator /=(Vector2<T>& left, T right);
 /// \return True if \a left is equal to \a right
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-bool operator ==(const Vector2<T>& left, const Vector2<T>& right);
+template <typename T> bool operator==(const Vector2<T> &left, const Vector2<T> &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Vector2
@@ -244,21 +229,18 @@ bool operator ==(const Vector2<T>& left, const Vector2<T>& right);
 /// \return True if \a left is not equal to \a right
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-bool operator !=(const Vector2<T>& left, const Vector2<T>& right);
+template <typename T> bool operator!=(const Vector2<T> &left, const Vector2<T> &right);
 
 #include <SFML/System/Vector2.inl>
 
 // Define the most common types
-typedef Vector2<int>          Vector2i;
+typedef Vector2<int> Vector2i;
 typedef Vector2<unsigned int> Vector2u;
-typedef Vector2<float>        Vector2f;
+typedef Vector2<float> Vector2f;
 
 } // namespace sf
 
-
 #endif // SFML_VECTOR2_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Vector2

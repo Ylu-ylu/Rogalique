@@ -31,7 +31,6 @@
 #include <SFML/Window/Export.hpp>
 #include <SFML/System/Vector2.hpp>
 
-
 namespace sf
 {
 class Window;
@@ -42,19 +41,18 @@ class Window;
 ////////////////////////////////////////////////////////////
 class SFML_WINDOW_API Mouse
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Mouse buttons
     ///
     ////////////////////////////////////////////////////////////
     enum Button
     {
-        Left,       ///< The left mouse button
-        Right,      ///< The right mouse button
-        Middle,     ///< The middle (wheel) mouse button
-        XButton1,   ///< The first extra mouse button
-        XButton2,   ///< The second extra mouse button
+        Left,     ///< The left mouse button
+        Right,    ///< The right mouse button
+        Middle,   ///< The middle (wheel) mouse button
+        XButton1, ///< The first extra mouse button
+        XButton2, ///< The second extra mouse button
 
         ButtonCount ///< Keep last -- the total number of mouse buttons
     };
@@ -101,7 +99,7 @@ public:
     /// \return Current position of the mouse
     ///
     ////////////////////////////////////////////////////////////
-    static Vector2i getPosition(const Window& relativeTo);
+    static Vector2i getPosition(const Window &relativeTo);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the current position of the mouse in desktop coordinates
@@ -112,7 +110,7 @@ public:
     /// \param position New position of the mouse
     ///
     ////////////////////////////////////////////////////////////
-    static void setPosition(const Vector2i& position);
+    static void setPosition(const Vector2i &position);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the current position of the mouse in window coordinates
@@ -124,14 +122,12 @@ public:
     /// \param relativeTo Reference window
     ///
     ////////////////////////////////////////////////////////////
-    static void setPosition(const Vector2i& position, const Window& relativeTo);
+    static void setPosition(const Vector2i &position, const Window &relativeTo);
 };
 
 } // namespace sf
 
-
 #endif // SFML_MOUSE_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Mouse

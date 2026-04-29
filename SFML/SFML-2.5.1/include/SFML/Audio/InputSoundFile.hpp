@@ -34,7 +34,6 @@
 #include <string>
 #include <algorithm>
 
-
 namespace sf
 {
 class InputStream;
@@ -46,8 +45,7 @@ class SoundFileReader;
 ////////////////////////////////////////////////////////////
 class SFML_AUDIO_API InputSoundFile : NonCopyable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -71,7 +69,7 @@ public:
     /// \return True if the file was successfully opened
     ///
     ////////////////////////////////////////////////////////////
-    bool openFromFile(const std::string& filename);
+    bool openFromFile(const std::string &filename);
 
     ////////////////////////////////////////////////////////////
     /// \brief Open a sound file in memory for reading
@@ -85,7 +83,7 @@ public:
     /// \return True if the file was successfully opened
     ///
     ////////////////////////////////////////////////////////////
-    bool openFromMemory(const void* data, std::size_t sizeInBytes);
+    bool openFromMemory(const void *data, std::size_t sizeInBytes);
 
     ////////////////////////////////////////////////////////////
     /// \brief Open a sound file from a custom stream for reading
@@ -98,7 +96,7 @@ public:
     /// \return True if the file was successfully opened
     ///
     ////////////////////////////////////////////////////////////
-    bool openFromStream(InputStream& stream);
+    bool openFromStream(InputStream &stream);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the total number of audio samples in the file
@@ -193,10 +191,9 @@ public:
     /// \return Number of samples actually read (may be less than \a maxCount)
     ///
     ////////////////////////////////////////////////////////////
-    Uint64 read(Int16* samples, Uint64 maxCount);
+    Uint64 read(Int16 *samples, Uint64 maxCount);
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     /// \brief Close the current file
     ///
@@ -206,20 +203,18 @@ private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    SoundFileReader* m_reader;       ///< Reader that handles I/O on the file's format
-    InputStream*     m_stream;       ///< Input stream used to access the file's data
-    bool             m_streamOwned;  ///< Is the stream internal or external?
-    Uint64           m_sampleOffset; ///< Sample Read Position
-    Uint64           m_sampleCount;  ///< Total number of samples in the file
-    unsigned int     m_channelCount; ///< Number of channels of the sound
-    unsigned int     m_sampleRate;   ///< Number of samples per second
+    SoundFileReader *m_reader;   ///< Reader that handles I/O on the file's format
+    InputStream *m_stream;       ///< Input stream used to access the file's data
+    bool m_streamOwned;          ///< Is the stream internal or external?
+    Uint64 m_sampleOffset;       ///< Sample Read Position
+    Uint64 m_sampleCount;        ///< Total number of samples in the file
+    unsigned int m_channelCount; ///< Number of channels of the sound
+    unsigned int m_sampleRate;   ///< Number of samples per second
 };
 
 } // namespace sf
 
-
 #endif // SFML_INPUTSOUNDFILE_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::InputSoundFile

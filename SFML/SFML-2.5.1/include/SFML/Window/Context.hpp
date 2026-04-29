@@ -33,12 +33,11 @@
 #include <SFML/Window/ContextSettings.hpp>
 #include <SFML/System/NonCopyable.hpp>
 
-
 namespace sf
 {
 namespace priv
 {
-    class GlContext;
+class GlContext;
 }
 
 typedef void (*GlFunctionPointer)();
@@ -49,8 +48,7 @@ typedef void (*GlFunctionPointer)();
 ////////////////////////////////////////////////////////////
 class SFML_WINDOW_API Context : GlResource, NonCopyable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -87,7 +85,7 @@ public:
     /// \return Structure containing the settings
     ///
     ////////////////////////////////////////////////////////////
-    const ContextSettings& getSettings() const;
+    const ContextSettings &getSettings() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Check whether a given OpenGL extension is available
@@ -97,7 +95,7 @@ public:
     /// \return True if available, false if unavailable
     ///
     ////////////////////////////////////////////////////////////
-    static bool isExtensionAvailable(const char* name);
+    static bool isExtensionAvailable(const char *name);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the address of an OpenGL function
@@ -107,7 +105,7 @@ public:
     /// \return Address of the OpenGL function, 0 on failure
     ///
     ////////////////////////////////////////////////////////////
-    static GlFunctionPointer getFunction(const char* name);
+    static GlFunctionPointer getFunction(const char *name);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the currently active context
@@ -119,7 +117,7 @@ public:
     /// \return The currently active context or NULL if none is active
     ///
     ////////////////////////////////////////////////////////////
-    static const Context* getActiveContext();
+    static const Context *getActiveContext();
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the currently active context's ID
@@ -143,18 +141,16 @@ public:
     /// \param height   Back buffer height
     ///
     ////////////////////////////////////////////////////////////
-    Context(const ContextSettings& settings, unsigned int width, unsigned int height);
+    Context(const ContextSettings &settings, unsigned int width, unsigned int height);
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    priv::GlContext* m_context; ///< Internal OpenGL context
+    priv::GlContext *m_context; ///< Internal OpenGL context
 };
 
 } // namespace sf
-
 
 #endif // SFML_CONTEXT_HPP
 

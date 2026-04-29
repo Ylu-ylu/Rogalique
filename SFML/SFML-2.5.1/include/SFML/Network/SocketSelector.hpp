@@ -31,7 +31,6 @@
 #include <SFML/Network/Export.hpp>
 #include <SFML/System/Time.hpp>
 
-
 namespace sf
 {
 class Socket;
@@ -42,8 +41,7 @@ class Socket;
 ////////////////////////////////////////////////////////////
 class SFML_NETWORK_API SocketSelector
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -56,7 +54,7 @@ public:
     /// \param copy Instance to copy
     ///
     ////////////////////////////////////////////////////////////
-    SocketSelector(const SocketSelector& copy);
+    SocketSelector(const SocketSelector &copy);
 
     ////////////////////////////////////////////////////////////
     /// \brief Destructor
@@ -77,7 +75,7 @@ public:
     /// \see remove, clear
     ///
     ////////////////////////////////////////////////////////////
-    void add(Socket& socket);
+    void add(Socket &socket);
 
     ////////////////////////////////////////////////////////////
     /// \brief Remove a socket from the selector
@@ -90,7 +88,7 @@ public:
     /// \see add, clear
     ///
     ////////////////////////////////////////////////////////////
-    void remove(Socket& socket);
+    void remove(Socket &socket);
 
     ////////////////////////////////////////////////////////////
     /// \brief Remove all the sockets stored in the selector
@@ -139,7 +137,7 @@ public:
     /// \see isReady
     ///
     ////////////////////////////////////////////////////////////
-    bool isReady(Socket& socket) const;
+    bool isReady(Socket &socket) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Overload of assignment operator
@@ -149,23 +147,20 @@ public:
     /// \return Reference to self
     ///
     ////////////////////////////////////////////////////////////
-    SocketSelector& operator =(const SocketSelector& right);
+    SocketSelector &operator=(const SocketSelector &right);
 
-private:
-
+  private:
     struct SocketSelectorImpl;
 
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    SocketSelectorImpl* m_impl; ///< Opaque pointer to the implementation (which requires OS-specific types)
+    SocketSelectorImpl *m_impl; ///< Opaque pointer to the implementation (which requires OS-specific types)
 };
 
 } // namespace sf
 
-
 #endif // SFML_SOCKETSELECTOR_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::SocketSelector

@@ -36,7 +36,6 @@
 #include <string>
 #include <vector>
 
-
 namespace sf
 {
 class InputStream;
@@ -47,14 +46,12 @@ class InputStream;
 ////////////////////////////////////////////////////////////
 class SFML_AUDIO_API Music : public SoundStream
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Structure defining a time range using the template type
     ///
     ////////////////////////////////////////////////////////////
-    template <typename T>
-    struct Span
+    template <typename T> struct Span
     {
         ////////////////////////////////////////////////////////////
         /// \brief Default constructor
@@ -62,7 +59,6 @@ public:
         ////////////////////////////////////////////////////////////
         Span()
         {
-
         }
 
         ////////////////////////////////////////////////////////////
@@ -72,11 +68,8 @@ public:
         /// \param len Initial Length
         ///
         ////////////////////////////////////////////////////////////
-        Span(T off, T len):
-        offset(off),
-        length(len)
+        Span(T off, T len) : offset(off), length(len)
         {
-
         }
 
         T offset; ///< The beginning offset of the time range
@@ -117,7 +110,7 @@ public:
     /// \see openFromMemory, openFromStream
     ///
     ////////////////////////////////////////////////////////////
-    bool openFromFile(const std::string& filename);
+    bool openFromFile(const std::string &filename);
 
     ////////////////////////////////////////////////////////////
     /// \brief Open a music from an audio file in memory
@@ -140,7 +133,7 @@ public:
     /// \see openFromFile, openFromStream
     ///
     ////////////////////////////////////////////////////////////
-    bool openFromMemory(const void* data, std::size_t sizeInBytes);
+    bool openFromMemory(const void *data, std::size_t sizeInBytes);
 
     ////////////////////////////////////////////////////////////
     /// \brief Open a music from an audio file in a custom stream
@@ -161,7 +154,7 @@ public:
     /// \see openFromFile, openFromMemory
     ///
     ////////////////////////////////////////////////////////////
-    bool openFromStream(InputStream& stream);
+    bool openFromStream(InputStream &stream);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the total duration of the music
@@ -210,8 +203,7 @@ public:
     ////////////////////////////////////////////////////////////
     void setLoopPoints(TimeSpan timePoints);
 
-protected:
-
+  protected:
     ////////////////////////////////////////////////////////////
     /// \brief Request a new chunk of audio samples from the stream source
     ///
@@ -223,7 +215,7 @@ protected:
     /// \return True to continue playback, false to stop
     ///
     ////////////////////////////////////////////////////////////
-    virtual bool onGetData(Chunk& data);
+    virtual bool onGetData(Chunk &data);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change the current playing position in the stream source
@@ -245,8 +237,7 @@ protected:
     ////////////////////////////////////////////////////////////
     virtual Int64 onLoop();
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     /// \brief Initialize the internal state after loading a new music
     ///
@@ -276,17 +267,15 @@ private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    InputSoundFile     m_file;     ///< The streamed music file
-    std::vector<Int16> m_samples;  ///< Temporary buffer of samples
-    Mutex              m_mutex;    ///< Mutex protecting the data
-    Span<Uint64>       m_loopSpan; ///< Loop Range Specifier
+    InputSoundFile m_file;        ///< The streamed music file
+    std::vector<Int16> m_samples; ///< Temporary buffer of samples
+    Mutex m_mutex;                ///< Mutex protecting the data
+    Span<Uint64> m_loopSpan;      ///< Loop Range Specifier
 };
 
 } // namespace sf
 
-
 #endif // SFML_MUSIC_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Music

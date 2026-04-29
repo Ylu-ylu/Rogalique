@@ -42,9 +42,8 @@ namespace priv
 {
 class SFML_SYSTEM_API ResourceStream;
 }
-}
+} // namespace sf
 #endif
-
 
 namespace sf
 {
@@ -54,7 +53,7 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_SYSTEM_API FileInputStream : public InputStream, NonCopyable
 {
-public:
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -75,7 +74,7 @@ public:
     /// \return True on success, false on error
     ///
     ////////////////////////////////////////////////////////////
-    bool open(const std::string& filename);
+    bool open(const std::string &filename);
 
     ////////////////////////////////////////////////////////////
     /// \brief Read data from the stream
@@ -89,7 +88,7 @@ public:
     /// \return The number of bytes actually read, or -1 on error
     ///
     ////////////////////////////////////////////////////////////
-    virtual Int64 read(void* data, Int64 size);
+    virtual Int64 read(void *data, Int64 size);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change the current reading position
@@ -117,23 +116,20 @@ public:
     ////////////////////////////////////////////////////////////
     virtual Int64 getSize();
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
 #ifdef SFML_SYSTEM_ANDROID
-    priv::ResourceStream* m_file;
+    priv::ResourceStream *m_file;
 #else
-    std::FILE* m_file; ///< stdio file stream
+    std::FILE *m_file; ///< stdio file stream
 #endif
 };
 
 } // namespace sf
 
-
 #endif // SFML_FILEINPUTSTREAM_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::FileInputStream

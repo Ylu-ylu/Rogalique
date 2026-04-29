@@ -31,7 +31,6 @@
 #include <SFML/Audio/Export.hpp>
 #include <SFML/System/Vector3.hpp>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -41,8 +40,7 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_AUDIO_API Listener
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Change the global volume of all the sounds and musics
     ///
@@ -91,7 +89,7 @@ public:
     /// \see getPosition, setDirection
     ///
     ////////////////////////////////////////////////////////////
-    static void setPosition(const Vector3f& position);
+    static void setPosition(const Vector3f &position);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the current position of the listener in the scene
@@ -137,7 +135,7 @@ public:
     /// \see getDirection, setUpVector, setPosition
     ///
     ////////////////////////////////////////////////////////////
-    static void setDirection(const Vector3f& direction);
+    static void setDirection(const Vector3f &direction);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the current forward vector of the listener in the scene
@@ -183,7 +181,7 @@ public:
     /// \see getUpVector, setDirection, setPosition
     ///
     ////////////////////////////////////////////////////////////
-    static void setUpVector(const Vector3f& upVector);
+    static void setUpVector(const Vector3f &upVector);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the current upward vector of the listener in the scene
@@ -198,9 +196,7 @@ public:
 
 } // namespace sf
 
-
 #endif // SFML_LISTENER_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Listener

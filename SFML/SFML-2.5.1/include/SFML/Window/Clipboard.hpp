@@ -31,7 +31,6 @@
 #include <SFML/Window/Export.hpp>
 #include <SFML/System/String.hpp>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -40,8 +39,7 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_WINDOW_API Clipboard
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Get the content of the clipboard as string data
     ///
@@ -69,14 +67,12 @@ public:
     /// to the clipboard
     ///
     ////////////////////////////////////////////////////////////
-    static void setString(const String& text);
+    static void setString(const String &text);
 };
 
 } // namespace sf
 
-
 #endif // SFML_CLIPBOARD_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Clipboard

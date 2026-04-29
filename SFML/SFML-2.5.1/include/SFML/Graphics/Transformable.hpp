@@ -31,7 +31,6 @@
 #include <SFML/Graphics/Export.hpp>
 #include <SFML/Graphics/Transform.hpp>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -40,8 +39,7 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API Transformable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -81,7 +79,7 @@ public:
     /// \see move, getPosition
     ///
     ////////////////////////////////////////////////////////////
-    void setPosition(const Vector2f& position);
+    void setPosition(const Vector2f &position);
 
     ////////////////////////////////////////////////////////////
     /// \brief set the orientation of the object
@@ -124,7 +122,7 @@ public:
     /// \see scale, getScale
     ///
     ////////////////////////////////////////////////////////////
-    void setScale(const Vector2f& factors);
+    void setScale(const Vector2f &factors);
 
     ////////////////////////////////////////////////////////////
     /// \brief set the local origin of the object
@@ -159,7 +157,7 @@ public:
     /// \see getOrigin
     ///
     ////////////////////////////////////////////////////////////
-    void setOrigin(const Vector2f& origin);
+    void setOrigin(const Vector2f &origin);
 
     ////////////////////////////////////////////////////////////
     /// \brief get the position of the object
@@ -169,7 +167,7 @@ public:
     /// \see setPosition
     ///
     ////////////////////////////////////////////////////////////
-    const Vector2f& getPosition() const;
+    const Vector2f &getPosition() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief get the orientation of the object
@@ -191,7 +189,7 @@ public:
     /// \see setScale
     ///
     ////////////////////////////////////////////////////////////
-    const Vector2f& getScale() const;
+    const Vector2f &getScale() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief get the local origin of the object
@@ -201,7 +199,7 @@ public:
     /// \see setOrigin
     ///
     ////////////////////////////////////////////////////////////
-    const Vector2f& getOrigin() const;
+    const Vector2f &getOrigin() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Move the object by a given offset
@@ -237,7 +235,7 @@ public:
     /// \see setPosition
     ///
     ////////////////////////////////////////////////////////////
-    void move(const Vector2f& offset);
+    void move(const Vector2f &offset);
 
     ////////////////////////////////////////////////////////////
     /// \brief Rotate the object
@@ -289,7 +287,7 @@ public:
     /// \see setScale
     ///
     ////////////////////////////////////////////////////////////
-    void scale(const Vector2f& factor);
+    void scale(const Vector2f &factor);
 
     ////////////////////////////////////////////////////////////
     /// \brief get the combined transform of the object
@@ -299,7 +297,7 @@ public:
     /// \see getInverseTransform
     ///
     ////////////////////////////////////////////////////////////
-    const Transform& getTransform() const;
+    const Transform &getTransform() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief get the inverse of the combined transform of the object
@@ -309,28 +307,25 @@ public:
     /// \see getTransform
     ///
     ////////////////////////////////////////////////////////////
-    const Transform& getInverseTransform() const;
+    const Transform &getInverseTransform() const;
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    Vector2f          m_origin;                     ///< Origin of translation/rotation/scaling of the object
-    Vector2f          m_position;                   ///< Position of the object in the 2D world
-    float             m_rotation;                   ///< Orientation of the object, in degrees
-    Vector2f          m_scale;                      ///< Scale of the object
-    mutable Transform m_transform;                  ///< Combined transformation of the object
-    mutable bool      m_transformNeedUpdate;        ///< Does the transform need to be recomputed?
-    mutable Transform m_inverseTransform;           ///< Combined transformation of the object
-    mutable bool      m_inverseTransformNeedUpdate; ///< Does the transform need to be recomputed?
+    Vector2f m_origin;                         ///< Origin of translation/rotation/scaling of the object
+    Vector2f m_position;                       ///< Position of the object in the 2D world
+    float m_rotation;                          ///< Orientation of the object, in degrees
+    Vector2f m_scale;                          ///< Scale of the object
+    mutable Transform m_transform;             ///< Combined transformation of the object
+    mutable bool m_transformNeedUpdate;        ///< Does the transform need to be recomputed?
+    mutable Transform m_inverseTransform;      ///< Combined transformation of the object
+    mutable bool m_inverseTransformNeedUpdate; ///< Does the transform need to be recomputed?
 };
 
 } // namespace sf
 
-
 #endif // SFML_TRANSFORMABLE_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Transformable

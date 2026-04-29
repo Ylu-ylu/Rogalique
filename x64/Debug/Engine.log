@@ -1,21 +1,5 @@
-﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: The intermediate directory (D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\x64\Debug\) contains files shared from another project (XYZEngine.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  Engine.cpp
-D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\Engine\Engine.h(2,9): warning C4005: 'NOMINMAX': macro redefinition
-  (compiling source file '/Engine.cpp')
-      D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\Engine\Engine.h(2,9):
-      'NOMINMAX' previously declared on the command line
-  
-  InputComponent.cpp
-  ResourceSystem.cpp
-D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\Engine\ResourceSystem.cpp(63,22): warning C4018: '<=': signed/unsigned mismatch
-  (compiling source file '/ResourceSystem.cpp')
-  
-D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\Engine\ResourceSystem.cpp(70,23): warning C4018: '<=': signed/unsigned mismatch
-  (compiling source file '/ResourceSystem.cpp')
-  
-D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\Engine\ResourceSystem.cpp(114,23): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  (compiling source file '/ResourceSystem.cpp')
-  
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: The intermediate directory (D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\x64\Debug\) contains files shared from another project (XYZEngine.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  FollowComponent.cpp
   StatsComponent.cpp
   Generating Code...
-  Engine.vcxproj -> D:\XYZ C++ for gamedevelopment\Rogalique_HW14_v1\XYZRoguelike\x64\Debug\Engine.lib
+  Engine.vcxproj -> D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\XYZRoguelike\x64\Debug\Engine.lib

@@ -30,7 +30,6 @@
 ////////////////////////////////////////////////////////////
 #include <SFML/Window/Export.hpp>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -39,8 +38,7 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_WINDOW_API Keyboard
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Key codes
     ///
@@ -150,15 +148,15 @@ public:
         F15,          ///< The F15 key
         Pause,        ///< The Pause key
 
-        KeyCount,     ///< Keep last -- the total number of keyboard keys
+        KeyCount, ///< Keep last -- the total number of keyboard keys
 
         // Deprecated values:
 
-        Dash      = Hyphen,       ///< \deprecated Use Hyphen instead
-        BackSpace = Backspace,    ///< \deprecated Use Backspace instead
-        BackSlash = Backslash,    ///< \deprecated Use Backslash instead
-        SemiColon = Semicolon,    ///< \deprecated Use Semicolon instead
-        Return    = Enter         ///< \deprecated Use Enter instead
+        Dash = Hyphen,         ///< \deprecated Use Hyphen instead
+        BackSpace = Backspace, ///< \deprecated Use Backspace instead
+        BackSlash = Backslash, ///< \deprecated Use Backslash instead
+        SemiColon = Semicolon, ///< \deprecated Use Semicolon instead
+        Return = Enter         ///< \deprecated Use Enter instead
     };
 
     ////////////////////////////////////////////////////////////
@@ -189,9 +187,7 @@ public:
 
 } // namespace sf
 
-
 #endif // SFML_KEYBOARD_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Keyboard

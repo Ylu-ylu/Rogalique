@@ -35,7 +35,6 @@
 #include <SFML/System/Mutex.hpp>
 #include <cstdlib>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -44,16 +43,15 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_AUDIO_API SoundStream : public SoundSource
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Structure defining a chunk of audio data to stream
     ///
     ////////////////////////////////////////////////////////////
     struct Chunk
     {
-        const Int16* samples;     ///< Pointer to the audio samples
-        std::size_t  sampleCount; ///< Number of samples pointed by Samples
+        const Int16 *samples;    ///< Pointer to the audio samples
+        std::size_t sampleCount; ///< Number of samples pointed by Samples
     };
 
     ////////////////////////////////////////////////////////////
@@ -178,8 +176,7 @@ public:
     ////////////////////////////////////////////////////////////
     bool getLoop() const;
 
-protected:
-
+  protected:
     enum
     {
         NoLoop = -1 ///< "Invalid" endSeeks value, telling us to continue uninterrupted
@@ -226,7 +223,7 @@ protected:
     /// \return True to continue playback, false to stop
     ///
     ////////////////////////////////////////////////////////////
-    virtual bool onGetData(Chunk& data) = 0;
+    virtual bool onGetData(Chunk &data) = 0;
 
     ////////////////////////////////////////////////////////////
     /// \brief Change the current playing position in the stream source
@@ -251,8 +248,7 @@ protected:
     ////////////////////////////////////////////////////////////
     virtual Int64 onLoop();
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     /// \brief Function called as the entry point of the thread
     ///
@@ -299,31 +295,29 @@ private:
 
     enum
     {
-        BufferCount = 3,    ///< Number of audio buffers used by the streaming loop
-        BufferRetries = 2   ///< Number of retries (excluding initial try) for onGetData()
+        BufferCount = 3,  ///< Number of audio buffers used by the streaming loop
+        BufferRetries = 2 ///< Number of retries (excluding initial try) for onGetData()
     };
 
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    Thread        m_thread;                   ///< Thread running the background tasks
-    mutable Mutex m_threadMutex;              ///< Thread mutex
-    Status        m_threadStartState;         ///< State the thread starts in (Playing, Paused, Stopped)
-    bool          m_isStreaming;              ///< Streaming state (true = playing, false = stopped)
-    unsigned int  m_buffers[BufferCount];     ///< Sound buffers used to store temporary audio data
-    unsigned int  m_channelCount;             ///< Number of channels (1 = mono, 2 = stereo, ...)
-    unsigned int  m_sampleRate;               ///< Frequency (samples / second)
-    Uint32        m_format;                   ///< Format of the internal sound buffers
-    bool          m_loop;                     ///< Loop flag (true to loop, false to play once)
-    Uint64        m_samplesProcessed;         ///< Number of buffers processed since beginning of the stream
-    Int64         m_bufferSeeks[BufferCount]; ///< If buffer is an "end buffer", holds next seek position, else NoLoop. For play offset calculation.
+    Thread m_thread;                     ///< Thread running the background tasks
+    mutable Mutex m_threadMutex;         ///< Thread mutex
+    Status m_threadStartState;           ///< State the thread starts in (Playing, Paused, Stopped)
+    bool m_isStreaming;                  ///< Streaming state (true = playing, false = stopped)
+    unsigned int m_buffers[BufferCount]; ///< Sound buffers used to store temporary audio data
+    unsigned int m_channelCount;         ///< Number of channels (1 = mono, 2 = stereo, ...)
+    unsigned int m_sampleRate;           ///< Frequency (samples / second)
+    Uint32 m_format;                     ///< Format of the internal sound buffers
+    bool m_loop;                         ///< Loop flag (true to loop, false to play once)
+    Uint64 m_samplesProcessed;           ///< Number of buffers processed since beginning of the stream
+    Int64 m_bufferSeeks[BufferCount];    ///< If buffer is an "end buffer", holds next seek position, else NoLoop. For play offset calculation.
 };
 
 } // namespace sf
 
-
 #endif // SFML_SOUNDSTREAM_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::SoundStream

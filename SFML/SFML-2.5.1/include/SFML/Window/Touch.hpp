@@ -31,7 +31,6 @@
 #include <SFML/Window/Export.hpp>
 #include <SFML/System/Vector2.hpp>
 
-
 namespace sf
 {
 class Window;
@@ -42,8 +41,7 @@ class Window;
 ////////////////////////////////////////////////////////////
 class SFML_WINDOW_API Touch
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Check if a touch event is currently down
     ///
@@ -79,14 +77,12 @@ public:
     /// \return Current position of \a finger, or undefined if it's not down
     ///
     ////////////////////////////////////////////////////////////
-    static Vector2i getPosition(unsigned int finger, const Window& relativeTo);
+    static Vector2i getPosition(unsigned int finger, const Window &relativeTo);
 };
 
 } // namespace sf
 
-
 #endif // SFML_TOUCH_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Touch

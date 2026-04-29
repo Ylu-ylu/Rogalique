@@ -6,21 +6,20 @@
 
 namespace XYZEngine
 {
-	class Engine
-	{
-	public:
-		Engine(const Engine& app) = delete;
-		Engine& operator= (const Engine&) = delete;
+class Engine
+{
+  public:
+    Engine(const Engine &app) = delete;
+    Engine &operator=(const Engine &) = delete;
 
-		static Engine* Instance();
+    static Engine *Instance();
 
-		void Run();
+    void Run();
 
-	private:
-		Engine();
-		~Engine() = default;
+  private:
+    Engine();
+    ~Engine() = default;
 
-
-		void setupLogger();
-	};
-}
+    void setupLogger();
+};
+} // namespace XYZEngine
