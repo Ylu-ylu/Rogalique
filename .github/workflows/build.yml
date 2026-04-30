@@ -19,12 +19,21 @@ jobs:
           fetch-depth: 0
           submodules: true
 
+      # Добавлено: Установка .NET SDK (необходимо для разрешения Microsoft.NET.Sdk)
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x' # Укажите версию, которую используете в проекте
+
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
 
       - name: List all repository files recursively
-        # Исправлено: используем PowerShell для рекурсивного вывода списка файлов
         run: Get-ChildItem -Recurse
+
+      # Исправлено: Добавлен этап восстановления зависимостей перед сборкой
+      - name: Restore dependencies
+        run: msbuild Game.sln /t:Restore /p:Configuration=Release
 
       - name: Build solution
         run: msbuild Game.sln /p:Configuration=Release /p:Platform=x64
