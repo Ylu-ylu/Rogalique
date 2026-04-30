@@ -24,7 +24,7 @@ jobs:
         shell: cmd
 
       - name: List Release files
-        run: dir /s /b x64\Release
+        run: if exist x64\Release dir /s /b x64\Release || echo "No Release files"
         shell: cmd
 
       - name: Setup MSVC
@@ -43,4 +43,8 @@ jobs:
         run: |
           set CL=/std:c++17 /I"%CD%\SFML\SFML-2.5.1\include" /I"%CD%\Engine"
           msbuild Game.sln /p:Configuration=Release /m
+        shell: cmd
+
+      - name: List Release files
+        run: if exist x64\Release dir /s /b x64\Release || echo "No Release files"
         shell: cmd
