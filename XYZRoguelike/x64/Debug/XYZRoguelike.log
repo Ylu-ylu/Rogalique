@@ -1,12 +1,51 @@
 ﻿  AI.cpp
+  Application.cpp
   Creeper.cpp
   CreeperSpawner.cpp
   DeveloperLevel.cpp
-  Game.cpp
-  GameMain.cpp
+  Floor.cpp
   GameState.cpp
-  GameStatePlaying.cpp
+  GameStateData.cpp
+  GameStateGameWin.cpp
+  LevelLoader.cpp
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\XYZRoguelike\LevelLoader.cpp(17,23): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
   MazeGenerator.cpp
 D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\XYZRoguelike\MazeGenerator.cpp(22,25): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Music.cpp
+  Player.cpp
+  Sprite.cpp
+  Game.cpp
+  GameMain.cpp
+  GameStatePauseMenu.cpp
+  GameStateGameOver.cpp
+  GameStateMainMenu.cpp
+  GameStatePlaying.cpp
   Generating Code...
+  Compiling...
+  GameStateRecords.cpp
+  Menu.cpp
+  Text.cpp
+  Wall.cpp
+  Generating Code...
+Engine.lib(Component.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(Component.obj)' or at ''; linking object as if no debug info
+Engine.lib(TransformComponent.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(TransformComponent.obj)' or at ''; linking object as if no debug info
+Engine.lib(ResourceSystem.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(ResourceSystem.obj)' or at ''; linking object as if no debug info
+Engine.lib(RigidbodyComponent.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(RigidbodyComponent.obj)' or at ''; linking object as if no debug info
+Engine.lib(SpriteRendererComponent.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(SpriteRendererComponent.obj)' or at ''; linking object as if no debug info
+Engine.lib(SpriteColliderComponent.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(SpriteColliderComponent.obj)' or at ''; linking object as if no debug info
+Engine.lib(FollowComponent.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(FollowComponent.obj)' or at ''; linking object as if no debug info
+Engine.lib(StatsComponent.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(StatsComponent.obj)' or at ''; linking object as if no debug info
+Engine.lib(AttackComponen.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(AttackComponen.obj)' or at ''; linking object as if no debug info
+Engine.lib(GameWorld.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(GameWorld.obj)' or at ''; linking object as if no debug info
+Engine.lib(CameraComponent.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(CameraComponent.obj)' or at ''; linking object as if no debug info
+Engine.lib(ColliderComponent.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(ColliderComponent.obj)' or at ''; linking object as if no debug info
+Engine.lib(AudioComponent.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(AudioComponent.obj)' or at ''; linking object as if no debug info
+Engine.lib(RenderSystem.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(RenderSystem.obj)' or at ''; linking object as if no debug info
+Engine.lib(InputComponent.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(InputComponent.obj)' or at ''; linking object as if no debug info
+Engine.lib(MovementComponent.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(MovementComponent.obj)' or at ''; linking object as if no debug info
+Engine.lib(Engine.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(Engine.obj)' or at ''; linking object as if no debug info
+Engine.lib(pch.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(pch.obj)' or at ''; linking object as if no debug info
+Engine.lib(GameObject.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(GameObject.obj)' or at ''; linking object as if no debug info
+Engine.lib(Matrix2D.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(Matrix2D.obj)' or at ''; linking object as if no debug info
+Engine.lib(PhysicsSystem.obj) : warning LNK4099: PDB '' was not found with 'Engine.lib(PhysicsSystem.obj)' or at ''; linking object as if no debug info
   XYZRoguelike.vcxproj -> D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\XYZRoguelike\x64\Debug\XYZRoguelike.exe
