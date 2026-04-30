@@ -19,21 +19,22 @@ jobs:
           fetch-depth: 0
           submodules: true
 
-      # Добавлено: Установка .NET SDK (необходимо для разрешения Microsoft.NET.Sdk)
-      - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v4
-        with:
-          dotnet-version: '8.0.x' # Укажите версию, которую используете в проекте
-
-      - name: Setup MSBuild
+      # Добавляем установку инструментов C++ (важно для Game.sln)
+      - name: Add MSBuild to PATH
         uses: microsoft/setup-msbuild@v2
+
+      # Добавляем установку NuGet для управления зависимостями
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v1
 
       - name: List all repository files recursively
         run: Get-ChildItem -Recurse
 
-      # Исправлено: Добавлен этап восстановления зависимостей перед сборкой
-      - name: Restore dependencies
-        run: msbuild Game.sln /t:Restore /p:Configuration=Release
+      # Используем NuGet для восстановления, так как msbuild /t:Restore 
+      # может конфликтовать с C++ проектами в облаке
+      - name: Restore NuGet packages
+        run: nuget restore Game.sln
 
       - name: Build solution
-        run: msbuild Game.sln /p:Configuration=Release /p:Platform=x64
+        # Добавлен флаг /m для многопоточной сборки (ускоряет процесс)
+        run: msbuild Game.sln /p:Configuration=Release /p:Platform=x64 /m
