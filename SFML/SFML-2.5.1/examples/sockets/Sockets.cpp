@@ -5,12 +5,10 @@
 #include <iostream>
 #include <cstdlib>
 
-
 void runTcpServer(unsigned short port);
 void runTcpClient(unsigned short port);
 void runUdpServer(unsigned short port);
 void runUdpClient(unsigned short port);
-
 
 ////////////////////////////////////////////////////////////
 /// Entry point of application
@@ -26,12 +24,12 @@ int main()
     // TCP, UDP or connected UDP ?
     char protocol;
     std::cout << "Do you want to use TCP (t) or UDP (u)? ";
-    std::cin  >> protocol;
+    std::cin >> protocol;
 
     // Client or server ?
     char who;
     std::cout << "Do you want to be a server (s) or a client (c)? ";
-    std::cin  >> who;
+    std::cin >> who;
 
     if (protocol == 't')
     {

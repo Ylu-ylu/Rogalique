@@ -1,0 +1,19 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "SFMLTemplate\\SFMLTemplate.vcxproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "Engine\\Engine.vcxproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "XYZRoguelike\\XYZRoguelike.vcxproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -30,7 +30,6 @@
 ////////////////////////////////////////////////////////////
 #include <SFML/Graphics/Export.hpp>
 
-
 namespace sf
 {
 
@@ -105,19 +104,22 @@ struct SFML_GRAPHICS_API BlendMode
     /// \param alphaBlendEquation     Specifies how to combine the source and destination alphas.
     ///
     ////////////////////////////////////////////////////////////
-    BlendMode(Factor colorSourceFactor, Factor colorDestinationFactor,
-              Equation colorBlendEquation, Factor alphaSourceFactor,
-              Factor alphaDestinationFactor, Equation alphaBlendEquation);
+    BlendMode(Factor colorSourceFactor,
+              Factor colorDestinationFactor,
+              Equation colorBlendEquation,
+              Factor alphaSourceFactor,
+              Factor alphaDestinationFactor,
+              Equation alphaBlendEquation);
 
     ////////////////////////////////////////////////////////////
     // Member Data
     ////////////////////////////////////////////////////////////
-    Factor   colorSrcFactor; ///< Source blending factor for the color channels
-    Factor   colorDstFactor; ///< Destination blending factor for the color channels
-    Equation colorEquation;  ///< Blending equation for the color channels
-    Factor   alphaSrcFactor; ///< Source blending factor for the alpha channel
-    Factor   alphaDstFactor; ///< Destination blending factor for the alpha channel
-    Equation alphaEquation;  ///< Blending equation for the alpha channel
+    Factor colorSrcFactor;  ///< Source blending factor for the color channels
+    Factor colorDstFactor;  ///< Destination blending factor for the color channels
+    Equation colorEquation; ///< Blending equation for the color channels
+    Factor alphaSrcFactor;  ///< Source blending factor for the alpha channel
+    Factor alphaDstFactor;  ///< Destination blending factor for the alpha channel
+    Equation alphaEquation; ///< Blending equation for the alpha channel
 };
 
 ////////////////////////////////////////////////////////////
@@ -130,7 +132,7 @@ struct SFML_GRAPHICS_API BlendMode
 /// \return True if blending modes are equal, false if they are different
 ///
 ////////////////////////////////////////////////////////////
-SFML_GRAPHICS_API bool operator ==(const BlendMode& left, const BlendMode& right);
+SFML_GRAPHICS_API bool operator==(const BlendMode &left, const BlendMode &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates BlendMode
@@ -142,7 +144,7 @@ SFML_GRAPHICS_API bool operator ==(const BlendMode& left, const BlendMode& right
 /// \return True if blending modes are different, false if they are equal
 ///
 ////////////////////////////////////////////////////////////
-SFML_GRAPHICS_API bool operator !=(const BlendMode& left, const BlendMode& right);
+SFML_GRAPHICS_API bool operator!=(const BlendMode &left, const BlendMode &right);
 
 ////////////////////////////////////////////////////////////
 // Commonly used blending modes
@@ -154,9 +156,7 @@ SFML_GRAPHICS_API extern const BlendMode BlendNone;     ///< Overwrite dest with
 
 } // namespace sf
 
-
 #endif // SFML_BLENDMODE_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::BlendMode

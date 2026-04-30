@@ -31,7 +31,6 @@
 #include <SFML/Window/Export.hpp>
 #include <SFML/System/String.hpp>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -40,17 +39,16 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_WINDOW_API Joystick
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Constants related to joysticks capabilities
     ///
     ////////////////////////////////////////////////////////////
     enum
     {
-        Count       = 8,  ///< Maximum number of supported joysticks
+        Count = 8,        ///< Maximum number of supported joysticks
         ButtonCount = 32, ///< Maximum number of supported buttons
-        AxisCount   = 8   ///< Maximum number of supported axes
+        AxisCount = 8     ///< Maximum number of supported axes
     };
 
     ////////////////////////////////////////////////////////////
@@ -77,7 +75,7 @@ public:
     {
         Identification();
 
-        String       name;      ///< Name of the joystick
+        String name;            ///< Name of the joystick
         unsigned int vendorId;  ///< Manufacturer identifier
         unsigned int productId; ///< Product identifier
     };
@@ -167,9 +165,7 @@ public:
 
 } // namespace sf
 
-
 #endif // SFML_JOYSTICK_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Joystick

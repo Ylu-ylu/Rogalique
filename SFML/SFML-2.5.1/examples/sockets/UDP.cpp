@@ -5,7 +5,6 @@
 #include <SFML/Network.hpp>
 #include <iostream>
 
-
 ////////////////////////////////////////////////////////////
 /// Launch a server, wait for a message, send an answer.
 ///
@@ -36,7 +35,6 @@ void runUdpServer(unsigned short port)
     std::cout << "Message sent to the client: \"" << out << "\"" << std::endl;
 }
 
-
 ////////////////////////////////////////////////////////////
 /// Send a message to the server, wait for the answer
 ///
@@ -48,9 +46,8 @@ void runUdpClient(unsigned short port)
     do
     {
         std::cout << "Type the address or name of the server to connect to: ";
-        std::cin  >> server;
-    }
-    while (server == sf::IpAddress::None);
+        std::cin >> server;
+    } while (server == sf::IpAddress::None);
 
     // Create a socket for communicating with the server
     sf::UdpSocket socket;

@@ -31,7 +31,6 @@
 #include <SFML/Graphics/Export.hpp>
 #include <SFML/Graphics/RenderStates.hpp>
 
-
 namespace sf
 {
 class RenderTarget;
@@ -43,16 +42,16 @@ class RenderTarget;
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API Drawable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Virtual destructor
     ///
     ////////////////////////////////////////////////////////////
-    virtual ~Drawable() {}
+    virtual ~Drawable()
+    {
+    }
 
-protected:
-
+  protected:
     friend class RenderTarget;
 
     ////////////////////////////////////////////////////////////
@@ -66,14 +65,12 @@ protected:
     /// \param states Current render states
     ///
     ////////////////////////////////////////////////////////////
-    virtual void draw(RenderTarget& target, RenderStates states) const = 0;
+    virtual void draw(RenderTarget &target, RenderStates states) const = 0;
 };
 
 } // namespace sf
 
-
 #endif // SFML_DRAWABLE_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Drawable

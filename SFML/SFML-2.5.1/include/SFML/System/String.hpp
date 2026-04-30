@@ -34,7 +34,6 @@
 #include <locale>
 #include <string>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -44,12 +43,11 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_SYSTEM_API String
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     // Types
     ////////////////////////////////////////////////////////////
-    typedef std::basic_string<Uint32>::iterator       Iterator;      ///< Iterator type
+    typedef std::basic_string<Uint32>::iterator Iterator;            ///< Iterator type
     typedef std::basic_string<Uint32>::const_iterator ConstIterator; ///< Read-only iterator type
 
     ////////////////////////////////////////////////////////////
@@ -75,7 +73,7 @@ public:
     /// \param locale   Locale to use for conversion
     ///
     ////////////////////////////////////////////////////////////
-    String(char ansiChar, const std::locale& locale = std::locale());
+    String(char ansiChar, const std::locale &locale = std::locale());
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct from single wide character
@@ -103,7 +101,7 @@ public:
     /// \param locale     Locale to use for conversion
     ///
     ////////////////////////////////////////////////////////////
-    String(const char* ansiString, const std::locale& locale = std::locale());
+    String(const char *ansiString, const std::locale &locale = std::locale());
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct from an ANSI string and a locale
@@ -115,7 +113,7 @@ public:
     /// \param locale     Locale to use for conversion
     ///
     ////////////////////////////////////////////////////////////
-    String(const std::string& ansiString, const std::locale& locale = std::locale());
+    String(const std::string &ansiString, const std::locale &locale = std::locale());
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct from null-terminated C-style wide string
@@ -123,7 +121,7 @@ public:
     /// \param wideString Wide string to convert
     ///
     ////////////////////////////////////////////////////////////
-    String(const wchar_t* wideString);
+    String(const wchar_t *wideString);
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct from a wide string
@@ -131,7 +129,7 @@ public:
     /// \param wideString Wide string to convert
     ///
     ////////////////////////////////////////////////////////////
-    String(const std::wstring& wideString);
+    String(const std::wstring &wideString);
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct from a null-terminated C-style UTF-32 string
@@ -139,7 +137,7 @@ public:
     /// \param utf32String UTF-32 string to assign
     ///
     ////////////////////////////////////////////////////////////
-    String(const Uint32* utf32String);
+    String(const Uint32 *utf32String);
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct from an UTF-32 string
@@ -147,7 +145,7 @@ public:
     /// \param utf32String UTF-32 string to assign
     ///
     ////////////////////////////////////////////////////////////
-    String(const std::basic_string<Uint32>& utf32String);
+    String(const std::basic_string<Uint32> &utf32String);
 
     ////////////////////////////////////////////////////////////
     /// \brief Copy constructor
@@ -155,7 +153,7 @@ public:
     /// \param copy Instance to copy
     ///
     ////////////////////////////////////////////////////////////
-    String(const String& copy);
+    String(const String &copy);
 
     ////////////////////////////////////////////////////////////
     /// \brief Create a new sf::String from a UTF-8 encoded string
@@ -168,8 +166,7 @@ public:
     /// \see fromUtf16, fromUtf32
     ///
     ////////////////////////////////////////////////////////////
-    template <typename T>
-    static String fromUtf8(T begin, T end);
+    template <typename T> static String fromUtf8(T begin, T end);
 
     ////////////////////////////////////////////////////////////
     /// \brief Create a new sf::String from a UTF-16 encoded string
@@ -182,8 +179,7 @@ public:
     /// \see fromUtf8, fromUtf32
     ///
     ////////////////////////////////////////////////////////////
-    template <typename T>
-    static String fromUtf16(T begin, T end);
+    template <typename T> static String fromUtf16(T begin, T end);
 
     ////////////////////////////////////////////////////////////
     /// \brief Create a new sf::String from a UTF-32 encoded string
@@ -200,8 +196,7 @@ public:
     /// \see fromUtf8, fromUtf16
     ///
     ////////////////////////////////////////////////////////////
-    template <typename T>
-    static String fromUtf32(T begin, T end);
+    template <typename T> static String fromUtf32(T begin, T end);
 
     ////////////////////////////////////////////////////////////
     /// \brief Implicit conversion operator to std::string (ANSI string)
@@ -250,7 +245,7 @@ public:
     /// \see toWideString, operator std::string
     ///
     ////////////////////////////////////////////////////////////
-    std::string toAnsiString(const std::locale& locale = std::locale()) const;
+    std::string toAnsiString(const std::locale &locale = std::locale()) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Convert the Unicode string to a wide string
@@ -306,7 +301,7 @@ public:
     /// \return Reference to self
     ///
     ////////////////////////////////////////////////////////////
-    String& operator =(const String& right);
+    String &operator=(const String &right);
 
     ////////////////////////////////////////////////////////////
     /// \brief Overload of += operator to append an UTF-32 string
@@ -316,7 +311,7 @@ public:
     /// \return Reference to self
     ///
     ////////////////////////////////////////////////////////////
-    String& operator +=(const String& right);
+    String &operator+=(const String &right);
 
     ////////////////////////////////////////////////////////////
     /// \brief Overload of [] operator to access a character by its position
@@ -329,7 +324,7 @@ public:
     /// \return Character at position \a index
     ///
     ////////////////////////////////////////////////////////////
-    Uint32 operator [](std::size_t index) const;
+    Uint32 operator[](std::size_t index) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Overload of [] operator to access a character by its position
@@ -342,7 +337,7 @@ public:
     /// \return Reference to the character at position \a index
     ///
     ////////////////////////////////////////////////////////////
-    Uint32& operator [](std::size_t index);
+    Uint32 &operator[](std::size_t index);
 
     ////////////////////////////////////////////////////////////
     /// \brief Clear the string
@@ -396,7 +391,7 @@ public:
     /// \param str      Characters to insert
     ///
     ////////////////////////////////////////////////////////////
-    void insert(std::size_t position, const String& str);
+    void insert(std::size_t position, const String &str);
 
     ////////////////////////////////////////////////////////////
     /// \brief Find a sequence of one or more characters in the string
@@ -410,7 +405,7 @@ public:
     /// \return Position of \a str in the string, or String::InvalidPos if not found
     ///
     ////////////////////////////////////////////////////////////
-    std::size_t find(const String& str, std::size_t start = 0) const;
+    std::size_t find(const String &str, std::size_t start = 0) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Replace a substring with another string
@@ -424,7 +419,7 @@ public:
     /// \param replaceWith String that replaces the given substring.
     ///
     ////////////////////////////////////////////////////////////
-    void replace(std::size_t position, std::size_t length, const String& replaceWith);
+    void replace(std::size_t position, std::size_t length, const String &replaceWith);
 
     ////////////////////////////////////////////////////////////
     /// \brief Replace all occurrences of a substring with a replacement string
@@ -436,7 +431,7 @@ public:
     /// \param replaceWith The value that replaces found \a searchFor values
     ///
     ////////////////////////////////////////////////////////////
-    void replace(const String& searchFor, const String& replaceWith);
+    void replace(const String &searchFor, const String &replaceWith);
 
     ////////////////////////////////////////////////////////////
     /// \brief Return a part of the string
@@ -466,7 +461,7 @@ public:
     /// \return Read-only pointer to the array of characters
     ///
     ////////////////////////////////////////////////////////////
-    const Uint32* getData() const;
+    const Uint32 *getData() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Return an iterator to the beginning of the string
@@ -516,10 +511,9 @@ public:
     ////////////////////////////////////////////////////////////
     ConstIterator end() const;
 
-private:
-
-    friend SFML_SYSTEM_API bool operator ==(const String& left, const String& right);
-    friend SFML_SYSTEM_API bool operator <(const String& left, const String& right);
+  private:
+    friend SFML_SYSTEM_API bool operator==(const String &left, const String &right);
+    friend SFML_SYSTEM_API bool operator<(const String &left, const String &right);
 
     ////////////////////////////////////////////////////////////
     // Member data
@@ -537,7 +531,7 @@ private:
 /// \return True if both strings are equal
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API bool operator ==(const String& left, const String& right);
+SFML_SYSTEM_API bool operator==(const String &left, const String &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates String
@@ -549,7 +543,7 @@ SFML_SYSTEM_API bool operator ==(const String& left, const String& right);
 /// \return True if both strings are different
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API bool operator !=(const String& left, const String& right);
+SFML_SYSTEM_API bool operator!=(const String &left, const String &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates String
@@ -561,7 +555,7 @@ SFML_SYSTEM_API bool operator !=(const String& left, const String& right);
 /// \return True if \a left is lexicographically before \a right
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API bool operator <(const String& left, const String& right);
+SFML_SYSTEM_API bool operator<(const String &left, const String &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates String
@@ -573,7 +567,7 @@ SFML_SYSTEM_API bool operator <(const String& left, const String& right);
 /// \return True if \a left is lexicographically after \a right
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API bool operator >(const String& left, const String& right);
+SFML_SYSTEM_API bool operator>(const String &left, const String &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates String
@@ -585,7 +579,7 @@ SFML_SYSTEM_API bool operator >(const String& left, const String& right);
 /// \return True if \a left is lexicographically before or equivalent to \a right
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API bool operator <=(const String& left, const String& right);
+SFML_SYSTEM_API bool operator<=(const String &left, const String &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates String
@@ -597,7 +591,7 @@ SFML_SYSTEM_API bool operator <=(const String& left, const String& right);
 /// \return True if \a left is lexicographically after or equivalent to \a right
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API bool operator >=(const String& left, const String& right);
+SFML_SYSTEM_API bool operator>=(const String &left, const String &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates String
@@ -609,15 +603,13 @@ SFML_SYSTEM_API bool operator >=(const String& left, const String& right);
 /// \return Concatenated string
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API String operator +(const String& left, const String& right);
+SFML_SYSTEM_API String operator+(const String &left, const String &right);
 
 #include <SFML/System/String.inl>
 
 } // namespace sf
 
-
 #endif // SFML_STRING_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::String

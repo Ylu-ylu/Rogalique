@@ -32,7 +32,6 @@
 #include <SFML/System/NonCopyable.hpp>
 #include <string>
 
-
 namespace sf
 {
 class SoundFileWriter;
@@ -43,8 +42,7 @@ class SoundFileWriter;
 ////////////////////////////////////////////////////////////
 class SFML_AUDIO_API OutputSoundFile : NonCopyable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -71,7 +69,7 @@ public:
     /// \return True if the file was successfully opened
     ///
     ////////////////////////////////////////////////////////////
-    bool openFromFile(const std::string& filename, unsigned int sampleRate, unsigned int channelCount);
+    bool openFromFile(const std::string &filename, unsigned int sampleRate, unsigned int channelCount);
 
     ////////////////////////////////////////////////////////////
     /// \brief Write audio samples to the file
@@ -80,10 +78,9 @@ public:
     /// \param count       Number of samples to write
     ///
     ////////////////////////////////////////////////////////////
-    void write(const Int16* samples, Uint64 count);
+    void write(const Int16 *samples, Uint64 count);
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     /// \brief Close the current file
     ///
@@ -93,14 +90,12 @@ private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    SoundFileWriter* m_writer; ///< Writer that handles I/O on the file's format
+    SoundFileWriter *m_writer; ///< Writer that handles I/O on the file's format
 };
 
 } // namespace sf
 
-
 #endif // SFML_OUTPUTSOUNDFILE_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::OutputSoundFile

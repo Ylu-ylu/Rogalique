@@ -32,14 +32,13 @@
 #include <SFML/System/NonCopyable.hpp>
 #include <cstdlib>
 
-
 namespace sf
 {
 namespace priv
 {
-    class ThreadImpl;
-    struct ThreadFunc;
-}
+class ThreadImpl;
+struct ThreadFunc;
+} // namespace priv
 
 ////////////////////////////////////////////////////////////
 /// \brief Utility class to manipulate threads
@@ -47,8 +46,7 @@ namespace priv
 ////////////////////////////////////////////////////////////
 class SFML_SYSTEM_API Thread : NonCopyable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Construct the thread from a functor with no argument
     ///
@@ -71,8 +69,7 @@ public:
     /// \param function Functor or free function to use as the entry point of the thread
     ///
     ////////////////////////////////////////////////////////////
-    template <typename F>
-    Thread(F function);
+    template <typename F> Thread(F function);
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct the thread from a functor with an argument
@@ -99,8 +96,7 @@ public:
     /// \param argument argument to forward to the function
     ///
     ////////////////////////////////////////////////////////////
-    template <typename F, typename A>
-    Thread(F function, A argument);
+    template <typename F, typename A> Thread(F function, A argument);
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct the thread from a member function and an object
@@ -122,8 +118,7 @@ public:
     /// \param object Pointer to the object to use
     ///
     ////////////////////////////////////////////////////////////
-    template <typename C>
-    Thread(void(C::*function)(), C* object);
+    template <typename C> Thread(void (C::*function)(), C *object);
 
     ////////////////////////////////////////////////////////////
     /// \brief Destructor
@@ -171,8 +166,7 @@ public:
     ////////////////////////////////////////////////////////////
     void terminate();
 
-private:
-
+  private:
     friend class priv::ThreadImpl;
 
     ////////////////////////////////////////////////////////////
@@ -186,8 +180,8 @@ private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    priv::ThreadImpl* m_impl;       ///< OS-specific implementation of the thread
-    priv::ThreadFunc* m_entryPoint; ///< Abstraction of the function to run
+    priv::ThreadImpl *m_impl;       ///< OS-specific implementation of the thread
+    priv::ThreadFunc *m_entryPoint; ///< Abstraction of the function to run
 };
 
 #include <SFML/System/Thread.inl>
@@ -195,7 +189,6 @@ private:
 } // namespace sf
 
 #endif // SFML_THREAD_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Thread

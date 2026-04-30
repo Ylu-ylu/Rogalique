@@ -38,7 +38,6 @@
 #include <string>
 #include <vector>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -47,19 +46,18 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API Text : public Drawable, public Transformable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Enumeration of the string drawing styles
     ///
     ////////////////////////////////////////////////////////////
     enum Style
     {
-        Regular       = 0,      ///< Regular characters, no style
-        Bold          = 1 << 0, ///< Bold characters
-        Italic        = 1 << 1, ///< Italic characters
-        Underlined    = 1 << 2, ///< Underlined characters
-        StrikeThrough = 1 << 3  ///< Strike through characters
+        Regular = 0,           ///< Regular characters, no style
+        Bold = 1 << 0,         ///< Bold characters
+        Italic = 1 << 1,       ///< Italic characters
+        Underlined = 1 << 2,   ///< Underlined characters
+        StrikeThrough = 1 << 3 ///< Strike through characters
     };
 
     ////////////////////////////////////////////////////////////
@@ -85,7 +83,7 @@ public:
     /// \param characterSize  Base size of characters, in pixels
     ///
     ////////////////////////////////////////////////////////////
-    Text(const String& string, const Font& font, unsigned int characterSize = 30);
+    Text(const String &string, const Font &font, unsigned int characterSize = 30);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the text's string
@@ -106,7 +104,7 @@ public:
     /// \see getString
     ///
     ////////////////////////////////////////////////////////////
-    void setString(const String& string);
+    void setString(const String &string);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the text's font
@@ -123,7 +121,7 @@ public:
     /// \see getFont
     ///
     ////////////////////////////////////////////////////////////
-    void setFont(const Font& font);
+    void setFont(const Font &font);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the character size
@@ -207,7 +205,7 @@ public:
     /// Use setFillColor() or setOutlineColor() instead.
     ///
     ////////////////////////////////////////////////////////////
-    SFML_DEPRECATED void setColor(const Color& color);
+    SFML_DEPRECATED void setColor(const Color &color);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the fill color of the text
@@ -221,7 +219,7 @@ public:
     /// \see getFillColor
     ///
     ////////////////////////////////////////////////////////////
-    void setFillColor(const Color& color);
+    void setFillColor(const Color &color);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the outline color of the text
@@ -233,7 +231,7 @@ public:
     /// \see getOutlineColor
     ///
     ////////////////////////////////////////////////////////////
-    void setOutlineColor(const Color& color);
+    void setOutlineColor(const Color &color);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the thickness of the text's outline
@@ -267,7 +265,7 @@ public:
     /// \see setString
     ///
     ////////////////////////////////////////////////////////////
-    const String& getString() const;
+    const String &getString() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the text's font
@@ -281,7 +279,7 @@ public:
     /// \see setFont
     ///
     ////////////////////////////////////////////////////////////
-    const Font* getFont() const;
+    const Font *getFont() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the character size
@@ -335,7 +333,7 @@ public:
     /// Use getFillColor() or getOutlineColor() instead.
     ///
     ////////////////////////////////////////////////////////////
-    SFML_DEPRECATED const Color& getColor() const;
+    SFML_DEPRECATED const Color &getColor() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the fill color of the text
@@ -345,7 +343,7 @@ public:
     /// \see setFillColor
     ///
     ////////////////////////////////////////////////////////////
-    const Color& getFillColor() const;
+    const Color &getFillColor() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the outline color of the text
@@ -355,7 +353,7 @@ public:
     /// \see setOutlineColor
     ///
     ////////////////////////////////////////////////////////////
-    const Color& getOutlineColor() const;
+    const Color &getOutlineColor() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the outline thickness of the text
@@ -412,8 +410,7 @@ public:
     ////////////////////////////////////////////////////////////
     FloatRect getGlobalBounds() const;
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     /// \brief Draw the text to a render target
     ///
@@ -421,7 +418,7 @@ private:
     /// \param states Current render states
     ///
     ////////////////////////////////////////////////////////////
-    virtual void draw(RenderTarget& target, RenderStates states) const;
+    virtual void draw(RenderTarget &target, RenderStates states) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Make sure the text's geometry is updated
@@ -435,27 +432,25 @@ private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    String              m_string;              ///< String to display
-    const Font*         m_font;                ///< Font used to display the string
-    unsigned int        m_characterSize;       ///< Base size of characters, in pixels
-    float               m_letterSpacingFactor; ///< Spacing factor between letters
-    float               m_lineSpacingFactor;   ///< Spacing factor between lines
-    Uint32              m_style;               ///< Text style (see Style enum)
-    Color               m_fillColor;           ///< Text fill color
-    Color               m_outlineColor;        ///< Text outline color
-    float               m_outlineThickness;    ///< Thickness of the text's outline
-    mutable VertexArray m_vertices;            ///< Vertex array containing the fill geometry
-    mutable VertexArray m_outlineVertices;     ///< Vertex array containing the outline geometry
-    mutable FloatRect   m_bounds;              ///< Bounding rectangle of the text (in local coordinates)
-    mutable bool        m_geometryNeedUpdate;  ///< Does the geometry need to be recomputed?
-    mutable Uint64      m_fontTextureId;       ///< The font texture id
+    String m_string;                       ///< String to display
+    const Font *m_font;                    ///< Font used to display the string
+    unsigned int m_characterSize;          ///< Base size of characters, in pixels
+    float m_letterSpacingFactor;           ///< Spacing factor between letters
+    float m_lineSpacingFactor;             ///< Spacing factor between lines
+    Uint32 m_style;                        ///< Text style (see Style enum)
+    Color m_fillColor;                     ///< Text fill color
+    Color m_outlineColor;                  ///< Text outline color
+    float m_outlineThickness;              ///< Thickness of the text's outline
+    mutable VertexArray m_vertices;        ///< Vertex array containing the fill geometry
+    mutable VertexArray m_outlineVertices; ///< Vertex array containing the outline geometry
+    mutable FloatRect m_bounds;            ///< Bounding rectangle of the text (in local coordinates)
+    mutable bool m_geometryNeedUpdate;     ///< Does the geometry need to be recomputed?
+    mutable Uint64 m_fontTextureId;        ///< The font texture id
 };
 
 } // namespace sf
 
-
 #endif // SFML_TEXT_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Text

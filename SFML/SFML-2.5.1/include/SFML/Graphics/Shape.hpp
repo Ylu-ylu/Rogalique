@@ -34,7 +34,6 @@
 #include <SFML/Graphics/VertexArray.hpp>
 #include <SFML/System/Vector2.hpp>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -43,8 +42,7 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API Shape : public Drawable, public Transformable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Virtual destructor
     ///
@@ -71,7 +69,7 @@ public:
     /// \see getTexture, setTextureRect
     ///
     ////////////////////////////////////////////////////////////
-    void setTexture(const Texture* texture, bool resetRect = false);
+    void setTexture(const Texture *texture, bool resetRect = false);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the sub-rectangle of the texture that the shape will display
@@ -85,7 +83,7 @@ public:
     /// \see getTextureRect, setTexture
     ///
     ////////////////////////////////////////////////////////////
-    void setTextureRect(const IntRect& rect);
+    void setTextureRect(const IntRect &rect);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the fill color of the shape
@@ -102,7 +100,7 @@ public:
     /// \see getFillColor, setOutlineColor
     ///
     ////////////////////////////////////////////////////////////
-    void setFillColor(const Color& color);
+    void setFillColor(const Color &color);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the outline color of the shape
@@ -114,7 +112,7 @@ public:
     /// \see getOutlineColor, setFillColor
     ///
     ////////////////////////////////////////////////////////////
-    void setOutlineColor(const Color& color);
+    void setOutlineColor(const Color &color);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the thickness of the shape's outline
@@ -143,7 +141,7 @@ public:
     /// \see setTexture
     ///
     ////////////////////////////////////////////////////////////
-    const Texture* getTexture() const;
+    const Texture *getTexture() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the sub-rectangle of the texture displayed by the shape
@@ -153,7 +151,7 @@ public:
     /// \see setTextureRect
     ///
     ////////////////////////////////////////////////////////////
-    const IntRect& getTextureRect() const;
+    const IntRect &getTextureRect() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the fill color of the shape
@@ -163,7 +161,7 @@ public:
     /// \see setFillColor
     ///
     ////////////////////////////////////////////////////////////
-    const Color& getFillColor() const;
+    const Color &getFillColor() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the outline color of the shape
@@ -173,7 +171,7 @@ public:
     /// \see setOutlineColor
     ///
     ////////////////////////////////////////////////////////////
-    const Color& getOutlineColor() const;
+    const Color &getOutlineColor() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the outline thickness of the shape
@@ -247,8 +245,7 @@ public:
     ////////////////////////////////////////////////////////////
     FloatRect getGlobalBounds() const;
 
-protected:
-
+  protected:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -265,8 +262,7 @@ protected:
     ////////////////////////////////////////////////////////////
     void update();
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     /// \brief Draw the shape to a render target
     ///
@@ -274,7 +270,7 @@ private:
     /// \param states Current render states
     ///
     ////////////////////////////////////////////////////////////
-    virtual void draw(RenderTarget& target, RenderStates states) const;
+    virtual void draw(RenderTarget &target, RenderStates states) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Update the fill vertices' color
@@ -300,27 +296,24 @@ private:
     ////////////////////////////////////////////////////////////
     void updateOutlineColors();
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    const Texture* m_texture;          ///< Texture of the shape
-    IntRect        m_textureRect;      ///< Rectangle defining the area of the source texture to display
-    Color          m_fillColor;        ///< Fill color
-    Color          m_outlineColor;     ///< Outline color
-    float          m_outlineThickness; ///< Thickness of the shape's outline
-    VertexArray    m_vertices;         ///< Vertex array containing the fill geometry
-    VertexArray    m_outlineVertices;  ///< Vertex array containing the outline geometry
-    FloatRect      m_insideBounds;     ///< Bounding rectangle of the inside (fill)
-    FloatRect      m_bounds;           ///< Bounding rectangle of the whole shape (outline + fill)
+    const Texture *m_texture;      ///< Texture of the shape
+    IntRect m_textureRect;         ///< Rectangle defining the area of the source texture to display
+    Color m_fillColor;             ///< Fill color
+    Color m_outlineColor;          ///< Outline color
+    float m_outlineThickness;      ///< Thickness of the shape's outline
+    VertexArray m_vertices;        ///< Vertex array containing the fill geometry
+    VertexArray m_outlineVertices; ///< Vertex array containing the outline geometry
+    FloatRect m_insideBounds;      ///< Bounding rectangle of the inside (fill)
+    FloatRect m_bounds;            ///< Bounding rectangle of the whole shape (outline + fill)
 };
 
 } // namespace sf
 
-
 #endif // SFML_SHAPE_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Shape

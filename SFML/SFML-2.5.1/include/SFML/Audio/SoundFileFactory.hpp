@@ -32,7 +32,6 @@
 #include <string>
 #include <vector>
 
-
 namespace sf
 {
 class InputStream;
@@ -45,16 +44,14 @@ class SoundFileWriter;
 ////////////////////////////////////////////////////////////
 class SFML_AUDIO_API SoundFileFactory
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Register a new reader
     ///
     /// \see unregisterReader
     ///
     ////////////////////////////////////////////////////////////
-    template <typename T>
-    static void registerReader();
+    template <typename T> static void registerReader();
 
     ////////////////////////////////////////////////////////////
     /// \brief Unregister a reader
@@ -62,8 +59,7 @@ public:
     /// \see registerReader
     ///
     ////////////////////////////////////////////////////////////
-    template <typename T>
-    static void unregisterReader();
+    template <typename T> static void unregisterReader();
 
     ////////////////////////////////////////////////////////////
     /// \brief Register a new writer
@@ -71,8 +67,7 @@ public:
     /// \see unregisterWriter
     ///
     ////////////////////////////////////////////////////////////
-    template <typename T>
-    static void registerWriter();
+    template <typename T> static void registerWriter();
 
     ////////////////////////////////////////////////////////////
     /// \brief Unregister a writer
@@ -80,8 +75,7 @@ public:
     /// \see registerWriter
     ///
     ////////////////////////////////////////////////////////////
-    template <typename T>
-    static void unregisterWriter();
+    template <typename T> static void unregisterWriter();
 
     ////////////////////////////////////////////////////////////
     /// \brief Instantiate the right reader for the given file on disk
@@ -95,7 +89,7 @@ public:
     /// \see createReaderFromMemory, createReaderFromStream
     ///
     ////////////////////////////////////////////////////////////
-    static SoundFileReader* createReaderFromFilename(const std::string& filename);
+    static SoundFileReader *createReaderFromFilename(const std::string &filename);
 
     ////////////////////////////////////////////////////////////
     /// \brief Instantiate the right codec for the given file in memory
@@ -110,7 +104,7 @@ public:
     /// \see createReaderFromFilename, createReaderFromStream
     ///
     ////////////////////////////////////////////////////////////
-    static SoundFileReader* createReaderFromMemory(const void* data, std::size_t sizeInBytes);
+    static SoundFileReader *createReaderFromMemory(const void *data, std::size_t sizeInBytes);
 
     ////////////////////////////////////////////////////////////
     /// \brief Instantiate the right codec for the given file in stream
@@ -124,7 +118,7 @@ public:
     /// \see createReaderFromFilename, createReaderFromMemory
     ///
     ////////////////////////////////////////////////////////////
-    static SoundFileReader* createReaderFromStream(InputStream& stream);
+    static SoundFileReader *createReaderFromStream(InputStream &stream);
 
     ////////////////////////////////////////////////////////////
     /// \brief Instantiate the right writer for the given file on disk
@@ -136,24 +130,23 @@ public:
     /// \return A new sound file writer that can write given file, or null if no writer can handle it
     ///
     ////////////////////////////////////////////////////////////
-    static SoundFileWriter* createWriterFromFilename(const std::string& filename);
+    static SoundFileWriter *createWriterFromFilename(const std::string &filename);
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     // Types
     ////////////////////////////////////////////////////////////
     struct ReaderFactory
     {
-        bool (*check)(InputStream&);
-        SoundFileReader* (*create)();
+        bool (*check)(InputStream &);
+        SoundFileReader *(*create)();
     };
     typedef std::vector<ReaderFactory> ReaderFactoryArray;
 
     struct WriterFactory
     {
-        bool (*check)(const std::string&);
-        SoundFileWriter* (*create)();
+        bool (*check)(const std::string &);
+        SoundFileWriter *(*create)();
     };
     typedef std::vector<WriterFactory> WriterFactoryArray;
 
@@ -169,7 +162,6 @@ private:
 #include <SFML/Audio/SoundFileFactory.inl>
 
 #endif // SFML_SOUNDFILEFACTORY_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::SoundFileFactory

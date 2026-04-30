@@ -33,7 +33,6 @@
 #include <SFML/System/Export.hpp>
 #include <cstdlib>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -42,8 +41,7 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_SYSTEM_API MemoryInputStream : public InputStream
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -57,7 +55,7 @@ public:
     /// \param sizeInBytes Size of the data, in bytes
     ///
     ////////////////////////////////////////////////////////////
-    void open(const void* data, std::size_t sizeInBytes);
+    void open(const void *data, std::size_t sizeInBytes);
 
     ////////////////////////////////////////////////////////////
     /// \brief Read data from the stream
@@ -71,7 +69,7 @@ public:
     /// \return The number of bytes actually read, or -1 on error
     ///
     ////////////////////////////////////////////////////////////
-    virtual Int64 read(void* data, Int64 size);
+    virtual Int64 read(void *data, Int64 size);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change the current reading position
@@ -99,21 +97,18 @@ public:
     ////////////////////////////////////////////////////////////
     virtual Int64 getSize();
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    const char* m_data;   ///< Pointer to the data in memory
-    Int64       m_size;   ///< Total size of the data
-    Int64       m_offset; ///< Current reading position
+    const char *m_data; ///< Pointer to the data in memory
+    Int64 m_size;       ///< Total size of the data
+    Int64 m_offset;     ///< Current reading position
 };
 
 } // namespace sf
 
-
 #endif // SFML_MEMORYINPUTSTREAM_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::MemoryInputStream

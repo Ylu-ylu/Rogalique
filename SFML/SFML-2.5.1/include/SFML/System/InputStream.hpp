@@ -31,7 +31,6 @@
 #include <SFML/Config.hpp>
 #include <SFML/System/Export.hpp>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -40,13 +39,14 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_SYSTEM_API InputStream
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Virtual destructor
     ///
     ////////////////////////////////////////////////////////////
-    virtual ~InputStream() {}
+    virtual ~InputStream()
+    {
+    }
 
     ////////////////////////////////////////////////////////////
     /// \brief Read data from the stream
@@ -60,7 +60,7 @@ public:
     /// \return The number of bytes actually read, or -1 on error
     ///
     ////////////////////////////////////////////////////////////
-    virtual Int64 read(void* data, Int64 size) = 0;
+    virtual Int64 read(void *data, Int64 size) = 0;
 
     ////////////////////////////////////////////////////////////
     /// \brief Change the current reading position
@@ -91,9 +91,7 @@ public:
 
 } // namespace sf
 
-
 #endif // SFML_INPUTSTREAM_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::InputStream

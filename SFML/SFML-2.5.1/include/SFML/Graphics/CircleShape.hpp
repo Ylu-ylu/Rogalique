@@ -31,7 +31,6 @@
 #include <SFML/Graphics/Export.hpp>
 #include <SFML/Graphics/Shape.hpp>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -40,8 +39,7 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API CircleShape : public Shape
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -106,20 +104,17 @@ public:
     ////////////////////////////////////////////////////////////
     virtual Vector2f getPoint(std::size_t index) const;
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    float       m_radius;     ///< Radius of the circle
+    float m_radius;           ///< Radius of the circle
     std::size_t m_pointCount; ///< Number of points composing the circle
 };
 
 } // namespace sf
 
-
 #endif // SFML_CIRCLESHAPE_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::CircleShape

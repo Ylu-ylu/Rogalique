@@ -1,0 +1,69 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: The intermediate directory (D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\x64\Debug\) contains files shared from another project (XYZEngine.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  pch.cpp
+  AttackComponen.cpp
+  AudioComponent.cpp
+  CameraComponent.cpp
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\CameraComponent.cpp(37,44): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\CameraComponent.cpp(37,44): warning C4244:         with
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\CameraComponent.cpp(37,44): warning C4244:         [
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\CameraComponent.cpp(37,44): warning C4244:             T=float
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\CameraComponent.cpp(37,44): warning C4244:         ]
+  (compiling source file '/CameraComponent.cpp')
+  
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\CameraComponent.cpp(37,37): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\CameraComponent.cpp(37,37): warning C4244:         with
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\CameraComponent.cpp(37,37): warning C4244:         [
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\CameraComponent.cpp(37,37): warning C4244:             T=float
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\CameraComponent.cpp(37,37): warning C4244:         ]
+  (compiling source file '/CameraComponent.cpp')
+  
+  ColliderComponent.cpp
+  Collision.cpp
+  Component.cpp
+  dllmain.cpp
+  Engine.cpp
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\Engine.h(2,1): warning C4005: 'NOMINMAX': macro redefinition
+  (compiling source file '/Engine.cpp')
+      D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\Engine.h(2,1):
+      'NOMINMAX' previously declared on the command line
+  
+  FollowComponent.cpp
+  GameObject.cpp
+  GameWorld.cpp
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\GameWorld.cpp(37,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '/GameWorld.cpp')
+  
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\GameWorld.cpp(61,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '/GameWorld.cpp')
+  
+  InputComponent.cpp
+  Matrix2D.cpp
+  MovementComponent.cpp
+  PhysicsSystem.cpp
+  RenderSystem.cpp
+  ResourceSystem.cpp
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\ResourceSystem.cpp(63,27): warning C4018: '<=': signed/unsigned mismatch
+  (compiling source file '/ResourceSystem.cpp')
+  
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\ResourceSystem.cpp(70,31): warning C4018: '<=': signed/unsigned mismatch
+  (compiling source file '/ResourceSystem.cpp')
+  
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\ResourceSystem.cpp(114,25): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '/ResourceSystem.cpp')
+  
+  RigidbodyComponent.cpp
+  SpriteColliderComponent.cpp
+  SpriteRendererComponent.cpp
+  Generating Code...
+  Compiling...
+  StatsComponent.cpp
+  TransformComponent.cpp
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\TransformComponent.cpp(273,91): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '/TransformComponent.cpp')
+  
+D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\Engine\TransformComponent.cpp(283,96): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '/TransformComponent.cpp')
+  
+  Trigger.cpp
+  Generating Code...
+  Engine.vcxproj -> D:\XYZ C++ for gamedevelopment\Rogalique_HW15_v1 -check3\XYZRoguelike\x64\Debug\Engine.lib

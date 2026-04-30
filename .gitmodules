@@ -1,0 +1,112 @@
+[submodule "Plugins/NGPlus"]
+	path = Plugins/NGPlus
+	url = https://github.com/NextGenium/NGPlus
+[submodule "Plugins/UnrealHelperLibrary"]
+	path = Plugins/UnrealHelperLibrary
+	url = https://github.com/Ciberusps/unreal-helper-library.git
+	branch = UE5.4
+[submodule "Plugins/FMODStudio"]
+	path = Plugins/FMODStudio
+	url = https://github.com/NextGenium/FMODStudio
+	branch = UE5.4
+[submodule "Plugins/FMODStudioNiagara"]
+	path = Plugins/FMODStudioNiagara
+	url = https://github.com/NextGenium/FMODStudioNiagara
+	branch = UE5.4
+[submodule "Plugins/Narrative"]
+	path = Plugins/Narrative
+	url = https://github.com/NextGenium/Narrative
+	branch = space_dog
+[submodule "Plugins/NarrativeCommonUI"]
+	path = Plugins/NarrativeCommonUI
+	url = https://github.com/NextGenium/NarrativeCommonUI
+	branch = UE5.4
+[submodule "Plugins/RefreshAllNodes"]
+	path = Plugins/RefreshAllNodes
+	url = https://github.com/NextGenium/RefreshAllNodes
+	branch = UE5.4
+[submodule "Plugins/InstanceTool"]
+	path = Plugins/InstanceTool
+	url = https://github.com/NextGenium/InstanceTool
+	branch = UE5.4
+[submodule "Plugins/DLSS"]
+	path = Plugins/DLSS
+	url = https://github.com/NextGenium/DLSS
+	branch = UE5.4
+[submodule "Plugins/DLSSMoviePipelineSupport"]
+	path = Plugins/DLSSMoviePipelineSupport
+	url = https://github.com/NextGenium/DLSSMoviePipelineSupport
+	branch = UE5.4
+[submodule "Plugins/NIS"]
+	path = Plugins/NIS
+	url = https://github.com/NextGenium/NIS
+	branch = UE5.4
+[submodule "Plugins/Streamline"]
+	path = Plugins/Streamline
+	url = https://github.com/NextGenium/Streamline
+	branch = UE5.4
+[submodule "Plugins/StreamlineDeepDVC"]
+	path = Plugins/StreamlineDeepDVC
+	url = https://github.com/NextGenium/StreamlineDeepDVC
+	branch = UE5.4
+[submodule "Plugins/FSR3"]
+	path = Plugins/FSR3
+	url = https://github.com/NextGenium/FSR3
+	branch = UE5.4
+[submodule "Plugins/FSR3MovieRenderPipeline"]
+	path = Plugins/FSR3MovieRenderPipeline
+	url = https://github.com/NextGenium/FSR3MovieRenderPipeline
+	branch = UE5.4
+[submodule "Plugins/SideFX_Labs"]
+	path = Plugins/SideFX_Labs
+	url = https://github.com/NextGenium/SideFX_Labs
+	branch = UE5.4
+[submodule "Plugins/DirGravity"]
+	path = Plugins/DirGravity
+	url = https://github.com/NextGenium/DirGravity
+	branch = UE5.4
+[submodule "Plugins/NinjaCharacter"]
+	path = Plugins/NinjaCharacter
+	url = https://github.com/NextGenium/NinjaCharacter
+	branch = UE5.4
+[submodule "Plugins/HoudiniEngine"]
+	path = Plugins/HoudiniEngine
+	url = https://github.com/NextGenium/HoudiniEngine
+	branch = UE5.4
+[submodule "Plugins/EmailPlugin"]
+	path = Plugins/EmailPlugin
+	url = https://github.com/NextGenium/EmailPlugin
+	branch = UE5.4
+[submodule "Plugins/FlyingNavSystem"]
+	path = Plugins/FlyingNavSystem
+	url = https://github.com/NextGenium/FlyingNavSystem
+	branch = UE5.4
+[submodule "Plugins/Tether"]
+	path = Plugins/Tether
+	url = https://github.com/NextGenium/Tether
+	branch = UE5.4
+[submodule "Plugins/NGStatistics"]
+	path = Plugins/NGStatistics
+	url = https://github.com/NextGenium/NGStatistics
+	branch = UE5.4
+[submodule "Plugins/next-framework-loader"]
+	path = Plugins/next-framework-loader
+	url = https://github.com/NextGenium/next-framework-loader
+[submodule "Plugins/KnowledgeSystem"]
+	path = Plugins/KnowledgeSystem
+	url = https://github.com/NextGenium/knowledge-system
+[submodule "Plugins/MiniGameSwitcher"]
+	path = Plugins/MiniGameSwitcher
+	url = https://github.com/NextGenium/MiniGameSwitcher
+	branch = UE5.4
+[submodule "Plugins/AssetsCleaner"]
+	path = Plugins/AssetsCleaner
+	url = https://github.com/NextGenium/AssetsCleaner
+	branch = UE5.4
+[submodule "Plugins/EasyMultiSave"]
+	path = Plugins/EasyMultiSave
+	url = https://github.com/NextGenium/EasyMultiSave
+	branch = UE5.4
+[submodule "Plugins/ValidationsFilter"]
+	path = Plugins/ValidationsFilter
+	url = https://github.com/NextGenium/ValidationsFilter

@@ -5,7 +5,6 @@
 #include <SFML/Network.hpp>
 #include <iostream>
 
-
 ////////////////////////////////////////////////////////////
 /// Launch a server, wait for an incoming connection,
 /// send a message and wait for the answer.
@@ -41,7 +40,6 @@ void runTcpServer(unsigned short port)
     std::cout << "Answer received from the client: \"" << in << "\"" << std::endl;
 }
 
-
 ////////////////////////////////////////////////////////////
 /// Create a client, connect it to a server, display the
 /// welcome message and send an answer.
@@ -54,9 +52,8 @@ void runTcpClient(unsigned short port)
     do
     {
         std::cout << "Type the address or name of the server to connect to: ";
-        std::cin  >> server;
-    }
-    while (server == sf::IpAddress::None);
+        std::cin >> server;
+    } while (server == sf::IpAddress::None);
 
     // Create a socket for communicating with the server
     sf::TcpSocket socket;

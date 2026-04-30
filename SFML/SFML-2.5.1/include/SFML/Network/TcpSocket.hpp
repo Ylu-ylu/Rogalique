@@ -32,7 +32,6 @@
 #include <SFML/Network/Socket.hpp>
 #include <SFML/System/Time.hpp>
 
-
 namespace sf
 {
 class TcpListener;
@@ -45,8 +44,7 @@ class Packet;
 ////////////////////////////////////////////////////////////
 class SFML_NETWORK_API TcpSocket : public Socket
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -109,7 +107,7 @@ public:
     /// \see disconnect
     ///
     ////////////////////////////////////////////////////////////
-    Status connect(const IpAddress& remoteAddress, unsigned short remotePort, Time timeout = Time::Zero);
+    Status connect(const IpAddress &remoteAddress, unsigned short remotePort, Time timeout = Time::Zero);
 
     ////////////////////////////////////////////////////////////
     /// \brief Disconnect the socket from its remote peer
@@ -138,7 +136,7 @@ public:
     /// \see receive
     ///
     ////////////////////////////////////////////////////////////
-    Status send(const void* data, std::size_t size);
+    Status send(const void *data, std::size_t size);
 
     ////////////////////////////////////////////////////////////
     /// \brief Send raw data to the remote peer
@@ -154,7 +152,7 @@ public:
     /// \see receive
     ///
     ////////////////////////////////////////////////////////////
-    Status send(const void* data, std::size_t size, std::size_t& sent);
+    Status send(const void *data, std::size_t size, std::size_t &sent);
 
     ////////////////////////////////////////////////////////////
     /// \brief Receive raw data from the remote peer
@@ -172,7 +170,7 @@ public:
     /// \see send
     ///
     ////////////////////////////////////////////////////////////
-    Status receive(void* data, std::size_t size, std::size_t& received);
+    Status receive(void *data, std::size_t size, std::size_t &received);
 
     ////////////////////////////////////////////////////////////
     /// \brief Send a formatted packet of data to the remote peer
@@ -190,7 +188,7 @@ public:
     /// \see receive
     ///
     ////////////////////////////////////////////////////////////
-    Status send(Packet& packet);
+    Status send(Packet &packet);
 
     ////////////////////////////////////////////////////////////
     /// \brief Receive a formatted packet of data from the remote peer
@@ -206,10 +204,9 @@ public:
     /// \see send
     ///
     ////////////////////////////////////////////////////////////
-    Status receive(Packet& packet);
+    Status receive(Packet &packet);
 
-private:
-
+  private:
     friend class TcpListener;
 
     ////////////////////////////////////////////////////////////
@@ -220,9 +217,9 @@ private:
     {
         PendingPacket();
 
-        Uint32            Size;         ///< Data of packet size
-        std::size_t       SizeReceived; ///< Number of size bytes received so far
-        std::vector<char> Data;         ///< Data of the packet
+        Uint32 Size;              ///< Data of packet size
+        std::size_t SizeReceived; ///< Number of size bytes received so far
+        std::vector<char> Data;   ///< Data of the packet
     };
 
     ////////////////////////////////////////////////////////////
@@ -233,9 +230,7 @@ private:
 
 } // namespace sf
 
-
 #endif // SFML_TCPSOCKET_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::TcpSocket

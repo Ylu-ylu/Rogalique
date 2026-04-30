@@ -30,7 +30,6 @@
 ////////////////////////////////////////////////////////////
 #include <SFML/Graphics/Export.hpp>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -39,8 +38,7 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API Color
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -111,7 +109,7 @@ public:
 /// \return True if colors are equal, false if they are different
 ///
 ////////////////////////////////////////////////////////////
-SFML_GRAPHICS_API bool operator ==(const Color& left, const Color& right);
+SFML_GRAPHICS_API bool operator==(const Color &left, const Color &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Color
@@ -125,7 +123,7 @@ SFML_GRAPHICS_API bool operator ==(const Color& left, const Color& right);
 /// \return True if colors are different, false if they are equal
 ///
 ////////////////////////////////////////////////////////////
-SFML_GRAPHICS_API bool operator !=(const Color& left, const Color& right);
+SFML_GRAPHICS_API bool operator!=(const Color &left, const Color &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Color
@@ -140,7 +138,7 @@ SFML_GRAPHICS_API bool operator !=(const Color& left, const Color& right);
 /// \return Result of \a left + \a right
 ///
 ////////////////////////////////////////////////////////////
-SFML_GRAPHICS_API Color operator +(const Color& left, const Color& right);
+SFML_GRAPHICS_API Color operator+(const Color &left, const Color &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Color
@@ -155,7 +153,7 @@ SFML_GRAPHICS_API Color operator +(const Color& left, const Color& right);
 /// \return Result of \a left - \a right
 ///
 ////////////////////////////////////////////////////////////
-SFML_GRAPHICS_API Color operator -(const Color& left, const Color& right);
+SFML_GRAPHICS_API Color operator-(const Color &left, const Color &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Color
@@ -172,7 +170,7 @@ SFML_GRAPHICS_API Color operator -(const Color& left, const Color& right);
 /// \return Result of \a left * \a right
 ///
 ////////////////////////////////////////////////////////////
-SFML_GRAPHICS_API Color operator *(const Color& left, const Color& right);
+SFML_GRAPHICS_API Color operator*(const Color &left, const Color &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Color
@@ -188,7 +186,7 @@ SFML_GRAPHICS_API Color operator *(const Color& left, const Color& right);
 /// \return Reference to \a left
 ///
 ////////////////////////////////////////////////////////////
-SFML_GRAPHICS_API Color& operator +=(Color& left, const Color& right);
+SFML_GRAPHICS_API Color &operator+=(Color &left, const Color &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Color
@@ -204,7 +202,7 @@ SFML_GRAPHICS_API Color& operator +=(Color& left, const Color& right);
 /// \return Reference to \a left
 ///
 ////////////////////////////////////////////////////////////
-SFML_GRAPHICS_API Color& operator -=(Color& left, const Color& right);
+SFML_GRAPHICS_API Color &operator-=(Color &left, const Color &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Color
@@ -222,13 +220,11 @@ SFML_GRAPHICS_API Color& operator -=(Color& left, const Color& right);
 /// \return Reference to \a left
 ///
 ////////////////////////////////////////////////////////////
-SFML_GRAPHICS_API Color& operator *=(Color& left, const Color& right);
+SFML_GRAPHICS_API Color &operator*=(Color &left, const Color &right);
 
 } // namespace sf
 
-
 #endif // SFML_COLOR_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Color

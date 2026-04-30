@@ -3,32 +3,48 @@ name: Build Game Solution
 on:
   push:
     branches:
-      - main  # Start on push
+      - main
   pull_request:
     branches:
-      - main  # Start on pull request
+      - main
 
 jobs:
   build:
-    runs-on: windows-latest  # Use Windows Runner
+    runs-on: windows-latest
 
     steps:
-      # Step 1: Checkout the repository
       - name: Checkout code
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           submodules: true
 
-      # Step 2: Set up MSBuild and VS
-      - name: Setup MSBuild
+      - name: List files for debug
+        run: dir/s /b
+        shell: cmd
+
+      - name: List Release files
+        run: if exist x64\Release dir /s /b x64\Release || echo "No Release files"
+        shell: cmd
+
+      - name: Setup MSVC
+        uses: ilammy/msvc-dev-cmd@v1
+
+      - name: Add MSBuild to PATH
         uses: microsoft/setup-msbuild@v2
 
-     # Debug: List all files recursively to verify solution file exists
-      - name: List all repository files recursively
-        run: dir /s
-        working-directory: ${{ github.workspace }}
+      - name: Setup NuGet
+        uses: NuGet/setup-nuget@v1
 
-      # Step 3: Build the Solution
+      - name: Restore NuGet packages
+        run: nuget restore Game.sln
+
       - name: Build solution
-        run: msbuild Game.sln /p:Configuration=Release /p:Platform=x64  # Update path if needed
+        run: |
+          set CL=/std:c++17 /I"%CD%\SFML\SFML-2.5.1\include" /I"%CD%\Engine"
+          msbuild Game.sln /p:Configuration=Release /m
+        shell: cmd
+
+      - name: List Release files
+        run: if exist x64\Release dir /s /b x64\Release || echo "No Release files"
+        shell: cmd

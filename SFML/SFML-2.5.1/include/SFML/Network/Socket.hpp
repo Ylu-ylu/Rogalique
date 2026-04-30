@@ -33,7 +33,6 @@
 #include <SFML/System/NonCopyable.hpp>
 #include <vector>
 
-
 namespace sf
 {
 class SocketSelector;
@@ -44,8 +43,7 @@ class SocketSelector;
 ////////////////////////////////////////////////////////////
 class SFML_NETWORK_API Socket : NonCopyable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Status codes that may be returned by socket functions
     ///
@@ -68,8 +66,7 @@ public:
         AnyPort = 0 ///< Special value that tells the system to pick any available port
     };
 
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Destructor
     ///
@@ -105,8 +102,7 @@ public:
     ////////////////////////////////////////////////////////////
     bool isBlocking() const;
 
-protected:
-
+  protected:
     ////////////////////////////////////////////////////////////
     /// \brief Types of protocols that the socket can use
     ///
@@ -166,23 +162,20 @@ protected:
     ////////////////////////////////////////////////////////////
     void close();
 
-private:
-
+  private:
     friend class SocketSelector;
 
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    Type         m_type;       ///< Type of the socket (TCP or UDP)
-    SocketHandle m_socket;     ///< Socket descriptor
-    bool         m_isBlocking; ///< Current blocking mode of the socket
+    Type m_type;           ///< Type of the socket (TCP or UDP)
+    SocketHandle m_socket; ///< Socket descriptor
+    bool m_isBlocking;     ///< Current blocking mode of the socket
 };
 
 } // namespace sf
 
-
 #endif // SFML_SOCKET_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Socket

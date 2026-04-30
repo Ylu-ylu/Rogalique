@@ -30,25 +30,22 @@
 ////////////////////////////////////////////////////////////
 #include <SFML/System/ThreadLocal.hpp>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
 /// \brief Pointer to a thread-local variable
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-class ThreadLocalPtr : private ThreadLocal
+template <typename T> class ThreadLocalPtr : private ThreadLocal
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
     /// \param value Optional value to initialize the variable
     ///
     ////////////////////////////////////////////////////////////
-    ThreadLocalPtr(T* value = NULL);
+    ThreadLocalPtr(T *value = NULL);
 
     ////////////////////////////////////////////////////////////
     /// \brief Overload of unary operator *
@@ -59,7 +56,7 @@ public:
     /// \return Reference to the thread-local variable
     ///
     ////////////////////////////////////////////////////////////
-    T& operator *() const;
+    T &operator*() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Overload of operator ->
@@ -70,7 +67,7 @@ public:
     /// \return Pointer to the thread-local variable
     ///
     ////////////////////////////////////////////////////////////
-    T* operator ->() const;
+    T *operator->() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Conversion operator to implicitly convert the
@@ -79,7 +76,7 @@ public:
     /// \return Pointer to the actual object
     ///
     ////////////////////////////////////////////////////////////
-    operator T*() const;
+    operator T *() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Assignment operator for a raw pointer parameter
@@ -89,7 +86,7 @@ public:
     /// \return Reference to self
     ///
     ////////////////////////////////////////////////////////////
-    ThreadLocalPtr<T>& operator =(T* value);
+    ThreadLocalPtr<T> &operator=(T *value);
 
     ////////////////////////////////////////////////////////////
     /// \brief Assignment operator for a ThreadLocalPtr parameter
@@ -99,16 +96,14 @@ public:
     /// \return Reference to self
     ///
     ////////////////////////////////////////////////////////////
-    ThreadLocalPtr<T>& operator =(const ThreadLocalPtr<T>& right);
+    ThreadLocalPtr<T> &operator=(const ThreadLocalPtr<T> &right);
 };
 
 } // namespace sf
 
 #include <SFML/System/ThreadLocalPtr.inl>
 
-
 #endif // SFML_THREADLOCALPTR_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::ThreadLocalPtr

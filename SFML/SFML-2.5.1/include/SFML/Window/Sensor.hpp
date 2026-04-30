@@ -32,7 +32,6 @@
 #include <SFML/System/Vector3.hpp>
 #include <SFML/System/Time.hpp>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -41,8 +40,7 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_WINDOW_API Sensor
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Sensor type
     ///
@@ -56,7 +54,7 @@ public:
         UserAcceleration, ///< Measures the direction and intensity of device acceleration, independent of the gravity (m/s^2)
         Orientation,      ///< Measures the absolute 3D orientation (degrees)
 
-        Count             ///< Keep last -- the total number of sensor types
+        Count ///< Keep last -- the total number of sensor types
     };
 
     ////////////////////////////////////////////////////////////
@@ -97,9 +95,7 @@ public:
 
 } // namespace sf
 
-
 #endif // SFML_SENSOR_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Sensor

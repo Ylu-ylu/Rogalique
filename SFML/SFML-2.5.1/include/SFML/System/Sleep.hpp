@@ -31,7 +31,6 @@
 #include <SFML/System/Export.hpp>
 #include <SFML/System/Time.hpp>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -47,6 +46,5 @@ namespace sf
 void SFML_SYSTEM_API sleep(Time duration);
 
 } // namespace sf
-
 
 #endif // SFML_SLEEP_HPP

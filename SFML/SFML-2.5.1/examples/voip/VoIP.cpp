@@ -6,14 +6,12 @@
 #include <iostream>
 #include <cstdlib>
 
-
 ////////////////////////////////////////////////////////////
 // Function prototypes
 // (I'm too lazy to put them into separate headers...)
 ////////////////////////////////////////////////////////////
 void doClient(unsigned short port);
 void doServer(unsigned short port);
-
 
 ////////////////////////////////////////////////////////////
 /// Entry point of application
@@ -29,7 +27,7 @@ int main()
     // Client or server ?
     char who;
     std::cout << "Do you want to be a server ('s') or a client ('c')? ";
-    std::cin  >> who;
+    std::cin >> who;
 
     if (who == 's')
     {

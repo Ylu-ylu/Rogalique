@@ -33,12 +33,11 @@
 #include <SFML/Graphics/RenderTarget.hpp>
 #include <SFML/Window/ContextSettings.hpp>
 
-
 namespace sf
 {
 namespace priv
 {
-    class RenderTextureImpl;
+class RenderTextureImpl;
 }
 
 ////////////////////////////////////////////////////////////
@@ -47,8 +46,7 @@ namespace priv
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API RenderTexture : public RenderTarget
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -106,7 +104,7 @@ public:
     /// \return True if creation has been successful
     ///
     ////////////////////////////////////////////////////////////
-    bool create(unsigned int width, unsigned int height, const ContextSettings& settings = ContextSettings());
+    bool create(unsigned int width, unsigned int height, const ContextSettings &settings = ContextSettings());
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the maximum anti-aliasing level supported by the system
@@ -231,22 +229,19 @@ public:
     /// \return Const reference to the texture
     ///
     ////////////////////////////////////////////////////////////
-    const Texture& getTexture() const;
+    const Texture &getTexture() const;
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    priv::RenderTextureImpl* m_impl;    ///< Platform/hardware specific implementation
-    Texture                  m_texture; ///< Target texture to draw on
+    priv::RenderTextureImpl *m_impl; ///< Platform/hardware specific implementation
+    Texture m_texture;               ///< Target texture to draw on
 };
 
 } // namespace sf
 
-
 #endif // SFML_RENDERTEXTURE_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::RenderTexture

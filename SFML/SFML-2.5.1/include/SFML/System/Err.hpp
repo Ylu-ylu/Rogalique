@@ -31,20 +31,17 @@
 #include <SFML/System/Export.hpp>
 #include <ostream>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
 /// \brief Standard stream used by SFML to output warnings and errors
 ///
 ////////////////////////////////////////////////////////////
-SFML_SYSTEM_API std::ostream& err();
+SFML_SYSTEM_API std::ostream &err();
 
 } // namespace sf
 
-
 #endif // SFML_ERR_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \fn sf::err

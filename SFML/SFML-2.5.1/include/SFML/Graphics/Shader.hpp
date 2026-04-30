@@ -37,7 +37,6 @@
 #include <map>
 #include <string>
 
-
 namespace sf
 {
 class Color;
@@ -51,8 +50,7 @@ class Transform;
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API Shader : GlResource, NonCopyable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Types of shaders
     ///
@@ -71,7 +69,9 @@ public:
     /// \see setUniform(const std::string&, CurrentTextureType)
     ///
     ////////////////////////////////////////////////////////////
-    struct CurrentTextureType {};
+    struct CurrentTextureType
+    {
+    };
 
     ////////////////////////////////////////////////////////////
     /// \brief Represents the texture of the object being drawn
@@ -81,8 +81,7 @@ public:
     ////////////////////////////////////////////////////////////
     static CurrentTextureType CurrentTexture;
 
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -116,7 +115,7 @@ public:
     /// \see loadFromMemory, loadFromStream
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromFile(const std::string& filename, Type type);
+    bool loadFromFile(const std::string &filename, Type type);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load both the vertex and fragment shaders from files
@@ -137,7 +136,7 @@ public:
     /// \see loadFromMemory, loadFromStream
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromFile(const std::string& vertexShaderFilename, const std::string& fragmentShaderFilename);
+    bool loadFromFile(const std::string &vertexShaderFilename, const std::string &fragmentShaderFilename);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the vertex, geometry and fragment shaders from files
@@ -159,7 +158,7 @@ public:
     /// \see loadFromMemory, loadFromStream
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromFile(const std::string& vertexShaderFilename, const std::string& geometryShaderFilename, const std::string& fragmentShaderFilename);
+    bool loadFromFile(const std::string &vertexShaderFilename, const std::string &geometryShaderFilename, const std::string &fragmentShaderFilename);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the vertex, geometry or fragment shader from a source code in memory
@@ -179,7 +178,7 @@ public:
     /// \see loadFromFile, loadFromStream
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromMemory(const std::string& shader, Type type);
+    bool loadFromMemory(const std::string &shader, Type type);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load both the vertex and fragment shaders from source codes in memory
@@ -200,7 +199,7 @@ public:
     /// \see loadFromFile, loadFromStream
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromMemory(const std::string& vertexShader, const std::string& fragmentShader);
+    bool loadFromMemory(const std::string &vertexShader, const std::string &fragmentShader);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the vertex, geometry and fragment shaders from source codes in memory
@@ -222,7 +221,7 @@ public:
     /// \see loadFromFile, loadFromStream
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromMemory(const std::string& vertexShader, const std::string& geometryShader, const std::string& fragmentShader);
+    bool loadFromMemory(const std::string &vertexShader, const std::string &geometryShader, const std::string &fragmentShader);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the vertex, geometry or fragment shader from a custom stream
@@ -242,7 +241,7 @@ public:
     /// \see loadFromFile, loadFromMemory
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromStream(InputStream& stream, Type type);
+    bool loadFromStream(InputStream &stream, Type type);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load both the vertex and fragment shaders from custom streams
@@ -263,7 +262,7 @@ public:
     /// \see loadFromFile, loadFromMemory
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromStream(InputStream& vertexShaderStream, InputStream& fragmentShaderStream);
+    bool loadFromStream(InputStream &vertexShaderStream, InputStream &fragmentShaderStream);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the vertex, geometry and fragment shaders from custom streams
@@ -285,7 +284,7 @@ public:
     /// \see loadFromFile, loadFromMemory
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromStream(InputStream& vertexShaderStream, InputStream& geometryShaderStream, InputStream& fragmentShaderStream);
+    bool loadFromStream(InputStream &vertexShaderStream, InputStream &geometryShaderStream, InputStream &fragmentShaderStream);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify value for \p float uniform
@@ -294,7 +293,7 @@ public:
     /// \param x    Value of the float scalar
     ///
     ////////////////////////////////////////////////////////////
-    void setUniform(const std::string& name, float x);
+    void setUniform(const std::string &name, float x);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify value for \p vec2 uniform
@@ -303,7 +302,7 @@ public:
     /// \param vector Value of the vec2 vector
     ///
     ////////////////////////////////////////////////////////////
-    void setUniform(const std::string& name, const Glsl::Vec2& vector);
+    void setUniform(const std::string &name, const Glsl::Vec2 &vector);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify value for \p vec3 uniform
@@ -312,7 +311,7 @@ public:
     /// \param vector Value of the vec3 vector
     ///
     ////////////////////////////////////////////////////////////
-    void setUniform(const std::string& name, const Glsl::Vec3& vector);
+    void setUniform(const std::string &name, const Glsl::Vec3 &vector);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify value for \p vec4 uniform
@@ -330,7 +329,7 @@ public:
     /// \param vector Value of the vec4 vector
     ///
     ////////////////////////////////////////////////////////////
-    void setUniform(const std::string& name, const Glsl::Vec4& vector);
+    void setUniform(const std::string &name, const Glsl::Vec4 &vector);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify value for \p int uniform
@@ -339,7 +338,7 @@ public:
     /// \param x    Value of the int scalar
     ///
     ////////////////////////////////////////////////////////////
-    void setUniform(const std::string& name, int x);
+    void setUniform(const std::string &name, int x);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify value for \p ivec2 uniform
@@ -348,7 +347,7 @@ public:
     /// \param vector Value of the ivec2 vector
     ///
     ////////////////////////////////////////////////////////////
-    void setUniform(const std::string& name, const Glsl::Ivec2& vector);
+    void setUniform(const std::string &name, const Glsl::Ivec2 &vector);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify value for \p ivec3 uniform
@@ -357,7 +356,7 @@ public:
     /// \param vector Value of the ivec3 vector
     ///
     ////////////////////////////////////////////////////////////
-    void setUniform(const std::string& name, const Glsl::Ivec3& vector);
+    void setUniform(const std::string &name, const Glsl::Ivec3 &vector);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify value for \p ivec4 uniform
@@ -374,7 +373,7 @@ public:
     /// \param vector Value of the ivec4 vector
     ///
     ////////////////////////////////////////////////////////////
-    void setUniform(const std::string& name, const Glsl::Ivec4& vector);
+    void setUniform(const std::string &name, const Glsl::Ivec4 &vector);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify value for \p bool uniform
@@ -383,7 +382,7 @@ public:
     /// \param x    Value of the bool scalar
     ///
     ////////////////////////////////////////////////////////////
-    void setUniform(const std::string& name, bool x);
+    void setUniform(const std::string &name, bool x);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify value for \p bvec2 uniform
@@ -392,7 +391,7 @@ public:
     /// \param vector Value of the bvec2 vector
     ///
     ////////////////////////////////////////////////////////////
-    void setUniform(const std::string& name, const Glsl::Bvec2& vector);
+    void setUniform(const std::string &name, const Glsl::Bvec2 &vector);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify value for \p bvec3 uniform
@@ -401,7 +400,7 @@ public:
     /// \param vector Value of the bvec3 vector
     ///
     ////////////////////////////////////////////////////////////
-    void setUniform(const std::string& name, const Glsl::Bvec3& vector);
+    void setUniform(const std::string &name, const Glsl::Bvec3 &vector);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify value for \p bvec4 uniform
@@ -410,7 +409,7 @@ public:
     /// \param vector Value of the bvec4 vector
     ///
     ////////////////////////////////////////////////////////////
-    void setUniform(const std::string& name, const Glsl::Bvec4& vector);
+    void setUniform(const std::string &name, const Glsl::Bvec4 &vector);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify value for \p mat3 matrix
@@ -419,7 +418,7 @@ public:
     /// \param matrix Value of the mat3 matrix
     ///
     ////////////////////////////////////////////////////////////
-    void setUniform(const std::string& name, const Glsl::Mat3& matrix);
+    void setUniform(const std::string &name, const Glsl::Mat3 &matrix);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify value for \p mat4 matrix
@@ -428,7 +427,7 @@ public:
     /// \param matrix Value of the mat4 matrix
     ///
     ////////////////////////////////////////////////////////////
-    void setUniform(const std::string& name, const Glsl::Mat4& matrix);
+    void setUniform(const std::string &name, const Glsl::Mat4 &matrix);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify a texture as \p sampler2D uniform
@@ -460,7 +459,7 @@ public:
     /// \param texture Texture to assign
     ///
     ////////////////////////////////////////////////////////////
-    void setUniform(const std::string& name, const Texture& texture);
+    void setUniform(const std::string &name, const Texture &texture);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify current texture as \p sampler2D uniform
@@ -483,7 +482,7 @@ public:
     /// \param name Name of the texture in the shader
     ///
     ////////////////////////////////////////////////////////////
-    void setUniform(const std::string& name, CurrentTextureType);
+    void setUniform(const std::string &name, CurrentTextureType);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify values for \p float[] array uniform
@@ -493,7 +492,7 @@ public:
     /// \param length      Number of elements in the array
     ///
     ////////////////////////////////////////////////////////////
-    void setUniformArray(const std::string& name, const float* scalarArray, std::size_t length);
+    void setUniformArray(const std::string &name, const float *scalarArray, std::size_t length);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify values for \p vec2[] array uniform
@@ -503,7 +502,7 @@ public:
     /// \param length      Number of elements in the array
     ///
     ////////////////////////////////////////////////////////////
-    void setUniformArray(const std::string& name, const Glsl::Vec2* vectorArray, std::size_t length);
+    void setUniformArray(const std::string &name, const Glsl::Vec2 *vectorArray, std::size_t length);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify values for \p vec3[] array uniform
@@ -513,7 +512,7 @@ public:
     /// \param length      Number of elements in the array
     ///
     ////////////////////////////////////////////////////////////
-    void setUniformArray(const std::string& name, const Glsl::Vec3* vectorArray, std::size_t length);
+    void setUniformArray(const std::string &name, const Glsl::Vec3 *vectorArray, std::size_t length);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify values for \p vec4[] array uniform
@@ -523,7 +522,7 @@ public:
     /// \param length      Number of elements in the array
     ///
     ////////////////////////////////////////////////////////////
-    void setUniformArray(const std::string& name, const Glsl::Vec4* vectorArray, std::size_t length);
+    void setUniformArray(const std::string &name, const Glsl::Vec4 *vectorArray, std::size_t length);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify values for \p mat3[] array uniform
@@ -533,7 +532,7 @@ public:
     /// \param length      Number of elements in the array
     ///
     ////////////////////////////////////////////////////////////
-    void setUniformArray(const std::string& name, const Glsl::Mat3* matrixArray, std::size_t length);
+    void setUniformArray(const std::string &name, const Glsl::Mat3 *matrixArray, std::size_t length);
 
     ////////////////////////////////////////////////////////////
     /// \brief Specify values for \p mat4[] array uniform
@@ -543,7 +542,7 @@ public:
     /// \param length      Number of elements in the array
     ///
     ////////////////////////////////////////////////////////////
-    void setUniformArray(const std::string& name, const Glsl::Mat4* matrixArray, std::size_t length);
+    void setUniformArray(const std::string &name, const Glsl::Mat4 *matrixArray, std::size_t length);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change a float parameter of the shader
@@ -551,7 +550,7 @@ public:
     /// \deprecated Use setUniform(const std::string&, float) instead.
     ///
     ////////////////////////////////////////////////////////////
-    SFML_DEPRECATED void setParameter(const std::string& name, float x);
+    SFML_DEPRECATED void setParameter(const std::string &name, float x);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change a 2-components vector parameter of the shader
@@ -559,7 +558,7 @@ public:
     /// \deprecated Use setUniform(const std::string&, const Glsl::Vec2&) instead.
     ///
     ////////////////////////////////////////////////////////////
-    SFML_DEPRECATED void setParameter(const std::string& name, float x, float y);
+    SFML_DEPRECATED void setParameter(const std::string &name, float x, float y);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change a 3-components vector parameter of the shader
@@ -567,7 +566,7 @@ public:
     /// \deprecated Use setUniform(const std::string&, const Glsl::Vec3&) instead.
     ///
     ////////////////////////////////////////////////////////////
-    SFML_DEPRECATED void setParameter(const std::string& name, float x, float y, float z);
+    SFML_DEPRECATED void setParameter(const std::string &name, float x, float y, float z);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change a 4-components vector parameter of the shader
@@ -575,7 +574,7 @@ public:
     /// \deprecated Use setUniform(const std::string&, const Glsl::Vec4&) instead.
     ///
     ////////////////////////////////////////////////////////////
-    SFML_DEPRECATED void setParameter(const std::string& name, float x, float y, float z, float w);
+    SFML_DEPRECATED void setParameter(const std::string &name, float x, float y, float z, float w);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change a 2-components vector parameter of the shader
@@ -583,7 +582,7 @@ public:
     /// \deprecated Use setUniform(const std::string&, const Glsl::Vec2&) instead.
     ///
     ////////////////////////////////////////////////////////////
-    SFML_DEPRECATED void setParameter(const std::string& name, const Vector2f& vector);
+    SFML_DEPRECATED void setParameter(const std::string &name, const Vector2f &vector);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change a 3-components vector parameter of the shader
@@ -591,7 +590,7 @@ public:
     /// \deprecated Use setUniform(const std::string&, const Glsl::Vec3&) instead.
     ///
     ////////////////////////////////////////////////////////////
-    SFML_DEPRECATED void setParameter(const std::string& name, const Vector3f& vector);
+    SFML_DEPRECATED void setParameter(const std::string &name, const Vector3f &vector);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change a color parameter of the shader
@@ -599,7 +598,7 @@ public:
     /// \deprecated Use setUniform(const std::string&, const Glsl::Vec4&) instead.
     ///
     ////////////////////////////////////////////////////////////
-    SFML_DEPRECATED void setParameter(const std::string& name, const Color& color);
+    SFML_DEPRECATED void setParameter(const std::string &name, const Color &color);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change a matrix parameter of the shader
@@ -607,7 +606,7 @@ public:
     /// \deprecated Use setUniform(const std::string&, const Glsl::Mat4&) instead.
     ///
     ////////////////////////////////////////////////////////////
-    SFML_DEPRECATED void setParameter(const std::string& name, const Transform& transform);
+    SFML_DEPRECATED void setParameter(const std::string &name, const Transform &transform);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change a texture parameter of the shader
@@ -615,7 +614,7 @@ public:
     /// \deprecated Use setUniform(const std::string&, const Texture&) instead.
     ///
     ////////////////////////////////////////////////////////////
-    SFML_DEPRECATED void setParameter(const std::string& name, const Texture& texture);
+    SFML_DEPRECATED void setParameter(const std::string &name, const Texture &texture);
 
     ////////////////////////////////////////////////////////////
     /// \brief Change a texture parameter of the shader
@@ -623,7 +622,7 @@ public:
     /// \deprecated Use setUniform(const std::string&, CurrentTextureType) instead.
     ///
     ////////////////////////////////////////////////////////////
-    SFML_DEPRECATED void setParameter(const std::string& name, CurrentTextureType);
+    SFML_DEPRECATED void setParameter(const std::string &name, CurrentTextureType);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the underlying OpenGL handle of the shader.
@@ -658,7 +657,7 @@ public:
     /// \param shader Shader to bind, can be null to use no shader
     ///
     ////////////////////////////////////////////////////////////
-    static void bind(const Shader* shader);
+    static void bind(const Shader *shader);
 
     ////////////////////////////////////////////////////////////
     /// \brief Tell whether or not the system supports shaders
@@ -691,8 +690,7 @@ public:
     ////////////////////////////////////////////////////////////
     static bool isGeometryAvailable();
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     /// \brief Compile the shader(s) and create the program
     ///
@@ -706,7 +704,7 @@ private:
     /// \return True on success, false if any error happened
     ///
     ////////////////////////////////////////////////////////////
-    bool compile(const char* vertexShaderCode, const char* geometryShaderCode, const char* fragmentShaderCode);
+    bool compile(const char *vertexShaderCode, const char *geometryShaderCode, const char *fragmentShaderCode);
 
     ////////////////////////////////////////////////////////////
     /// \brief Bind all the textures used by the shader
@@ -725,7 +723,7 @@ private:
     /// \return Location ID of the uniform, or -1 if not found
     ///
     ////////////////////////////////////////////////////////////
-    int getUniformLocation(const std::string& name);
+    int getUniformLocation(const std::string &name);
 
     ////////////////////////////////////////////////////////////
     /// \brief RAII object to save and restore the program
@@ -739,23 +737,21 @@ private:
     ////////////////////////////////////////////////////////////
     // Types
     ////////////////////////////////////////////////////////////
-    typedef std::map<int, const Texture*> TextureTable;
+    typedef std::map<int, const Texture *> TextureTable;
     typedef std::map<std::string, int> UniformTable;
 
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    unsigned int m_shaderProgram;  ///< OpenGL identifier for the program
-    int          m_currentTexture; ///< Location of the current texture in the shader
-    TextureTable m_textures;       ///< Texture variables in the shader, mapped to their location
-    UniformTable m_uniforms;       ///< Parameters location cache
+    unsigned int m_shaderProgram; ///< OpenGL identifier for the program
+    int m_currentTexture;         ///< Location of the current texture in the shader
+    TextureTable m_textures;      ///< Texture variables in the shader, mapped to their location
+    UniformTable m_uniforms;      ///< Parameters location cache
 };
 
 } // namespace sf
 
-
 #endif // SFML_SHADER_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Shader

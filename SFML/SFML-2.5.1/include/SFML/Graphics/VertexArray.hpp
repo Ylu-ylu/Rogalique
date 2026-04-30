@@ -35,7 +35,6 @@
 #include <SFML/Graphics/Drawable.hpp>
 #include <vector>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -44,8 +43,7 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API VertexArray : public Drawable
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -85,7 +83,7 @@ public:
     /// \see getVertexCount
     ///
     ////////////////////////////////////////////////////////////
-    Vertex& operator [](std::size_t index);
+    Vertex &operator[](std::size_t index);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get a read-only access to a vertex by its index
@@ -101,7 +99,7 @@ public:
     /// \see getVertexCount
     ///
     ////////////////////////////////////////////////////////////
-    const Vertex& operator [](std::size_t index) const;
+    const Vertex &operator[](std::size_t index) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Clear the vertex array
@@ -134,7 +132,7 @@ public:
     /// \param vertex Vertex to add
     ///
     ////////////////////////////////////////////////////////////
-    void append(const Vertex& vertex);
+    void append(const Vertex &vertex);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the type of primitives to draw
@@ -171,8 +169,7 @@ public:
     ////////////////////////////////////////////////////////////
     FloatRect getBounds() const;
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     /// \brief Draw the vertex array to a render target
     ///
@@ -180,22 +177,19 @@ private:
     /// \param states Current render states
     ///
     ////////////////////////////////////////////////////////////
-    virtual void draw(RenderTarget& target, RenderStates states) const;
+    virtual void draw(RenderTarget &target, RenderStates states) const;
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    std::vector<Vertex> m_vertices;      ///< Vertices contained in the array
-    PrimitiveType       m_primitiveType; ///< Type of primitives to draw
+    std::vector<Vertex> m_vertices; ///< Vertices contained in the array
+    PrimitiveType m_primitiveType;  ///< Type of primitives to draw
 };
 
 } // namespace sf
 
-
 #endif // SFML_VERTEXARRAY_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::VertexArray

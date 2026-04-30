@@ -33,7 +33,6 @@
 #include <SFML/Graphics/Transform.hpp>
 #include <SFML/System/Vector2.hpp>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -42,8 +41,7 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API View
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -58,7 +56,7 @@ public:
     /// \param rectangle Rectangle defining the zone to display
     ///
     ////////////////////////////////////////////////////////////
-    explicit View(const FloatRect& rectangle);
+    explicit View(const FloatRect &rectangle);
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct the view from its center and size
@@ -67,7 +65,7 @@ public:
     /// \param size   Size of zone to display
     ///
     ////////////////////////////////////////////////////////////
-    View(const Vector2f& center, const Vector2f& size);
+    View(const Vector2f &center, const Vector2f &size);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the center of the view
@@ -88,7 +86,7 @@ public:
     /// \see setSize, getCenter
     ///
     ////////////////////////////////////////////////////////////
-    void setCenter(const Vector2f& center);
+    void setCenter(const Vector2f &center);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the size of the view
@@ -109,7 +107,7 @@ public:
     /// \see setCenter, getCenter
     ///
     ////////////////////////////////////////////////////////////
-    void setSize(const Vector2f& size);
+    void setSize(const Vector2f &size);
 
     ////////////////////////////////////////////////////////////
     /// \brief Set the orientation of the view
@@ -138,7 +136,7 @@ public:
     /// \see getViewport
     ///
     ////////////////////////////////////////////////////////////
-    void setViewport(const FloatRect& viewport);
+    void setViewport(const FloatRect &viewport);
 
     ////////////////////////////////////////////////////////////
     /// \brief Reset the view to the given rectangle
@@ -150,7 +148,7 @@ public:
     /// \see setCenter, setSize, setRotation
     ///
     ////////////////////////////////////////////////////////////
-    void reset(const FloatRect& rectangle);
+    void reset(const FloatRect &rectangle);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the center of the view
@@ -160,7 +158,7 @@ public:
     /// \see getSize, setCenter
     ///
     ////////////////////////////////////////////////////////////
-    const Vector2f& getCenter() const;
+    const Vector2f &getCenter() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the size of the view
@@ -170,7 +168,7 @@ public:
     /// \see getCenter, setSize
     ///
     ////////////////////////////////////////////////////////////
-    const Vector2f& getSize() const;
+    const Vector2f &getSize() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the current orientation of the view
@@ -190,7 +188,7 @@ public:
     /// \see setViewport
     ///
     ////////////////////////////////////////////////////////////
-    const FloatRect& getViewport() const;
+    const FloatRect &getViewport() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Move the view relatively to its current position
@@ -211,7 +209,7 @@ public:
     /// \see setCenter, rotate, zoom
     ///
     ////////////////////////////////////////////////////////////
-    void move(const Vector2f& offset);
+    void move(const Vector2f &offset);
 
     ////////////////////////////////////////////////////////////
     /// \brief Rotate the view relatively to its current orientation
@@ -250,7 +248,7 @@ public:
     /// \see getInverseTransform
     ///
     ////////////////////////////////////////////////////////////
-    const Transform& getTransform() const;
+    const Transform &getTransform() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the inverse projection transform of the view
@@ -262,28 +260,25 @@ public:
     /// \see getTransform
     ///
     ////////////////////////////////////////////////////////////
-    const Transform& getInverseTransform() const;
+    const Transform &getInverseTransform() const;
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    Vector2f          m_center;              ///< Center of the view, in scene coordinates
-    Vector2f          m_size;                ///< Size of the view, in scene coordinates
-    float             m_rotation;            ///< Angle of rotation of the view rectangle, in degrees
-    FloatRect         m_viewport;            ///< Viewport rectangle, expressed as a factor of the render-target's size
-    mutable Transform m_transform;           ///< Precomputed projection transform corresponding to the view
-    mutable Transform m_inverseTransform;    ///< Precomputed inverse projection transform corresponding to the view
-    mutable bool      m_transformUpdated;    ///< Internal state telling if the transform needs to be updated
-    mutable bool      m_invTransformUpdated; ///< Internal state telling if the inverse transform needs to be updated
+    Vector2f m_center;                    ///< Center of the view, in scene coordinates
+    Vector2f m_size;                      ///< Size of the view, in scene coordinates
+    float m_rotation;                     ///< Angle of rotation of the view rectangle, in degrees
+    FloatRect m_viewport;                 ///< Viewport rectangle, expressed as a factor of the render-target's size
+    mutable Transform m_transform;        ///< Precomputed projection transform corresponding to the view
+    mutable Transform m_inverseTransform; ///< Precomputed inverse projection transform corresponding to the view
+    mutable bool m_transformUpdated;      ///< Internal state telling if the transform needs to be updated
+    mutable bool m_invTransformUpdated;   ///< Internal state telling if the inverse transform needs to be updated
 };
 
 } // namespace sf
 
-
 #endif // SFML_VIEW_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::View

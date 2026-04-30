@@ -35,7 +35,6 @@
 #include <vector>
 #include <set>
 
-
 namespace sf
 {
 class Sound;
@@ -48,8 +47,7 @@ class InputStream;
 ////////////////////////////////////////////////////////////
 class SFML_AUDIO_API SoundBuffer : AlResource
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -62,7 +60,7 @@ public:
     /// \param copy Instance to copy
     ///
     ////////////////////////////////////////////////////////////
-    SoundBuffer(const SoundBuffer& copy);
+    SoundBuffer(const SoundBuffer &copy);
 
     ////////////////////////////////////////////////////////////
     /// \brief Destructor
@@ -83,7 +81,7 @@ public:
     /// \see loadFromMemory, loadFromStream, loadFromSamples, saveToFile
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromFile(const std::string& filename);
+    bool loadFromFile(const std::string &filename);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the sound buffer from a file in memory
@@ -99,7 +97,7 @@ public:
     /// \see loadFromFile, loadFromStream, loadFromSamples
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromMemory(const void* data, std::size_t sizeInBytes);
+    bool loadFromMemory(const void *data, std::size_t sizeInBytes);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the sound buffer from a custom stream
@@ -114,7 +112,7 @@ public:
     /// \see loadFromFile, loadFromMemory, loadFromSamples
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromStream(InputStream& stream);
+    bool loadFromStream(InputStream &stream);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the sound buffer from an array of audio samples
@@ -132,7 +130,7 @@ public:
     /// \see loadFromFile, loadFromMemory, saveToFile
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromSamples(const Int16* samples, Uint64 sampleCount, unsigned int channelCount, unsigned int sampleRate);
+    bool loadFromSamples(const Int16 *samples, Uint64 sampleCount, unsigned int channelCount, unsigned int sampleRate);
 
     ////////////////////////////////////////////////////////////
     /// \brief Save the sound buffer to an audio file
@@ -147,7 +145,7 @@ public:
     /// \see loadFromFile, loadFromMemory, loadFromSamples
     ///
     ////////////////////////////////////////////////////////////
-    bool saveToFile(const std::string& filename) const;
+    bool saveToFile(const std::string &filename) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the array of audio samples stored in the buffer
@@ -161,7 +159,7 @@ public:
     /// \see getSampleCount
     ///
     ////////////////////////////////////////////////////////////
-    const Int16* getSamples() const;
+    const Int16 *getSamples() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the number of samples stored in the buffer
@@ -221,10 +219,9 @@ public:
     /// \return Reference to self
     ///
     ////////////////////////////////////////////////////////////
-    SoundBuffer& operator =(const SoundBuffer& right);
+    SoundBuffer &operator=(const SoundBuffer &right);
 
-private:
-
+  private:
     friend class Sound;
 
     ////////////////////////////////////////////////////////////
@@ -235,7 +232,7 @@ private:
     /// \return True on successful initialization, false on failure
     ///
     ////////////////////////////////////////////////////////////
-    bool initialize(InputSoundFile& file);
+    bool initialize(InputSoundFile &file);
 
     ////////////////////////////////////////////////////////////
     /// \brief Update the internal buffer with the cached audio samples
@@ -254,7 +251,7 @@ private:
     /// \param sound Sound instance to attach
     ///
     ////////////////////////////////////////////////////////////
-    void attachSound(Sound* sound) const;
+    void attachSound(Sound *sound) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Remove a sound from the list of sounds that use this buffer
@@ -262,27 +259,25 @@ private:
     /// \param sound Sound instance to detach
     ///
     ////////////////////////////////////////////////////////////
-    void detachSound(Sound* sound) const;
+    void detachSound(Sound *sound) const;
 
     ////////////////////////////////////////////////////////////
     // Types
     ////////////////////////////////////////////////////////////
-    typedef std::set<Sound*> SoundList; ///< Set of unique sound instances
+    typedef std::set<Sound *> SoundList; ///< Set of unique sound instances
 
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    unsigned int       m_buffer;   ///< OpenAL buffer identifier
-    std::vector<Int16> m_samples;  ///< Samples buffer
-    Time               m_duration; ///< Sound duration
-    mutable SoundList  m_sounds;   ///< List of sounds that are using this buffer
+    unsigned int m_buffer;        ///< OpenAL buffer identifier
+    std::vector<Int16> m_samples; ///< Samples buffer
+    Time m_duration;              ///< Sound duration
+    mutable SoundList m_sounds;   ///< List of sounds that are using this buffer
 };
 
 } // namespace sf
 
-
 #endif // SFML_SOUNDBUFFER_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::SoundBuffer

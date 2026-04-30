@@ -32,7 +32,6 @@
 #include <SFML/Graphics/BlendMode.hpp>
 #include <SFML/Graphics/Transform.hpp>
 
-
 namespace sf
 {
 class Shader;
@@ -44,8 +43,7 @@ class Texture;
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API RenderStates
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -66,7 +64,7 @@ public:
     /// \param theBlendMode Blend mode to use
     ///
     ////////////////////////////////////////////////////////////
-    RenderStates(const BlendMode& theBlendMode);
+    RenderStates(const BlendMode &theBlendMode);
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct a default set of render states with a custom transform
@@ -74,7 +72,7 @@ public:
     /// \param theTransform Transform to use
     ///
     ////////////////////////////////////////////////////////////
-    RenderStates(const Transform& theTransform);
+    RenderStates(const Transform &theTransform);
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct a default set of render states with a custom texture
@@ -82,7 +80,7 @@ public:
     /// \param theTexture Texture to use
     ///
     ////////////////////////////////////////////////////////////
-    RenderStates(const Texture* theTexture);
+    RenderStates(const Texture *theTexture);
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct a default set of render states with a custom shader
@@ -90,7 +88,7 @@ public:
     /// \param theShader Shader to use
     ///
     ////////////////////////////////////////////////////////////
-    RenderStates(const Shader* theShader);
+    RenderStates(const Shader *theShader);
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct a set of render states with all its attributes
@@ -101,8 +99,7 @@ public:
     /// \param theShader    Shader to use
     ///
     ////////////////////////////////////////////////////////////
-    RenderStates(const BlendMode& theBlendMode, const Transform& theTransform,
-                 const Texture* theTexture, const Shader* theShader);
+    RenderStates(const BlendMode &theBlendMode, const Transform &theTransform, const Texture *theTexture, const Shader *theShader);
 
     ////////////////////////////////////////////////////////////
     // Static member data
@@ -112,17 +109,15 @@ public:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    BlendMode      blendMode; ///< Blending mode
-    Transform      transform; ///< Transform
-    const Texture* texture;   ///< Texture
-    const Shader*  shader;    ///< Shader
+    BlendMode blendMode;    ///< Blending mode
+    Transform transform;    ///< Transform
+    const Texture *texture; ///< Texture
+    const Shader *shader;   ///< Shader
 };
 
 } // namespace sf
 
-
 #endif // SFML_RENDERSTATES_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::RenderStates

@@ -31,18 +31,15 @@
 #include <SFML/System/Vector2.hpp>
 #include <algorithm>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
 /// \brief Utility class for manipulating 2D axis aligned rectangles
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-class Rect
+template <typename T> class Rect
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -76,7 +73,7 @@ public:
     /// \param size     Size of the rectangle
     ///
     ////////////////////////////////////////////////////////////
-    Rect(const Vector2<T>& position, const Vector2<T>& size);
+    Rect(const Vector2<T> &position, const Vector2<T> &size);
 
     ////////////////////////////////////////////////////////////
     /// \brief Construct the rectangle from another type of rectangle
@@ -89,8 +86,7 @@ public:
     /// \param rectangle Rectangle to convert
     ///
     ////////////////////////////////////////////////////////////
-    template <typename U>
-    explicit Rect(const Rect<U>& rectangle);
+    template <typename U> explicit Rect(const Rect<U> &rectangle);
 
     ////////////////////////////////////////////////////////////
     /// \brief Check if a point is inside the rectangle's area
@@ -121,7 +117,7 @@ public:
     /// \see intersects
     ///
     ////////////////////////////////////////////////////////////
-    bool contains(const Vector2<T>& point) const;
+    bool contains(const Vector2<T> &point) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Check the intersection between two rectangles
@@ -133,7 +129,7 @@ public:
     /// \see contains
     ///
     ////////////////////////////////////////////////////////////
-    bool intersects(const Rect<T>& rectangle) const;
+    bool intersects(const Rect<T> &rectangle) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Check the intersection between two rectangles
@@ -149,7 +145,7 @@ public:
     /// \see contains
     ///
     ////////////////////////////////////////////////////////////
-    bool intersects(const Rect<T>& rectangle, Rect<T>& intersection) const;
+    bool intersects(const Rect<T> &rectangle, Rect<T> &intersection) const;
 
     ////////////////////////////////////////////////////////////
     // Member data
@@ -172,8 +168,7 @@ public:
 /// \return True if \a left is equal to \a right
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-bool operator ==(const Rect<T>& left, const Rect<T>& right);
+template <typename T> bool operator==(const Rect<T> &left, const Rect<T> &right);
 
 ////////////////////////////////////////////////////////////
 /// \relates Rect
@@ -187,20 +182,17 @@ bool operator ==(const Rect<T>& left, const Rect<T>& right);
 /// \return True if \a left is not equal to \a right
 ///
 ////////////////////////////////////////////////////////////
-template <typename T>
-bool operator !=(const Rect<T>& left, const Rect<T>& right);
+template <typename T> bool operator!=(const Rect<T> &left, const Rect<T> &right);
 
 #include <SFML/Graphics/Rect.inl>
 
 // Create typedefs for the most common types
-typedef Rect<int>   IntRect;
+typedef Rect<int> IntRect;
 typedef Rect<float> FloatRect;
 
 } // namespace sf
 
-
 #endif // SFML_RECT_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Rect

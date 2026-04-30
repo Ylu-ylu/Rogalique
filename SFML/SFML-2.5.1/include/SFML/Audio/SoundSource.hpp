@@ -32,7 +32,6 @@
 #include <SFML/Audio/AlResource.hpp>
 #include <SFML/System/Vector3.hpp>
 
-
 namespace sf
 {
 ////////////////////////////////////////////////////////////
@@ -41,8 +40,7 @@ namespace sf
 ////////////////////////////////////////////////////////////
 class SFML_AUDIO_API SoundSource : AlResource
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Enumeration of the sound source states
     ///
@@ -60,7 +58,7 @@ public:
     /// \param copy Instance to copy
     ///
     ////////////////////////////////////////////////////////////
-    SoundSource(const SoundSource& copy);
+    SoundSource(const SoundSource &copy);
 
     ////////////////////////////////////////////////////////////
     /// \brief Destructor
@@ -125,7 +123,7 @@ public:
     /// \see getPosition
     ///
     ////////////////////////////////////////////////////////////
-    void setPosition(const Vector3f& position);
+    void setPosition(const Vector3f &position);
 
     ////////////////////////////////////////////////////////////
     /// \brief Make the sound's position relative to the listener or absolute
@@ -248,7 +246,7 @@ public:
     /// \return Reference to self
     ///
     ////////////////////////////////////////////////////////////
-    SoundSource& operator =(const SoundSource& right);
+    SoundSource &operator=(const SoundSource &right);
 
     ////////////////////////////////////////////////////////////
     /// \brief Start or resume playing the sound source
@@ -293,8 +291,7 @@ public:
     ////////////////////////////////////////////////////////////
     virtual Status getStatus() const;
 
-protected:
-
+  protected:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -311,9 +308,7 @@ protected:
 
 } // namespace sf
 
-
 #endif // SFML_SOUNDSOURCE_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::SoundSource

@@ -38,7 +38,6 @@
 #include <string>
 #include <vector>
 
-
 namespace sf
 {
 class InputStream;
@@ -49,8 +48,7 @@ class InputStream;
 ////////////////////////////////////////////////////////////
 class SFML_GRAPHICS_API Font
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Holds various information about a font
     ///
@@ -60,8 +58,7 @@ public:
         std::string family; ///< The font family
     };
 
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -76,7 +73,7 @@ public:
     /// \param copy Instance to copy
     ///
     ////////////////////////////////////////////////////////////
-    Font(const Font& copy);
+    Font(const Font &copy);
 
     ////////////////////////////////////////////////////////////
     /// \brief Destructor
@@ -106,7 +103,7 @@ public:
     /// \see loadFromMemory, loadFromStream
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromFile(const std::string& filename);
+    bool loadFromFile(const std::string &filename);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the font from a file in memory
@@ -127,7 +124,7 @@ public:
     /// \see loadFromFile, loadFromStream
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromMemory(const void* data, std::size_t sizeInBytes);
+    bool loadFromMemory(const void *data, std::size_t sizeInBytes);
 
     ////////////////////////////////////////////////////////////
     /// \brief Load the font from a custom stream
@@ -149,7 +146,7 @@ public:
     /// \see loadFromFile, loadFromMemory
     ///
     ////////////////////////////////////////////////////////////
-    bool loadFromStream(InputStream& stream);
+    bool loadFromStream(InputStream &stream);
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the font information
@@ -157,7 +154,7 @@ public:
     /// \return A structure that holds the font information
     ///
     ////////////////////////////////////////////////////////////
-    const Info& getInfo() const;
+    const Info &getInfo() const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Retrieve a glyph of the font
@@ -177,7 +174,7 @@ public:
     /// \return The glyph corresponding to \a codePoint and \a characterSize
     ///
     ////////////////////////////////////////////////////////////
-    const Glyph& getGlyph(Uint32 codePoint, unsigned int characterSize, bool bold, float outlineThickness = 0) const;
+    const Glyph &getGlyph(Uint32 codePoint, unsigned int characterSize, bool bold, float outlineThickness = 0) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Get the kerning offset of two glyphs
@@ -251,7 +248,7 @@ public:
     /// \return Texture containing the glyphs of the requested size
     ///
     ////////////////////////////////////////////////////////////
-    const Texture& getTexture(unsigned int characterSize) const;
+    const Texture &getTexture(unsigned int characterSize) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Overload of assignment operator
@@ -261,17 +258,18 @@ public:
     /// \return Reference to self
     ///
     ////////////////////////////////////////////////////////////
-    Font& operator =(const Font& right);
+    Font &operator=(const Font &right);
 
-private:
-
+  private:
     ////////////////////////////////////////////////////////////
     /// \brief Structure defining a row of glyphs
     ///
     ////////////////////////////////////////////////////////////
     struct Row
     {
-        Row(unsigned int rowTop, unsigned int rowHeight) : width(0), top(rowTop), height(rowHeight) {}
+        Row(unsigned int rowTop, unsigned int rowHeight) : width(0), top(rowTop), height(rowHeight)
+        {
+        }
 
         unsigned int width;  ///< Current width of the row
         unsigned int top;    ///< Y position of the row into the texture
@@ -291,10 +289,10 @@ private:
     {
         Page();
 
-        GlyphTable       glyphs;  ///< Table mapping code points to their corresponding glyph
-        Texture          texture; ///< Texture containing the pixels of the glyphs
-        unsigned int     nextRow; ///< Y position of the next new row in the texture
-        std::vector<Row> rows;    ///< List containing the position of all the existing rows
+        GlyphTable glyphs;     ///< Table mapping code points to their corresponding glyph
+        Texture texture;       ///< Texture containing the pixels of the glyphs
+        unsigned int nextRow;  ///< Y position of the next new row in the texture
+        std::vector<Row> rows; ///< List containing the position of all the existing rows
     };
 
     ////////////////////////////////////////////////////////////
@@ -326,7 +324,7 @@ private:
     /// \return Found rectangle within the texture
     ///
     ////////////////////////////////////////////////////////////
-    IntRect findGlyphRect(Page& page, unsigned int width, unsigned int height) const;
+    IntRect findGlyphRect(Page &page, unsigned int width, unsigned int height) const;
 
     ////////////////////////////////////////////////////////////
     /// \brief Make sure that the given size is the current one
@@ -346,24 +344,22 @@ private:
     ////////////////////////////////////////////////////////////
     // Member data
     ////////////////////////////////////////////////////////////
-    void*                      m_library;     ///< Pointer to the internal library interface (it is typeless to avoid exposing implementation details)
-    void*                      m_face;        ///< Pointer to the internal font face (it is typeless to avoid exposing implementation details)
-    void*                      m_streamRec;   ///< Pointer to the stream rec instance (it is typeless to avoid exposing implementation details)
-    void*                      m_stroker;     ///< Pointer to the stroker (it is typeless to avoid exposing implementation details)
-    int*                       m_refCount;    ///< Reference counter used by implicit sharing
-    Info                       m_info;        ///< Information about the font
-    mutable PageTable          m_pages;       ///< Table containing the glyphs pages by character size
+    void *m_library;                          ///< Pointer to the internal library interface (it is typeless to avoid exposing implementation details)
+    void *m_face;                             ///< Pointer to the internal font face (it is typeless to avoid exposing implementation details)
+    void *m_streamRec;                        ///< Pointer to the stream rec instance (it is typeless to avoid exposing implementation details)
+    void *m_stroker;                          ///< Pointer to the stroker (it is typeless to avoid exposing implementation details)
+    int *m_refCount;                          ///< Reference counter used by implicit sharing
+    Info m_info;                              ///< Information about the font
+    mutable PageTable m_pages;                ///< Table containing the glyphs pages by character size
     mutable std::vector<Uint8> m_pixelBuffer; ///< Pixel buffer holding a glyph's pixels before being written to the texture
-    #ifdef SFML_SYSTEM_ANDROID
-    void*                      m_stream; ///< Asset file streamer (if loaded from file)
-    #endif
+#ifdef SFML_SYSTEM_ANDROID
+    void *m_stream; ///< Asset file streamer (if loaded from file)
+#endif
 };
 
 } // namespace sf
 
-
 #endif // SFML_FONT_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::Font

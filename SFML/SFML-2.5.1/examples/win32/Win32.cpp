@@ -8,7 +8,6 @@
 
 HWND button;
 
-
 ////////////////////////////////////////////////////////////
 /// Function called whenever one of our windows receives a message
 ///
@@ -17,27 +16,24 @@ LRESULT CALLBACK onEvent(HWND handle, UINT message, WPARAM wParam, LPARAM lParam
 {
     switch (message)
     {
-        // Quit when we close the main window
-        case WM_CLOSE:
+    // Quit when we close the main window
+    case WM_CLOSE: {
+        PostQuitMessage(0);
+        return 0;
+    }
+
+    // Quit when we click the "quit" button
+    case WM_COMMAND: {
+        if (reinterpret_cast<HWND>(lParam) == button)
         {
             PostQuitMessage(0);
             return 0;
         }
-
-        // Quit when we click the "quit" button
-        case WM_COMMAND:
-        {
-            if (reinterpret_cast<HWND>(lParam) == button)
-            {
-                PostQuitMessage(0);
-                return 0;
-            }
-        }
+    }
     }
 
     return DefWindowProc(handle, message, wParam, lParam);
 }
-
 
 ////////////////////////////////////////////////////////////
 /// Entry point of application
@@ -53,15 +49,15 @@ int main()
 
     // Define a class for our main window
     WNDCLASS windowClass;
-    windowClass.style         = 0;
-    windowClass.lpfnWndProc   = &onEvent;
-    windowClass.cbClsExtra    = 0;
-    windowClass.cbWndExtra    = 0;
-    windowClass.hInstance     = instance;
-    windowClass.hIcon         = NULL;
-    windowClass.hCursor       = 0;
+    windowClass.style = 0;
+    windowClass.lpfnWndProc = &onEvent;
+    windowClass.cbClsExtra = 0;
+    windowClass.cbWndExtra = 0;
+    windowClass.hInstance = instance;
+    windowClass.hIcon = NULL;
+    windowClass.hCursor = 0;
     windowClass.hbrBackground = reinterpret_cast<HBRUSH>(COLOR_BACKGROUND);
-    windowClass.lpszMenuName  = NULL;
+    windowClass.lpszMenuName = NULL;
     windowClass.lpszClassName = TEXT("SFML App");
     RegisterClass(&windowClass);
 
@@ -72,7 +68,7 @@ int main()
     button = CreateWindow(TEXT("BUTTON"), TEXT("Quit"), WS_CHILD | WS_VISIBLE, 560, 440, 80, 40, window, NULL, instance, NULL);
 
     // Let's create two SFML views
-    HWND view1 = CreateWindow(TEXT("STATIC"), NULL, WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS, 20,  20, 300, 400, window, NULL, instance, NULL);
+    HWND view1 = CreateWindow(TEXT("STATIC"), NULL, WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS, 20, 20, 300, 400, window, NULL, instance, NULL);
     HWND view2 = CreateWindow(TEXT("STATIC"), NULL, WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS, 340, 20, 300, 400, window, NULL, instance, NULL);
     sf::RenderWindow SFMLView1(view1);
     sf::RenderWindow SFMLView2(view2);

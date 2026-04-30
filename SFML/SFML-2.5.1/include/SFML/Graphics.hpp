@@ -57,7 +57,6 @@
 #include <SFML/Graphics/VertexBuffer.hpp>
 #include <SFML/Graphics/View.hpp>
 
-
 #endif // SFML_GRAPHICS_HPP
 
 ////////////////////////////////////////////////////////////

@@ -32,7 +32,6 @@
 #include <SFML/Network/Socket.hpp>
 #include <SFML/Network/IpAddress.hpp>
 
-
 namespace sf
 {
 class TcpSocket;
@@ -43,8 +42,7 @@ class TcpSocket;
 ////////////////////////////////////////////////////////////
 class SFML_NETWORK_API TcpListener : public Socket
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Default constructor
     ///
@@ -82,7 +80,7 @@ public:
     /// \see accept, close
     ///
     ////////////////////////////////////////////////////////////
-    Status listen(unsigned short port, const IpAddress& address = IpAddress::Any);
+    Status listen(unsigned short port, const IpAddress &address = IpAddress::Any);
 
     ////////////////////////////////////////////////////////////
     /// \brief Stop listening and close the socket
@@ -108,15 +106,12 @@ public:
     /// \see listen
     ///
     ////////////////////////////////////////////////////////////
-    Status accept(TcpSocket& socket);
+    Status accept(TcpSocket &socket);
 };
-
 
 } // namespace sf
 
-
 #endif // SFML_TCPLISTENER_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::TcpListener

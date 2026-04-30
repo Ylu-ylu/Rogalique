@@ -31,7 +31,6 @@
 #include <SFML/Audio/Export.hpp>
 #include <string>
 
-
 namespace sf
 {
 class InputStream;
@@ -42,15 +41,14 @@ class InputStream;
 ////////////////////////////////////////////////////////////
 class SFML_AUDIO_API SoundFileReader
 {
-public:
-
+  public:
     ////////////////////////////////////////////////////////////
     /// \brief Structure holding the audio properties of a sound file
     ///
     ////////////////////////////////////////////////////////////
     struct Info
     {
-        Uint64       sampleCount;  ///< Total number of samples in the file
+        Uint64 sampleCount;        ///< Total number of samples in the file
         unsigned int channelCount; ///< Number of channels of the sound
         unsigned int sampleRate;   ///< Samples rate of the sound, in samples per second
     };
@@ -59,7 +57,9 @@ public:
     /// \brief Virtual destructor
     ///
     ////////////////////////////////////////////////////////////
-    virtual ~SoundFileReader() {}
+    virtual ~SoundFileReader()
+    {
+    }
 
     ////////////////////////////////////////////////////////////
     /// \brief Open a sound file for reading
@@ -74,7 +74,7 @@ public:
     /// \return True if the file was successfully opened
     ///
     ////////////////////////////////////////////////////////////
-    virtual bool open(InputStream& stream, Info& info) = 0;
+    virtual bool open(InputStream &stream, Info &info) = 0;
 
     ////////////////////////////////////////////////////////////
     /// \brief Change the current read position to the given sample offset
@@ -100,14 +100,12 @@ public:
     /// \return Number of samples actually read (may be less than \a maxCount)
     ///
     ////////////////////////////////////////////////////////////
-    virtual Uint64 read(Int16* samples, Uint64 maxCount) = 0;
+    virtual Uint64 read(Int16 *samples, Uint64 maxCount) = 0;
 };
 
 } // namespace sf
 
-
 #endif // SFML_SOUNDFILEREADER_HPP
-
 
 ////////////////////////////////////////////////////////////
 /// \class sf::SoundFileReader
