@@ -21,7 +21,7 @@ jobs:
 
       - name: List files for debug
         run: dir /s /b
-        working-directory: ${{ github.workspace }}
+        shell: cmd
 
       - name: Setup MSVC
         uses: ilammy/msvc-dev-cmd@v1
