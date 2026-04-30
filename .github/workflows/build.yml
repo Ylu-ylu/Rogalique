@@ -36,4 +36,4 @@ jobs:
         run: nuget restore Game.sln
 
       - name: Build solution
-        run: msbuild Game.sln /p:Configuration=Release /p:IncludePath="$(pwd)\SFML\SFML-2.5.1\include" /m
+        run: msbuild Game.sln /p:Configuration=Release /p:IncludePath="$(pwd)\SFML\SFML-2.5.1\include;$(pwd)\Engine" /m
