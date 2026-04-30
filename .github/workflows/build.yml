@@ -19,22 +19,19 @@ jobs:
           fetch-depth: 0
           submodules: true
 
-      # Добавляем установку инструментов C++ (важно для Game.sln)
       - name: Add MSBuild to PATH
         uses: microsoft/setup-msbuild@v2
 
-      # Добавляем установку NuGet для управления зависимостями
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1
 
       - name: List all repository files recursively
         run: Get-ChildItem -Recurse
 
-      # Используем NuGet для восстановления, так как msbuild /t:Restore 
-      # может конфликтовать с C++ проектами в облаке
       - name: Restore NuGet packages
-        run: nuget restore Game.sln
+        # Исправлено: добавлен путь к папке Rogalique
+        run: nuget restore Rogalique/Game.sln
 
       - name: Build solution
-        # Добавлен флаг /m для многопоточной сборки (ускоряет процесс)
-        run: msbuild Game.sln /p:Configuration=Release /p:Platform=x64 /m
+        # Исправлено: добавлен путь к папке Rogalique
+        run: msbuild Rogalique/Game.sln /p:Configuration=Release /p:Platform=x64 /m
