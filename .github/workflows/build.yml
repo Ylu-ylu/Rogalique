@@ -19,6 +19,9 @@ jobs:
           fetch-depth: 0
           submodules: true
 
+      - name: List files for debug
+        run: dir /s /b
+
       - name: Setup MSVC
         uses: ilammy/msvc-dev-cmd@v1
 
@@ -29,8 +32,7 @@ jobs:
         uses: NuGet/setup-nuget@v1
 
       - name: Restore NuGet packages
-        run: nuget restore Rogalique/Game.sln
+        run: nuget restore Game.sln
 
       - name: Build solution
-        # Убрали /p:Platform=x64, так как проект ее не поддерживает
-        run: msbuild Rogalique/Game.sln /p:Configuration=Release /m
+        run: msbuild Game.sln /p:Configuration=Release /m
