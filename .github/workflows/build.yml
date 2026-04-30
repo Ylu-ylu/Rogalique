@@ -23,8 +23,8 @@ jobs:
         uses: microsoft/setup-msbuild@v2
 
       - name: List all repository files recursively
-        shell: cmd
-        run: dir /s
+        # Исправлено: используем PowerShell для рекурсивного вывода списка файлов
+        run: Get-ChildItem -Recurse
 
       - name: Build solution
         run: msbuild Game.sln /p:Configuration=Release /p:Platform=x64
