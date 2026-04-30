@@ -19,6 +19,10 @@ jobs:
           fetch-depth: 0
           submodules: true
 
+      # Шаг 1: Настройка MSVC (решает проблему с iostream и путями)
+      - name: Setup MSVC
+        uses: ilammy/msvc-dev-cmd@v1
+
       - name: Add MSBuild to PATH
         uses: microsoft/setup-msbuild@v2
 
@@ -29,7 +33,5 @@ jobs:
         run: nuget restore Rogalique/Game.sln
 
       - name: Build solution
-        shell: powershell
-        run: |
-          $msBuildPath = & "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -latest -requires Microsoft.Component.MSBuild -find MSBuild\**\Bin\MSBuild.exe | select-object -first 1
-          & $msBuildPath Rogalique/Game.sln /p:Configuration=Release /p:Platform=x64 /m
+        # Если Release|x64 не работает, попробуйте просто Release
+        run: msbuild Rogalique/Game.sln /p:Configuration=Release /m
