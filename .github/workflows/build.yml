@@ -23,6 +23,10 @@ jobs:
         run: dir/s /b
         shell: cmd
 
+      - name: List Release files
+        run: dir /s /b x64\Release
+        shell: cmd
+
       - name: Setup MSVC
         uses: ilammy/msvc-dev-cmd@v1
 

@@ -2,7 +2,6 @@ d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\engine.pch
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\xyzroguelike\x64\debug\engine.pdb
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\xyzroguelike\x64\debug\engine.idb
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\pch.obj
-d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\statscomponent.obj
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\spriterenderercomponent.obj
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\spritecollidercomponent.obj
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\rigidbodycomponent.obj
@@ -16,15 +15,16 @@ d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\gameworld.obj
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\gameobject.obj
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\followcomponent.obj
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\engine.obj
+d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\dllmain.obj
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\component.obj
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\collision.obj
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\collidercomponent.obj
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\cameracomponent.obj
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\audiocomponent.obj
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\attackcomponen.obj
-d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\dllmain.obj
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\trigger.obj
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\transformcomponent.obj
+d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\statscomponent.obj
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\xyzroguelike\x64\debug\engine.lib
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\engine.res
 d:\xyz c++ for gamedevelopment\rogalique_hw15_v1 -check3\x64\debug\enginetest.ilk
