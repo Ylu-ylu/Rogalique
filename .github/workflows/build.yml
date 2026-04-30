@@ -1,0 +1,34 @@
+name: Build Game Solution
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      # Step 2: Set up MSBuild and VS
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v2
+
+      # Debug: List all files recursively to verify solution file exists
+      - name: List all repository files recursively
+        shell: cmd
+        run: dir /s
+
+      # Step 3: Build the Solution
+      - name: Build solution
+        run: msbuild Game.sln /p:Configuration=Release /p:Platform=x64
