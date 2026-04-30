@@ -25,13 +25,11 @@ jobs:
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1
 
-      - name: List all repository files recursively
-        run: Get-ChildItem -Recurse
-
       - name: Restore NuGet packages
-        # Исправлено: добавлен путь к папке Rogalique
         run: nuget restore Rogalique/Game.sln
 
       - name: Build solution
-        # Исправлено: добавлен путь к папке Rogalique
-        run: msbuild Rogalique/Game.sln /p:Configuration=Release /p:Platform=x64 /m
+        shell: powershell
+        run: |
+          $msBuildPath = & "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -latest -requires Microsoft.Component.MSBuild -find MSBuild\**\Bin\MSBuild.exe | select-object -first 1
+          & $msBuildPath Rogalique/Game.sln /p:Configuration=Release /p:Platform=x64 /m
