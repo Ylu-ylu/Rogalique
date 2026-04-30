@@ -19,7 +19,6 @@ jobs:
           fetch-depth: 0
           submodules: true
 
-      # Шаг 1: Настройка MSVC (решает проблему с iostream и путями)
       - name: Setup MSVC
         uses: ilammy/msvc-dev-cmd@v1
 
@@ -33,5 +32,5 @@ jobs:
         run: nuget restore Rogalique/Game.sln
 
       - name: Build solution
-        # Если Release|x64 не работает, попробуйте просто Release
+        # Убрали /p:Platform=x64, так как проект ее не поддерживает
         run: msbuild Rogalique/Game.sln /p:Configuration=Release /m
