@@ -37,6 +37,6 @@ jobs:
 
       - name: Build solution
         run: |
-          set CL=/I"%CD%\SFML\SFML-2.5.1\include" /I"%CD%\Engine"
+          set CL=/std:c++17 /I"%CD%\SFML\SFML-2.5.1\include" /I"%CD%\Engine"
           msbuild Game.sln /p:Configuration=Release /m
         shell: cmd
