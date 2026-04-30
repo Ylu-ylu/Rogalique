@@ -20,7 +20,7 @@ jobs:
           submodules: true
 
       - name: List files for debug
-        run: dir /s /b
+        run: dir/s /b
         shell: cmd
 
       - name: Setup MSVC
