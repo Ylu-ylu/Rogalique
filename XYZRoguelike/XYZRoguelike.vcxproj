@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -95,6 +95,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\;$(SolutionDir)Engine;$(ProjectDir);$(ProjectDir)$(Platform)\$(Configuration)\;$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)\SFML\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -109,6 +111,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\;$(SolutionDir)Engine;$(ProjectDir);$(ProjectDir)$(Platform)\$(Configuration)\;$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)\SFML\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -123,7 +127,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)Engine\;$(SolutionDir)Engine;$(SolutionDir)XYZRoguelike\x64\Debug\;$(SolutionDir)\x64\Debug;$(ProjectDir)\$(Platform)\$(Configuration)\;$(SolutionDir)\SFML\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\;$(SolutionDir)Engine;$(ProjectDir);$(ProjectDir)$(Platform)\$(Configuration)\;$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)\SFML\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
@@ -144,15 +148,15 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\SFML\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <LanguageStandard>Default</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Engine\;$(SolutionDir)Engine;$(ProjectDir);$(ProjectDir)$(Platform)\$(Configuration)\;$(SolutionDir)$(Platform)\$(Configuration)\;$(SolutionDir)\SFML\SFML-2.5.1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)x64\Release\;%(AdditionalIncludeDirectories);$(SolutionDir)XYZRoguelike\x64\Debug\;$(SolutionDir)x64\Debug\;$(SolutionDir)\SFML\SFML-2.5.1\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)x64\Release\;%(AdditionalLibraryDirectories);$(SolutionDir)XYZRoguelike\x64\Debug\;$(SolutionDir)x64\Debug\;$(SolutionDir)\SFML\SFML-2.5.1\lib</AdditionalLibraryDirectories>
       <AdditionalDependencies>sfml-main.lib;sfml-graphics-s.lib;sfml-window-s.lib;sfml-system-s.lib;sfml-audio-s.lib;sfml-network-s.lib;ws2_32.lib;opengl32.lib;freetype.lib;winmm.lib;gdi32.lib;openal32.lib;flac.lib;vorbisenc.lib;vorbisfile.lib;vorbis.lib;ogg.lib;Engine.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <IgnoreSpecificDefaultLibraries>

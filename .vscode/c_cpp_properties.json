@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/Engine",
+                "${workspaceFolder}/XYZRoguelike",
+                "${workspaceFolder}/SFML/SFML-2.5.1/include"
+            ],
+            "defines": [
+                "SFML_STATIC",
+                "_DEBUG",
+                "_CONSOLE"
+            ],
+            "compilerPath": "cl.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-msvc-x64"
+        }
+    ],
+    "version": 4
+}

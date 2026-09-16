@@ -16,7 +16,7 @@ class RenderSystem
     void Render(const sf::Drawable &drawable);
 
   private:
-    sf::RenderWindow *window;
+    sf::RenderWindow *window = nullptr;
 
     RenderSystem()
     {

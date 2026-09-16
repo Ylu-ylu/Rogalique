@@ -1,11 +1,11 @@
 #pragma once
 
-#include "CameraComponent.h"
-#include "GameWorld.h"
-#include "SpriteRendererComponent.h"
-#include "RenderSystem.h"
-#include "InputComponent.h"
-#include "GameObject.h"
+#include "../Engine/CameraComponent.h"
+#include "../Engine/GameWorld.h"
+#include "../Engine/SpriteRendererComponent.h"
+#include "../Engine/RenderSystem.h"
+#include "../Engine/InputComponent.h"
+#include "../Engine/GameObject.h"
 #include "Vector.h"
 
 namespace XYZRoguelike

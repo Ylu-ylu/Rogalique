@@ -1,7 +1,7 @@
 ﻿#include "CreeperSpawner.h"
 #include "Creeper.h"
-#include "StatsComponent.h"
-#include "TransformComponent.h"
+#include "../Engine/StatsComponent.h"
+#include "../Engine/TransformComponent.h"
 #include <cstdlib>
 #include <ctime>
 #include <cmath>

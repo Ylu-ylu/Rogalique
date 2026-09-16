@@ -4,11 +4,10 @@
 #include "MazeGenerator.h"
 #include "GameSettings.h"
 #include <cstdlib>
-
-#include <ResourceSystem.h>
-#include <SpriteRendererComponent.h>
-#include <RigidbodyComponent.h>
-#include <SpriteColliderComponent.h>
+#include "../Engine/ResourceSystem.h"
+#include "../Engine/SpriteRendererComponent.h"
+#include "../Engine/RigidbodyComponent.h"
+#include "../Engine/SpriteColliderComponent.h"
 
 using namespace XYZEngine;
 

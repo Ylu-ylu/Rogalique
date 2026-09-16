@@ -3,7 +3,7 @@
 #include <memory>
 #include <string>
 #include <SFML/Graphics/Color.hpp>
-#include "GameObject.h"
+#include "../Engine/GameObject.h"
 #include "Vector.h"
 
 namespace XYZRoguelike

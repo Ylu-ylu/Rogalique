@@ -1,12 +1,12 @@
 // XYZRoguelike\Creeper.cpp
 #include "Creeper.h"
-#include <ResourceSystem.h>
-#include "RigidbodyComponent.h"
-#include "SpriteColliderComponent.h"
-#include "FollowComponent.h"
-#include <StatsComponent.h>
-#include <AttackComponen.h>
-#include <GameWorld.h>
+#include "../Engine/ResourceSystem.h"
+#include "../Engine/RigidbodyComponent.h"
+#include "../Engine/SpriteColliderComponent.h"
+#include "../Engine/FollowComponent.h"
+#include "../Engine/StatsComponent.h"
+#include "../Engine/AttackComponen.h"
+#include "../Engine/GameWorld.h"
 #include "GameSettings.h" // Для доступа к SETTINGS
 
 namespace XYZRoguelike
