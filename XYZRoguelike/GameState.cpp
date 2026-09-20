@@ -11,6 +11,7 @@
 
 namespace XYZRoguelike
 {
+// Constructs a GameState instance of the specified type and initializes its associated data
 GameState::GameState(GameStateType type, bool isExclusivelyVisible) : type(type), isExclusivelyVisible(isExclusivelyVisible)
 {
     switch (type)
@@ -49,6 +50,7 @@ GameState::GameState(GameStateType type, bool isExclusivelyVisible) : type(type)
     }
 }
 
+// Destructs the GameState and releases its associated data
 GameState::~GameState()
 {
     if (data)
@@ -57,16 +59,19 @@ GameState::~GameState()
     }
 }
 
+// Delegates update logic to the underlying state data object
 void GameState::Update(float timeDelta)
 {
     data->Update(timeDelta);
 }
 
+// Delegates rendering logic to the underlying state data object
 void GameState::Draw(sf::RenderWindow &window)
 {
     data->Draw(window);
 }
 
+// Delegates window event handling to the underlying state data object
 void GameState::HandleWindowEvent(sf::Event &event)
 {
     data->HandleWindowEvent(event);

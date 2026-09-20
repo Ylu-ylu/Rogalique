@@ -3,12 +3,15 @@
 
 namespace XYZEngine
 {
+// Gets the singleton instance of GameWorld
 GameWorld *GameWorld::Instance()
 {
     static GameWorld world;
     return &world;
 }
 
+// Updates all game objects each frame
+// Called once per frame to update the logic of all objects
 void GameWorld::Update(float deltaTime)
 {
     for (int i = 0; i < gameObjects.size(); i++)
@@ -16,15 +19,20 @@ void GameWorld::Update(float deltaTime)
         gameObjects[i]->Update(deltaTime);
     }
 }
+// Updates the physics system with a fixed time step
+// Accumulates time and performs physics update when fixed time is reached
 void GameWorld::FixedUpdate(float deltaTime)
 {
     fixedCounter += deltaTime;
     if (fixedCounter > PhysicsSystem::Instance()->GetFixedDeltaTime())
-    {
+        return;
+
         fixedCounter -= PhysicsSystem::Instance()->GetFixedDeltaTime();
         PhysicsSystem::Instance()->Update();
-    }
+
 }
+// Renders all game objects to the screen
+// Called once per frame to visualize all objects
 void GameWorld::Render()
 {
     for (int i = 0; i < gameObjects.size(); i++)
@@ -32,6 +40,8 @@ void GameWorld::Render()
         gameObjects[i]->Render();
     }
 }
+// Performs deferred operations after all frame updates
+// Removes objects marked for destruction to avoid iterator issues
 void GameWorld::LateUpdate()
 {
     for (int i = markedToDestroyGameObjects.size() - 1; i >= 0; i--)
@@ -40,22 +50,31 @@ void GameWorld::LateUpdate()
     }
 }
 
+// Creates a new game object without a name and adds it to the world
+// Returns a pointer to the created object
 GameObject *GameWorld::CreateGameObject()
 {
     GameObject *newGameObject = new GameObject();
     gameObjects.push_back(newGameObject);
     return newGameObject;
 }
+// Creates a new game object with the specified name and adds it to the world
+// Returns a pointer to the created object
 GameObject *GameWorld::CreateGameObject(std::string name)
 {
     GameObject *newGameObject = new GameObject(name);
     gameObjects.push_back(newGameObject);
     return newGameObject;
 }
+// Marks a game object for destruction (will be removed in LateUpdate)
+// This is a safe deletion method since it doesn't break iterators during loops
 void GameWorld::DestroyGameObject(GameObject *gameObject)
 {
     markedToDestroyGameObjects.push_back(gameObject);
 }
+// Clears the entire world: removes all root objects (those without a parent)
+// Child objects are removed along with their parents
+// Also resets the counter for physics
 void GameWorld::Clear()
 {
     for (int i = gameObjects.size() - 1; i >= 0; i--)
@@ -74,6 +93,8 @@ void GameWorld::Clear()
     fixedCounter = 0.f;
 }
 
+// Prints the hierarchy of all objects in the world to console for debugging
+// Only root objects (those without a parent) and their hierarchy are printed
 void GameWorld::Print() const
 {
     for (auto &obj : gameObjects)
@@ -89,6 +110,9 @@ void GameWorld::Print() const
     }
 }
 
+// Immediately removes a game object and all of its children
+// Detaches the object from parent, removes from gameObjects and markedToDestroyGameObjects arrays,
+// then recursively deletes all descendants
 void GameWorld::DestroyGameObjectImmediate(GameObject *gameObject)
 {
     auto parent = gameObject->GetComponent<TransformComponent>()->GetParent();

@@ -1,5 +1,6 @@
 // XYZRoguelike\Creeper.cpp
 #include "Creeper.h"
+#include "GameConstants.h"
 #include "../Engine/ResourceSystem.h"
 #include "../Engine/RigidbodyComponent.h"
 #include "../Engine/SpriteColliderComponent.h"
@@ -7,26 +8,27 @@
 #include "../Engine/StatsComponent.h"
 #include "../Engine/AttackComponen.h"
 #include "../Engine/GameWorld.h"
-#include "GameSettings.h" // Для доступа к SETTINGS
+#include "GameSettings.h"
 
 namespace XYZRoguelike
 {
+// Constructs a Creeper enemy with sprite renderer, follow behavior, physics, collider, and combat stats
 Creeper::Creeper(const XYZEngine::Vector2Df &position, XYZEngine::GameObject *target) : AI(position, target)
 {
     // Create GameObject
-    gameObject = XYZEngine::GameWorld::Instance()->CreateGameObject("Creeper");
+    gameObject = XYZEngine::GameWorld::Instance()->CreateGameObject(CREEPER_GAMEOBJECT_NAME);
     auto transform = gameObject->GetComponent<XYZEngine::TransformComponent>();
     transform->SetWorldPosition(position);
 
     // Add Sprite Renderer (use AI texture temporarily or create new one)
     auto renderer = gameObject->AddComponent<XYZEngine::SpriteRendererComponent>();
-    renderer->SetTexture(*XYZEngine::ResourceSystem::Instance()->GetTextureMapElementShared("Creeper", 0));
-    renderer->SetPixelSize(80, 80); // Slightly smaller than AI/Player
+    renderer->SetTexture(*XYZEngine::ResourceSystem::Instance()->GetTextureMapElementShared(CREEPER_TEXTURE_KEY, DEFAULT_TEXTURE_INDEX));
+    renderer->SetPixelSize(CREEPER_TEXTURE_WIDTH, CREEPER_TEXTURE_HEIGHT);
 
     // Add Follow Component (chase player)
     auto follower = gameObject->AddComponent<XYZEngine::FollowComponent>();
     follower->SetTarget(target);
-    follower->SetSpeed(DEFAULT_SPEED);
+    follower->SetSpeed(CREEPER_SPEED);
 
     // Add Physics
     auto rigidbody = gameObject->AddComponent<XYZEngine::RigidbodyComponent>();
@@ -36,17 +38,19 @@ Creeper::Creeper(const XYZEngine::Vector2Df &position, XYZEngine::GameObject *ta
     auto collider = gameObject->AddComponent<XYZEngine::SpriteColliderComponent>();
 
     // Add Stats (health, armor)
-    auto statsComponent = gameObject->AddComponent<XYZEngine::StatsComponent>(DEFAULT_HEALTH, DEFAULT_ARMOR);
+    auto statsComponent = gameObject->AddComponent<XYZEngine::StatsComponent>(CREEPER_HEALTH, CREEPER_ARMOR);
 
     // Add Attack Component
-    auto attackComponent = gameObject->AddComponent<XYZEngine::AttackComponent>(DEFAULT_ATTACK);
+    auto attackComponent = gameObject->AddComponent<XYZEngine::AttackComponent>(CREEPER_ATTACK);
 }
 
+// Constructs a Creeper from template with player reference, enemy name, and unique ID
 Creeper::Creeper(XYZEngine::GameObject *player, const std::string &enemyName, int id) : AI(player, enemyName, id)
 {
     SetColor(sf::Color::Red);
 }
 
+// Creates a copy of this Creeper at the specified spawn position with given name and ID
 std::unique_ptr<AI> Creeper::Clone(XYZEngine::Vector2Df spawnPosition, const std::string &enemyName, int id) const
 {
     auto clone = std::make_unique<Creeper>(fallowTarget, enemyName, id);
@@ -54,8 +58,8 @@ std::unique_ptr<AI> Creeper::Clone(XYZEngine::Vector2Df spawnPosition, const std
     return clone;
 }
 
-// Пример корректной инициализации позиции крипера
-float creeperWidth = 80.0f;  // или получите из renderer->GetPixelWidth()
+// Example of correct Creeper position initialization
+float creeperWidth = 80.0f;  // or get from renderer->GetPixelWidth()
 float creeperHeight = 80.0f; // или получите из renderer->GetPixelHeight()
 
 float x = static_cast<float>(rand() % (SETTINGS.SCREEN_WIDTH - static_cast<int>(creeperWidth)));

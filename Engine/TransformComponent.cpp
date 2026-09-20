@@ -5,6 +5,7 @@
 
 namespace XYZEngine
 {
+// Constructor: initializes the Transform component attached to a GameObject
 TransformComponent::TransformComponent(GameObject *gameObject) : Component(gameObject)
 {
 }
@@ -16,22 +17,26 @@ void TransformComponent::Render()
 {
 }
 
+// Moves the object by the specified offset vector
 void TransformComponent::MoveBy(const Vector2Df &offset)
 {
     MoveBy(offset.x, offset.y);
     isUpdated = false;
 }
+// Moves the object by the specified X and Y offsets
 void TransformComponent::MoveBy(float offsetX, float offsetY)
 {
     localPosition.x += offsetX;
     localPosition.y += offsetY;
     isUpdated = false;
 }
+// Sets the world position from a vector
 void TransformComponent::SetWorldPosition(const Vector2Df &position)
 {
     SetWorldPosition(position.x, position.y);
     isUpdated = false;
 }
+// Sets the world position using X and Y coordinates
 void TransformComponent::SetWorldPosition(float positionX, float positionY)
 {
     Vector2Df newPosition = {positionX, positionY};
@@ -50,11 +55,13 @@ void TransformComponent::SetWorldPosition(float positionX, float positionY)
         updateLocalTransform();
     }
 }
+// Sets the local position from a vector
 void TransformComponent::SetLocalPosition(const Vector2Df &position)
 {
     SetLocalPosition(position.x, position.y);
     isUpdated = false;
 }
+// Sets the local position using X and Y coordinates
 void TransformComponent::SetLocalPosition(float positionX, float positionY)
 {
     localPosition.x = positionX;
@@ -62,6 +69,7 @@ void TransformComponent::SetLocalPosition(float positionX, float positionY)
     isUpdated = false;
 }
 
+// Rotates the object by the specified angle offset in degrees
 void TransformComponent::RotateBy(float offset)
 {
     localRotation = localRotation + offset;
@@ -75,6 +83,7 @@ void TransformComponent::RotateBy(float offset)
     }
     isUpdated = false;
 }
+// Sets the world rotation angle in degrees
 void TransformComponent::SetWorldRotation(float angle)
 {
     if (parent == nullptr)
@@ -92,6 +101,7 @@ void TransformComponent::SetWorldRotation(float angle)
         updateLocalTransform();
     }
 }
+// Sets the local rotation angle in degrees
 void TransformComponent::SetLocalRotation(float angle)
 {
     localRotation = angle;
@@ -106,22 +116,26 @@ void TransformComponent::SetLocalRotation(float angle)
     isUpdated = false;
 }
 
+// Scales the object by the specified scale vector (multiplies current scale)
 void TransformComponent::ScaleBy(const Vector2Df &scale)
 {
     ScaleBy(scale.x, scale.y);
     isUpdated = false;
 }
+// Scales the object by the specified X and Y scale factors
 void TransformComponent::ScaleBy(float scaleX, float scaleY)
 {
     localScale.x *= scaleX;
     localScale.y *= scaleY;
     isUpdated = false;
 }
+// Sets the world scale from a vector
 void TransformComponent::SetWorldScale(const Vector2Df &scale)
 {
     SetWorldScale(scale.x, scale.y);
     isUpdated = false;
 }
+// Sets the world scale using X and Y scale factors
 void TransformComponent::SetWorldScale(float scaleX, float scaleY)
 {
     Vector2Df newScale = {scaleX, scaleY};
@@ -140,11 +154,13 @@ void TransformComponent::SetWorldScale(float scaleX, float scaleY)
         updateLocalTransform();
     }
 }
+// Sets the local scale from a vector
 void TransformComponent::SetLocalScale(const Vector2Df &scale)
 {
     SetLocalScale(scale.x, scale.y);
     isUpdated = false;
 }
+// Sets the local scale using X and Y scale factors
 void TransformComponent::SetLocalScale(float scaleX, float scaleY)
 {
     localScale.x = scaleX;
@@ -152,6 +168,7 @@ void TransformComponent::SetLocalScale(float scaleX, float scaleY)
     isUpdated = false;
 }
 
+// Gets the world position of the object
 const Vector2Df &TransformComponent::GetWorldPosition() const
 {
     updateLocalTransform();
@@ -163,12 +180,14 @@ const Vector2Df &TransformComponent::GetWorldPosition() const
     setWorldInfoFrom(parent->GetWorldTransform() * localTransform);
     return position;
 }
+// Gets the local position of the object relative to its parent
 const Vector2Df &TransformComponent::GetLocalPosition() const
 {
     updateLocalTransform();
     return localPosition;
 }
 
+// Gets the world rotation angle in degrees
 const float TransformComponent::GetWorldRotation() const
 {
     updateLocalTransform();
@@ -181,12 +200,14 @@ const float TransformComponent::GetWorldRotation() const
     return rotation;
 }
 
+// Gets the local rotation angle in degrees relative to its parent
 const float TransformComponent::GetLocalRotation() const
 {
     updateLocalTransform();
     return localRotation;
 }
 
+// Gets the world scale of the object
 const Vector2Df &TransformComponent::GetWorldScale() const
 {
     updateLocalTransform();
@@ -198,12 +219,14 @@ const Vector2Df &TransformComponent::GetWorldScale() const
     setWorldInfoFrom(parent->GetWorldTransform() * localTransform);
     return scale;
 }
+// Gets the local scale relative to its parent
 const Vector2Df &TransformComponent::GetLocalScale() const
 {
     updateLocalTransform();
     return localScale;
 }
 
+// Sets the parent transform for hierarchical transformation
 void TransformComponent::SetParent(TransformComponent *newParent)
 {
     if (parent == nullptr && newParent != nullptr)
@@ -228,11 +251,13 @@ void TransformComponent::SetParent(TransformComponent *newParent)
     parent = newParent;
     isUpdated = false;
 }
+// Gets the parent transform, or null if this is a root transform
 TransformComponent *TransformComponent::GetParent() const
 {
     return parent;
 }
 
+// Gets the combined world transformation matrix
 const Matrix2D TransformComponent::GetWorldTransform() const
 {
     updateLocalTransform();
@@ -245,6 +270,7 @@ const Matrix2D TransformComponent::GetWorldTransform() const
     return parent->GetWorldTransform() * localTransform;
 }
 
+// Prints detailed debug information about this transform's position, rotation, and scale
 void TransformComponent::Print() const
 {
     std::cout << "Transform name : " << gameObject->GetName() << std::endl;

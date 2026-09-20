@@ -8,6 +8,7 @@
 
 namespace XYZRoguelike
 {
+// Initializes all gameplay resources including fonts, sounds, and UI elements
 void GameStatePlayingData::Init()
 {
     // Init game resources (terminate if error)
@@ -34,6 +35,7 @@ void GameStatePlayingData::Init()
     bonusSound.setBuffer(bonusSoundBuffer);
 }
 
+// Handles input events during gameplay, such as pausing with ESC key
 void GameStatePlayingData::HandleWindowEvent(const sf::Event &event)
 {
     if (event.type == sf::Event::KeyPressed)
@@ -45,6 +47,7 @@ void GameStatePlayingData::HandleWindowEvent(const sf::Event &event)
     }
 }
 
+// Configures the spawning context with maze dimensions, grid data, and player reference for enemy spawning
 void GameStatePlayingData::ConfigureSpawnContext(int width,
                                                  int height,
                                                  const std::vector<std::vector<bool>> &gridData,
@@ -56,6 +59,7 @@ void GameStatePlayingData::ConfigureSpawnContext(int width,
     playerTarget = playerObj;
 }
 
+// Updates gameplay state each frame, handling wave spawning when conditions are met
 void GameStatePlayingData::Update(float timeDelta)
 {
     (void)timeDelta;
@@ -76,6 +80,7 @@ void GameStatePlayingData::Update(float timeDelta)
     }
 }
 
+// Renders gameplay elements including background, game objects, score text, and input hints to the window
 void GameStatePlayingData::Draw(sf::RenderWindow &window)
 {
     // Draw background
@@ -93,6 +98,7 @@ void GameStatePlayingData::Draw(sf::RenderWindow &window)
     window.draw(inputHintText);
 }
 
+// Advances to the next level or triggers game win condition when all levels are completed
 void GameStatePlayingData::LoadNextLevel()
 {
     if (currentLevel >= levelLoder.GetLevelCount() - 1)
@@ -106,6 +112,7 @@ void GameStatePlayingData::LoadNextLevel()
     }
 }
 
+// Determines if a ball's direction should be inverted based on collision with a block
 void GameStatePlayingData::GetBallInverse(const sf::Vector2f &ballPos, const sf::FloatRect &blockRect, bool &needInverseDirX, bool &needInverseDirY)
 {
 
@@ -123,6 +130,7 @@ void GameStatePlayingData::GetBallInverse(const sf::Vector2f &ballPos, const sf:
     }
 }
 
+// Handles notifications from observable objects (part of observer pattern implementation)
 void GameStatePlayingData::Notify(std::shared_ptr<IObservable> observable)
 {
 }

@@ -16,11 +16,11 @@ void GameStatePauseMenuData::Init()
     titleText.setCharacterSize(48);
     titleText.setFillColor(sf::Color::Red);
 
-    MenuItem resumeItem;
-    resumeItem.text.setString("Return to game");
-    resumeItem.text.setFont(font);
-    resumeItem.text.setCharacterSize(24);
-    resumeItem.onPressCallback = [](MenuItem &) { Application::Instance().GetGame().PopState(); };
+    MenuItem resumeButtonItem;
+    resumeButtonItem.text.setString("Return to game");
+    resumeButtonItem.text.setFont(font);
+    resumeButtonItem.text.setCharacterSize(24);
+    resumeButtonItem.onPressCallback = [](MenuItem &) { Application::Instance().GetGame().PopState(); };
 
     MenuItem exitItem;
     exitItem.text.setString("Exit to main menu");
@@ -31,7 +31,7 @@ void GameStatePauseMenuData::Init()
     MenuItem pauseMenu;
     pauseMenu.childrenOrientation = Orientation::Vertical;
     pauseMenu.childrenAlignment = Alignment::Middle;
-    pauseMenu.childrens.push_back(resumeItem);
+    pauseMenu.childrens.push_back(resumeButtonItem);
     pauseMenu.childrens.push_back(exitItem);
 
     menu.Init(pauseMenu);

@@ -10,6 +10,7 @@
 namespace XYZRoguelike
 {
 
+// Constructs game instance with initial records and switches to main menu state
 Game::Game()
 {
     // Generate fake records table
@@ -27,11 +28,13 @@ Game::Game()
     SwitchStateTo(GameStateType::MainMenu);
 }
 
+// Destructs game instance and cleans up all active game states
 Game::~Game()
 {
     Shutdown();
 }
 
+// Processes all pending window events and delegates them to the current game state
 void Game::HandleWindowEvents(sf::RenderWindow &window)
 {
     sf::Event event;
@@ -50,6 +53,7 @@ void Game::HandleWindowEvents(sf::RenderWindow &window)
     }
 }
 
+// Updates game state and processes pending state changes; returns false when game should exit
 bool Game::Update(float timeDelta)
 {
     if (stateChangeType == GameStateChangeType::Switch)
@@ -88,6 +92,7 @@ bool Game::Update(float timeDelta)
     return false;
 }
 
+// Renders visible game states to the window, respecting exclusive visibility flags
 void Game::Draw(sf::RenderWindow &window)
 {
     if (stateStack.size() > 0)
@@ -109,6 +114,7 @@ void Game::Draw(sf::RenderWindow &window)
     }
 }
 
+// Clears all game states from the stack and resets state change tracking
 void Game::Shutdown()
 {
     // Shutdown all game states
@@ -122,6 +128,7 @@ void Game::Shutdown()
     pendingGameStateIsExclusivelyVisible = false;
 }
 
+// Pushes a new game state onto the stack, optionally making it block underlying states from rendering
 void Game::PushState(GameStateType stateType, bool isExclusivelyVisible)
 {
     pendingGameStateType = stateType;
@@ -129,6 +136,7 @@ void Game::PushState(GameStateType stateType, bool isExclusivelyVisible)
     stateChangeType = GameStateChangeType::Push;
 }
 
+// Removes the current game state from the stack and returns to the previous one
 void Game::PopState()
 {
     pendingGameStateType = GameStateType::None;
@@ -136,11 +144,13 @@ void Game::PopState()
     stateChangeType = GameStateChangeType::Pop;
 }
 
+// Exits current gameplay and returns to main menu
 void Game::ExitGame()
 {
     SwitchStateTo(GameStateType::MainMenu);
 }
 
+// Switches to a new game state, clearing all existing states from the stack
 void Game::SwitchStateTo(GameStateType newState)
 {
     pendingGameStateType = newState;
@@ -148,17 +158,20 @@ void Game::SwitchStateTo(GameStateType newState)
     stateChangeType = GameStateChangeType::Switch;
 }
 
+// Displays the records/high scores screen as an exclusive overlay
 void Game::ShowRecords()
 {
     PushState(GameStateType::Records, true);
 }
 
+// Checks if a specific game option is currently enabled
 bool Game::IsEnableOptions(GameOptions option) const
 {
     const bool isEnable = ((std::uint8_t)options & (std::uint8_t)option) != (std::uint8_t)GameOptions::Empty;
     return isEnable;
 }
 
+// Enables or disables a specific game option using bitwise operations
 void Game::SetOption(GameOptions option, bool value)
 {
     if (value)
@@ -171,42 +184,50 @@ void Game::SetOption(GameOptions option, bool value)
     }
 }
 
+// Retrieves the best score for a player by their ID; returns 0 if player not found
 int Game::GetRecordByPlayerId(const std::string &playerId) const
 {
     auto it = recordsTable.find(playerId);
     return it == recordsTable.end() ? 0 : it->second;
 }
 
+// Quits the game entirely by switching to None state
 void Game::QuitGame()
 {
     SwitchStateTo(GameStateType::None);
 }
 
+// Updates a player's record with the highest score between current and new value
 void Game::UpdateRecord(const std::string &playerId, int score)
 {
     recordsTable[playerId] = std::max(recordsTable[playerId], score);
 }
 
+// Switches to the Playing game state to begin a new game session
 void Game::StartGame()
 {
     SwitchStateTo(GameStateType::Playing);
 }
 
+// Pauses gameplay by pushing an exit dialog state onto the stack
 void Game::PauseGame()
 {
     PushState(GameStateType::ExitDialog, false);
 }
 
+// Displays game win screen as an overlay
 void Game::WinGame()
 {
     PushState(GameStateType::GameWin, false);
 }
 
+// Displays game over screen as an overlay
 void Game::LooseGame()
 {
     PushState(GameStateType::GameOver, false);
 }
 
+// Main game loop update: processes events, updates game state, and renders frame
 void Game::UpdateGame(float timeDelta, sf::RenderWindow &window)
 {
     HandleWindowEvents(window);
@@ -227,6 +248,7 @@ void Game::UpdateGame(float timeDelta, sf::RenderWindow &window)
     }
 }
 
+// Delegates level progression to the current Playing game state
 void Game::LoadNextLevel()
 {
     assert(stateStack.back().GetType() == GameStateType::Playing);

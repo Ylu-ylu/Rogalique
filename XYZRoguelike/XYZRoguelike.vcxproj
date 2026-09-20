@@ -196,6 +196,7 @@
     <ClInclude Include="CreeperSpawner.h" />
     <ClInclude Include="DeveloperLevel.h" />
     <ClInclude Include="Floor.h" />
+    <ClInclude Include="GameConstants.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="GameStateData.h" />
     <ClInclude Include="GameStateGameWin.h" />

@@ -4,6 +4,7 @@
 #include <SpriteRendererComponent.h>
 #include <ResourceSystem.h>
 #include "GameObject.h"
+#include "GameConstants.h"
 
 namespace XYZRoguelike
 {
