@@ -192,6 +192,7 @@
     <ClInclude Include="Scene.h" />
     <ClInclude Include="SpriteColliderComponent.h" />
     <ClInclude Include="SpriteDirectionComponent.h" />
+    <ClInclude Include="SpriteMovementAnimationComponent.h" />
     <ClInclude Include="SpriteRendererComponent.h" />
     <ClInclude Include="StatsComponent.h" />
     <ClInclude Include="TransformComponent.h" />
@@ -225,6 +226,7 @@
     <ClCompile Include="RigidbodyComponent.cpp" />
     <ClCompile Include="SpriteColliderComponent.cpp" />
     <ClCompile Include="SpriteDirectionComponent.cpp" />
+    <ClCompile Include="SpriteMovementAnimationComponent.cpp" />
     <ClCompile Include="SpriteRendererComponent.cpp" />
     <ClCompile Include="StatsComponent.cpp" />
     <ClCompile Include="TransformComponent.cpp" />

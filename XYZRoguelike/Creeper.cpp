@@ -6,6 +6,7 @@
 #include "../Engine/SpriteColliderComponent.h"
 #include "../Engine/FollowComponent.h"
 #include "../Engine/SpriteDirectionComponent.h"
+#include "../Engine/SpriteMovementAnimationComponent.h"
 #include "../Engine/StatsComponent.h"
 #include "../Engine/AttackComponen.h"
 #include "../Engine/GameWorld.h"
@@ -32,6 +33,11 @@ Creeper::Creeper(const XYZEngine::Vector2Df &position, XYZEngine::GameObject *ta
     follower->SetSpeed(CREEPER_SPEED);
 
     gameObject->AddComponent<XYZEngine::SpriteDirectionComponent>();
+
+    auto animation = gameObject->AddComponent<XYZEngine::SpriteMovementAnimationComponent>();
+    animation->AddAnimation("walk", CREEPER_TEXTURE_KEY, {0, 1, 2, 3, 4, 5, 6}, 0.1f, true);
+    animation->AddAnimation("idle", CREEPER_TEXTURE_KEY, {DEFAULT_TEXTURE_INDEX}, 0.1f, true);
+    animation->Play("idle");
 
     // Add Physics
     auto rigidbody = gameObject->AddComponent<XYZEngine::RigidbodyComponent>();

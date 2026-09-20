@@ -6,6 +6,7 @@
 #include "SpriteColliderComponent.h"
 #include <MovementComponent.h>
 #include <SpriteDirectionComponent.h>
+#include <SpriteMovementAnimationComponent.h>
 #include <StatsComponent.h>
 #include <AttackComponen.h>
 
@@ -37,6 +38,11 @@ Player::Player(const XYZEngine::Vector2Df &position)
     movement->SetSpeed(PLAYER_SPEED);
 
     gameObject->AddComponent<XYZEngine::SpriteDirectionComponent>();
+
+    auto animation = gameObject->AddComponent<XYZEngine::SpriteMovementAnimationComponent>();
+    animation->AddAnimation("walk", PLAYER_TEXTURE_KEY, {0, 1, 2, 3, 4, 5, 6, 7}, 0.08f, true);
+    animation->AddAnimation("idle", PLAYER_TEXTURE_KEY, {DEFAULT_TEXTURE_INDEX}, 0.1f, true);
+    animation->Play("idle");
 
     auto rigidbody = gameObject->AddComponent<XYZEngine::RigidbodyComponent>();
     rigidbody->SetKinematic(false);

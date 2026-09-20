@@ -6,6 +6,7 @@
 #include "../Engine/SpriteColliderComponent.h"
 #include "../Engine/FollowComponent.h"
 #include "../Engine/SpriteDirectionComponent.h"
+#include "../Engine/SpriteMovementAnimationComponent.h"
 #include "../Engine/StatsComponent.h"
 #include "../Engine/AttackComponen.h"
 #include "../Engine/SpriteRendererComponent.h"
@@ -44,6 +45,11 @@ AI::AI(XYZEngine::GameObject *player, const std::string &enemyName, int id) : fa
     follower->SetSpeed(AI_SPEED);
 
     gameObject->AddComponent<XYZEngine::SpriteDirectionComponent>();
+
+    auto animation = gameObject->AddComponent<XYZEngine::SpriteMovementAnimationComponent>();
+    animation->AddAnimation("walk", AI_TEXTURE_KEY, {0, 1, 2, 3, 4, 5, 6}, 0.1f, true);
+    animation->AddAnimation("idle", AI_TEXTURE_KEY, {DEFAULT_TEXTURE_INDEX}, 0.1f, true);
+    animation->Play("idle");
 
     auto rigidbody = gameObject->AddComponent<XYZEngine::RigidbodyComponent>();
     rigidbody->SetKinematic(false);

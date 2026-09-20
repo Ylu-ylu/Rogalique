@@ -2,6 +2,7 @@
 #include "Component.h"
 #include "TransformComponent.h"
 #include "SpriteRendererComponent.h"
+#include "SpriteMovementAnimationComponent.h"
 #include "ResourceSystem.h"
 
 namespace XYZEngine
@@ -24,6 +25,15 @@ class FollowComponent : public Component
   private:
     TransformComponent *transform = nullptr;
     TransformComponent *targetTransform = nullptr;
+    SpriteMovementAnimationComponent *animation = nullptr;
+
+    Vector2Df previousPosition = {0.f, 0.f};
+    bool previousPositionValid = false;
+    Vector2Df windowDelta = {0.f, 0.f};
+    float windowTimer = 0.f;
+    float checkWindow = 0.25f;
+    float moveDistanceThreshold = 8.f;
+    bool isWalking = false;
 
     // Render
     std::vector<const sf::Texture *> textureMap;

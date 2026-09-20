@@ -46,21 +46,21 @@ int main()
         LOG_INFO("Loading texture maps and sounds");
 
         // Load textures
-        XYZEngine::ResourceSystem::Instance()->LoadTextureMap("ai", "Resources/TextureMaps/Wizard.png", {46, 140}, 1, false);
+        XYZEngine::ResourceSystem::Instance()->LoadTextureMap("ai", "Resources/TextureMaps/Wizard.png", {52, 53}, 7, false);
         if (XYZEngine::ResourceSystem::Instance()->GetTextureMapElementShared("ai", 0) == nullptr)
         {
             LOG_ERROR("Texture map 'ai' failed to load or is empty");
             throw std::runtime_error("Failed to load required texture map: ai");
         }
 
-        XYZEngine::ResourceSystem::Instance()->LoadTextureMap("Player", "Resources/TextureMaps/Man.png", {45, 140}, 1, false);
+        XYZEngine::ResourceSystem::Instance()->LoadTextureMap("Player", "Resources/TextureMaps/Man.png", {46, 48}, 8, false);
         if (XYZEngine::ResourceSystem::Instance()->GetTextureMapElementShared("Player", 0) == nullptr)
         {
             LOG_ERROR("Texture map 'Player' failed to load or is empty");
             throw std::runtime_error("Failed to load required texture map: Player");
         }
 
-        XYZEngine::ResourceSystem::Instance()->LoadTextureMap("Creeper", "Resources/TextureMaps/Creeper.png", {45, 140}, 1, false);
+        XYZEngine::ResourceSystem::Instance()->LoadTextureMap("Creeper", "Resources/TextureMaps/Creeper.png", {56, 54}, 7, false);
         if (XYZEngine::ResourceSystem::Instance()->GetTextureMapElementShared("Creeper", 0) == nullptr)
         {
             LOG_ERROR("Texture map 'Player' failed to load or is empty");

@@ -27,6 +27,8 @@ void Engine::Run()
 
     LOG_INFO("Program was started!");
 
+    RenderSystem::Instance()->GetMainWindow().setFramerateLimit(60);
+
     while (RenderSystem::Instance()->GetMainWindow().isOpen())
     {
         sf::Time dt = gameClock.restart();

@@ -225,6 +225,12 @@
       <Project>{a884ec93-de06-497d-8c5f-fee92b41b86f}</Project>
     </ProjectReference>
   </ItemGroup>
+  <ItemDefinitionGroup>
+    <PostBuildEvent>
+      <Command>xcopy "$(SolutionDir)SFML\SFML-2.5.1\bin\openal32.dll" "$(OutDir)" /D /Y
+xcopy "$(ProjectDir)Resources" "$(OutDir)Resources\" /E /I /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

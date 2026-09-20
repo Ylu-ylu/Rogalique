@@ -24,6 +24,23 @@ void MovementComponent::Update(float deltaTime)
 
     acceleration = transform->GetWorldPosition() - previousPosition;
     previousPosition = transform->GetWorldPosition();
+
+    if (animation == nullptr)
+    {
+        animation = gameObject->GetComponent<SpriteMovementAnimationComponent>();
+    }
+
+    if (animation != nullptr)
+    {
+        if (xAxis != 0.f || yAxis != 0.f)
+        {
+            animation->Play("walk");
+        }
+        else
+        {
+            animation->Play("idle");
+        }
+    }
 }
 
 void MovementComponent::Render()
