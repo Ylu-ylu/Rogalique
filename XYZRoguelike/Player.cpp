@@ -5,6 +5,7 @@
 #include "RigidbodyComponent.h"
 #include "SpriteColliderComponent.h"
 #include <MovementComponent.h>
+#include <SpriteDirectionComponent.h>
 #include <StatsComponent.h>
 #include <AttackComponen.h>
 
@@ -34,6 +35,8 @@ Player::Player(const XYZEngine::Vector2Df &position)
 
     auto movement = gameObject->AddComponent<XYZEngine::MovementComponent>();
     movement->SetSpeed(PLAYER_SPEED);
+
+    gameObject->AddComponent<XYZEngine::SpriteDirectionComponent>();
 
     auto rigidbody = gameObject->AddComponent<XYZEngine::RigidbodyComponent>();
     rigidbody->SetKinematic(false);

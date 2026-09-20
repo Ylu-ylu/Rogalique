@@ -1,0 +1,67 @@
+Этап 0. Обзор (30 мин)
+#	Файл	Зачем
+1	README.md	3 строки — что за игра
+2	Game.sln	4 проекта: Engine ← XYZRoguelike, EngineTest, SFML
+3	описание/Rogalique_архитектурный_отчет.md	готовый архитектурный разбор (проверяй по коду)
+Этап 1. Точка входа и главный цикл
+GameMain.cpp → Engine → GameWorld → GameObject/Component
+#	Файл	Что смотреть	Связь со следующим
+4	XYZRoguelike/GameMain.cpp	main(): окно, загрузка текстур, DeveloperLevel::Start(), Engine::Run()	вызывает Engine
+5	Engine/Engine.h/.cpp	синглтон, game loop: Update → FixedUpdate → Render → LateUpdate	всё делегирует GameWorld
+6	Engine/GameWorld.h/.cpp	хранение объектов, отложенное удаление через LateUpdate (важная идея!)	работает с GameObject
+Этап 2. Ядро движка: объекты и компоненты
+GameObject ← Component ← TransformComponent ← Matrix2D/Vector
+#	Файл	Что смотреть
+7	Engine/GameObject.h/.cpp	AddComponent<T>, GetComponent<T>, владение компонентами
+8	Engine/Component.h/.cpp	базовый абстрактный класс, Update/Render
+9	Engine/TransformComponent.h/.cpp + Matrix2D.h/.cpp + Vector.h	иерархия parent/child, dirty-flag кэширование матриц
+Контрольная точка: нарисуй на бумаге «GameObject содержит Component'ы, каждый GameObject имеет Transform».
+
+Этап 3. Подсистемы-синглтоны (в порядке важности)
+#	Файл	Что смотреть
+10	Engine/RenderSystem.h/.cpp	обёртка над sf::RenderWindow
+11	Engine/ResourceSystem.h/.cpp	кэш текстур/атласов/звуков; найди баг: Clear() не чистит звуки
+12	Engine/PhysicsSystem.h/.cpp	AABB-коллизии, trigger enter/exit; найди баг: утечка new Trigger (строки 42–44, 85–87)
+13	Engine/ColliderComponent.h/.cpp + SpriteColliderComponent + Collision.h + Trigger.h	подписки на события, Unsubscribe
+14	Engine/RigidbodyComponent.h/.cpp	скорость, демпфинг; найди баг: зануление отрицательной скорости
+Этап 4. Поведенческие компоненты
+#	Файл	Что смотреть
+15	InputComponent → MovementComponent	цепочка «ввод → скорость»
+16	FollowComponent	как враг преследует игрока
+17	StatsComponent, AttackComponen.h/.cpp (опечатка в имени!), CameraComponent, AudioComponent	HP/атака/камера/звук
+Этап 5. Игровой слой (сцена)
+Scene → DeveloperLevel → MazeGenerator
+                      → Player / AI / Creeper / CreeperSpawner
+                      → Wall / Floor / Music
+#	Файл	Что смотреть
+18	XYZRoguelike/DeveloperLevel.h/.cpp	главный оркестратор: рамка уровня, спавн, выход-триггер, LoadNextLevel()
+19	MazeGenerator.h/.cpp	DFS-бэктрекинг со стеком, шаг через 2 клетки
+20	Player.h/.cpp	пример сборки GameObject из компонентов (итог этапов 2–4)
+21	AI.h/.cpp → Creeper.h/.cpp → CreeperSpawner.h/.cpp	наследование, Clone(), пресеты Normal/Hard/Boss/Wave
+22	Wall.cpp, Floor.cpp, Music.cpp	простейшие обёртки (5 минут)
+23	GameConstants.h, GameSettings.h, randomizer.h	константы
+Этап 6. Мёртвый код (знать, что он не исполняется!)
+Application, Game, GameState*, Menu, LevelLoader, IObserver, IDelayedAction — слой из старого проекта «змейка/арканоид». main() их не вызывает. Читай бегло, только чтобы понять паттерн стековой state machine.
+
+Этап 7. Тесты и сборка
+#	Файл	Что смотреть
+24	EngineTest/test.cpp	12 тестов — только Vector2D
+25	Build.bat, .github/workflows/	MSBuild, NuGet, CI
+Схема зависимостей для чтения
+GameMain.cpp
+  └─ Engine::Run()
+       └─ GameWorld
+            ├─ GameObject ─ Component (база)
+            │                ├─ TransformComponent ─ Matrix2D ─ Vector
+            │                ├─ SpriteRenderer ──── RenderSystem ─┐
+            │                ├─ Collider ────────── PhysicsSystem │ ResourceSystem
+            │                ├─ Rigidbody                        │
+            │                ├─ Input → Movement                  │
+            │                ├─ Follow (AI)                       │
+            │                └─ Stats / Attack / Camera / Audio ──┘
+            └─ DeveloperLevel (Scene)
+                 ├─ MazeGenerator
+                 ├─ Player
+                 ├─ AI → Creeper → CreeperSpawner
+                 └─ Wall / Floor / Music
+Правило: не переходи к следующему файлу, пока не можешь объяснить, кто его создаёт и кто вызывает его методы. Весь путь — примерно 25 файлов ядра, реально читается за 2–4 вечера.

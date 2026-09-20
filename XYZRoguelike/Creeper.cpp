@@ -5,6 +5,7 @@
 #include "../Engine/RigidbodyComponent.h"
 #include "../Engine/SpriteColliderComponent.h"
 #include "../Engine/FollowComponent.h"
+#include "../Engine/SpriteDirectionComponent.h"
 #include "../Engine/StatsComponent.h"
 #include "../Engine/AttackComponen.h"
 #include "../Engine/GameWorld.h"
@@ -29,6 +30,8 @@ Creeper::Creeper(const XYZEngine::Vector2Df &position, XYZEngine::GameObject *ta
     auto follower = gameObject->AddComponent<XYZEngine::FollowComponent>();
     follower->SetTarget(target);
     follower->SetSpeed(CREEPER_SPEED);
+
+    gameObject->AddComponent<XYZEngine::SpriteDirectionComponent>();
 
     // Add Physics
     auto rigidbody = gameObject->AddComponent<XYZEngine::RigidbodyComponent>();
@@ -60,7 +63,7 @@ std::unique_ptr<AI> Creeper::Clone(XYZEngine::Vector2Df spawnPosition, const std
 
 // Example of correct Creeper position initialization
 float creeperWidth = 80.0f;  // or get from renderer->GetPixelWidth()
-float creeperHeight = 80.0f; // или получите из renderer->GetPixelHeight()
+float creeperHeight = 80.0f; // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ renderer->GetPixelHeight()
 
 float x = static_cast<float>(rand() % (SETTINGS.SCREEN_WIDTH - static_cast<int>(creeperWidth)));
 float y = static_cast<float>(rand() % (SETTINGS.SCREEN_HEIGHT - static_cast<int>(creeperHeight)));

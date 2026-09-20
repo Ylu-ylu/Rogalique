@@ -8,7 +8,6 @@ namespace XYZEngine
 FollowComponent::FollowComponent(GameObject *gameObject) : Component(gameObject)
 {
     transform = gameObject->GetComponent<TransformComponent>();
-    spriteRenderer = gameObject->GetComponent<SpriteRendererComponent>();
     if (transform == nullptr)
     {
         std::cout << "FollowComponent requires a TransformComponent." << std::endl;
@@ -43,11 +42,6 @@ void FollowComponent::Update(float deltaTime)
     {
         Vector2Df normalized = Vector2Df(direction.x / length, direction.y / length);
         transform->MoveBy(normalized * speed * deltaTime);
-
-        if (spriteRenderer)
-        {
-            spriteRenderer->FlipX(direction.x < 0);
-        }
     }
 }
 

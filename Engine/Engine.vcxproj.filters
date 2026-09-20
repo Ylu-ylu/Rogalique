@@ -81,6 +81,9 @@
     <ClInclude Include="SpriteColliderComponent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="SpriteDirectionComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="AudioComponent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -156,6 +159,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SpriteColliderComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteDirectionComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="AudioComponent.cpp">

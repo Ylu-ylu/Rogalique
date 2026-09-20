@@ -5,6 +5,7 @@
 #include "../Engine/RigidbodyComponent.h"
 #include "../Engine/SpriteColliderComponent.h"
 #include "../Engine/FollowComponent.h"
+#include "../Engine/SpriteDirectionComponent.h"
 #include "../Engine/StatsComponent.h"
 #include "../Engine/AttackComponen.h"
 #include "../Engine/SpriteRendererComponent.h"
@@ -41,6 +42,8 @@ AI::AI(XYZEngine::GameObject *player, const std::string &enemyName, int id) : fa
     auto follower = gameObject->AddComponent<XYZEngine::FollowComponent>();
     follower->SetTarget(player);
     follower->SetSpeed(AI_SPEED);
+
+    gameObject->AddComponent<XYZEngine::SpriteDirectionComponent>();
 
     auto rigidbody = gameObject->AddComponent<XYZEngine::RigidbodyComponent>();
     rigidbody->SetKinematic(false);
@@ -99,7 +102,7 @@ XYZEngine::Vector2Df AI::GetPosition() const
 void AI::SetHealthMultiplier(float multiplier)
 {
     maxHealth = baseHealth * multiplier;
-    // TODO: Обновить StatsComponent если есть
+    // TODO: пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ StatsComponent пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
     auto stats = gameObject->GetComponent<XYZEngine::StatsComponent>();
     if (stats)
     {
@@ -131,7 +134,7 @@ void AI::SetAttackMultiplier(float multiplier)
 
 void AI::SetSpeedMultiplier(float multiplier)
 {
-    // TODO: Получить FollowComponent и изменить скорость
+    // TODO: пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ FollowComponent пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     auto follower = gameObject->GetComponent<XYZEngine::FollowComponent>();
     if (follower)
     {

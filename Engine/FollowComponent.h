@@ -24,7 +24,6 @@ class FollowComponent : public Component
   private:
     TransformComponent *transform = nullptr;
     TransformComponent *targetTransform = nullptr;
-    SpriteRendererComponent *spriteRenderer = nullptr;
 
     // Render
     std::vector<const sf::Texture *> textureMap;

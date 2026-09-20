@@ -24,7 +24,7 @@ int main()
         {
             LOG_ERROR("Failed to allocate main window");
             throw std::runtime_error("Window allocation failed");
-        }
+        }  
         XYZEngine::RenderSystem::Instance()->SetMainWindow(window);
 
         // Pre-check resource files (warn if missing before attempting to load)
