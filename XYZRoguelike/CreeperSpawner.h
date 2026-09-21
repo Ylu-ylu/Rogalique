@@ -62,6 +62,7 @@ class CreeperSpawner
   private:
     std::vector<std::unique_ptr<AI>> enemies;
     XYZEngine::GameObject *cachedPlayer = nullptr;
+    std::vector<std::pair<int, int>> usedCells;
 
     XYZEngine::Vector2Df GetRandomValidPosition(int mazeWidth,
                                                 int mazeHeight,

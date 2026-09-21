@@ -60,7 +60,9 @@ void DeveloperLevel::CreateExitTrigger(int exitX, int exitY)
     auto playerCollider = player->GetGameObject()->GetComponent<XYZEngine::SpriteColliderComponent>();
     if (playerCollider != nullptr)
     {
-        playerCollider->SubscribeTriggerEnter([this](XYZEngine::Trigger) { LoadNextLevel(); });
+        playerCollider->SubscribeTriggerEnter([this](XYZEngine::Trigger) {
+            XYZEngine::GameWorld::Instance()->EnqueueLateAction([this]() { LoadNextLevel(); });
+        });
     }
 }
 
@@ -78,9 +80,9 @@ void DeveloperLevel::LoadNextLevel()
 
 void DeveloperLevel::Start()
 {
-    // harder level => larger map
-    int width = 15 + (currentLevel - 1) * 2;
-    int height = 15 + (currentLevel - 1) * 2;
+    // maze size stays the same every level, only the wall layout changes
+    int width = 15;
+    int height = 15;
 
     int exitX = 0;
     int exitY = 0;

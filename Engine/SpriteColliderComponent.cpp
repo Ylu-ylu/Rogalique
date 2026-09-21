@@ -14,6 +14,14 @@ SpriteColliderComponent::SpriteColliderComponent(GameObject *gameObject) : Colli
     }
 
     sprite = gameObject->GetComponent<SpriteRendererComponent>()->GetSprite();
+
+    auto spriteBounds = sprite->getGlobalBounds();
+    auto position = gameObject->GetComponent<TransformComponent>()->GetWorldPosition();
+    bounds = {position.x - 0.5f * spriteBounds.width,
+              position.y - 0.5f * spriteBounds.height,
+              spriteBounds.width,
+              spriteBounds.height};
+
     PhysicsSystem::Instance()->Subscribe(this);
 }
 SpriteColliderComponent::~SpriteColliderComponent()
@@ -27,7 +35,14 @@ SpriteColliderComponent::~SpriteColliderComponent()
 
 void SpriteColliderComponent::Update(float deltaTime)
 {
-    bounds = sprite->getGlobalBounds();
+    // Bounds must come from the transform: freshly created objects have not
+    // been rendered yet, so the sprite position would still be (0, 0).
+    auto spriteBounds = sprite->getGlobalBounds();
+    auto position = gameObject->GetComponent<TransformComponent>()->GetWorldPosition();
+    bounds = {position.x - 0.5f * spriteBounds.width,
+              position.y - 0.5f * spriteBounds.height,
+              spriteBounds.width,
+              spriteBounds.height};
 }
 void SpriteColliderComponent::Render()
 {

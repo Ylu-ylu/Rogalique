@@ -83,10 +83,12 @@ CreeperSpawner::CreeperSpawner()
 void CreeperSpawner::SpawnCreepers(
     int count, int mazeWidth, int mazeHeight, const std::vector<std::vector<bool>> &grid, XYZEngine::GameObject *playerTarget)
 {
+    cachedPlayer = playerTarget;
+
     for (int i = 0; i < count; ++i)
     {
         // Get random valid position from maze grid
-        XYZEngine::Vector2Df spawnPos = GetRandomValidPosition(mazeWidth, mazeHeight, grid);
+        XYZEngine::Vector2Df spawnPos = GetRandomValidPosition(mazeWidth, mazeHeight, grid, 300.0f);
 
         // Create creeper at position targeting player
         auto creeper = std::make_unique<Creeper>(playerTarget, "Creeper", i);
@@ -135,14 +137,35 @@ XYZEngine::Vector2Df CreeperSpawner::GetRandomValidPosition(int mazeWidth,
                                                             const std::vector<std::vector<bool>> &grid,
                                                             float minDistanceFromPlayer)
 {
-    // Собираем все валидные позиции
+    // Собираем все валидные позиции (не занятые другими врагами).
+    // Крайние клетки сетки пропускаем: их мировая позиция совпадает с рамкой
+    // лабиринта — враг не должен рождаться внутри пограничной стены.
     std::vector<std::pair<int, int>> validPositions;
     for (int y = 0; y < mazeHeight; ++y)
     {
         for (int x = 0; x < mazeWidth; ++x)
         {
+            if (x == 0 || y == 0 || x == mazeWidth - 1 || y == mazeHeight - 1)
+            {
+                continue;
+            }
+
             if (y < grid.size() && x < grid[y].size() && grid[y][x])
             {
+                bool alreadyUsed = false;
+                for (const auto &cell : usedCells)
+                {
+                    if (cell.first == x && cell.second == y)
+                    {
+                        alreadyUsed = true;
+                        break;
+                    }
+                }
+                if (alreadyUsed)
+                {
+                    continue;
+                }
+
                 // Проверка на минимальную дистанцию до игрока
                 if (minDistanceFromPlayer > 0.0f && cachedPlayer != nullptr)
                 {
@@ -150,7 +173,7 @@ XYZEngine::Vector2Df CreeperSpawner::GetRandomValidPosition(int mazeWidth,
                     if (transform)
                     {
                         XYZEngine::Vector2Df playerPos = transform->GetWorldPosition();
-                        XYZEngine::Vector2Df pos{(x + 1) * 128.0f, (y + 1) * 128.0f};
+                        XYZEngine::Vector2Df pos{x * 128.0f, y * 128.0f};
                         if (CalculateDistance(pos, playerPos) < minDistanceFromPlayer)
                             continue;
                     }
@@ -163,7 +186,8 @@ XYZEngine::Vector2Df CreeperSpawner::GetRandomValidPosition(int mazeWidth,
     if (!validPositions.empty())
     {
         auto [x, y] = validPositions[std::rand() % validPositions.size()];
-        return XYZEngine::Vector2Df{(x + 1) * 128.0f, (y + 1) * 128.0f};
+        usedCells.emplace_back(x, y);
+        return XYZEngine::Vector2Df{x * 128.0f, y * 128.0f};
     }
 
     // Если не найдено — fallback в центр карты

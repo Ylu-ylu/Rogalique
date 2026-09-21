@@ -40,7 +40,7 @@ void PhysicsSystem::Update()
                         triggersEnteredPair.find(colliders[j]) == triggersEnteredPair.end())
                     {
                         auto trigger = new Trigger(colliders[i], colliders[j]);
-                        colliders[i]->OnTriggerEnter(*trigger);
+                         colliders[i]->OnTriggerEnter(*trigger);
                         colliders[j]->OnTriggerEnter(*trigger);
 
                         triggersEnteredPair.emplace(colliders[i], colliders[j]);
@@ -113,6 +113,18 @@ void PhysicsSystem::Subscribe(ColliderComponent *collider)
 void PhysicsSystem::Unsubscribe(ColliderComponent *collider)
 {
     std::cout << "Unsubscribe " << collider << std::endl;
+
+    for (auto it = triggersEnteredPair.cbegin(); it != triggersEnteredPair.cend();)
+    {
+        if (it->first == collider || it->second == collider)
+        {
+            it = triggersEnteredPair.erase(it);
+        }
+        else
+        {
+            ++it;
+        }
+    }
 
     colliders.erase(std::remove_if(colliders.begin(), colliders.end(), [collider](ColliderComponent *obj) { return obj == collider; }),
                     colliders.end());

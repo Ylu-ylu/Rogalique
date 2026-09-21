@@ -41,13 +41,28 @@ void GameWorld::Render()
     }
 }
 // Performs deferred operations after all frame updates
-// Removes objects marked for destruction to avoid iterator issues
+// Runs queued actions first, then removes objects marked for destruction
 void GameWorld::LateUpdate()
 {
+    while (!lateActions.empty())
+    {
+        auto action = lateActions.front();
+        lateActions.erase(lateActions.begin());
+        action();
+    }
+
     for (int i = markedToDestroyGameObjects.size() - 1; i >= 0; i--)
     {
         DestroyGameObjectImmediate(markedToDestroyGameObjects[i]);
     }
+}
+
+// Defers an action to the end of the frame, after physics and rendering finished.
+// Level transitions must use this: rebuilding the world inside a physics
+// callback would mutate colliders while PhysicsSystem iterates them.
+void GameWorld::EnqueueLateAction(std::function<void()> action)
+{
+    lateActions.push_back(action);
 }
 
 // Creates a new game object without a name and adds it to the world

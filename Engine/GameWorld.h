@@ -2,6 +2,7 @@
 
 #include "GameObject.h"
 #include "PhysicsSystem.h"
+#include <functional>
 
 namespace XYZEngine
 {
@@ -18,6 +19,7 @@ class GameWorld
     GameObject *CreateGameObject();
     GameObject *CreateGameObject(std::string name);
     void DestroyGameObject(GameObject *gameObject);
+    void EnqueueLateAction(std::function<void()> action);
     void Clear();
 
     void Print() const;
@@ -37,6 +39,7 @@ class GameWorld
 
     std::vector<GameObject *> gameObjects = {};
     std::vector<GameObject *> markedToDestroyGameObjects = {};
+    std::vector<std::function<void()>> lateActions = {};
 
     void DestroyGameObjectImmediate(GameObject *gameObject);
 };
