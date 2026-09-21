@@ -1,12 +1,13 @@
 #include "MazeGenerator.h"
 #include <cstdlib>
 #include <ctime>
+#include <queue>
 
 namespace XYZRoguelike
 {
-// Initialize the MazeGenerator with specified dimensions and target level
-MazeGenerator::MazeGenerator(int width, int height, DeveloperLevel *level)
-    : width(width), height(height), level(level) // Store pointer to the DeveloperLevel where walls/floors will be create
+// Initialize the MazeGenerator with specified dimensions, target level and exit tile
+MazeGenerator::MazeGenerator(int width, int height, DeveloperLevel *level, int exitX, int exitY)
+    : width(width), height(height), level(level), exitX(exitX), exitY(exitY)
 {
     //  Initialize the 2D grid that represents the maze structure:
     // - First dimension (height): number of rows in the maze
@@ -70,36 +71,123 @@ void MazeGenerator::Generate()
         }
     }
 
-    // Coordinates of the exit (e.g., bottom right corner)
-    int exitX = width - 1;
-    int exitY = height - 1;
+    ConnectExitToMaze();
+}
 
-    // Count the number of walls around the exit
-    int wallCount = 0;
-    std::vector<std::pair<int, int>> neighbors = {{exitX - 1, exitY}, {exitX + 1, exitY}, {exitX, exitY - 1}, {exitX, exitY + 1}};
+// Carves a guaranteed walkable corridor from the exit gap to the nearest maze cell.
+void MazeGenerator::ConnectExitToMaze()
+{
+    int inX = exitX;
+    int inY = exitY;
 
-    for (const auto &[nx, ny] : neighbors)
+    if (exitX == 0)
     {
-        if (nx >= 0 && nx < width && ny >= 0 && ny < height)
+        inX = 1;
+    }
+    else if (exitX == width)
+    {
+        inX = width - 2;
+    }
+    else if (exitY == 0)
+    {
+        inY = 1;
+    }
+    else
+    {
+        inY = height - 2;
+    }
+
+    if (inX < 0 || inX >= width || inY < 0 || inY >= height)
+    {
+        return;
+    }
+
+    if (grid[inY][inX])
+    {
+        return;
+    }
+
+    std::vector<std::vector<std::pair<int, int>>> parent(height, std::vector<std::pair<int, int>>(width, {-1, -1}));
+    std::queue<std::pair<int, int>> cells;
+    cells.push({inX, inY});
+    parent[inY][inX] = {inX, inY};
+
+    const int dx[] = {1, -1, 0, 0};
+    const int dy[] = {0, 0, 1, -1};
+
+    std::vector<std::pair<int, int>> path;
+    bool found = false;
+
+    while (!cells.empty() && !found)
+    {
+        std::pair<int, int> current = cells.front();
+        cells.pop();
+        int cx = current.first;
+        int cy = current.second;
+
+        if (grid[cy][cx] && !(cx == inX && cy == inY))
         {
-            if (!grid[nx][ny])
-                wallCount++;
+            int bx = cx;
+            int by = cy;
+            while (!(bx == inX && by == inY))
+            {
+                path.push_back({bx, by});
+                std::pair<int, int> p = parent[by][bx];
+                bx = p.first;
+                by = p.second;
+            }
+            found = true;
+            break;
+        }
+
+        for (int d = 0; d < 4; d++)
+        {
+            int nx = cx + dx[d];
+            int ny = cy + dy[d];
+
+            if (nx >= 0 && nx < width && ny >= 0 && ny < height && parent[ny][nx].first == -1)
+            {
+                parent[ny][nx] = {cx, cy};
+                cells.push({nx, ny});
+            }
         }
     }
 
-    // If there are more than two walls, make one of the neighboring cells passable
-    if (wallCount > 2)
+    if (!found)
     {
-        for (const auto &[nx, ny] : neighbors)
+        return;
+    }
+
+    auto carveCell = [&](int x, int y)
+    {
+        if (x < 0 || x >= width || y < 0 || y >= height)
         {
-            if (nx >= 0 && nx < width && ny >= 0 && ny < height)
+            return;
+        }
+
+        grid[y][x] = true;
+        level->floors.push_back(std::make_unique<Floor>(XYZEngine::Vector2Df{x * 128.f, y * 128.f}, 0));
+
+        XYZEngine::Vector2Df cellPosition{x * 128.f, y * 128.f};
+        for (auto it = level->walls.begin(); it != level->walls.end();)
+        {
+            auto transform = (*it)->GetGameObject()->GetComponent<XYZEngine::TransformComponent>();
+            if (transform != nullptr && transform->GetWorldPosition() == cellPosition)
             {
-                grid[nx][ny] = true; // Open the passage
-                wallCount--;
-                if (wallCount <= 2)
-                    break;
+                XYZEngine::GameWorld::Instance()->DestroyGameObject((*it)->GetGameObject());
+                it = level->walls.erase(it);
+            }
+            else
+            {
+                ++it;
             }
         }
+    };
+
+    carveCell(inX, inY);
+    for (const auto &cell : path)
+    {
+        carveCell(cell.first, cell.second);
     }
 }
 

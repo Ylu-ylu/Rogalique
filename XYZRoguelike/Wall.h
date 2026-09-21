@@ -11,6 +11,11 @@ class Wall
   public:
     Wall(const XYZEngine::Vector2Df position, int textureMapIndex);
 
+    XYZEngine::GameObject *GetGameObject() const
+    {
+        return gameObject;
+    }
+
   private:
     XYZEngine::GameObject *gameObject;
 };

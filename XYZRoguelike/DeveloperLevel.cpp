@@ -151,7 +151,7 @@ void DeveloperLevel::Start()
     // ensure exit has walkable visual tile
     floors.push_back(std::make_unique<Floor>(std::forward<XYZEngine::Vector2Df>({exitX * 128.f, exitY * 128.f}), std::forward<int>(0)));
 
-    MazeGenerator mazeGenerator(width, height, this);
+    MazeGenerator mazeGenerator(width, height, this, exitX, exitY);
     mazeGenerator.Generate();
 
     player = std::make_shared<Player>(std::forward<XYZEngine::Vector2Df>({width / 2 * 128.f, height / 2 * 128.f}));
