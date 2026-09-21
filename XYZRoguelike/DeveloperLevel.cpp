@@ -186,12 +186,12 @@ void DeveloperLevel::Start()
 
     creeperSpawner = std::make_unique<CreeperSpawner>();
 
-    // difficulty scales by level
-    const int baseCount = 2 + currentLevel;
+    // difficulty scales by level (creeper count reduced by 20%, rounded)
+    const int baseCount = ((2 + currentLevel) * 4 + 2) / 5;
     creeperSpawner->SpawnCreepers(baseCount, width, height, mazeGenerator.GetGrid(), player->GetGameObject());
 
     SpawnConfig customConfig;
-    customConfig.count = 1 + currentLevel / 2;
+    customConfig.count = ((1 + currentLevel / 2) * 4 + 2) / 5;
     customConfig.healthMultiplier = 1.0f + currentLevel * 0.25f;
     customConfig.armorMultiplier = 1.0f + currentLevel * 0.15f;
     customConfig.speedMultiplier = 1.0f + currentLevel * 0.10f;

@@ -58,7 +58,7 @@ SpawnConfig Wave(int waveNumber)
     }
 
     SpawnConfig config;
-    config.count = 3 + waveNumber;
+    config.count = ((3 + waveNumber) * 4 + 2) / 5;
     config.healthMultiplier = 1.0f + (0.15f * waveNumber);
     config.armorMultiplier = 1.0f + (0.10f * waveNumber);
     config.speedMultiplier = 1.0f + (0.05f * waveNumber);
