@@ -53,7 +53,7 @@ int main()
             throw std::runtime_error("Failed to load required texture map: ai");
         }
 
-        XYZEngine::ResourceSystem::Instance()->LoadTextureMap("Player", "Resources/TextureMaps/Man.png", {46, 48}, 8, false);
+        XYZEngine::ResourceSystem::Instance()->LoadTextureMap("Player", "Resources/TextureMaps/Man.png", {64, 48}, 14, false);
         if (XYZEngine::ResourceSystem::Instance()->GetTextureMapElementShared("Player", 0) == nullptr)
         {
             LOG_ERROR("Texture map 'Player' failed to load or is empty");

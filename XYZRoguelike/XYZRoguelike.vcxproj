@@ -180,6 +180,10 @@
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameMain.cpp" />
+    <ClCompile Include="HealthBarComponent.cpp" />
+    <ClCompile Include="EnemyDeathComponent.cpp" />
+    <ClCompile Include="PlayerDeathComponent.cpp" />
+    <ClCompile Include="PlayerAttackComponent.cpp" />
     <ClCompile Include="GameStatePauseMenu.cpp" />
     <ClCompile Include="GameStateGameOver.cpp" />
     <ClCompile Include="GameStateMainMenu.cpp" />
@@ -197,6 +201,10 @@
     <ClInclude Include="DeveloperLevel.h" />
     <ClInclude Include="Floor.h" />
     <ClInclude Include="GameConstants.h" />
+    <ClInclude Include="HealthBarComponent.h" />
+    <ClInclude Include="EnemyDeathComponent.h" />
+    <ClInclude Include="PlayerDeathComponent.h" />
+    <ClInclude Include="PlayerAttackComponent.h" />
     <ClInclude Include="GameState.h" />
     <ClInclude Include="GameStateData.h" />
     <ClInclude Include="GameStateGameWin.h" />

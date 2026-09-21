@@ -18,6 +18,11 @@ void PhysicsSystem::Update()
 {
     for (int i = 0; i < colliders.size(); i++)
     {
+        if (!colliders[i]->enabled)
+        {
+            continue;
+        }
+
         auto body = colliders[i]->GetGameObject()->GetComponent<RigidbodyComponent>();
         if (body->GetKinematic())
         {
@@ -26,7 +31,7 @@ void PhysicsSystem::Update()
 
         for (int j = 0; j < colliders.size(); j++)
         {
-            if (j == i)
+            if (j == i || !colliders[j]->enabled)
             {
                 continue;
             }
@@ -50,36 +55,26 @@ void PhysicsSystem::Update()
                 {
                     float intersectionWidth = intersection.width;
                     float intersectionHeight = intersection.height;
-                    Vector2Df intersectionPosition = {intersection.left - 0.5f * intersectionWidth, intersection.top - 0.5f * intersectionHeight};
 
-                    Vector2Df aPosition = {colliders[i]->bounds.left, colliders[i]->bounds.top};
                     auto aTransform = colliders[i]->GetGameObject()->GetComponent<TransformComponent>();
+
+                    // Push apart along the axis of least penetration, away from
+                    // the other collider's center. Center-based comparison keeps
+                    // the direction correct so objects never get pushed into walls.
+                    float aCenterX = colliders[i]->bounds.left + 0.5f * colliders[i]->bounds.width;
+                    float aCenterY = colliders[i]->bounds.top + 0.5f * colliders[i]->bounds.height;
+                    float bCenterX = colliders[j]->bounds.left + 0.5f * colliders[j]->bounds.width;
+                    float bCenterY = colliders[j]->bounds.top + 0.5f * colliders[j]->bounds.height;
 
                     if (intersectionWidth > intersectionHeight)
                     {
-                        if (intersectionPosition.y > aPosition.y)
-                        {
-                            aTransform->MoveBy({0, -intersectionHeight});
-                            std::cout << "Top collision" << std::endl;
-                        }
-                        else
-                        {
-                            aTransform->MoveBy({0, intersectionHeight});
-                            std::cout << "Down collision" << std::endl;
-                        }
+                        float direction = (aCenterY >= bCenterY) ? 1.f : -1.f;
+                        aTransform->MoveBy({0.f, direction * intersectionHeight});
                     }
                     else
                     {
-                        if (intersectionPosition.x > aPosition.x)
-                        {
-                            aTransform->MoveBy({-intersectionWidth, 0.f});
-                            std::cout << "Right collision" << std::endl;
-                        }
-                        else
-                        {
-                            aTransform->MoveBy({intersectionWidth, 0.f});
-                            std::cout << "Left collision" << std::endl;
-                        }
+                        float direction = (aCenterX >= bCenterX) ? 1.f : -1.f;
+                        aTransform->MoveBy({direction * intersectionWidth, 0.f});
                     }
 
                     auto collision = new Collision(colliders[i], colliders[j], intersection);

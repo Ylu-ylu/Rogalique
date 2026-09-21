@@ -9,6 +9,7 @@
 #include <SpriteMovementAnimationComponent.h>
 #include <StatsComponent.h>
 #include <AttackComponen.h>
+#include "HealthBarComponent.h"
 
 namespace XYZRoguelike
 {
@@ -42,18 +43,32 @@ Player::Player(const XYZEngine::Vector2Df &position)
     auto animation = gameObject->AddComponent<XYZEngine::SpriteMovementAnimationComponent>();
     animation->AddAnimation("walk", PLAYER_TEXTURE_KEY, {0, 1, 2, 3, 4, 5, 6, 7}, 0.08f, true);
     animation->AddAnimation("idle", PLAYER_TEXTURE_KEY, {DEFAULT_TEXTURE_INDEX}, 0.1f, true);
+    animation->AddAnimation("attack", PLAYER_TEXTURE_KEY, {8, 9, 10, 11, 12}, 0.08f, false);
+    animation->AddAnimation("death", PLAYER_TEXTURE_KEY, {13}, 0.15f, false);
     animation->Play("idle");
 
     auto rigidbody = gameObject->AddComponent<XYZEngine::RigidbodyComponent>();
     rigidbody->SetKinematic(false);
 
     auto collider = gameObject->AddComponent<XYZEngine::SpriteColliderComponent>();
+    collider->SetSize(122.f, 128.f);
 
     // Add health, damage, armor stats
     auto statsComponent = gameObject->AddComponent<XYZEngine::StatsComponent>(PLAYER_HEALTH, PLAYER_ARMOR);
 
     // Add AttackComponent
     auto attackComponent = gameObject->AddComponent<XYZEngine::AttackComponent>(PLAYER_ATTACK);
+
+    // HUD above the head: red health bar (top), yellow armor bar (below)
+    auto healthBar = gameObject->AddComponent<HealthBarComponent>();
+    healthBar->SetOffset(0.f, 100.f);
+    healthBar->SetSize(90.f, 8.f);
+
+    auto armorBar = gameObject->AddComponent<HealthBarComponent>();
+    armorBar->UseArmor(true);
+    armorBar->SetFillColor(sf::Color::Yellow);
+    armorBar->SetOffset(0.f, 88.f);
+    armorBar->SetSize(90.f, 8.f);
 }
 
 // Gets the player's game object

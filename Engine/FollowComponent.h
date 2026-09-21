@@ -3,6 +3,8 @@
 #include "TransformComponent.h"
 #include "SpriteRendererComponent.h"
 #include "SpriteMovementAnimationComponent.h"
+#include "StatsComponent.h"
+#include "AttackComponen.h"
 #include "ResourceSystem.h"
 
 namespace XYZEngine
@@ -25,7 +27,14 @@ class FollowComponent : public Component
   private:
     TransformComponent *transform = nullptr;
     TransformComponent *targetTransform = nullptr;
+    GameObject *targetGameObject = nullptr;
     SpriteMovementAnimationComponent *animation = nullptr;
+    AttackComponent *attack = nullptr;
+    StatsComponent *stats = nullptr;
+
+    float attackRange = 140.f;
+    float attackCooldown = 1.f;
+    float attackTimer = 0.f;
 
     Vector2Df previousPosition = {0.f, 0.f};
     bool previousPositionValid = false;

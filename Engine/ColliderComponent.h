@@ -19,6 +19,14 @@ class ColliderComponent : public Component
     virtual void Render() = 0;
 
     void SetTrigger(bool newIsTrigger);
+    void SetEnabled(bool value)
+    {
+        enabled = value;
+    }
+    bool IsEnabled() const
+    {
+        return enabled;
+    }
 
     void SubscribeCollision(std::function<void(Collision)> onCollisionAction);
     void UnsubscribeCollision(std::function<void(Collision)> onCollisionAction);
@@ -34,6 +42,7 @@ class ColliderComponent : public Component
   protected:
     sf::FloatRect bounds;
     bool isTrigger = false;
+    bool enabled = true;
 
     void OnCollision(Collision collision);
     void OnTriggerEnter(Trigger trigger);

@@ -192638,3 +192638,5197 @@
 [INFO] Move backward
 [INFO] Move backward
 [INFO] Game exiting
+[INFO] Program was started!
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 38.799999
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 27.599998
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 16.399998
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 6.399998
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 96.399994, Current armor: 0.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Took 11.200000 damage, Current health: 85.199997, Current armor: 0.000000
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Took 11.200000 damage, Current health: 74.000000, Current armor: 0.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 10.000000 damage, Current health: 64.000000, Current armor: 0.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 11.200000 damage, Current health: 52.799999, Current armor: 0.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 11.200000 damage, Current health: 41.599998, Current armor: 0.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 10.000000 damage, Current health: 31.599998, Current armor: 0.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 10.000000 damage, Current health: 21.599998, Current armor: 0.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 11.599998, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 1.599998, Current armor: 0.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Move right
+[INFO] Player died - restarting level
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move forward
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 38.799999
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 27.599998
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Game exiting
+[INFO] Program was started!
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 125.000000, Current armor: 47.500000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 40.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 125.000000, Current armor: 37.500000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 30.000000
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 20.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 10.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 0.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 12.000000 damage, Current health: 88.000000, Current armor: 0.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 78.000000, Current armor: 0.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 125.000000, Current armor: 27.500000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 68.000000, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 125.000000, Current armor: 17.500000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 58.000000, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 125.000000, Current armor: 7.500000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 48.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 38.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 122.500000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 28.000000, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 18.000000, Current armor: 0.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 8.000000, Current armor: 0.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Player attack started
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player died - restarting level
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 40.000000
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 30.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 20.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Player attack started
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 10.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 0.000000
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Player attack started
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack missed: no enemy in range
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Game exiting
+[INFO] Program was started!
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 38.799999
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 45.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 35.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 27.599998
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 25.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 16.399998
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 15.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 5.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 5.199998
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 110.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 11.200000 damage, Current health: 94.000000, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 11.200000 damage, Current health: 82.800003, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Game exiting
+[INFO] Program was started!
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 40.000000
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 30.000000
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 20.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 10.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Took 12.000000 damage, Current health: 98.000000, Current armor: 0.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 88.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 78.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Took 12.000000 damage, Current health: 66.000000, Current armor: 0.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 56.000000, Current armor: 0.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 125.000000, Current armor: 47.500000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 46.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 36.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 26.000000, Current armor: 0.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 125.000000, Current armor: 37.500000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 16.000000, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 125.000000, Current armor: 27.500000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 125.000000, Current armor: 17.500000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 6.000000, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 125.000000, Current armor: 7.500000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player died - restarting level
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 40.000000
+[INFO] Game exiting
+[INFO] Program was started!
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 40.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 30.000000
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 20.000000
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 10.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player died - restarting level
+[INFO] Game exiting
+[INFO] Program was started!
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 45.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 35.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 25.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 15.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 5.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 110.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 38.799999
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 27.599998
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 16.399998
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 5.199998
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Creeper_0 died
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 45.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 35.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Took 10.000000 damage, Current health: 95.199997, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] ai_0 died
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Player attack started
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 25.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 15.000000
+[INFO] Player attack hit closest enemy
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Player attack started
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 5.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 110.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Creeper_1 died
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player attack hit closest enemy
+[INFO] Creeper_1 died
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Took 12.000000 damage, Current health: 83.199997, Current armor: 0.000000
+[INFO] Took 12.000000 damage, Current health: 71.199997, Current armor: 0.000000
+[INFO] Game exiting
+[INFO] Program was started!
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 40.000000
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 30.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 12.000000 damage, Current health: 100.000000, Current armor: 18.000000
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 12.000000 damage, Current health: 100.000000, Current armor: 6.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 10.000000 damage, Current health: 96.000000, Current armor: 0.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 12.000000 damage, Current health: 84.000000, Current armor: 0.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 74.000000, Current armor: 0.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 12.000000 damage, Current health: 62.000000, Current armor: 0.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 52.000000, Current armor: 0.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Took 10.000000 damage, Current health: 42.000000, Current armor: 0.000000
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 32.000000, Current armor: 0.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Took 10.000000 damage, Current health: 22.000000, Current armor: 0.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Took 12.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 12.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player died - restarting level
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Took 11.200000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 40.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 30.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 20.000000
+[INFO] Game exiting
+[INFO] Program was started!
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 40.000000
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 30.000000
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 20.000000
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 10.000000
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player died - restarting level
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 40.000000
+[INFO] Game exiting

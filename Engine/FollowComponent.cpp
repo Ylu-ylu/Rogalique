@@ -17,6 +17,7 @@ FollowComponent::FollowComponent(GameObject *gameObject) : Component(gameObject)
 
 void FollowComponent::SetTarget(GameObject *targetObject)
 {
+    targetGameObject = targetObject;
     if (targetObject)
     {
         targetTransform = targetObject->GetComponent<TransformComponent>();
@@ -35,6 +36,16 @@ void FollowComponent::Update(float deltaTime)
     }
 
     if (transform == nullptr)
+    {
+        return;
+    }
+
+    if (stats == nullptr)
+    {
+        stats = gameObject->GetComponent<StatsComponent>();
+    }
+
+    if (stats != nullptr && stats->GetCurrentHealth() <= 0.f)
     {
         return;
     }
@@ -71,10 +82,26 @@ void FollowComponent::Update(float deltaTime)
     Vector2Df direction = targetTransform->GetWorldPosition() - currentPosition;
     float length = direction.GetLength();
 
-    if (length > 0.001f)
+    if (length > 0.001f && length > attackRange)
     {
         Vector2Df normalized = Vector2Df(direction.x / length, direction.y / length);
         transform->MoveBy(normalized * speed * deltaTime);
+    }
+
+    attackTimer += deltaTime;
+    if (targetGameObject != nullptr && length < attackRange && attackTimer >= attackCooldown)
+    {
+        attackTimer = 0.f;
+
+        if (attack == nullptr)
+        {
+            attack = gameObject->GetComponent<AttackComponent>();
+        }
+
+        if (attack != nullptr)
+        {
+            attack->Attack(targetGameObject);
+        }
     }
 
     if (animation != nullptr)

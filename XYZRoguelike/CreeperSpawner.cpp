@@ -120,6 +120,85 @@ int CreeperSpawner::GetAliveCount() const
     return count;
 }
 
+XYZEngine::GameObject *CreeperSpawner::FindClosestEnemy(const XYZEngine::Vector2Df &position, float maxDistance)
+{
+    XYZEngine::GameObject *closestEnemy = nullptr;
+    float closestDistance = maxDistance;
+
+    for (const auto &enemy : enemies)
+    {
+        if (enemy == nullptr || enemy->GetGameObject() == nullptr)
+        {
+            continue;
+        }
+
+        auto enemyObject = enemy->GetGameObject();
+
+        auto stats = enemyObject->GetComponent<XYZEngine::StatsComponent>();
+        if (stats != nullptr && stats->GetCurrentHealth() <= 0.0f)
+        {
+            continue;
+        }
+
+        auto enemyTransform = enemyObject->GetComponent<XYZEngine::TransformComponent>();
+        if (enemyTransform == nullptr)
+        {
+            continue;
+        }
+
+        float distance = CalculateDistance(position, enemyTransform->GetWorldPosition());
+        if (distance < closestDistance)
+        {
+            closestDistance = distance;
+            closestEnemy = enemyObject;
+        }
+    }
+
+    for (AI *enemy : externalEnemies)
+    {
+        if (enemy == nullptr || enemy->GetGameObject() == nullptr)
+        {
+            continue;
+        }
+
+        auto enemyObject = enemy->GetGameObject();
+
+        auto stats = enemyObject->GetComponent<XYZEngine::StatsComponent>();
+        if (stats != nullptr && stats->GetCurrentHealth() <= 0.0f)
+        {
+            continue;
+        }
+
+        auto enemyTransform = enemyObject->GetComponent<XYZEngine::TransformComponent>();
+        if (enemyTransform == nullptr)
+        {
+            continue;
+        }
+
+        float distance = CalculateDistance(position, enemyTransform->GetWorldPosition());
+        if (distance < closestDistance)
+        {
+            closestDistance = distance;
+            closestEnemy = enemyObject;
+        }
+    }
+
+    return closestEnemy;
+}
+
+void CreeperSpawner::ReservePosition(const XYZEngine::Vector2Df &position)
+{
+    usedCells.emplace_back(static_cast<int>(position.x / 128.f), static_cast<int>(position.y / 128.f));
+}
+
+void CreeperSpawner::AddExternalEnemy(AI *enemy)
+{
+    if (enemy != nullptr)
+    {
+        externalEnemies.push_back(enemy);
+    }
+}
+
 void CreeperSpawner::Clear()
 {
     enemies.clear();

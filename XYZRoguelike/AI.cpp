@@ -1,5 +1,7 @@
 #include "AI.h"
 #include "GameConstants.h"
+#include "HealthBarComponent.h"
+#include "EnemyDeathComponent.h"
 #include <stdexcept>
 #include "../Engine/ResourceSystem.h"
 #include "../Engine/RigidbodyComponent.h"
@@ -57,6 +59,12 @@ AI::AI(XYZEngine::GameObject *player, const std::string &enemyName, int id) : fa
     gameObject->AddComponent<XYZEngine::SpriteColliderComponent>();
     gameObject->AddComponent<XYZEngine::StatsComponent>(AI_HEALTH, AI_ARMOR);
     gameObject->AddComponent<XYZEngine::AttackComponent>(AI_ATTACK_POWER);
+
+    auto healthBar = gameObject->AddComponent<HealthBarComponent>();
+    healthBar->SetOffset(0.f, 80.f);
+    healthBar->SetSize(70.f, 8.f);
+
+    gameObject->AddComponent<EnemyDeathComponent>();
 }
 
 // Gets the AI's game object

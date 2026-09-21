@@ -16,7 +16,13 @@ class SpriteColliderComponent : public ColliderComponent
     void Update(float deltaTime) override;
     void Render() override;
 
+    void SetSize(float width, float height);
+
   private:
     const sf::Sprite *sprite;
+
+    bool useCustomSize = false;
+    float customWidth = 0.f;
+    float customHeight = 0.f;
 };
 } // namespace XYZEngine

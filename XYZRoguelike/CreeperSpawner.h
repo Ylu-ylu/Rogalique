@@ -57,10 +57,16 @@ class CreeperSpawner
     const std::vector<std::unique_ptr<AI>> &GetEnemies() const;
     int GetAliveCount() const;
 
+    XYZEngine::GameObject *FindClosestEnemy(const XYZEngine::Vector2Df &position, float maxDistance);
+
+    void ReservePosition(const XYZEngine::Vector2Df &position);
+    void AddExternalEnemy(AI *enemy);
+
     void Clear();
 
   private:
     std::vector<std::unique_ptr<AI>> enemies;
+    std::vector<AI *> externalEnemies;
     XYZEngine::GameObject *cachedPlayer = nullptr;
     std::vector<std::pair<int, int>> usedCells;
 

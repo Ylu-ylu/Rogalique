@@ -2,12 +2,15 @@
 #include "Floor.h"
 #include "Wall.h"
 #include "MazeGenerator.h"
+#include "PlayerDeathComponent.h"
+#include "PlayerAttackComponent.h"
 #include "GameSettings.h"
 #include <cstdlib>
 #include "../Engine/ResourceSystem.h"
 #include "../Engine/SpriteRendererComponent.h"
 #include "../Engine/RigidbodyComponent.h"
 #include "../Engine/SpriteColliderComponent.h"
+#include "../Engine/Logger.h"
 
 using namespace XYZEngine;
 
@@ -61,6 +64,7 @@ void DeveloperLevel::CreateExitTrigger(int exitX, int exitY)
     if (playerCollider != nullptr)
     {
         playerCollider->SubscribeTriggerEnter([this](XYZEngine::Trigger) {
+            LOG_INFO("Level exit triggered");
             XYZEngine::GameWorld::Instance()->EnqueueLateAction([this]() { LoadNextLevel(); });
         });
     }
@@ -157,6 +161,8 @@ void DeveloperLevel::Start()
     mazeGenerator.Generate();
 
     player = std::make_shared<Player>(std::forward<XYZEngine::Vector2Df>({width / 2 * 128.f, height / 2 * 128.f}));
+    player->GetGameObject()->AddComponent<PlayerDeathComponent>(this);
+    player->GetGameObject()->AddComponent<PlayerAttackComponent>();
 
     auto camera = player->GetGameObject()->GetComponent<XYZEngine::CameraComponent>();
     if (camera != nullptr)
@@ -187,6 +193,14 @@ void DeveloperLevel::Start()
     ai = std::make_shared<AI>(std::forward<XYZEngine::Vector2Df>({width / 3 * 128.f, height / 3 * 128.f}), player->GetGameObject());
 
     creeperSpawner = std::make_unique<CreeperSpawner>();
+    creeperSpawner->ReservePosition(ai->GetPosition());
+    creeperSpawner->AddExternalEnemy(ai.get());
+
+    auto playerAttack = player->GetGameObject()->GetComponent<PlayerAttackComponent>();
+    if (playerAttack != nullptr)
+    {
+        playerAttack->SetEnemySpawner(creeperSpawner.get());
+    }
 
     // difficulty scales by level (creeper count reduced by 20%, rounded)
     const int baseCount = ((2 + currentLevel) * 4 + 2) / 5;

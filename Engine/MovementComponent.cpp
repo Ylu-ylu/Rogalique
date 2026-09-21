@@ -30,7 +30,7 @@ void MovementComponent::Update(float deltaTime)
         animation = gameObject->GetComponent<SpriteMovementAnimationComponent>();
     }
 
-    if (animation != nullptr)
+    if (animation != nullptr && !animation->IsPlaying("attack") && !animation->IsCurrentAnimation("death"))
     {
         if (xAxis != 0.f || yAxis != 0.f)
         {
