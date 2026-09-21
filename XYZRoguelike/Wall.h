@@ -16,6 +16,8 @@ class Wall
         return gameObject;
     }
 
+    void SetTileIndex(int textureMapIndex);
+
   private:
     XYZEngine::GameObject *gameObject;
 };

@@ -3,6 +3,59 @@
 #include <ctime>
 #include <queue>
 
+namespace
+{
+// Wall cell check for autotiling: grid false = wall, out of bounds = not a wall.
+bool IsWallCell(const std::vector<std::vector<bool>> &grid, int x, int y)
+{
+    if (y < 0 || y >= static_cast<int>(grid.size()))
+    {
+        return false;
+    }
+    if (x < 0 || x >= static_cast<int>(grid[y].size()))
+    {
+        return false;
+    }
+    return !grid[y][x];
+}
+
+// Picks the wall texture index by neighboring walls so corners and straight
+// walls look connected (same scheme as the reference game).
+int GetWallTileIndex(const std::vector<std::vector<bool>> &grid, int x, int y)
+{
+    bool up = IsWallCell(grid, x, y - 1);
+    bool down = IsWallCell(grid, x, y + 1);
+    bool left = IsWallCell(grid, x - 1, y);
+    bool right = IsWallCell(grid, x + 1, y);
+
+    if (!up && down && !left && right)
+    {
+        return 1;
+    }
+    if (!up && down && left && !right)
+    {
+        return 3;
+    }
+    if (up && !down && !left && right)
+    {
+        return 25;
+    }
+    if (up && !down && left && !right)
+    {
+        return 27;
+    }
+    if (up || down)
+    {
+        return 12;
+    }
+    if (left || right)
+    {
+        return 38;
+    }
+    return 12;
+}
+} // namespace
+
 namespace XYZRoguelike
 {
 // Initialize the MazeGenerator with specified dimensions, target level and exit tile
@@ -72,6 +125,28 @@ void MazeGenerator::Generate()
     }
 
     ConnectExitToMaze();
+
+    // Autotile inner maze walls by neighbors so corners and straight walls
+    // look connected. Border walls keep their indices set by DeveloperLevel.
+    for (auto &wall : level->walls)
+    {
+        auto transform = wall->GetGameObject()->GetComponent<XYZEngine::TransformComponent>();
+        if (transform == nullptr)
+        {
+            continue;
+        }
+
+        auto position = transform->GetWorldPosition();
+        const int wx = static_cast<int>(position.x / 128.f);
+        const int wy = static_cast<int>(position.y / 128.f);
+
+        if (wx < 1 || wx > width - 2 || wy < 1 || wy > height - 2)
+        {
+            continue;
+        }
+
+        wall->SetTileIndex(GetWallTileIndex(grid, wx, wy));
+    }
 }
 
 // Carves a guaranteed walkable corridor from the exit gap to the nearest maze cell.
