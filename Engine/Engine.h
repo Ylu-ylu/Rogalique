@@ -16,10 +16,16 @@ class Engine
 
     void Run();
 
+    void SetPaused(bool value);
+    bool IsPaused() const;
+
   private:
     Engine();
     ~Engine() = default;
 
     void setupLogger();
+
+    bool isPaused = false;
+    bool escPressedLastFrame = false;
 };
 } // namespace XYZEngine

@@ -12,6 +12,16 @@ FollowComponent::FollowComponent(GameObject *gameObject) : Component(gameObject)
     {
         std::cout << "FollowComponent requires a TransformComponent." << std::endl;
         gameObject->RemoveComponent(this);
+        return;
+    }
+
+    attackSound = gameObject->AddComponent<AudioComponent>();
+    const sf::SoundBuffer *buffer = ResourceSystem::Instance()->GetSound("Attack");
+    if (buffer != nullptr)
+    {
+        attackSound->SetAudio(*buffer);
+        attackSound->SetLoop(false);
+        attackSound->SetVolume(100.f);
     }
 }
 
@@ -50,6 +60,33 @@ void FollowComponent::Update(float deltaTime)
         return;
     }
 
+    if (isAttackActive)
+    {
+        swingTimer += deltaTime;
+
+        if (!damageApplied && swingTimer >= damageMoment)
+        {
+            damageApplied = true;
+
+            if (attack == nullptr)
+            {
+                attack = gameObject->GetComponent<AttackComponent>();
+            }
+
+            if (attack != nullptr && targetGameObject != nullptr)
+            {
+                attack->Attack(targetGameObject);
+            }
+        }
+
+        if (swingTimer >= attackDuration)
+        {
+            isAttackActive = false;
+        }
+
+        return;
+    }
+
     Vector2Df currentPosition = transform->GetWorldPosition();
     Vector2Df netDelta = previousPositionValid ? currentPosition - previousPosition : Vector2Df{0.f, 0.f};
     previousPosition = currentPosition;
@@ -79,6 +116,24 @@ void FollowComponent::Update(float deltaTime)
         return;
     }
 
+    // a dead target is not chased (the corpse is left alone)
+    if (targetGameObject != nullptr)
+    {
+        if (targetStats == nullptr)
+        {
+            targetStats = targetGameObject->GetComponent<StatsComponent>();
+        }
+
+        if (targetStats != nullptr && targetStats->GetCurrentHealth() <= 0.f)
+        {
+            if (animation != nullptr)
+            {
+                animation->Play("idle");
+            }
+            return;
+        }
+    }
+
     Vector2Df direction = targetTransform->GetWorldPosition() - currentPosition;
     float length = direction.GetLength();
 
@@ -92,19 +147,23 @@ void FollowComponent::Update(float deltaTime)
     if (targetGameObject != nullptr && length < attackRange && attackTimer >= attackCooldown)
     {
         attackTimer = 0.f;
+        isAttackActive = true;
+        damageApplied = false;
+        swingTimer = 0.f;
 
-        if (attack == nullptr)
+        if (animation != nullptr)
         {
-            attack = gameObject->GetComponent<AttackComponent>();
+            animation->Play("attack");
         }
 
-        if (attack != nullptr)
+        if (attackSound != nullptr)
         {
-            attack->Attack(targetGameObject);
+            attackSound->Stop();
+            attackSound->Play();
         }
     }
 
-    if (animation != nullptr)
+    if (animation != nullptr && !animation->IsPlaying("attack") && !animation->IsCurrentAnimation("death"))
     {
         animation->Play(isWalking ? "walk" : "idle");
     }

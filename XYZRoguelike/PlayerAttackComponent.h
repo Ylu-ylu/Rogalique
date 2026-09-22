@@ -4,6 +4,7 @@
 #include "../Engine/TransformComponent.h"
 #include "../Engine/StatsComponent.h"
 #include "../Engine/AttackComponen.h"
+#include "../Engine/AudioComponent.h"
 #include "../Engine/SpriteMovementAnimationComponent.h"
 
 namespace XYZRoguelike
@@ -25,6 +26,7 @@ class PlayerAttackComponent : public XYZEngine::Component
     XYZEngine::AttackComponent *attack = nullptr;
     XYZEngine::StatsComponent *stats = nullptr;
     XYZEngine::SpriteMovementAnimationComponent *animation = nullptr;
+    XYZEngine::AudioComponent *attackSound = nullptr;
     CreeperSpawner *enemySpawner = nullptr;
 
     float attackRange = 180.f;

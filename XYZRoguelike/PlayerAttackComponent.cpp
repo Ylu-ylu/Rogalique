@@ -1,6 +1,7 @@
 #include "PlayerAttackComponent.h"
 #include "CreeperSpawner.h"
 #include "../Engine/GameObject.h"
+#include "../Engine/ResourceSystem.h"
 #include "../Engine/Logger.h"
 
 #include <SFML/Window/Keyboard.hpp>
@@ -13,6 +14,15 @@ PlayerAttackComponent::PlayerAttackComponent(XYZEngine::GameObject *gameObject) 
     attack = gameObject->GetComponent<XYZEngine::AttackComponent>();
     stats = gameObject->GetComponent<XYZEngine::StatsComponent>();
     animation = gameObject->GetComponent<XYZEngine::SpriteMovementAnimationComponent>();
+
+    attackSound = gameObject->AddComponent<XYZEngine::AudioComponent>();
+    const sf::SoundBuffer *buffer = XYZEngine::ResourceSystem::Instance()->GetSound("Attack");
+    if (buffer != nullptr)
+    {
+        attackSound->SetAudio(*buffer);
+        attackSound->SetLoop(false);
+        attackSound->SetVolume(100.f);
+    }
 }
 
 void PlayerAttackComponent::SetEnemySpawner(CreeperSpawner *spawner)
@@ -27,16 +37,22 @@ void PlayerAttackComponent::TryDealDamage()
         return;
     }
 
-    XYZEngine::GameObject *target = enemySpawner->FindClosestEnemy(transform->GetWorldPosition(), attackRange);
+    // the melee swing hits every enemy in range, not just the closest one
+    std::vector<XYZEngine::GameObject *> targets;
+    enemySpawner->FindEnemiesInRange(transform->GetWorldPosition(), attackRange, targets);
 
-    if (target == nullptr)
+    if (targets.empty())
     {
         LOG_INFO("Player attack missed: no enemy in range");
         return;
     }
 
-    attack->Attack(target);
-    LOG_INFO("Player attack hit closest enemy");
+    for (XYZEngine::GameObject *target : targets)
+    {
+        attack->Attack(target);
+    }
+
+    LOG_INFO("Player attack hit " + std::to_string(targets.size()) + " enemies");
 }
 
 void PlayerAttackComponent::Update(float deltaTime)
@@ -84,6 +100,12 @@ void PlayerAttackComponent::Update(float deltaTime)
         if (animation != nullptr)
         {
             animation->Play("attack");
+        }
+
+        if (attackSound != nullptr)
+        {
+            attackSound->Stop();
+            attackSound->Play();
         }
 
         LOG_INFO("Player attack started");

@@ -42,11 +42,15 @@ int main()
         warnIfMissing("Resources/TextureMaps/Wall.png");
         warnIfMissing("Resources/TextureMaps/Creeper.png");
         warnIfMissing("Resources/Sounds/neon-gaming.wav");
+        warnIfMissing("Resources/Sounds/Attack.wav");
+        warnIfMissing("Resources/Sounds/Creeper-death.wav");
+        warnIfMissing("Resources/Sounds/Player-death.wav");
+        warnIfMissing("Resources/Sounds/Transition.wav");
 
         LOG_INFO("Loading texture maps and sounds");
 
         // Load textures
-        XYZEngine::ResourceSystem::Instance()->LoadTextureMap("ai", "Resources/TextureMaps/Wizard.png", {52, 53}, 7, false);
+        XYZEngine::ResourceSystem::Instance()->LoadTextureMap("ai", "Resources/TextureMaps/Wizard.png", {64, 53}, 13, false);
         if (XYZEngine::ResourceSystem::Instance()->GetTextureMapElementShared("ai", 0) == nullptr)
         {
             LOG_ERROR("Texture map 'ai' failed to load or is empty");
@@ -60,7 +64,9 @@ int main()
             throw std::runtime_error("Failed to load required texture map: Player");
         }
 
-        XYZEngine::ResourceSystem::Instance()->LoadTextureMap("Creeper", "Resources/TextureMaps/Creeper.png", {56, 54}, 7, false);
+        XYZEngine::ResourceSystem::Instance()->LoadTextureMap("Creeper", "Resources/TextureMaps/Creeper.png", {56, 54}, 13, false);
+
+        XYZEngine::ResourceSystem::Instance()->LoadTexture("Heart", "Resources/TextureMaps/Heart.png");
         if (XYZEngine::ResourceSystem::Instance()->GetTextureMapElementShared("Creeper", 0) == nullptr)
         {
             LOG_ERROR("Texture map 'Player' failed to load or is empty");
@@ -88,6 +94,11 @@ int main()
             LOG_ERROR("Sound 'music' failed to load");
             throw std::runtime_error("Failed to load required sound: music");
         }
+
+        XYZEngine::ResourceSystem::Instance()->LoadSound("Attack", "Resources/Sounds/Attack.wav");
+        XYZEngine::ResourceSystem::Instance()->LoadSound("Creeper-death", "Resources/Sounds/Creeper-death.wav");
+        XYZEngine::ResourceSystem::Instance()->LoadSound("Player-death", "Resources/Sounds/Player-death.wav");
+        XYZEngine::ResourceSystem::Instance()->LoadSound("Transition", "Resources/Sounds/Transition.wav");
 
         LOG_INFO("Initializing DeveloperLevel");
         auto developerLevel = std::make_shared<DeveloperLevel>();

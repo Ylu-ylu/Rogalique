@@ -181,7 +181,13 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameMain.cpp" />
     <ClCompile Include="HealthBarComponent.cpp" />
+    <ClCompile Include="HealingWallComponent.cpp" />
+    <ClCompile Include="PlayerLivesComponent.cpp" />
+    <ClCompile Include="GameHUDComponent.cpp" />
+    <ClCompile Include="PauseComponent.cpp" />
+    <ClCompile Include="ExitLabelComponent.cpp" />
     <ClCompile Include="EnemyDeathComponent.cpp" />
+    <ClCompile Include="BossDeathComponent.cpp" />
     <ClCompile Include="PlayerDeathComponent.cpp" />
     <ClCompile Include="PlayerAttackComponent.cpp" />
     <ClCompile Include="GameStatePauseMenu.cpp" />
@@ -202,7 +208,13 @@
     <ClInclude Include="Floor.h" />
     <ClInclude Include="GameConstants.h" />
     <ClInclude Include="HealthBarComponent.h" />
+    <ClInclude Include="HealingWallComponent.h" />
+    <ClInclude Include="PlayerLivesComponent.h" />
+    <ClInclude Include="GameHUDComponent.h" />
+    <ClInclude Include="PauseComponent.h" />
+    <ClInclude Include="ExitLabelComponent.h" />
     <ClInclude Include="EnemyDeathComponent.h" />
+    <ClInclude Include="BossDeathComponent.h" />
     <ClInclude Include="PlayerDeathComponent.h" />
     <ClInclude Include="PlayerAttackComponent.h" />
     <ClInclude Include="GameState.h" />

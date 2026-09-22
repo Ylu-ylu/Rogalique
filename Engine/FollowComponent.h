@@ -5,6 +5,7 @@
 #include "SpriteMovementAnimationComponent.h"
 #include "StatsComponent.h"
 #include "AttackComponen.h"
+#include "AudioComponent.h"
 #include "ResourceSystem.h"
 
 namespace XYZEngine
@@ -31,10 +32,17 @@ class FollowComponent : public Component
     SpriteMovementAnimationComponent *animation = nullptr;
     AttackComponent *attack = nullptr;
     StatsComponent *stats = nullptr;
+    StatsComponent *targetStats = nullptr;
+    AudioComponent *attackSound = nullptr;
 
     float attackRange = 140.f;
     float attackCooldown = 1.f;
     float attackTimer = 0.f;
+    float swingTimer = 0.f;
+    float damageMoment = 0.22f;
+    float attackDuration = 0.4f;
+    bool isAttackActive = false;
+    bool damageApplied = false;
 
     Vector2Df previousPosition = {0.f, 0.f};
     bool previousPositionValid = false;

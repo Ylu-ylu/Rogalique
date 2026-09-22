@@ -10,6 +10,8 @@
 #include <StatsComponent.h>
 #include <AttackComponen.h>
 #include "HealthBarComponent.h"
+#include "PlayerLivesComponent.h"
+#include "PauseComponent.h"
 
 namespace XYZRoguelike
 {
@@ -58,6 +60,12 @@ Player::Player(const XYZEngine::Vector2Df &position)
 
     // Add AttackComponent
     auto attackComponent = gameObject->AddComponent<XYZEngine::AttackComponent>(PLAYER_ATTACK);
+
+    // Respawn stock: 3 hearts
+    gameObject->AddComponent<PlayerLivesComponent>();
+
+    // PAUSED overlay while the engine is paused (Esc)
+    gameObject->AddComponent<PauseComponent>();
 
     // HUD above the head: red health bar (top), yellow armor bar (below)
     auto healthBar = gameObject->AddComponent<HealthBarComponent>();

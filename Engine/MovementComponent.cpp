@@ -17,6 +17,16 @@ MovementComponent::MovementComponent(GameObject *gameObject) : Component(gameObj
 
 void MovementComponent::Update(float deltaTime)
 {
+    if (stats == nullptr)
+    {
+        stats = gameObject->GetComponent<StatsComponent>();
+    }
+
+    if (stats != nullptr && stats->GetCurrentHealth() <= 0.f)
+    {
+        return;
+    }
+
     float xAxis = input->GetHorizontalAxis();
     float yAxis = input->GetVerticalAxis();
 

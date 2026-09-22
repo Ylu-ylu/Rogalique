@@ -51,6 +51,8 @@ AI::AI(XYZEngine::GameObject *player, const std::string &enemyName, int id) : fa
     auto animation = gameObject->AddComponent<XYZEngine::SpriteMovementAnimationComponent>();
     animation->AddAnimation("walk", AI_TEXTURE_KEY, {0, 1, 2, 3, 4, 5, 6}, 0.1f, true);
     animation->AddAnimation("idle", AI_TEXTURE_KEY, {DEFAULT_TEXTURE_INDEX}, 0.1f, true);
+    animation->AddAnimation("attack", AI_TEXTURE_KEY, {7, 8, 9, 10, 11}, 0.08f, false);
+    animation->AddAnimation("death", AI_TEXTURE_KEY, {12}, 0.15f, false);
     animation->Play("idle");
 
     auto rigidbody = gameObject->AddComponent<XYZEngine::RigidbodyComponent>();

@@ -20,6 +20,12 @@ class DeveloperLevel : public Scene
     void Start() override;
     void Restart() override;
     void Stop() override;
+    void OpenExit();
+    void OnBossDied();
+    bool IsExitOpened() const
+    {
+        return exitOpened;
+    }
     std::vector<std::unique_ptr<Wall>> walls;
     std::vector<std::unique_ptr<Floor>> floors;
 
@@ -29,12 +35,17 @@ class DeveloperLevel : public Scene
     void ChooseExitTile(int width, int height, int &outExitX, int &outExitY) const;
     void CreateExitTrigger(int exitX, int exitY);
     void LoadNextLevel();
+    void SetupBoss(XYZEngine::GameObject *bossObject);
 
   private:
     std::shared_ptr<Player> player;
     std::shared_ptr<AI> ai;
     std::unique_ptr<Music> music;
     std::unique_ptr<CreeperSpawner> creeperSpawner;
+
+    XYZEngine::GameObject *exitObject = nullptr;
+    std::vector<XYZEngine::GameObject *> bossObjects;
+    bool exitOpened = false;
 
     int currentLevel = 1;
     bool isLevelTransitionInProgress = false;

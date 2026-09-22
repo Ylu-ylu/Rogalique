@@ -2,6 +2,8 @@
 #include "../Engine/GameObject.h"
 #include "../Engine/TransformComponent.h"
 #include "../Engine/SpriteColliderComponent.h"
+#include "../Engine/SpriteMovementAnimationComponent.h"
+#include "../Engine/ResourceSystem.h"
 #include "../Engine/Logger.h"
 
 namespace XYZRoguelike
@@ -9,6 +11,14 @@ namespace XYZRoguelike
 EnemyDeathComponent::EnemyDeathComponent(XYZEngine::GameObject *gameObject) : XYZEngine::Component(gameObject)
 {
     stats = gameObject->GetComponent<XYZEngine::StatsComponent>();
+
+    deathSound = gameObject->AddComponent<XYZEngine::AudioComponent>();
+    const sf::SoundBuffer *buffer = XYZEngine::ResourceSystem::Instance()->GetSound("Creeper-death");
+    if (buffer != nullptr)
+    {
+        deathSound->SetAudio(*buffer);
+        deathSound->SetLoop(false);
+    }
 }
 
 void EnemyDeathComponent::Update(float deltaTime)
@@ -27,6 +37,18 @@ void EnemyDeathComponent::Update(float deltaTime)
         if (collider != nullptr)
         {
             collider->SetEnabled(false);
+        }
+
+        auto animation = gameObject->GetComponent<XYZEngine::SpriteMovementAnimationComponent>();
+        if (animation != nullptr)
+        {
+            animation->Play("death");
+        }
+
+        if (deathSound != nullptr)
+        {
+            deathSound->Stop();
+            deathSound->Play();
         }
 
         LOG_INFO(gameObject->GetName() + " died");

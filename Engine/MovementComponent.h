@@ -2,6 +2,7 @@
 
 #include "GameObject.h"
 #include "InputComponent.h"
+#include "StatsComponent.h"
 #include "SpriteMovementAnimationComponent.h"
 
 namespace XYZEngine
@@ -22,6 +23,7 @@ class MovementComponent : public Component
     InputComponent *input;
     TransformComponent *transform;
     SpriteMovementAnimationComponent *animation = nullptr;
+    StatsComponent *stats = nullptr;
 
     float speed = 0;
     Vector2Df previousPosition = {0, 0};

@@ -4,6 +4,8 @@
 #include "GameWorld.h"
 #include "RenderSystem.h"
 
+#include <SFML/Window/Keyboard.hpp>
+
 namespace XYZEngine
 {
 Engine *Engine::Instance()
@@ -18,6 +20,16 @@ Engine::Engine()
     srand(seed);
 
     setupLogger();
+}
+
+void Engine::SetPaused(bool value)
+{
+    isPaused = value;
+}
+
+bool Engine::IsPaused() const
+{
+    return isPaused;
 }
 
 void Engine::Run()
@@ -47,12 +59,28 @@ void Engine::Run()
             break;
         }
 
+        // pause toggle: handled here so unpausing works while the world is frozen
+        bool escPressed = sf::Keyboard::isKeyPressed(sf::Keyboard::Escape);
+        if (escPressed && !escPressedLastFrame)
+        {
+            isPaused = !isPaused;
+        }
+        escPressedLastFrame = escPressed;
+
         RenderSystem::Instance()->GetMainWindow().clear();
 
-        GameWorld::Instance()->Update(deltaTime);
-        GameWorld::Instance()->FixedUpdate(deltaTime);
+        if (!isPaused)
+        {
+            GameWorld::Instance()->Update(deltaTime);
+            GameWorld::Instance()->FixedUpdate(deltaTime);
+        }
+
         GameWorld::Instance()->Render();
-        GameWorld::Instance()->LateUpdate();
+
+        if (!isPaused)
+        {
+            GameWorld::Instance()->LateUpdate();
+        }
 
         RenderSystem::Instance()->GetMainWindow().display();
     }

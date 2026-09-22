@@ -59,6 +59,8 @@ class CreeperSpawner
 
     XYZEngine::GameObject *FindClosestEnemy(const XYZEngine::Vector2Df &position, float maxDistance);
 
+    void FindEnemiesInRange(const XYZEngine::Vector2Df &position, float maxDistance, std::vector<XYZEngine::GameObject *> &results);
+
     void ReservePosition(const XYZEngine::Vector2Df &position);
     void AddExternalEnemy(AI *enemy);
 

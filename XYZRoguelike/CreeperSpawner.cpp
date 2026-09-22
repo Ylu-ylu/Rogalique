@@ -41,10 +41,10 @@ SpawnConfig Boss()
 {
     SpawnConfig config;
     config.count = 1;
-    config.healthMultiplier = 4.0f;
+    config.healthMultiplier = 1.5f;
     config.armorMultiplier = 3.0f;
     config.speedMultiplier = 0.9f;
-    config.damageMultiplier = 2.5f;
+    config.damageMultiplier = 1.5f;
     config.minDistanceFromPlayer = 500.0f;
     config.enemyTypeName = "BossCreeper";
     return config;
@@ -184,6 +184,63 @@ XYZEngine::GameObject *CreeperSpawner::FindClosestEnemy(const XYZEngine::Vector2
     }
 
     return closestEnemy;
+}
+
+void CreeperSpawner::FindEnemiesInRange(const XYZEngine::Vector2Df &position, float maxDistance, std::vector<XYZEngine::GameObject *> &results)
+{
+    for (const auto &enemy : enemies)
+    {
+        if (enemy == nullptr || enemy->GetGameObject() == nullptr)
+        {
+            continue;
+        }
+
+        auto enemyObject = enemy->GetGameObject();
+
+        auto enemyStats = enemyObject->GetComponent<XYZEngine::StatsComponent>();
+        if (enemyStats != nullptr && enemyStats->GetCurrentHealth() <= 0.0f)
+        {
+            continue;
+        }
+
+        auto enemyTransform = enemyObject->GetComponent<XYZEngine::TransformComponent>();
+        if (enemyTransform == nullptr)
+        {
+            continue;
+        }
+
+        if (CalculateDistance(position, enemyTransform->GetWorldPosition()) < maxDistance)
+        {
+            results.push_back(enemyObject);
+        }
+    }
+
+    for (AI *enemy : externalEnemies)
+    {
+        if (enemy == nullptr || enemy->GetGameObject() == nullptr)
+        {
+            continue;
+        }
+
+        auto enemyObject = enemy->GetGameObject();
+
+        auto enemyStats = enemyObject->GetComponent<XYZEngine::StatsComponent>();
+        if (enemyStats != nullptr && enemyStats->GetCurrentHealth() <= 0.0f)
+        {
+            continue;
+        }
+
+        auto enemyTransform = enemyObject->GetComponent<XYZEngine::TransformComponent>();
+        if (enemyTransform == nullptr)
+        {
+            continue;
+        }
+
+        if (CalculateDistance(position, enemyTransform->GetWorldPosition()) < maxDistance)
+        {
+            results.push_back(enemyObject);
+        }
+    }
 }
 
 void CreeperSpawner::ReservePosition(const XYZEngine::Vector2Df &position)

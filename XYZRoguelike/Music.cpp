@@ -9,6 +9,7 @@ Music::Music(const std::string &soundName)
     {
         music->SetAudio(*buffer);
         music->SetLoop(true);
+        music->SetVolume(35.f);
         music->Play();
     }
     else
