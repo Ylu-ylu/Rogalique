@@ -6,7 +6,6 @@
 #include "../Engine/RenderSystem.h"
 #include "../Engine/InputComponent.h"
 #include "../Engine/GameObject.h"
-#include "Vector.h"
 
 namespace XYZRoguelike
 {

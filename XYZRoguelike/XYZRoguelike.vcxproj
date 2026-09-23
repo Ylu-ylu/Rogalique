@@ -165,20 +165,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="AI.cpp" />
-    <ClCompile Include="Application.cpp" />
     <ClCompile Include="Creeper.cpp" />
     <ClCompile Include="CreeperSpawner.cpp" />
     <ClCompile Include="DeveloperLevel.cpp" />
     <ClCompile Include="Floor.cpp" />
-    <ClCompile Include="GameState.cpp" />
-    <ClCompile Include="GameStateData.cpp" />
-    <ClCompile Include="GameStateGameWin.cpp" />
-    <ClCompile Include="LevelLoader.cpp" />
     <ClCompile Include="MazeGenerator.cpp" />
     <ClCompile Include="Music.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Sprite.cpp" />
-    <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameMain.cpp" />
     <ClCompile Include="HealthBarComponent.cpp" />
     <ClCompile Include="HealingWallComponent.cpp" />
@@ -192,18 +185,10 @@
     <ClCompile Include="BossDeathComponent.cpp" />
     <ClCompile Include="PlayerDeathComponent.cpp" />
     <ClCompile Include="PlayerAttackComponent.cpp" />
-    <ClCompile Include="GameStatePauseMenu.cpp" />
-    <ClCompile Include="GameStateGameOver.cpp" />
-    <ClCompile Include="GameStateMainMenu.cpp" />
-    <ClCompile Include="GameStatePlaying.cpp" />
-    <ClCompile Include="GameStateRecords.cpp" />
-    <ClCompile Include="Menu.cpp" />
-    <ClCompile Include="Text.cpp" />
     <ClCompile Include="Wall.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AI.h" />
-    <ClInclude Include="Application.h" />
     <ClInclude Include="Creeper.h" />
     <ClInclude Include="CreeperSpawner.h" />
     <ClInclude Include="DeveloperLevel.h" />
@@ -221,27 +206,10 @@
     <ClInclude Include="BossDeathComponent.h" />
     <ClInclude Include="PlayerDeathComponent.h" />
     <ClInclude Include="PlayerAttackComponent.h" />
-    <ClInclude Include="GameState.h" />
-    <ClInclude Include="GameStateData.h" />
-    <ClInclude Include="GameStateGameWin.h" />
-    <ClInclude Include="IDelayedAction.h" />
-    <ClInclude Include="IObserver.h" />
-    <ClInclude Include="LevelLoader.h" />
     <ClInclude Include="MazeGenerator.h" />
     <ClInclude Include="Music.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="randomizer.h" />
-    <ClInclude Include="Sprite.h" />
-    <ClInclude Include="Game.h" />
     <ClInclude Include="GameSettings.h" />
-    <ClInclude Include="GameStatePauseMenu.h" />
-    <ClInclude Include="GameStateGameOver.h" />
-    <ClInclude Include="GameStateMainMenu.h" />
-    <ClInclude Include="GameStatePlaying.h" />
-    <ClInclude Include="GameStateRecords.h" />
-    <ClInclude Include="Menu.h" />
-    <ClInclude Include="Text.h" />
-    <ClInclude Include="Vector.h" />
     <ClInclude Include="Wall.h" />
   </ItemGroup>
   <ItemGroup>

@@ -66,14 +66,4 @@ std::unique_ptr<AI> Creeper::Clone(XYZEngine::Vector2Df spawnPosition, const std
     clone->SetPosition(spawnPosition);
     return clone;
 }
-
-// Example of correct Creeper position initialization
-float creeperWidth = 80.0f;  // or get from renderer->GetPixelWidth()
-float creeperHeight = 80.0f; // ��� �������� �� renderer->GetPixelHeight()
-
-float x = static_cast<float>(rand() % (SETTINGS.SCREEN_WIDTH - static_cast<int>(creeperWidth)));
-float y = static_cast<float>(rand() % (SETTINGS.SCREEN_HEIGHT - static_cast<int>(creeperHeight)));
-
-// XYZEngine::TransformComponent *transform = gameObject->GetComponent<XYZEngine::TransformComponent>();
-
 } // namespace XYZRoguelike

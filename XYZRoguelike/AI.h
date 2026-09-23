@@ -4,7 +4,6 @@
 #include <string>
 #include <SFML/Graphics/Color.hpp>
 #include "../Engine/GameObject.h"
-#include "Vector.h"
 
 namespace XYZRoguelike
 {

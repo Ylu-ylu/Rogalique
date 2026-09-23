@@ -1,6 +1,5 @@
 ﻿#pragma once
 #include "AI.h"
-#include "Vector.h"
 #include <functional>
 #include <memory>
 #include <vector>

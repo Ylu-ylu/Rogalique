@@ -1,15 +1,9 @@
 ﻿#include <SFML/Graphics.hpp>
-#include "Player.h"
+#include "DeveloperLevel.h"
 #include "Engine.h"
 #include "ResourceSystem.h"
-#include "DeveloperLevel.h"
-#include "Matrix2D.h"
-#include <cassert>
-#include <stdexcept>
-#include <fstream>
-#include <map>
+#include "Logger.h"
 #include <SFML/Audio/SoundBuffer.hpp>
-#include <Logger.h>
 // #include <windows.h>
 
 using namespace XYZRoguelike;

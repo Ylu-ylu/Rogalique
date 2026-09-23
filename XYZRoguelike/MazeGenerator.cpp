@@ -126,6 +126,53 @@ void MazeGenerator::Generate()
 
     ConnectExitToMaze();
 
+    // Widen the approach to the exit: clear a 3-tile area in front of the
+    // exit gap so the player can always physically reach it.
+    {
+        int approachX = exitX;
+        int approachY = exitY;
+
+        // direction from exit toward the maze interior
+        int dx = 0;
+        int dy = 0;
+        if (exitX == 0) { dx = 1; approachX = 1; }
+        else if (exitX == width) { dx = -1; approachX = width - 2; }
+        else if (exitY == 0) { dy = 1; approachY = 1; }
+        else { dy = -1; approachY = height - 2; }
+
+        // clear the inner neighbor and one tile on each side (perpendicular)
+        for (int side = -1; side <= 1; ++side)
+        {
+            int clearX = approachX + (dy != 0 ? side : 0);
+            int clearY = approachY + (dx != 0 ? side : 0);
+
+            if (clearX >= 0 && clearX < width && clearY >= 0 && clearY < height)
+            {
+                // mark as open in the grid
+                grid[clearY][clearX] = true;
+
+                // remove any wall at this position
+                XYZEngine::Vector2Df cellPosition{clearX * 128.f, clearY * 128.f};
+                for (auto it = level->walls.begin(); it != level->walls.end();)
+                {
+                    auto transform = (*it)->GetGameObject()->GetComponent<XYZEngine::TransformComponent>();
+                    if (transform != nullptr && transform->GetWorldPosition() == cellPosition)
+                    {
+                        XYZEngine::GameWorld::Instance()->DestroyGameObject((*it)->GetGameObject());
+                        it = level->walls.erase(it);
+                    }
+                    else
+                    {
+                        ++it;
+                    }
+                }
+
+                // ensure a floor tile exists (duplicates are harmless)
+                level->floors.push_back(std::make_unique<Floor>(cellPosition, 0));
+            }
+        }
+    }
+
     // Autotile inner maze walls by neighbors so corners and straight walls
     // look connected. Border walls keep their indices set by DeveloperLevel.
     for (auto &wall : level->walls)

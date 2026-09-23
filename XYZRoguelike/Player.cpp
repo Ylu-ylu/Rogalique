@@ -1,5 +1,4 @@
 #include "Player.h"
-#include "Player.h"
 #include "GameConstants.h"
 #include <ResourceSystem.h>
 #include "RigidbodyComponent.h"
