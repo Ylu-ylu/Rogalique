@@ -70,7 +70,7 @@ void HealingWallComponent::Update(float deltaTime)
 
         if (healTimer <= 0.f)
         {
-            healTimer = 0.5f;
+            healTimer = 0.25f;
 
             if (restoreArmor)
             {

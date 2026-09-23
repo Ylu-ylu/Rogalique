@@ -213598,3 +213598,2659 @@
 [INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 10.000000
 [INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 0.000000
 [INFO] Game exiting
+[INFO] Program was started!
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Player attack started
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 45.000000
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Player attack hit 2 enemies
+[INFO] Player attack started
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 35.000000
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack hit 2 enemies
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Move backward
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 25.000000
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Player attack hit 2 enemies
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 15.000000
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Player attack hit 2 enemies
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 115.000000, Current armor: 5.000000
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Player attack hit 2 enemies
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 110.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack hit 2 enemies
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Player attack hit 2 enemies
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Player attack hit 2 enemies
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Player attack hit 2 enemies
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player attack hit 2 enemies
+[INFO] ai_0 died
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 38.799999
+[INFO] Repaired 1.000000 armor, Current armor: 39.799999
+[INFO] Repaired 1.000000 armor, Current armor: 40.799999
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 29.599998
+[INFO] Repaired 1.000000 armor, Current armor: 30.599998
+[INFO] Repaired 1.000000 armor, Current armor: 31.599998
+[INFO] Repaired 1.000000 armor, Current armor: 32.599998
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 21.399998
+[INFO] Repaired 1.000000 armor, Current armor: 22.399998
+[INFO] Repaired 1.000000 armor, Current armor: 23.399998
+[INFO] Repaired 1.000000 armor, Current armor: 24.399998
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 13.199998
+[INFO] Repaired 1.000000 armor, Current armor: 14.199998
+[INFO] Repaired 1.000000 armor, Current armor: 15.199998
+[INFO] Repaired 1.000000 armor, Current armor: 16.199997
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 4.999997
+[INFO] Repaired 1.000000 armor, Current armor: 5.999997
+[INFO] Repaired 1.000000 armor, Current armor: 6.999997
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Repaired 1.000000 armor, Current armor: 7.999997
+[INFO] Took 11.200000 damage, Current health: 96.799995, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Repaired 1.000000 armor, Current armor: 1.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Repaired 1.000000 armor, Current armor: 2.000000
+[INFO] Player attack started
+[INFO] Took 11.200000 damage, Current health: 87.599998, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Repaired 1.000000 armor, Current armor: 1.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Repaired 1.000000 armor, Current armor: 2.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Creeper_0 died
+[INFO] Repaired 1.000000 armor, Current armor: 3.000000
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Repaired 1.000000 armor, Current armor: 4.000000
+[INFO] Repaired 1.000000 armor, Current armor: 5.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 15.000000 damage, Current health: 77.599998, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 150.000000, Current armor: 140.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 150.000000, Current armor: 130.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 150.000000, Current armor: 120.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Took 15.000000 damage, Current health: 62.599998, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 150.000000, Current armor: 110.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 150.000000, Current armor: 100.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 15.000000 damage, Current health: 47.599998, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 150.000000, Current armor: 90.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 150.000000, Current armor: 80.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 150.000000, Current armor: 70.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 15.000000 damage, Current health: 32.599998, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 150.000000, Current armor: 60.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 150.000000, Current armor: 50.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 150.000000, Current armor: 40.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Took 15.000000 damage, Current health: 17.599998, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 150.000000, Current armor: 30.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 150.000000, Current armor: 20.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 150.000000, Current armor: 10.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 10.000000 damage, Current health: 150.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 15.000000 damage, Current health: 2.599998, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 140.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 130.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 15.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player lost life. Lives left: 2
+[INFO] Player respawned with a spare life
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Player attack missed: no enemy in range
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Repaired 1.000000 armor, Current armor: 50.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 15.000000 damage, Current health: 100.000000, Current armor: 35.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 120.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 110.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Took 15.000000 damage, Current health: 100.000000, Current armor: 20.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Took 15.000000 damage, Current health: 100.000000, Current armor: 5.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 15.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 15.000000 damage, Current health: 75.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Creeper_0 died
+[INFO] Boss defeated
+[INFO] Boss defeated - exit opened
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Level exit triggered
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 12.400000 damage, Current health: 100.000000, Current armor: 37.599998
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 27.599998
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 17.599998
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 7.599998
+[INFO] Took 10.000000 damage, Current health: 97.599998, Current armor: 0.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 10.000000 damage, Current health: 87.599998, Current armor: 0.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 77.599998, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 67.599998, Current armor: 0.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 10.000000 damage, Current health: 57.599998, Current armor: 0.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 10.000000 damage, Current health: 47.599998, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 37.599998, Current armor: 0.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 27.599998, Current armor: 0.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 10.000000 damage, Current health: 17.599998, Current armor: 0.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Took 10.000000 damage, Current health: 7.599998, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player lost life. Lives left: 2
+[INFO] Player respawned with a spare life
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 40.000000
+[INFO] Took 14.000000 damage, Current health: 100.000000, Current armor: 26.000000
+[INFO] Repaired 1.000000 armor, Current armor: 27.000000
+[INFO] Repaired 1.000000 armor, Current armor: 28.000000
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 18.000000
+[INFO] Repaired 1.000000 armor, Current armor: 19.000000
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 9.000000
+[INFO] Repaired 1.000000 armor, Current armor: 10.000000
+[INFO] Repaired 1.000000 armor, Current armor: 11.000000
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 1.000000
+[INFO] Took 10.000000 damage, Current health: 91.000000, Current armor: 0.000000
+[INFO] Repaired 1.000000 armor, Current armor: 1.000000
+[INFO] Repaired 1.000000 armor, Current armor: 2.000000
+[INFO] Move right
+[INFO] Repaired 1.000000 armor, Current armor: 3.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 10.000000 damage, Current health: 84.000000, Current armor: 0.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Took 10.000000 damage, Current health: 74.000000, Current armor: 0.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Repaired 1.000000 armor, Current armor: 1.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Repaired 1.000000 armor, Current armor: 2.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Repaired 1.000000 armor, Current armor: 3.000000
+[INFO] Took 10.000000 damage, Current health: 67.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 57.000000, Current armor: 0.000000
+[INFO] Repaired 1.000000 armor, Current armor: 1.000000
+[INFO] Repaired 1.000000 armor, Current armor: 2.000000
+[INFO] Took 10.000000 damage, Current health: 49.000000, Current armor: 0.000000
+[INFO] Repaired 1.000000 armor, Current armor: 1.000000
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Game exiting
+[INFO] Program was started!
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 40.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 30.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 20.000000
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 10.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Creeper_1 died
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Healed 1.000000 amount, Current health: 61.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Healed 1.000000 amount, Current health: 62.000000
+[INFO] Healed 1.000000 amount, Current health: 63.000000
+[INFO] Healed 1.000000 amount, Current health: 64.000000
+[INFO] Healed 1.000000 amount, Current health: 65.000000
+[INFO] Healed 1.000000 amount, Current health: 66.000000
+[INFO] Healed 1.000000 amount, Current health: 67.000000
+[INFO] Healed 1.000000 amount, Current health: 68.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Healed 1.000000 amount, Current health: 69.000000
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Healed 1.000000 amount, Current health: 70.000000
+[INFO] Healed 1.000000 amount, Current health: 71.000000
+[INFO] Healed 1.000000 amount, Current health: 72.000000
+[INFO] Healed 1.000000 amount, Current health: 73.000000
+[INFO] Healed 1.000000 amount, Current health: 74.000000
+[INFO] Healed 1.000000 amount, Current health: 75.000000
+[INFO] Healed 1.000000 amount, Current health: 76.000000
+[INFO] Healed 1.000000 amount, Current health: 77.000000
+[INFO] Healed 1.000000 amount, Current health: 78.000000
+[INFO] Healed 1.000000 amount, Current health: 79.000000
+[INFO] Healed 1.000000 amount, Current health: 80.000000
+[INFO] Healed 1.000000 amount, Current health: 81.000000
+[INFO] Healed 1.000000 amount, Current health: 82.000000
+[INFO] Healed 1.000000 amount, Current health: 83.000000
+[INFO] Healed 1.000000 amount, Current health: 84.000000
+[INFO] Healed 1.000000 amount, Current health: 85.000000
+[INFO] Healed 1.000000 amount, Current health: 86.000000
+[INFO] Healed 1.000000 amount, Current health: 87.000000
+[INFO] Healed 1.000000 amount, Current health: 88.000000
+[INFO] Healed 1.000000 amount, Current health: 89.000000
+[INFO] Healed 1.000000 amount, Current health: 90.000000
+[INFO] Healed 1.000000 amount, Current health: 91.000000
+[INFO] Healed 1.000000 amount, Current health: 92.000000
+[INFO] Healed 1.000000 amount, Current health: 93.000000
+[INFO] Healed 1.000000 amount, Current health: 94.000000
+[INFO] Healed 1.000000 amount, Current health: 95.000000
+[INFO] Healed 1.000000 amount, Current health: 96.000000
+[INFO] Healed 1.000000 amount, Current health: 97.000000
+[INFO] Healed 1.000000 amount, Current health: 98.000000
+[INFO] Healed 1.000000 amount, Current health: 99.000000
+[INFO] Game exiting
+[INFO] Program was started!
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 40.000000
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Boss AOE telegraph started
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Player attack started
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 90.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Player attack started
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 30.000000
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 60.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 20.000000
+[INFO] Took 10.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 30.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 10.000000
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Player attack started
+[INFO] Took 10.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player attack hit 1 enemies
+[INFO] Creeper_0 died
+[INFO] Player attack started
+[INFO] Player attack missed: no enemy in range
+[INFO] Boss AOE telegraph started
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Boss AOE telegraph started
+[INFO] Took 25.000000 damage, Current health: 85.000000, Current armor: 0.000000
+[INFO] Boss AOE hit the player
+[INFO] Took 15.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Took 15.000000 damage, Current health: 55.000000, Current armor: 0.000000
+[INFO] Took 15.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Took 15.000000 damage, Current health: 25.000000, Current armor: 0.000000
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Boss AOE telegraph started
+[INFO] Game exiting
+[INFO] Program was started!
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Already at full HP and Armor
+[INFO] Already at full HP and Armor
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move right
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Boss AOE telegraph started
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 38.799999
+[INFO] Took 12.000000 damage, Current health: 100.000000, Current armor: 26.799999
+[INFO] Wave potion used. Left: 4
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 15.599999
+[INFO] Wave potion used. Left: 3
+[INFO] Took 12.000000 damage, Current health: 100.000000, Current armor: 3.599999
+[INFO] Took 11.200000 damage, Current health: 92.400002, Current armor: 0.000000
+[INFO] Wave potion used. Left: 2
+[INFO] Took 12.000000 damage, Current health: 80.400002, Current armor: 0.000000
+[INFO] Wave potion used. Left: 1
+[INFO] Took 11.200000 damage, Current health: 69.200005, Current armor: 0.000000
+[INFO] Wave potion used. Left: 0
+[INFO] Took 12.000000 damage, Current health: 57.200005, Current armor: 0.000000
+[INFO] Took 11.200000 damage, Current health: 46.000004, Current armor: 0.000000
+[INFO] Took 12.000000 damage, Current health: 34.000004, Current armor: 0.000000
+[INFO] Took 11.200000 damage, Current health: 22.800003, Current armor: 0.000000
+[INFO] Boss AOE telegraph started
+[INFO] Took 12.000000 damage, Current health: 10.800003, Current armor: 0.000000
+[INFO] Took 11.200000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player lost life. Lives left: 2
+[INFO] Player respawned with a spare life
+[INFO] Took 12.000000 damage, Current health: 100.000000, Current armor: 38.000000
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 26.799999
+[INFO] Game exiting
+[INFO] Program was started!
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Wave potion used. Left: 4
+[INFO] Wave potion used. Left: 3
+[INFO] Wave potion used. Left: 2
+[INFO] Wave potion used. Left: 1
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Boss AOE telegraph started
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Wave potion used. Left: 0
+[INFO] Took 15.000000 damage, Current health: 100.000000, Current armor: 35.000000
+[INFO] Took 25.000000 damage, Current health: 100.000000, Current armor: 10.000000
+[INFO] Boss AOE hit the player
+[INFO] Took 15.000000 damage, Current health: 95.000000, Current armor: 0.000000
+[INFO] Took 11.200000 damage, Current health: 83.800003, Current armor: 0.000000
+[INFO] Took 15.000000 damage, Current health: 68.800003, Current armor: 0.000000
+[INFO] Took 11.200000 damage, Current health: 57.600002, Current armor: 0.000000
+[INFO] Took 15.000000 damage, Current health: 42.600002, Current armor: 0.000000
+[INFO] Took 11.200000 damage, Current health: 31.400002, Current armor: 0.000000
+[INFO] Healed 25.000000 amount, Current health: 56.400002
+[INFO] Health potion used. Left: 4
+[INFO] Took 11.200000 damage, Current health: 45.200001, Current armor: 0.000000
+[INFO] Took 15.000000 damage, Current health: 30.200001, Current armor: 0.000000
+[INFO] Healed 25.000000 amount, Current health: 55.200001
+[INFO] Health potion used. Left: 3
+[INFO] Healed 25.000000 amount, Current health: 80.199997
+[INFO] Health potion used. Left: 2
+[INFO] Healed 19.800003 amount, Current health: 100.000000
+[INFO] Repaired 5.199997 armor, Current armor: 5.199997
+[INFO] Health potion used. Left: 1
+[INFO] Took 11.200000 damage, Current health: 94.000000, Current armor: 0.000000
+[INFO] Took 15.000000 damage, Current health: 79.000000, Current armor: 0.000000
+[INFO] Rage potion used. Left: 4
+[INFO] Rage potion refreshed. Left: 3
+[INFO] Rage potion refreshed. Left: 2
+[INFO] Took 11.200000 damage, Current health: 67.800003, Current armor: 0.000000
+[INFO] Took 15.000000 damage, Current health: 52.800003, Current armor: 0.000000
+[INFO] Boss AOE telegraph started
+[INFO] Rage potion refreshed. Left: 1
+[INFO] Took 25.000000 damage, Current health: 27.800003, Current armor: 0.000000
+[INFO] Boss AOE hit the player
+[INFO] Took 11.200000 damage, Current health: 16.600002, Current armor: 0.000000
+[INFO] Took 15.000000 damage, Current health: 1.600002, Current armor: 0.000000
+[INFO] Rage potion refreshed. Left: 0
+[INFO] Took 11.200000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Took 15.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player lost life. Lives left: 2
+[INFO] Player respawned with a spare life
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 40.000000
+[INFO] Took 15.000000 damage, Current health: 100.000000, Current armor: 25.000000
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 13.800000
+[INFO] Rage potion expired
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 2.600000
+[INFO] Took 11.200000 damage, Current health: 91.400002, Current armor: 0.000000
+[INFO] Boss AOE telegraph started
+[INFO] Took 25.000000 damage, Current health: 66.400002, Current armor: 0.000000
+[INFO] Boss AOE hit the player
+[INFO] Took 11.200000 damage, Current health: 55.200001, Current armor: 0.000000
+[INFO] Took 11.200000 damage, Current health: 44.000000, Current armor: 0.000000
+[INFO] Took 11.200000 damage, Current health: 32.799999, Current armor: 0.000000
+[INFO] Took 11.200000 damage, Current health: 21.599998, Current armor: 0.000000
+[INFO] Took 11.200000 damage, Current health: 10.399999, Current armor: 0.000000
+[INFO] Took 11.200000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Player lost life. Lives left: 1
+[INFO] Player respawned with a spare life
+[INFO] Boss AOE telegraph started
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 40.000000
+[INFO] Took 25.000000 damage, Current health: 100.000000, Current armor: 15.000000
+[INFO] Boss AOE hit the player
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 3.800000
+[INFO] Game exiting
+[INFO] Program was started!
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move forward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move left
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Wave potion hit 0 enemies
+[INFO] Wave potion used. Left: 4
+[INFO] Wave potion hit 0 enemies
+[INFO] Wave potion used. Left: 3
+[INFO] Took 30.000000 damage, Current health: 150.000000, Current armor: 120.000000
+[INFO] Wave potion hit 1 enemies
+[INFO] Wave potion used. Left: 2
+[INFO] Boss AOE telegraph started
+[INFO] Took 15.000000 damage, Current health: 100.000000, Current armor: 35.000000
+[INFO] Took 30.000000 damage, Current health: 150.000000, Current armor: 90.000000
+[INFO] Wave potion hit 1 enemies
+[INFO] Wave potion used. Left: 1
+[INFO] Took 25.000000 damage, Current health: 100.000000, Current armor: 10.000000
+[INFO] Boss AOE hit the player
+[INFO] Took 30.000000 damage, Current health: 150.000000, Current armor: 60.000000
+[INFO] Wave potion hit 1 enemies
+[INFO] Wave potion used. Left: 0
+[INFO] Took 15.000000 damage, Current health: 95.000000, Current armor: 0.000000
+[INFO] Took 15.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Took 15.000000 damage, Current health: 65.000000, Current armor: 0.000000
+[INFO] Took 15.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Took 15.000000 damage, Current health: 35.000000, Current armor: 0.000000
+[INFO] Boss AOE telegraph started
+[INFO] Took 15.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Took 25.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Boss AOE hit the player
+[INFO] Player lost life. Lives left: 2
+[INFO] Player respawned with a spare life
+[INFO] Took 15.000000 damage, Current health: 100.000000, Current armor: 35.000000
+[INFO] Game exiting
+[INFO] Program was started!
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Move backward
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 40.000000
+[INFO] UseWavePotion: enemySpawner=OK
+[INFO] UseWavePotion: found 2 enemies in range
+[INFO] Took 30.000000 damage, Current health: 115.000000, Current armor: 25.000000
+[INFO] Took 30.000000 damage, Current health: 70.000000, Current armor: 0.000000
+[INFO] Wave potion used. Left: 4
+[INFO] UseWavePotion: enemySpawner=OK
+[INFO] UseWavePotion: found 2 enemies in range
+[INFO] Took 30.000000 damage, Current health: 110.000000, Current armor: 0.000000
+[INFO] Took 30.000000 damage, Current health: 40.000000, Current armor: 0.000000
+[INFO] Wave potion used. Left: 3
+[INFO] Took 10.000000 damage, Current health: 100.000000, Current armor: 30.000000
+[INFO] UseWavePotion: enemySpawner=OK
+[INFO] UseWavePotion: found 2 enemies in range
+[INFO] Took 30.000000 damage, Current health: 80.000000, Current armor: 0.000000
+[INFO] Took 30.000000 damage, Current health: 10.000000, Current armor: 0.000000
+[INFO] Wave potion used. Left: 2
+[INFO] UseWavePotion: enemySpawner=OK
+[INFO] UseWavePotion: found 2 enemies in range
+[INFO] Took 30.000000 damage, Current health: 50.000000, Current armor: 0.000000
+[INFO] Took 30.000000 damage, Current health: 0.000000, Current armor: 0.000000
+[INFO] Wave potion used. Left: 1
+[INFO] ai_0 died
+[INFO] UseWavePotion: enemySpawner=OK
+[INFO] UseWavePotion: found 1 enemies in range
+[INFO] Took 30.000000 damage, Current health: 20.000000, Current armor: 0.000000
+[INFO] Wave potion used. Left: 0
+[INFO] Boss AOE telegraph started
+[INFO] Took 11.200000 damage, Current health: 100.000000, Current armor: 18.799999
+[INFO] Boss AOE telegraph started
+[INFO] Took 25.000000 damage, Current health: 93.800003, Current armor: 0.000000
+[INFO] Boss AOE hit the player
+[INFO] Took 11.200000 damage, Current health: 82.600006, Current armor: 0.000000
+[INFO] Game exiting

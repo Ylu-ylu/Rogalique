@@ -64,7 +64,7 @@ int main()
             throw std::runtime_error("Failed to load required texture map: Player");
         }
 
-        XYZEngine::ResourceSystem::Instance()->LoadTextureMap("Creeper", "Resources/TextureMaps/Creeper.png", {56, 54}, 13, false);
+        XYZEngine::ResourceSystem::Instance()->LoadTextureMap("Creeper", "Resources/TextureMaps/Creeper.png", {64, 54}, 13, false);
 
         XYZEngine::ResourceSystem::Instance()->LoadTexture("Heart", "Resources/TextureMaps/Heart.png");
         if (XYZEngine::ResourceSystem::Instance()->GetTextureMapElementShared("Creeper", 0) == nullptr)

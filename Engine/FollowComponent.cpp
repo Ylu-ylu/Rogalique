@@ -178,6 +178,14 @@ void FollowComponent::SetSpeed(float newSpeed)
     speed = newSpeed;
 }
 
+void FollowComponent::SetAttackCooldown(float newCooldown)
+{
+    if (newCooldown > 0.f)
+    {
+        attackCooldown = newCooldown;
+    }
+}
+
 float FollowComponent::getSpeed() const
 {
     return speed;

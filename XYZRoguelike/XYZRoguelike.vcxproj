@@ -186,6 +186,8 @@
     <ClCompile Include="GameHUDComponent.cpp" />
     <ClCompile Include="PauseComponent.cpp" />
     <ClCompile Include="ExitLabelComponent.cpp" />
+    <ClCompile Include="BossAbilitiesComponent.cpp" />
+    <ClCompile Include="InventoryComponent.cpp" />
     <ClCompile Include="EnemyDeathComponent.cpp" />
     <ClCompile Include="BossDeathComponent.cpp" />
     <ClCompile Include="PlayerDeathComponent.cpp" />
@@ -213,6 +215,8 @@
     <ClInclude Include="GameHUDComponent.h" />
     <ClInclude Include="PauseComponent.h" />
     <ClInclude Include="ExitLabelComponent.h" />
+    <ClInclude Include="BossAbilitiesComponent.h" />
+    <ClInclude Include="InventoryComponent.h" />
     <ClInclude Include="EnemyDeathComponent.h" />
     <ClInclude Include="BossDeathComponent.h" />
     <ClInclude Include="PlayerDeathComponent.h" />

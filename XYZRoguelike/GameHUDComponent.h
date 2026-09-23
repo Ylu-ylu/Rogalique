@@ -9,6 +9,7 @@
 namespace XYZRoguelike
 {
 class DeveloperLevel;
+class InventoryComponent;
 
 // Top-left screen-space HUD: level number, lives (hearts), player stats and
 // the exit hint ("Kill Boss for Exit!" / "Go to Exit!").
@@ -27,7 +28,10 @@ class GameHUDComponent: public XYZEngine::Component
   private:
     XYZEngine::StatsComponent *stats = nullptr;
     PlayerLivesComponent *lives = nullptr;
+    InventoryComponent *inventory = nullptr;
     DeveloperLevel *level = nullptr;
+
+    XYZEngine::GameObject *playerObject = nullptr;
 
     int levelNumber = 1;
 

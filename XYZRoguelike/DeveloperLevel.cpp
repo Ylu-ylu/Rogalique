@@ -8,6 +8,8 @@
 #include "HealingWallComponent.h"
 #include "GameHUDComponent.h"
 #include "ExitLabelComponent.h"
+#include "BossAbilitiesComponent.h"
+#include "InventoryComponent.h"
 #include "GameConstants.h"
 #include "GameSettings.h"
 #include <cstdlib>
@@ -299,6 +301,12 @@ void DeveloperLevel::Start()
         playerAttack->SetEnemySpawner(creeperSpawner.get());
     }
 
+    auto playerInventory = player->GetGameObject()->GetComponent<InventoryComponent>();
+    if (playerInventory != nullptr)
+    {
+        playerInventory->SetEnemySpawner(creeperSpawner.get());
+    }
+
     // difficulty scales by level (creeper count reduced by 20%, rounded)
     const int baseCount = ((2 + currentLevel) * 4 + 2) / 5;
     creeperSpawner->SpawnCreepers(baseCount, width, height, mazeGenerator.GetGrid(), player->GetGameObject());
@@ -340,6 +348,15 @@ void DeveloperLevel::Start()
     auto hud = hudObject->AddComponent<GameHUDComponent>(currentLevel, this);
     hud->SetTarget(player->GetGameObject());
 
+    // potion inventory: keys 1/2/3, restocked every level
+    auto inventory = player->GetGameObject()->GetComponent<InventoryComponent>();
+    if (inventory == nullptr)
+    {
+        inventory = player->GetGameObject()->AddComponent<InventoryComponent>();
+    }
+    inventory->ResetStocks();
+    inventory->SetEnemySpawner(creeperSpawner.get());
+
     music = std::make_unique<Music>("music");
     isLevelTransitionInProgress = false;
     exitOpened = false;
@@ -371,6 +388,9 @@ void DeveloperLevel::Stop()
 
 void DeveloperLevel::SetupBoss(XYZEngine::GameObject *bossObject)
 {
+    // unique boss abilities: AOE with telegraph + rage below 50% HP
+    bossObject->AddComponent<BossAbilitiesComponent>(player->GetGameObject());
+
     // restyle the boss with the Creeper texture set (same size as regular
     // enemies so he can follow the player between walls)
     auto bossRenderer = bossObject->GetComponent<XYZEngine::SpriteRendererComponent>();

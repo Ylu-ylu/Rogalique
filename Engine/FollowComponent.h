@@ -19,6 +19,7 @@ class FollowComponent : public Component
 
     void SetTarget(GameObject *targetObject);
     void SetSpeed(float newSpeed);
+    void SetAttackCooldown(float newCooldown);
     float getSpeed() const;
     float GetSpeed() const
     {

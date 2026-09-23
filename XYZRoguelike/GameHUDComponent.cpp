@@ -1,5 +1,6 @@
 #include "GameHUDComponent.h"
 #include "DeveloperLevel.h"
+#include "InventoryComponent.h"
 #include "../Engine/GameObject.h"
 #include "../Engine/RenderSystem.h"
 #include "../Engine/ResourceSystem.h"
@@ -46,10 +47,18 @@ void GameHUDComponent::SetTarget(XYZEngine::GameObject *player)
 
     stats = player->GetComponent<XYZEngine::StatsComponent>();
     lives = player->GetComponent<PlayerLivesComponent>();
+    inventory = player->GetComponent<InventoryComponent>();
+    playerObject = player;
 }
 
 void GameHUDComponent::Update(float deltaTime)
 {
+    // lazy lookup: inventory may be added after SetTarget
+    if (inventory == nullptr && playerObject != nullptr)
+    {
+        inventory = playerObject->GetComponent<InventoryComponent>();
+    }
+
     std::string statsLine;
     if (stats != nullptr)
     {
@@ -74,6 +83,15 @@ void GameHUDComponent::Update(float deltaTime)
             statusText.setString("Kill Boss for Exit!");
             statusText.setFillColor(sf::Color(255, 120, 40));
         }
+    }
+
+    // potion line below the status
+    if (inventory != nullptr)
+    {
+        std::string potionLine = "[1] HP: " + std::to_string(inventory->GetHealthPotions()) + "\n" +
+                                  "[2] Rage: " + std::to_string(inventory->GetRagePotions()) + "\n" +
+                                  "[3] Wave: " + std::to_string(inventory->GetWavePotions());
+        statusText.setString(statusText.getString() + "\n" + potionLine);
     }
 }
 
