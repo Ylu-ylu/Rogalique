@@ -94,6 +94,7 @@ int main()
         XYZEngine::ResourceSystem::Instance()->LoadSound("Player-death", "Resources/Sounds/Player-death.wav");
         XYZEngine::ResourceSystem::Instance()->LoadSound("Transition", "Resources/Sounds/Transition.wav");
 
+        //Create level
         LOG_INFO("Initializing DeveloperLevel");
         auto developerLevel = std::make_shared<DeveloperLevel>();
         if (developerLevel == nullptr)

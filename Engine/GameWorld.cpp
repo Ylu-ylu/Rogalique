@@ -11,7 +11,6 @@ GameWorld *GameWorld::Instance()
 }
 
 // Updates all game objects each frame
-// Called once per frame to update the logic of all objects
 void GameWorld::Update(float deltaTime)
 {
     for (int i = 0; i < gameObjects.size(); i++)
@@ -24,12 +23,12 @@ void GameWorld::Update(float deltaTime)
 void GameWorld::FixedUpdate(float deltaTime)
 {
     fixedCounter += deltaTime;
-    if (fixedCounter > PhysicsSystem::Instance()->GetFixedDeltaTime())
-        return;
-
-        fixedCounter -= PhysicsSystem::Instance()->GetFixedDeltaTime();
+    const float fixedStep = PhysicsSystem::Instance()->GetFixedDeltaTime();
+    while (fixedCounter >= fixedStep)
+    {
+        fixedCounter -= fixedStep;
         PhysicsSystem::Instance()->Update();
-
+    }
 }
 // Renders all game objects to the screen
 // Called once per frame to visualize all objects

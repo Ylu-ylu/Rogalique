@@ -17,6 +17,8 @@ class PlayerDeathComponent : public XYZEngine::Component
 
     void Update(float deltaTime) override;
     void Render() override;
+    void PlayDeathSound();
+    bool hasDeathSound = false;
 
   private:
     XYZEngine::StatsComponent *stats = nullptr;
@@ -36,3 +38,5 @@ class PlayerDeathComponent : public XYZEngine::Component
     sf::RectangleShape overlay;
 };
 } // namespace XYZRoguelike
+
+

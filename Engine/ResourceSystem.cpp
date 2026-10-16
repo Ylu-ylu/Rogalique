@@ -55,19 +55,19 @@ void ResourceSystem::LoadTextureMap(const std::string &name, std::string sourceP
     sf::Texture textureMap;
     if (textureMap.loadFromFile(sourcePath))
     {
-        auto textureMapElements = new std::vector<sf::Texture *>();
+        std::vector<sf::Texture *> textureMapElements;
 
         auto textureSize = textureMap.getSize();
         int loadedElements = 0;
 
-        for (int y = 0; y <= textureSize.y - elementPixelSize.y; y += elementPixelSize.y)
+        for (unsigned int y = 0; y + elementPixelSize.y <= textureSize.y; y += elementPixelSize.y)
         {
             if (loadedElements == totalElements)
             {
                 break;
             }
 
-            for (int x = 0; x <= textureSize.x - elementPixelSize.x; x += elementPixelSize.x)
+            for (unsigned int x = 0; x + elementPixelSize.x <= textureSize.x; x += elementPixelSize.x)
             {
                 if (loadedElements == totalElements)
                 {
@@ -78,13 +78,17 @@ void ResourceSystem::LoadTextureMap(const std::string &name, std::string sourceP
                 if (newTextureMapElement->loadFromFile(sourcePath, sf::IntRect(x, y, elementPixelSize.x, elementPixelSize.y)))
                 {
                     newTextureMapElement->setSmooth(isSmooth);
-                    textureMapElements->push_back(newTextureMapElement);
+                    textureMapElements.push_back(newTextureMapElement);
+                }
+                else
+                {
+                    delete newTextureMapElement;
                 }
                 loadedElements++;
             }
         }
 
-        textureMaps.emplace(name, *textureMapElements);
+        textureMaps.emplace(name, std::move(textureMapElements));
     }
     else
     {
@@ -111,7 +115,7 @@ int ResourceSystem::GetTextureMapElementsCount(const std::string &name) const
 {
     auto textureMap = textureMaps.find(name);
     auto textures = textureMap->second;
-    return textures.size();
+    return static_cast<int>(textures.size());
 }
 void ResourceSystem::DeleteSharedTextureMap(const std::string &name)
 {

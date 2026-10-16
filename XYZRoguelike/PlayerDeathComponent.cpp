@@ -24,6 +24,16 @@ PlayerDeathComponent::PlayerDeathComponent(XYZEngine::GameObject *gameObject, De
     {
         deathSound->SetAudio(*buffer);
         deathSound->SetLoop(false);
+        hasDeathSound = true;
+    }
+}
+
+void PlayerDeathComponent::PlayDeathSound()
+{
+    if (deathSound != nullptr && hasDeathSound)
+    {
+        deathSound->Stop();
+        deathSound->Play();
     }
 }
 
@@ -54,13 +64,7 @@ void PlayerDeathComponent::Update(float deltaTime)
                 transform->SetWorldPosition({896.f, 896.f});
             }
 
-            if (deathSound != nullptr)
-            {
-                deathSound->Stop();
-                deathSound->Play();
-            }
-
-            LOG_INFO("Player respawned with a spare life");
+            PlayDeathSound();           
             return;
         }
 
@@ -75,14 +79,8 @@ void PlayerDeathComponent::Update(float deltaTime)
                 animation->Play("death");
             }
 
-            if (deathSound != nullptr)
-            {
-                deathSound->Stop();
-                deathSound->Play();
-            }
-
-            LOG_INFO("Player died - game over");
-        }
+            PlayDeathSound();          
+                    }
 
         if (gameOverActive)
         {
